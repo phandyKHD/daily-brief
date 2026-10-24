@@ -137,6 +137,7 @@ main .wrap { padding-block: 18px 60px; display: grid; gap: 14px; }
 .thumb { width: 40px; height: 36px; border: 1px solid var(--rule); background: var(--surface); border-radius: 999px; padding: 7px; cursor: pointer; color: var(--ink-3); }
 .thumb svg { width: 100%; height: 100%; display: block; fill: currentColor; }
 .thumb.down svg { transform: scaleY(-1); }
+.thumb.mid svg { transform: rotate(-90deg); }
 .thumb:hover { border-color: var(--ink-3); }
 .thumb[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
 .toggle { justify-self: start; background: none; border: 0; padding: 2px 0; font-family: var(--f-display); font-weight: 650; font-size: .85rem; color: var(--accent); cursor: pointer; }
@@ -290,6 +291,9 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     ["too_shallow", "Too shallow"], ["already_knew", "Already knew"], ["biased", "Biased"], ["great_source", "Great source"]
   ];
   var THUMB = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10v11H3V10h4zm2 11h8.3a2 2 0 0 0 2-1.6l1.4-7A2 2 0 0 0 18.7 10H14l.8-4.2a1.6 1.6 0 0 0-2.9-1.2L9 10v11z"/></svg>';
+  var VOTE_LABEL = { up: "Want more", mid: "It's OK", down: "Not for me" };
+  // Older ratings stored the vote as 1 / -1.
+  function voteOf(r) { var v = r && r.summary_vote; return v === 1 ? "up" : v === -1 ? "down" : (VOTE_LABEL[v] ? v : ""); }
   var STAR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6 6.5.8-4.8 4.5 1.2 6.5L12 17.3l-5.8 3.1 1.2-6.5L2.6 9.4l6.5-.8z"/></svg>';
 
   var editions = [DATA.edition].concat(DATA.archive || []);
@@ -397,7 +401,7 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
         date: date, article_id: art.id, round: art.round || 1, topic: art.topic, title: art.title, kind: art.kind,
         read_minutes: art.read_minutes, tags: art.tags || [],
         outlets: (art.sources || []).map(function (s) { return s.outlet; }),
-        relevance: 0, quality: 0, summary_vote: 0, quick_tags: [], feedback: "", updated_at: null
+        relevance: 0, quality: 0, summary_vote: "", quick_tags: [], feedback: "", updated_at: null
       };
     }
     return state.ratings[k];
@@ -636,14 +640,14 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     var r = state.ratings[k];
     var open = !!state.open[k] || OFFLINE;
     var rated = r && (r.relevance || r.quality);
-    var vote = (r && r.summary_vote) || 0;
+    var vote = voteOf(r);
     var h = '<article class="card" id="card-' + k + '" style="--tc: var(--t-' + esc(a.topic) + ')">';
     h += '<div class="card-head" data-toggle="' + k + '">';
     h += '<div class="meta"><span class="topic">' + esc(TOPICS[a.topic] || a.topic) + "</span>";
     if (a.kind && a.kind !== "news") h += '<span class="kind ' + esc(a.kind) + '">' + (a.kind === "opinion" ? "Opinion" : "Analysis") + "</span>";
     h += '<span class="mins">' + (a.read_minutes || 2) + " min</span>";
     if (rated) h += '<span class="rated">Rated R' + (r.relevance || "–") + " · Q" + (r.quality || "–") + "</span>";
-    else if (vote) h += '<span class="rated">' + (vote > 0 ? "Want more" : "Not for me") + "</span>";
+    else if (vote) h += '<span class="rated">' + VOTE_LABEL[vote] + "</span>";
     h += "</div>";
     h += "<h3>" + esc(a.title) + "</h3>";
     if (a.update_of) h += '<div class="update-of">Update to: ' + esc(a.update_of) + "</div>";
@@ -651,8 +655,9 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     h += '<div class="head-actions">';
     if (!OFFLINE) h += '<button type="button" class="toggle" aria-expanded="' + open + '">' + (open ? "Close" : "Read the full article") + "</button>";
     h += '<span class="thumbs" role="group" aria-label="Quick rating from the summary">' +
-      '<button type="button" class="thumb" data-vote="1" data-k="' + k + '" aria-pressed="' + (vote > 0) + '" aria-label="Want more like this" title="Want more like this">' + THUMB + "</button>" +
-      '<button type="button" class="thumb down" data-vote="-1" data-k="' + k + '" aria-pressed="' + (vote < 0) + '" aria-label="Not for me" title="Not for me">' + THUMB + "</button></span>";
+      ["up", "mid", "down"].map(function (v) {
+        return '<button type="button" class="thumb ' + v + '" data-vote="' + v + '" data-k="' + k + '" aria-pressed="' + (vote === v) + '" aria-label="' + VOTE_LABEL[v] + '" title="' + VOTE_LABEL[v] + '">' + THUMB + "</button>";
+      }).join("") + "</span>";
     h += "</div>";
     h += "</div>";
     if (open) {
@@ -795,8 +800,8 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     if (t.dataset.vote) {
       var pv = splitKey(t.dataset.k), av = findArt(pv);
       if (!av) return;
-      var rv = ratingFor(pv.date, av), v = +t.dataset.vote;
-      rv.summary_vote = rv.summary_vote === v ? 0 : v;
+      var rv = ratingFor(pv.date, av), v = t.dataset.vote;
+      rv.summary_vote = voteOf(rv) === v ? "" : v;
       rerenderCard(pv.date, av);
       queueSave(pv.date, av);
       renderRail();
