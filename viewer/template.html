@@ -140,6 +140,12 @@ main .wrap { padding-block: 18px 60px; display: grid; gap: 14px; }
 .sources ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: .95rem; }
 .sources li { min-width: 0; overflow-wrap: anywhere; }
 .sources .outlet { font-family: var(--f-display); font-weight: 650; font-size: .85rem; margin-right: 6px; }
+.share { display: grid; gap: 8px; }
+.share-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.share-btn { border: 1px solid var(--rule); background: var(--surface); border-radius: 999px; padding: 5px 12px; font-family: var(--f-display); font-size: .8rem; font-weight: 650; color: var(--ink); cursor: pointer; text-decoration: none; }
+.share-btn:hover { border-color: var(--ink-3); }
+.share-out { width: 100%; min-height: 120px; border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px; background: var(--bg); font-family: var(--f-mono); font-size: .78rem; line-height: 1.45; }
+.share-msg { font-family: var(--f-mono); font-size: .75rem; color: var(--good); }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; font-family: var(--f-mono); font-size: .75rem; color: var(--ink-3); }
 
 /* Rating slip */
@@ -428,6 +434,41 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     document.querySelectorAll(".tab").forEach(function (t) { t.setAttribute("aria-selected", String(t.dataset.view === state.view)); });
   }
 
+  // Plain text for sharing. The viewer link is private, so shared text carries the
+  // article itself plus the original sources rather than a link to this page.
+  function shareText(a, mode) {
+    var lines = [a.title, ""];
+    if (mode === "full") lines = lines.concat(a.body.join("\n\n").split("\n"), [""]);
+    else lines = lines.concat(a.tldr.map(function (t) { return "• " + t; }), [""]);
+    if (a.why_it_matters && a.topic !== "industry") lines.push("Why it matters: " + a.why_it_matters, "");
+    lines.push("Sources:");
+    (a.sources || []).forEach(function (s) { lines.push("- " + s.outlet + ": " + s.url); });
+    return lines.join("\n");
+  }
+  function doShare(btn) {
+    var p = splitKey(btn.dataset.k), a = findArt(p);
+    if (!a) return;
+    var msg = document.querySelector('[data-share-msg="' + btn.dataset.k + '"]');
+    var mode = btn.dataset.share;
+    var text = shareText(a, mode === "full" ? "full" : "summary");
+    if (mode === "native") {
+      navigator.share({ title: a.title, text: text }).catch(function () {});
+      return;
+    }
+    function fallback() {
+      var box = btn.closest(".share");
+      var ta = box.querySelector(".share-out");
+      if (!ta) { ta = document.createElement("textarea"); ta.className = "share-out"; ta.readOnly = true; ta.setAttribute("aria-label", "Text to share"); box.appendChild(ta); }
+      ta.value = text; ta.focus(); ta.select();
+      if (msg) msg.textContent = "Selected below. Copy it and paste into a message.";
+    }
+    try {
+      navigator.clipboard.writeText(text).then(function () {
+        if (msg) msg.textContent = "Copied. Paste it into WhatsApp, email or Teams.";
+      }, fallback);
+    } catch (e) { fallback(); }
+  }
+
   function starRow(name, value, k) {
     var out = '<div class="stars" role="radiogroup" aria-label="' + name + '">';
     for (var i = 1; i <= 5; i++) {
@@ -460,6 +501,12 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
         return '<li><span class="outlet">' + esc(s.outlet) + '</span><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.title || s.url) + "</a></li>";
       }).join("") + "</ul></div>";
       if (a.tags && a.tags.length) h += '<div class="tags">' + a.tags.map(function (t) { return "<span>#" + esc(t) + "</span>"; }).join("") + "</div>";
+      h += '<div class="share"><h4 style="margin:0;font-family:var(--f-display);font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-3)">Share</h4><div class="share-row">' +
+        '<button type="button" class="share-btn" data-share="summary" data-k="' + k + '">Copy summary</button>' +
+        '<button type="button" class="share-btn" data-share="full" data-k="' + k + '">Copy full article</button>' +
+        '<a class="share-btn" target="_blank" rel="noopener" href="mailto:?subject=' + encodeURIComponent(a.title) + '&body=' + encodeURIComponent(shareText(a, "summary")) + '">Email</a>' +
+        (navigator.share ? '<button type="button" class="share-btn" data-share="native" data-k="' + k + '">More…</button>' : "") +
+        '<span class="share-msg" data-share-msg="' + k + '" role="status"></span></div></div>';
       h += "</div>";
       h += slipHtml(date, a);
     }
@@ -575,6 +622,7 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     if (t.dataset.filter) { state.filter = t.dataset.filter; renderAll(); return; }
     if (t.dataset.date) { state.date = t.dataset.date; state.view = "today"; state.filter = "all"; renderAll(); window.scrollTo(0, 0); return; }
     if (t.dataset.goToday) { state.date = DATA.edition.date; renderAll(); return; }
+    if (t.dataset.share) { doShare(t); return; }
     if (t.classList.contains("star")) {
       var parts = splitKey(t.dataset.k), a = findArt(parts);
       if (!a) return;
