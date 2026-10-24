@@ -1,0 +1,9 @@
+{
+  "recipient": "peter@khdtechnology.com",
+  "timezone": "Europe/London",
+  "schedule": "04:30 daily",
+  "viewer_artifact_url": null,
+  "routine_trigger_id": null,
+  "archive_days": 7,
+  "max_fetches_per_run": 40
+}

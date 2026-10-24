@@ -1,0 +1,575 @@
+{
+  "date": "2026-10-24",
+  "generated_at": "2026-10-24T21:01:16+00:00",
+  "changes": [],
+  "rounds": [
+    {
+      "round": 1,
+      "mode": "daily",
+      "generated_at": "2026-10-24T21:01:16+00:00"
+    }
+  ],
+  "articles": [
+    {
+      "id": "a01",
+      "round": 1,
+      "topic": "industry",
+      "title": "David Wood Baking changes hands after receivership, with a safety record still in view",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "US lender Barings has completed a buyout of Leeds-based David Wood Baking, which employs more than 1,500 people at seven UK sites.",
+        "Receivers were put in over the company's shares in April; the deal value is undisclosed and a rebrand is promised.",
+        "Last month the firm was fined £333,333 after a worker cleaning a conveyor was dragged into an unguarded roller."
+      ],
+      "body": [
+        "Last week one of the larger private names in British bakery found a new owner. Barings, the North Carolina-based asset manager, has completed a buyout of David Wood Baking UK, working with managing director Karen Wood. The value was not disclosed. Barings and LeumiUK, which already lent to the business, stay on as lenders.",
+        "The deal closes a difficult chapter. Interpath's Anthony Johnson-Magee and Kristina Kicks were appointed joint receivers over the company's shares on 2 April, and are expected to step away shortly after completion. Food Manufacture reports the business makes bread, savoury pastry and ready meals at seven UK sites for Tesco, Asda, Sainsbury's and the Co-op, and employs more than 1,500 people.",
+        "The trouble goes back to September 2023, when a fire destroyed the company's Dudley bakery and production had to be spread across its other plants. In April 2024 Interpath arranged term debt and asset-finance facilities from Barings and Leumi to stabilise the group. Tom Swiers, Interpath's head of food and drink, said at the time that \"there is no greater destabilising event than a factory fire\". That refinancing evidently did not settle matters, and the lender has now ended up owning the business.",
+        "Karen Wood, who has led the company since autumn 2025, will stay on with finance chief Bruce Korican and operations director Aaron Corbett. She spoke of a \"fragile trading environment\" and inflation, and said a rebrand would be \"another step in that journey\". Barings' Abhi Bothra said the firm looked forward to supporting \"the next phase of growth\". No investment figures were given.",
+        "The new owners also inherit a poor safety record. On 1 September Medway Magistrates' Court fined the company £333,333, plus £7,644 costs, over an incident at its Sheerness factory in December 2023. A worker cleaning a sausage roll line put her hand through an unguarded conveyor roller; the conveyor, which had been switched off, started running and her arm was pulled in, causing multiple fractures. The Health and Safety Executive found the company had failed to stop access to the rotating parts. The firm said it has since invested in engineering standards, training and governance. It had already been fined more than £573,000 over separate injuries at its Bolton sites in 2022.",
+        "The pattern is familiar across UK bakery this autumn: Greggs is closing four manufacturing sites, while other plants, such as Geary's, are getting fresh money. Owners are concentrating volume on fewer, busier lines, and the companies that win are the ones that keep those lines running safely."
+      ],
+      "why_it_matters": "Why it matters for KHD: a lender-owned baker with seven sites, a promised fresh start and a court ruling over a worker hurt while cleaning a conveyor is a natural prospect. Pitch KHD's portable steam belt cleaners as a way to take people's hands off moving belts during sanitation. It is also worth a call to the operations director, Aaron Corbett, once the new owners have settled in.",
+      "sources": [
+        {
+          "outlet": "Food Manufacture",
+          "title": "Troubled David Wood Baking bought out by US finance firm",
+          "url": "https://www.foodmanufacture.co.uk/Article/2026/10/16/david-wood-baking-bought-out-by-us-finance-firm/"
+        },
+        {
+          "outlet": "Food Manufacture",
+          "title": "David Wood Baking fined over £300K after worker suffers serious injuries",
+          "url": "https://www.foodmanufacture.co.uk/Article/2026/09/07/david-woo-baking-fined-333k-after-workers-arm-broken/"
+        },
+        {
+          "outlet": "Interpath",
+          "title": "Interpath secures debt package for David Wood Baking as the business looks to the future",
+          "url": "https://interpath.com/media-hub/articles/interpath-secures-debt-package-for-david-wood-baking-as-the-business-looks-to-the-future/"
+        }
+      ],
+      "tags": [
+        "david wood baking",
+        "barings",
+        "bakery",
+        "hse",
+        "conveyor safety",
+        "receivership"
+      ],
+      "update_of": null
+    },
+    {
+      "id": "a02",
+      "round": 1,
+      "topic": "industry",
+      "title": "Listeria pulls SuperValu and Centra smoked salmon off shelves in Ireland and Northern Ireland",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "Ireland's FSAI issued a Category 1 recall on 20 October for 18 SuperValu and Centra smoked fish and prawn cocktail lines after Listeria monocytogenes was found.",
+        "The UK Food Standards Agency followed with an alert for Northern Ireland, where every use-by date is affected.",
+        "Neither regulator has named the supplier or the cause, which points to a problem at a shared source rather than one bad batch."
+      ],
+      "body": [
+        "Musgrave Group's SuperValu and Centra chains are recalling their smoked salmon, smoked mackerel and prawn cocktail ranges in both parts of Ireland after tests found Listeria monocytogenes.",
+        "The Food Safety Authority of Ireland issued the recall on Tuesday 20 October as a Category 1 \"for action\" alert, its most serious class. It lists 18 products, from 40g to 300g packs. These include SuperValu's standard, organic, whiskey-infused and gin-infused smoked salmon, hot-smoked BBQ salmon, peppered salmon darnes, Irish smoked mackerel and prawn cocktail, as well as Centra's smoked salmon, BBQ salmon, applewood smoked salmon and Wild Atlantic prawn cocktail. The country of origin is given as Ireland. Retailers must take the products off sale and display recall notices; consumers are told not to eat them.",
+        "The UK Food Standards Agency has issued a matching alert for Northern Ireland, where Musgrave also trades. Food Manufacture reported on Friday that the Northern Irish recall covers all use-by dates of the affected SuperValu and Centra salmon and prawn cocktail packs. Customers are being offered refunds in store.",
+        "What is missing matters. Neither the FSAI nor the FSA names the processor, and neither says how the bacteria got in. A recall that runs across every use-by date and several product types, from cold-smoked and hot-smoked fish to prawns, points to a shared source at a supplier rather than a single bad batch. Until investigators report, that is an inference, not a finding.",
+        "There is also a delay built into the risk. The FSAI notes that listeriosis has an average incubation of three weeks and can take anywhere from 3 to 70 days to appear. Healthy adults may have only mild, flu-like symptoms, but the infection can be severe for pregnant women, newborns, older people and anyone with a weakened immune system. The published notices do not mention any illnesses so far, but given that time lag, the absence of reported cases is not yet a clean bill of health.",
+        "This is the latest in a run of Listeria withdrawals this autumn. Food Manufacture lists a Waitrose black olive product on 14 September, a Sainsbury's product on 8 September and two cheeses from an Irish buffalo cheese maker on 2 September. For own-label retailers, each one means removing a whole range, not just a single line, and handing the bill back to the supplier."
+      ],
+      "why_it_matters": "Why it matters for KHD: Listeria in ready-to-eat fish usually means a hunt through the processing environment, conveyors included, and a recall on this scale will push Irish and UK chilled processors to tighten sanitation. KHD's low-moisture steam belt cleaning, which needs no chemicals, is a good fit for chilled ready-to-eat lines where operators want less water on the floor. This is worth raising with any Irish distributor or chilled-food prospect.",
+      "sources": [
+        {
+          "outlet": "Food Safety Authority of Ireland",
+          "title": "Recall of several Supervalu and Inspired by Centra smoked salmon, mackerel and prawn cocktail products",
+          "url": "https://www.fsai.ie/news-and-alerts/food-alerts/recall-of-several-supervalu-and-inspired-by-centra"
+        },
+        {
+          "outlet": "Food Manufacture",
+          "title": "Two major retailers pull seafood products over Listeria contamination",
+          "url": "https://www.foodmanufacture.co.uk/Article/2026/10/23/two-retailers-pull-salmon-and-prawn-products-over-listeria/"
+        }
+      ],
+      "tags": [
+        "listeria",
+        "recall",
+        "smoked salmon",
+        "supervalu",
+        "fsai",
+        "northern ireland"
+      ],
+      "update_of": null
+    },
+    {
+      "id": "a03",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Healey's first Budget may raise tax on passing a family firm to the next generation",
+      "kind": "analysis",
+      "read_minutes": 3,
+      "tldr": [
+        "Chancellor John Healey delivers his first Budget on Wednesday 28 October, with headroom reported to have shrunk sharply since March.",
+        "Reports say he may tax company buy-backs of redeemable shares, a common route for handing down family firms, as income at up to 45% rather than as a capital gain at 24%.",
+        "Smaller firms may get relief on business rates, paid for partly by making online marketplaces collect VAT."
+      ],
+      "body": [
+        "John Healey stands up on Wednesday 28 October to deliver his first Budget as Chancellor, and the briefing war has turned towards owner-managed businesses. On Thursday evening The Telegraph reported that he plans to raise taxes on retiring entrepreneurs, a story picked up by the markets wire Newsquawk. The detail sits in an HMRC consultation that closed in September and that tax advisers have been watching closely.",
+        "The target is a well-worn route for handing a company to the next generation. The retiring owner converts their shares into redeemable shares, and the company buys them back over time out of its profits. At present that buy-back is taxed as a capital gain, at 24% for a higher-rate taxpayer. Under the proposal it would be treated as a distribution and charged as income, at up to 45%. Business Matters works through the arithmetic: on a £1m business handed down this way, the bill could rise from £240,000 to as much as £450,000. A sale on the open market would still be taxed as a capital gain.",
+        "HMRC's consultation, titled \"modernising the taxation of distributions\", ran from 23 June to 14 September. It suggests replacing the subjective \"trade benefit\" test with mechanical rules, and one option would require a five-year holding and working period where the departing shareholder keeps family links with those who remain. Brit Brief, summarising the Telegraph's reporting, puts the yield at around £300m a year, though estimates vary.",
+        "The reaction from advisers has been sharp. KPMG said it had \"significant concerns\" that the change risked discouraging intergenerational transfers. John Endacott of PKF Francis Clark said the consultation looked \"timed to facilitate an autumn Budget announcement\" and warned that piling taxes on succession risks \"taxing them to extinction\". The shadow chancellor, Andrew Griffith, said the government was punishing people who take risks, and that it would now be easier to sell a family business than to pass it to your children. The Treasury says it does not comment on speculation.",
+        "It lands on top of Rachel Reeves's changes to inheritance tax reliefs for businesses and farms, which took effect in April. Taken together, an owner planning succession now faces a heavier bill whether the company passes on during their life or after their death.",
+        "Not every leak is bad news for business. The Sunday Times reported that the threshold at which small firms start paying business rates could rise from £12,000 to £18,000 of rateable value, taking thousands of shops, cafes and pubs out of the tax. The Times says it would be funded partly by making platforms such as Amazon and eBay collect VAT at source for sellers turning over more than £90,000, which could raise up to £1bn. The Guardian has reported that the bank surcharge could go back up, raising more than £2bn a year. On capital gains tax, the Financial Times says Healey has rejected aligning it with income tax, though The Telegraph thinks a smaller rise is possible. Healey himself told ITV that energy costs were \"punishing\" and promised to do what he could \"both for business and for households\".",
+        "The squeeze explains the hunt for revenue. The Institute for Fiscal Studies has warned that tens of billions in extra tax may be needed to avoid spending cuts, and a Reuters poll of economists put Healey's headroom at roughly £10bn to £12bn, against £23.6bn in March.",
+        "The strongest case for the change is that the Treasury can present it as closing an avoidance route rather than raising a rate: owners who sell to outsiders already pay capital gains tax, and family handovers arguably should not be treated better. The weakness is that family succession is how many British manufacturers stay independent and locally rooted. Newsquawk also cautions that single-source Budget briefings of this kind are often right on direction but loose on scope and rates, so the final detail may differ. Owners part-way through a share buy-back should speak to their advisers before Wednesday."
+      ],
+      "why_it_matters": "If Peter has a share buy-back or a family handover of KHD in mind, the tax treatment could change from 28 October. The detail on Wednesday, including when any change takes effect, will matter for the timing of any transaction.",
+      "sources": [
+        {
+          "outlet": "Business Matters",
+          "title": "Healey weighs income tax on family business handovers",
+          "url": "https://bmmagazine.co.uk/news/healey-family-business-tax-handovers/"
+        },
+        {
+          "outlet": "Brit Brief",
+          "title": "Budget 2026 leaks: What tax rises will Chancellor John Healey announce?",
+          "url": "https://britbrief.co.uk/politics/westminster/budget-2026-leaks-healeys-tax-rise-plans-revealed.html"
+        },
+        {
+          "outlet": "Newsquawk",
+          "title": "UK Chancellor Healey to raise taxes on retiring entrepreneurs, The Telegraph reports",
+          "url": "https://www.newsquawk.com/headlines/uk-chancellor-healey-to-raise-taxes-on-retiring-entrepreneurs-the-telegraph-reports"
+        }
+      ],
+      "tags": [
+        "budget 2026",
+        "john healey",
+        "family business",
+        "capital gains tax",
+        "business rates",
+        "succession"
+      ],
+      "update_of": null
+    },
+    {
+      "id": "a04",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Reform expects an adverse ruling on Farage's undeclared £5m gift as its poll support slips",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "The Commons standards commissioner is expected to report soon on Nigel Farage's failure to declare a £5m gift from Christopher Harborne.",
+        "Reform says it will appeal; a long suspension could in theory lead to a recall petition in Clacton.",
+        "YouGov now has Reform on 22%, behind both Labour and the Conservatives."
+      ],
+      "body": [
+        "Reform UK is preparing for a negative verdict from the parliamentary standards commissioner, Daniel Greenberg, over Nigel Farage's failure to declare a £5m gift from the crypto billionaire Christopher Harborne, according to The Guardian on Friday. Party insiders expect the first ruling to go against their leader, and Reform says it will appeal.",
+        "The gift was made just before the 2024 election, and the inquiry opened shortly after The Guardian disclosed it in May. Farage was interviewed by Greenberg last month. His position is that the money was \"a personal matter, not a political one\" and did not need to be registered. The rules say financial support linked to an MP's role must be declared if it was received in the 12 months before entering Parliament.",
+        "Any finding against him will not be quick to resolve. An MP can put further evidence to the standards committee and appeal to the Independent Expert Panel, which could take months. If Parliament eventually approved a suspension of more than ten sitting days, a recall petition would open in Clacton, and a by-election would follow if 10% of voters signed within six weeks. Greenberg has already found against Farage in a separate case, over 17 late registrations of outside earnings.",
+        "The timing is awkward. YouGov now puts Reform on 22%, behind both Labour and the Conservatives, after a sharp fall since its local election gains in May. At a rally in Plymouth this week, where he was setting out a plan to \"fix Britain in the first 100 days\", he told the crowd he was in Portsmouth, and was booed before correcting himself, HuffPost reported.",
+        "There are other clouds. A police inquiry into alleged attempts to arrange illegal overseas donations is continuing; the party's head of policy, James Orr, and communications chief, Dan Jukes, were suspended and deny wrongdoing. An ITV documentary filmed councillors and candidates making racist and violent remarks, which a party insider said showed vetting had fallen short. There is a new treasurer, Harvey Griffiths, and Chris Bruni-Lowe is returning as an informal strategy adviser.",
+        "Reform's finances, though, are strong: The Guardian reports a £72m donation from Harborne and Ben Delo and a plan to hire 400 campaign managers in target seats.",
+        "Reform's case is that the gift was private and that the process is being used against an insurgent party. The counter-argument is simple: the rules apply to every MP, and the party that promises to clean up Westminster will be judged by its own standards."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "The Guardian (via Shango Media)",
+          "title": "Reform UK braces for Farage standards verdict over undeclared £5m gift",
+          "url": "https://www.shango.media/the-guardian-reform-uk-braces-for-farage-standards-verdict-over-undeclared-5m-gift-11978896"
+        },
+        {
+          "outlet": "HuffPost UK",
+          "title": "Farage booed by Reform supporters after humiliating slip-up on stage",
+          "url": "https://www.huffingtonpost.co.uk/entry/nigel-farage-booed-reform-uk-plymouth_uk_6ad77352e4b061c2be463511"
+        }
+      ],
+      "tags": [
+        "reform uk",
+        "nigel farage",
+        "standards commissioner",
+        "christopher harborne",
+        "polling"
+      ],
+      "update_of": null
+    },
+    {
+      "id": "a05",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Government tells households to keep three days of food and water in after a global cyber scare",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "A new 'Be Ready' campaign asks every household to be able to cope for three days without outside help.",
+        "Ministers linked it to this week's PHP software flaw, which knocked services offline worldwide, and to a summer of wildfires.",
+        "Retailers warn that specific stockpiling targets can trigger panic buying."
+      ],
+      "body": [
+        "The government has asked households to keep enough bottled water and non-perishable food to last three days, under a new \"Be Ready\" campaign set out in a written ministerial statement by the Security Minister, Dan Jarvis, on Thursday. The online checklist also lists a torch, batteries, a radio, hand sanitiser, cash, copies of important documents and warm clothing.",
+        "Ministers tied the launch to this week's events. Serious flaws in PHP, the programming language behind a large share of the world's websites, were disclosed on Wednesday. Reuters reported that governments and businesses rushed to patch their systems, some services went offline, and millions of hacking attempts followed. The government said the outage showed why the campaign mattered.",
+        "Andy Burnham, chairing a meeting on wildfires, said Britain had been \"on the back foot\" in past emergencies and needed to be more proactive. The government also announced a wildfire plan that includes the use of military aircraft, after a record summer of heat and drought. The Defence Secretary, Wes Streeting, said cyber incidents like the PHP outage would become more common as AI makes it easier to get round traditional defences, and he wanted people to be \"alert but not alarmed\". Jarvis said the three-day standard \"brings the UK into line with many of our European peers\"; the European Commission gave EU citizens similar advice last year.",
+        "The campaign was planned under Keir Starmer. Bloomberg reported that Burnham held it back because he worried it would look too gloomy at the start of his premiership. The National notes that it lands days before John Healey's Budget, which must weigh demands for more defence spending.",
+        "Not everyone is comfortable. Jim Bligh of the British Retail Consortium warned that \"panic buying is quite easy to generate\" and questioned whether telling people to buy specific amounts could cause shortages. The Paymaster General, James Murray, said households could \"play their role\" in national resilience but stressed that the government's focus was military and defensive capability.",
+        "Supporters say the advice is modest, cheap and overdue, and that a population that can cope for 72 hours frees the emergency services for those in real need. Critics on the right may ask why the state's first response to cyber and supply threats is to tell citizens to buy tins, rather than to harden the networks and infrastructure it is responsible for."
+      ],
+      "why_it_matters": "Businesses as well as households are exposed to the same risks: a three-day loss of internet, power or deliveries would stop most production lines. It is a reasonable prompt to check that KHD's own systems are patched and that it has a plan for a few days of disruption.",
+      "sources": [
+        {
+          "outlet": "Reuters (via Dawn)",
+          "title": "UK tells public to keep 3 days' emergency supplies at home amid PHP glitch",
+          "url": "https://www.dawn.com/news/2039277/uk-tells-public-to-keep-3-days-emergency-supplies-at-home-amid-php-glitch"
+        },
+        {
+          "outlet": "The National",
+          "title": "UK government advises stockpiling water and food",
+          "url": "https://www.thenationalnews.com/news/uk/2026/10/23/uk-government-advises-stockpiling-water-and-food/"
+        }
+      ],
+      "tags": [
+        "be ready campaign",
+        "resilience",
+        "cyber security",
+        "php",
+        "andy burnham",
+        "wildfires"
+      ],
+      "update_of": null
+    },
+    {
+      "id": "a06",
+      "round": 1,
+      "topic": "ukraine",
+      "title": "Zelensky offers to freeze the front line but sets three conditions for a lasting armistice",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "Zelensky says Ukraine is ready to freeze fighting on the current front line, but will never recognise occupied land as Russian.",
+        "He wants a ceasefire, binding allied defence commitments and long-term funding for Ukraine's army, and says the US 'backstop' is still undefined.",
+        "Trilateral US–Ukraine–Russia talks could take place in Abu Dhabi in early or mid-November, depending on Moscow."
+      ],
+      "body": [
+        "Volodymyr Zelensky has said Ukraine is ready to stop the war along the current line of contact. In a broadcast interview with ABC News, reported by the Kyiv Post on Saturday, he said: \"Yes, we are ready to put an end to this war as quickly as possible... To freeze the front line.\"",
+        "He rejected the idea that Ukraine might give up a quarter of its territory for peace. Russia controls 19.3 per cent of Ukraine, he said, and getting to 25 per cent would mean handing over the whole of the Donbas. \"We will never recognise the occupied territory as Russian,\" he added. He said Western partners had floated similar freeze-in-place ideas in backchannel discussions.",
+        "The day before, at the Hudson Institute in Washington, Zelensky set out what he thinks a durable armistice needs: an immediate ceasefire, binding defence commitments from allies, and long-term funding for a strong Ukrainian army, which he said Ukraine's damaged economy cannot pay for alone for at least a decade. He backed a European-led coalition of the willing with personnel inside Ukraine, underpinned by American strategic guarantees, and floated bilateral US guarantees modelled on NATO's Article 5 and ratified by Congress while Kyiv still seeks membership.",
+        "His sharpest point was about what happens if Russia attacks again. On the US \"backstop\", he asked: \"Who will react? Not only our army. Who and how? And till now we don't have answers.\" Vague, declaratory deals, he warned, would invite another attack.",
+        "On the diplomatic track, Zelensky said Ukrainian, American and Russian delegations could meet in Abu Dhabi in early or mid-November, with preliminary contacts already held in Oslo and St Petersburg. He accused Moscow of derailing a planned October meeting on procedural grounds. US envoy Steve Witkoff has recently been in Russia discussing a possible three-way summit of Trump, Putin and Zelensky. Finland's President Alexander Stubb, who joined Zelensky and Witkoff in Oslo on 20 October, is being discussed as a possible European envoy.",
+        "There are small signs of contact on the ground. The Institute for the Study of War reports that the two sides reportedly agreed a limited local ceasefire in Russian-occupied Oleshky in Kherson oblast and carried out exchanges of civilian detainees and prisoners of war on 23 October. But ISW also notes that Putin has again restated territorial aims well beyond Donetsk, citing what it calls mythologised historical claims, and the Kremlin last week rejected an energy ceasefire.",
+        "The fighting goes on regardless: Russia launched 176 drones at Ukraine overnight into Friday, while Ukraine kept up long-range strikes on Russian military targets and advanced west of Kostyantynivka. The gap between Kyiv's offer to freeze and Moscow's maximalist aims remains the central obstacle."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Kyiv Post",
+          "title": "Ukraine Ready to Freeze Front Line to End War, Won't Cede Land, Zelensky Says",
+          "url": "https://kyivpost.com/post/88043"
+        },
+        {
+          "outlet": "ISW (via Kyiv Post)",
+          "title": "ISW Russian Offensive Campaign Assessment, October 23, 2026",
+          "url": "https://www.kyivpost.com/post/88028"
+        }
+      ],
+      "tags": [
+        "zelensky",
+        "ceasefire talks",
+        "security guarantees",
+        "abu dhabi",
+        "witkoff"
+      ],
+      "update_of": null
+    },
+    {
+      "id": "a07",
+      "round": 1,
+      "topic": "ukraine",
+      "title": "Trump's Russia sanctions waiver leaves Kyiv short of leverage",
+      "kind": "analysis",
+      "read_minutes": 2,
+      "tldr": [
+        "On 16 October Trump waived almost all the new Russia sanctions and tariffs in the Graham Act, two days before they took effect.",
+        "The White House calls it a pause to protect diplomacy and fuel prices; critics in both parties say it hands Putin a win.",
+        "On Friday Trump mused about 200% tariffs on Russia and Ukraine, then admitted they would not work."
+      ],
+      "body": [
+        "The most consequential Western decision on the war this month was made in Washington, and it went Moscow's way. Late on Friday 16 October, President Trump signed an executive order waiving nearly all the operative measures in the Lindsey O. Graham Sanctioning Russia and Iran Act of 2026, two days before they were due to bite on 18 October.",
+        "The law, signed in September and named after the Republican senator who died in July, was meant to squeeze Russia's oil income. It provided for tariffs of up to 100 per cent on big buyers of Russian oil and gas such as China and India, sanctions on Russian officials, banks and the shadow fleet of tankers, and limits on investment and Russian sovereign debt. Trump told Congress the waiver was \"in the national interests of the United States\". Sanctions imposed under earlier executive orders remain in force, and the president keeps the power to reinstate the new measures.",
+        "The administration's case is economic and diplomatic. Secretary of State Marco Rubio has described it as a 60-day pause to study the effect of the tariffs, citing India's reliance on Russian crude. A White House spokeswoman said immediate enforcement could complicate efforts towards an armistice. Fox Business links the move to a recent deal under which Russia agreed to release millions of tons of diesel onto world markets, as Republicans press for lower fuel costs before next month's midterms, with prices already pushed up by the wars in Iran and Ukraine.",
+        "Critics see it differently. Republican congressman Don Bacon said: \"The President is prolonging the war, not ending it.\" Senator Richard Blumenthal, a co-author of the bill, said the waivers have \"nothing to do with our national security\". Zelensky called the decision a \"gift\" for Putin at a moment when Russia is trying to black out Ukraine before winter. RFE/RL reports that the waiver has no expiry date and that the White House has yet to publish a detailed justification.",
+        "Trump returned to the subject at a rally in Fort Myers, Florida, on Friday. Claiming tariffs had helped end five wars, he wondered aloud about a 200 per cent tariff on Russia and Ukraine, before conceding: \"But we don't buy enough to do it to them, so it doesn't work.\" Zelensky's reply was pointed: the tools Congress has already passed are, in his words, \"sitting on his desk\".",
+        "For Kyiv the timing is poor. Relations with Washington were already strained: the week before the waiver, Trump said it was \"time for Ukraine to get a new president\" and warned Kyiv to stop attacking Russian oil refineries. The strongest argument for the waiver is that hitting India and China with tariffs during a fuel squeeze would hurt Western consumers and could sink a fragile negotiation. The strongest argument against is that Russia has just been shown that economic pressure can be bargained away, and that it pays to wait."
+      ],
+      "why_it_matters": "Diesel and energy prices feed straight into manufacturing and haulage costs; the waiver is partly an attempt to ease them, so any reversal could move fuel prices.",
+      "sources": [
+        {
+          "outlet": "RFE/RL",
+          "title": "Trump Waives Graham Act Sanctions On Russia Before They Take Effect",
+          "url": "https://www.rferl.org/a/trump-waives-graham-act-sanctions-on-russia/33878335.html"
+        },
+        {
+          "outlet": "Fox Business",
+          "title": "Russian sanctions, tariffs under Graham Act waived by President Donald Trump",
+          "url": "https://www.foxbusiness.com/politics/trump-waives-many-russian-sanctions-under-new-law-backed-lindsey-graham"
+        },
+        {
+          "outlet": "Kyiv Post",
+          "title": "Trump Mulls 200% Tariffs on Ukraine and Russia, Doubts It Works",
+          "url": "https://kyivpost.com/post/88047"
+        }
+      ],
+      "tags": [
+        "sanctions",
+        "trump",
+        "graham act",
+        "russian oil",
+        "diesel",
+        "tariffs"
+      ],
+      "update_of": null
+    },
+    {
+      "id": "a08",
+      "round": 1,
+      "topic": "nato",
+      "title": "Russian drone sinks cargo ship off Romania as Black Sea attacks mount",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "A drone that Romania blames on Russia sank the cargo ship Khoryv 13 nautical miles off Constanta on Friday; one sailor died and three are missing.",
+        "At least seven cargo ships have been hit off Romania and Bulgaria in two weeks, and NATO is sending more patrol aircraft, radar and drones to the Black Sea.",
+        "Germany's military has separately raised its Russian sabotage threat assessment to the second-highest level."
+      ],
+      "body": [
+        "A drone strike sank a civilian cargo ship just outside Romanian territorial waters on Friday morning, in the most serious of a run of attacks on merchant shipping near NATO's south-eastern flank. The Comoros-flagged Khoryv, with 13 Ukrainian and Azerbaijani crew, was hit about 13 nautical miles (24km) off the port of Constanta. Nine sailors were pulled from the water, one body was recovered and three were still missing when the search was hampered by poor weather and low visibility.",
+        "The ship had left Turkey on Wednesday bound for Sulina, where the Danube meets the Black Sea. That route matters: with Russia attacking Ukraine's own ports, much of Kyiv's export trade now runs through Danube ports and Romanian waters.",
+        "Romania's president, Nicusor Dan, blamed Moscow directly, calling the sinking \"a new example of the tragic consequences of Russia's aggression against Ukraine\" and saying it was time for Russia to take US and European peace initiatives seriously. Prime Minister Luca Niculescu called it \"a flagrant violation of international law\". Ursula von der Leyen described the attacks as \"reckless\". The Institute for the Study of War (ISW) assessed that the drone was likely Russian. Moscow had not commented at the time of reporting; it has denied responsibility for earlier deadly drone attacks in the region.",
+        "The Khoryv is not an isolated case. According to Al Jazeera, drawing on wire reports, at least seven cargo ships have been hit and about 30 sailors killed or missing off Romania and Bulgaria in the past fortnight. Romanian jets shot down two Russian drones over Romanian territorial waters only last weekend. ISW also noted drone debris falling in Moldova on the same day.",
+        "NATO said on Tuesday it would send more maritime patrol aircraft, radar systems and drones to the Black Sea. Ukraine, Romania and Bulgaria have asked the alliance to fast-track that surveillance. Because the ship was hit in international waters rather than on Romanian soil, the incident does not by itself bring Article 4 or 5 into play, which is the main argument for a measured response rather than an escalatory one.",
+        "The pressure is not limited to the sea. Defense News reports, citing a classified analysis seen by WDR and Süddeutsche Zeitung, that the Bundeswehr has raised its assessment of the Russian sabotage threat to its second-highest level. The analysis says vulnerable sites can no longer be confined to obvious places such as naval bases and training grounds for Ukrainian troops, and that German forces could be attacked at home. It follows the discovery of a drone and a can of explosives near Wunstorf air base and an attack at Leipzig/Halle airport in August that Berlin has attributed to Russia. Moscow calls the allegations absurd.",
+        "Taken together, the picture is of a Russian campaign that probes NATO's edges at low cost and stays just below the threshold that would force a collective response."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Romania blames Russia after drone sinks ship in the Black Sea",
+          "url": "https://www.aljazeera.com/news/2026/10/23/romania-blames-russia-after-drone-sinks-ship-in-the-black-sea"
+        },
+        {
+          "outlet": "Defense News",
+          "title": "German military raises sabotage threat level amid warning of Russian attacks: report",
+          "url": "https://defensenews.com/global/europe/2026/10/21/german-military-raises-sabotage-threat-level-amid-warning-of-russian-attacks-report"
+        },
+        {
+          "outlet": "ISW (via Kyiv Post)",
+          "title": "ISW Russian Offensive Campaign Assessment, October 23, 2026",
+          "url": "https://www.kyivpost.com/post/88028"
+        }
+      ],
+      "tags": [
+        "black sea",
+        "romania",
+        "drones",
+        "hybrid warfare",
+        "germany",
+        "shipping"
+      ],
+      "update_of": null
+    },
+    {
+      "id": "a09",
+      "round": 1,
+      "topic": "nato",
+      "title": "RAF Typhoons join a French nuclear strike exercise for the first time",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "RAF Typhoons escorted French nuclear-capable Rafales on a simulated nuclear strike over the Mediterranean on 20–21 October; no weapons were involved.",
+        "It is the first time British aircraft have taken part in a French airborne nuclear exercise, and a milestone under the UK–France Northwood Declaration.",
+        "Both governments stress their deterrents stay independent; the UK is also buying 12 F-35As to join NATO's nuclear mission."
+      ],
+      "body": [
+        "Britain and France have held their first joint exercise built around France's airborne nuclear deterrent. Over 20 and 21 October, RAF Typhoons flew as escorts for French Rafales that took off from Saint-Dizier air base in north-eastern France and simulated a nuclear strike mission over the Mediterranean. The exercise, codenamed Rummy, was announced by both defence ministries on Thursday. No nuclear weapons were carried.",
+        "The Ministry of Defence called it a key milestone in the nuclear partnership set out in the Northwood Declaration and the cooperation programme that followed. London and Paris agreed in July 2025 to coordinate their nuclear forces more closely, citing the threat to Europe from the war in Ukraine.",
+        "Defence Secretary Wes Streeting said the exercise \"marks a new chapter in the defence nuclear relationship between the United Kingdom and France\". His French counterpart, Catherine Vautrin, made the point both capitals want heard in Moscow and Washington: \"Having independent nuclear forces does not exclude coordination.\" Each country keeps sovereign control of its weapons and its own decision to use them.",
+        "The British role was supporting rather than nuclear. As Forces News points out, the Typhoon, in RAF service since 2003, cannot carry tactical nuclear bombs, unlike the Tornado it replaced. The UK's own deterrent remains the submarine-launched Trident system. The MoD used the announcement to restate its plans: £63 billion over four years on the nuclear enterprise, including the Dreadnought and SSN-AUKUS submarines and a new warhead, and the purchase of 12 F-35A jets so the RAF can join NATO's nuclear sharing mission.",
+        "France is moving in the same direction. President Macron said earlier this year that France would enlarge its arsenal and offered European partners joint exercises and the possible short-term deployment of French nuclear-capable aircraft. France spends about €5.6 billion a year on roughly 290 submarine- and air-launched weapons, the world's fourth-largest stockpile. Britain is estimated to hold about 225 warheads. Russia and the United States each have more than 5,000.",
+        "The political message is the real payload. With American commitment to Europe less certain, the continent's two nuclear powers are showing that they can plan and fly together, and that a Russian calculation about Europe's nuclear response must include both of them.",
+        "The counter-argument is that such gestures risk blurring lines: Britain's deterrent is assigned to NATO, France's is not, and critics of closer coordination worry it could muddy who decides what in a crisis. Both governments' insistence on independence is meant to answer exactly that concern."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "GOV.UK (Ministry of Defence)",
+          "title": "UK-France deepen nuclear defence ties in first joint exercise",
+          "url": "https://www.gov.uk/government/news/uk-france-deepen-nuclear-defence-ties-in-first-joint-exercise"
+        },
+        {
+          "outlet": "Forces News",
+          "title": "Non-nuclear Typhoons fly with nuclear-capable Rafales simulating nuclear strike",
+          "url": "https://www.forcesnews.com/services/raf/non-nuclear-typhoons-fly-nuclear-capable-rafales-simulating-nuclear-strike-first-time"
+        }
+      ],
+      "tags": [
+        "nuclear deterrence",
+        "france",
+        "raf",
+        "typhoon",
+        "f-35a",
+        "uk armed forces"
+      ],
+      "update_of": null
+    },
+    {
+      "id": "a10",
+      "round": 1,
+      "topic": "china",
+      "title": "Xi's party gathers on Monday for a plenum about discipline, a year before his next term",
+      "kind": "analysis",
+      "read_minutes": 2,
+      "tldr": [
+        "The Communist Party's Central Committee meets in Beijing from 26 to 29 October.",
+        "The stated theme is 'full and rigorous party self-governance': in practice, discipline, loyalty and anti-corruption.",
+        "It is the last big set-piece before the 2027 party congress."
+      ],
+      "body": [
+        "China's Communist Party Central Committee will meet in Beijing from Monday 26 to Thursday 29 October for its fifth plenary session since the current committee was formed in 2022. The dates were set at a Politburo meeting chaired by Xi Jinping in September and reported by the state news agency Xinhua.",
+        "This plenum has a narrow and political agenda. According to the Politburo's summary, it will deal with \"several major issues concerning the sustained advancement of full and rigorous party self-governance\" and must \"tackle and resolve well the prominent problems facing party-building\". In party language that means discipline, political loyalty and the anti-corruption campaign. More than 300 full and alternate members are expected to attend.",
+        "The backdrop explains the emphasis. In July the party expelled Ma Xingrui, a Politburo member and former head of the state aerospace conglomerate, citing a \"serious violation of law and discipline\" and what investigators called family corruption: using his influence to benefit relatives, arranging jobs and accepting gifts. He was the third sitting Politburo member purged since 2025, and at least 24 Central Committee members have been expelled or investigated since 2022, alongside a string of senior generals. Analysts quoted in coverage of Ma's fall read the campaign as a way of enforcing loyalty to Xi as much as cleaning up graft.",
+        "The timing matters more than the theme. The South China Morning Post describes this plenum as probably the party's most important meeting before the 21st national congress in autumn 2027, where the next leadership line-up will be settled and Xi is expected to secure a fourth five-year term as general secretary. Plenums are where gaps left by purged officials are formally filled and where expulsions are confirmed, so the communiqué on Thursday and any accompanying personnel announcements will be read for signs of who is rising and who has fallen.",
+        "Three things are worth watching. First, whether the plenum formally confirms the removal of disgraced members of the Central Committee and names replacements, which would show how far the purges have reshaped the body that will manage the 2027 transition. Second, whether further expulsions of senior military figures are confirmed, given how many generals the campaign has already swept up. Third, whether a successor figure is promoted, which so far Xi has carefully avoided.",
+        "The counter-view is that plenums of this kind are mostly ritual: the decisions are made beforehand, the communiqué is formulaic, and outsiders over-read it. That is fair as far as policy goes. But for a party whose next congress will set its leadership for another five years, the question of who is still standing is itself the news.",
+        "For British businesses with Chinese exposure, a discipline-focused meeting is a reminder that politics, not economics, is setting Beijing's priorities. Results should be out by the end of next week."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Reuters (via Internazionale)",
+          "title": "China's Xi chairs Politburo; Central Committee plenum set for October 26-29",
+          "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/09/21/china-s-xi-chairs-politburo-central-committee-plenum-set-for-october-26-29"
+        },
+        {
+          "outlet": "The Standard (Hong Kong)",
+          "title": "China's Xi chairs Politburo; Central Committee plenum set for October 26-29",
+          "url": "https://www.thestandard.com.hk/china/article/343372/"
+        },
+        {
+          "outlet": "Ground News (aggregating South China Morning Post)",
+          "title": "China purges third Politburo member in deepening anti-graft drive",
+          "url": "https://ground.news/article/china-purges-third-politburo-member-in-deepening-anti-graft-drive_e0add0"
+        },
+        {
+          "outlet": "South China Morning Post",
+          "title": "China's October plenum plan reveals focus on party discipline ahead of 2027 congress",
+          "url": "https://scmp.com/news/china/politics/article/3362363/china-says-key-plenum-will-be-held-october"
+        }
+      ],
+      "tags": [
+        "ccp",
+        "xi jinping",
+        "plenum",
+        "anti-corruption",
+        "2027 party congress"
+      ],
+      "update_of": null
+    },
+    {
+      "id": "a11",
+      "round": 1,
+      "topic": "china",
+      "title": "China grows 4.5% in the third quarter, but only because exports are carrying it",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "GDP rose 4.5% year on year in July to September, slightly ahead of forecasts and up from 4.3%.",
+        "Exports and factories did the work; investment fell 7.2% this year and property investment 20.6%.",
+        "China is on course for another record trade surplus, which means more cheap goods pushed into Europe."
+      ],
+      "body": [
+        "China's economy grew 4.5% year on year in the third quarter of 2026, the National Bureau of Statistics said on Monday 19 October. That was a little better than the 4.4% forecast in a Reuters poll of economists and an improvement on 4.3% in the second quarter. On a quarterly basis output rose 1.2%, up from 0.9%. Growth over the first nine months was 4.6%, keeping Beijing inside its annual target of 4.5% to 5%.",
+        "The bureau's line was that the economy \"sustained steady development against pressure\", with production and foreign trade growing fast. That is accurate, but it is also the problem. The growth is coming from the supply side and from abroad, not from Chinese households or businesses spending more at home.",
+        "Industrial output rose 5.5% year on year in September, its strongest pace in six months, and the September trade surplus was wider than expected on higher export volumes. China appears on track to beat last year's record surplus of about $1.2 trillion. Over the nine months, services grew 5.2% and industry 3.8%.",
+        "The domestic picture is much weaker. Fixed-asset investment fell 7.2% in the first nine months of the year, and property investment fell 20.6%, showing the housing slump has still not found a floor. Retail sales rose just 1.1% in September, which was the fastest rate since March and followed 0.4% in August. Urban unemployment was 5.2%.",
+        "Most economists expect the People's Bank of China to leave interest rates unchanged for the rest of the year, with any further support coming from fiscal policy instead. There is little sign yet of the large, consumer-focused stimulus that foreign governments and many economists have urged on Beijing.",
+        "The case for optimism is that the quarter beat expectations, retail sales are at least picking up from very low levels, and the nine-month figure is comfortably within target. Beijing can argue that its industrial strategy is working and that exports are a strength, not a weakness.",
+        "The trouble is what that strategy means for everyone else. An economy with falling investment at home, weak consumers and record export volumes is one that is pushing its surplus capacity into foreign markets. For British manufacturers, that points to continued price pressure from Chinese machinery, steel and components, and to more trade-defence disputes as other governments respond.",
+        "The next markers are the plenum in Beijing from 26 October, which is focused on party discipline rather than the economy, and October trade data in early November."
+      ],
+      "why_it_matters": "Weak Chinese demand at home plus record exports means more low-priced Chinese industrial equipment competing in UK and European markets, including in food processing machinery.",
+      "sources": [
+        {
+          "outlet": "Il Sole 24 Ore",
+          "title": "China's GDP up 4.5 per cent in the third quarter, exceeding expectations",
+          "url": "https://en.ilsole24ore.com/art/chinas-gdp-up-45-per-cent-in-the-third-quarter-exceeding-expectations-AJOQ0unB"
+        },
+        {
+          "outlet": "Kaohoon International (citing Reuters)",
+          "title": "China's Economy Grows 4.5% in 3Q26, Surpassing Forecasts as Exports Drive Recovery",
+          "url": "https://www.kaohooninternational.com/?p=592803"
+        },
+        {
+          "outlet": "Yeni Safak",
+          "title": "China economy grows 4.5% in third quarter 2026",
+          "url": "https://en.yenisafak.com/economy/china-economy-grows-45-in-third-quarter-2026-3724594"
+        }
+      ],
+      "tags": [
+        "china economy",
+        "gdp",
+        "exports",
+        "trade surplus",
+        "property"
+      ],
+      "update_of": null
+    },
+    {
+      "id": "a12",
+      "round": 1,
+      "topic": "us_politics",
+      "title": "Trump lifts some Canadian tariffs to help Susan Collins ten days before the midterms",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "The White House has exempted nine categories of Canadian goods, mostly farm packaging and processing equipment, from its 50% tariffs from 30 October.",
+        "The move is widely seen as help for Republican Senator Susan Collins in a tight Maine race before the 3 November midterms.",
+        "Other Canadian goods will be tariffed instead, so the overall pressure on Canada stays the same."
+      ],
+      "body": [
+        "The Trump administration has removed 50% tariffs from nine categories of Canadian goods used by American farmers, a move announced on Friday by Susan Collins, the Republican senator for Maine, who is fighting a close re-election race ten days before the 3 November midterm elections.",
+        "The exempted goods are mostly packaging and processing kit rather than food: paperboard cartons, plastic crates and bags, refrigeration equipment, agricultural sorting machinery, non-adhesive foil and seaweed, according to The Globe and Mail. The changes take effect on 30 October, the Associated Press reported. Collins said she had lobbied the Commerce Secretary, Howard Lutnick, and the trade representative, Jamieson Greer, because Maine's blueberry, apple and potato growers \"rely on specialized equipment, packaging materials, and other products from Canada\" that US suppliers do not make or that would be costly to replace.",
+        "This is not a softening of the trade war. The White House says it will put new tariffs on Canadian valves, carpets and waste products so that the total value of goods hit stays the same. The 50% tariffs, imposed over the summer under a Depression-era trade law, cover about $20bn of Canadian goods according to the AP. Separate 50% tariffs on steel and aluminium and 25% on cars are untouched. Canada has retaliated dollar for dollar, and talks collapsed in August. Mark Carney said Canada was willing to wait for a good deal and that the US was \"a little hard to predict\". Doug Ford, the Ontario premier, posted: \"Now get rid of the rest.\"",
+        "The politics are plain. Democrats are campaigning on the cost of living, and an AP-NORC poll in late September found 65% of Americans blame Trump's policies more than outside factors for high prices. The war with Iran has pushed up fuel and diesel costs, hitting farmers, a normally loyal Republican group. Collins's Democratic opponent, Troy Jackson, said she had \"enabled\" the tariffs and now wanted credit for \"bringing a cup of water to put out the fire\". Senator Ron Wyden said the last-minute carve-out showed voters were rejecting the tariff policy. Even Mike Rogers, the Republican Senate candidate in Michigan, has run an ad calling for an end to the tariff war.",
+        "The White House line is that the tariffs are \"protecting American farmers, manufacturers, and workers\". Supporters of the policy would say targeted exemptions show it can be tuned to protect users of hard-to-source inputs while keeping pressure on Ottawa.",
+        "For British exporters, the lesson is twofold. Tariffs on processing equipment and packaging fall straight onto food producers, and Washington will grant product-by-product relief when a well-placed politician makes the case. If Democrats take Congress, pressure on the whole tariff regime will grow."
+      ],
+      "why_it_matters": "The exempted list includes refrigeration and sorting machinery: the kind of food-processing equipment KHD's customers buy. It shows how US tariffs on equipment work in practice, and that carve-outs for specialist kit can be won through lobbying.",
+      "sources": [
+        {
+          "outlet": "AP (via PBS NewsHour)",
+          "title": "Seeking to help Collins in Maine, Trump exempts some Canadian imports from his 50% tariffs",
+          "url": "https://www.pbs.org/newshour/politics/seeking-to-help-collins-in-maine-trump-exempts-some-canadian-imports-from-his-50-tariffs"
+        },
+        {
+          "outlet": "The Globe and Mail",
+          "title": "U.S. to drop 50% tariffs on certain Canadian products",
+          "url": "https://www.theglobeandmail.com/politics/article-trump-tariff-removal-susan-collins-canada-maine-midterms/"
+        }
+      ],
+      "tags": [
+        "tariffs",
+        "midterms",
+        "susan collins",
+        "canada",
+        "trade"
+      ],
+      "update_of": null
+    }
+  ],
+  "run": {
+    "mode": "daily",
+    "duration_minutes": 0,
+    "fetches": 0,
+    "notes": []
+  }
+}

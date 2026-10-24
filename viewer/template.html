@@ -1,0 +1,632 @@
+<title>Daily Brief</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column (~66ch) under a pre-dawn masthead; sticky filter rail; article cards expand in place and end with the rating slip. */
+:root {
+  --bg: #f4f5f8;
+  --surface: #ffffff;
+  --ink: #161b2e;
+  --ink-2: #4a5068;
+  --ink-3: #7a8098;
+  --rule: #dfe2ea;
+  --accent: #c8611e;          /* dawn amber */
+  --accent-ink: #ffffff;
+  --accent-soft: #fbeee3;
+  --sky: #1d2a4d;             /* masthead night sky */
+  --sky-ink: #eef0f7;
+  --sky-2: #aab3d1;
+  --good: #2f7d4f;
+  --star-off: #cfd3de;
+  --focus: #3b62d6;
+
+  --t-industry: #8a5a12;
+  --t-china: #b0322a;
+  --t-nato: #2c4f9e;
+  --t-ukraine: #2a6f86;
+  --t-uk_politics: #6b3fa0;
+  --t-us_politics: #5e6372;
+  --t-ai: #217a5b;
+  --t-wildcard: #a63d78;
+
+  --f-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Newsreader", Georgia, "Times New Roman", serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+
+  --step--1: 0.8125rem;
+  --step-0: 1rem;
+  --step-1: 1.1875rem;
+  --step-2: 1.4375rem;
+  --step-3: 2rem;
+  --radius: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1220; --surface: #171b2c; --ink: #e8eaf2; --ink-2: #b4b9cc; --ink-3: #868ca3;
+    --rule: #2a3046; --accent: #ec8a45; --accent-ink: #1a1206; --accent-soft: #33241a;
+    --sky: #0a0d19; --sky-ink: #eef0f7; --sky-2: #8e98bb; --good: #5cc28a; --star-off: #3a4058; --focus: #8aa6ff;
+    --t-industry: #d9a65a; --t-china: #ef7a70; --t-nato: #86a6f0; --t-ukraine: #6cc2db;
+    --t-uk_politics: #b994ea; --t-us_politics: #a9aebd; --t-ai: #62c99f; --t-wildcard: #ea86bf;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1220; --surface: #171b2c; --ink: #e8eaf2; --ink-2: #b4b9cc; --ink-3: #868ca3;
+  --rule: #2a3046; --accent: #ec8a45; --accent-ink: #1a1206; --accent-soft: #33241a;
+  --sky: #0a0d19; --sky-ink: #eef0f7; --sky-2: #8e98bb; --good: #5cc28a; --star-off: #3a4058; --focus: #8aa6ff;
+  --t-industry: #d9a65a; --t-china: #ef7a70; --t-nato: #86a6f0; --t-ukraine: #6cc2db;
+  --t-uk_politics: #b994ea; --t-us_politics: #a9aebd; --t-ai: #62c99f; --t-wildcard: #ea86bf;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: var(--step-0); line-height: 1.55; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+button, input, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+a { color: inherit; }
+
+.wrap { max-width: 44rem; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+/* Masthead */
+.mast { background: var(--sky); color: var(--sky-ink); position: relative; overflow: hidden; }
+.mast::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: linear-gradient(90deg, transparent, var(--accent) 30%, var(--accent) 70%, transparent); opacity: .9; }
+.mast .wrap { padding-block: 22px 26px; display: grid; gap: 14px; }
+.mast-top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; }
+.brand { font-family: var(--f-display); font-stretch: 80%; font-weight: 800; text-transform: uppercase; letter-spacing: .14em; font-size: var(--step--1); color: var(--sky-2); }
+.brand b { color: var(--accent); font-weight: 800; }
+.issue { font-family: var(--f-mono); font-size: var(--step--1); color: var(--sky-2); }
+.date { font-family: var(--f-display); font-stretch: 85%; font-weight: 750; font-size: var(--step-3); line-height: 1.05; margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+.mast-stats { display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--f-mono); font-size: var(--step--1); color: var(--sky-2); }
+.mast-stats strong { color: var(--sky-ink); font-weight: 500; }
+.changes { margin: 0; padding: 10px 12px; border-left: 3px solid var(--accent); background: rgba(255,255,255,.06); border-radius: 0 6px 6px 0; font-size: .95rem; color: var(--sky-ink); }
+.changes h2 { margin: 0 0 4px; font-family: var(--f-display); font-size: var(--step--1); text-transform: uppercase; letter-spacing: .1em; color: var(--accent); font-weight: 700; }
+.changes ul { margin: 0; padding-left: 18px; }
+.mast-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.btn { display: inline-flex; align-items: center; gap: 8px; border: 1px solid transparent; border-radius: 999px; padding: 8px 16px; font-family: var(--f-display); font-weight: 650; font-size: .875rem; cursor: pointer; letter-spacing: .01em; }
+.btn-accent { background: var(--accent); color: var(--accent-ink); }
+.btn-accent:hover { filter: brightness(1.07); }
+.btn-ghost { background: transparent; color: var(--sky-ink); border-color: rgba(255,255,255,.25); }
+.btn-ghost:hover { border-color: var(--sky-2); }
+.btn[disabled] { opacity: .55; cursor: not-allowed; }
+.status-line { font-family: var(--f-mono); font-size: var(--step--1); color: var(--sky-2); }
+.spin { width: 12px; height: 12px; border-radius: 50%; border: 2px solid currentColor; border-right-color: transparent; animation: spin 0.8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Rail */
+.rail { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--rule); }
+.rail .wrap { padding-block: 10px; display: grid; gap: 8px; }
+.tabs { display: flex; gap: 4px; }
+.tab { border: 0; background: none; padding: 6px 10px; border-radius: 6px; font-family: var(--f-display); font-weight: 650; font-size: .875rem; color: var(--ink-3); cursor: pointer; }
+.tab[aria-selected="true"] { color: var(--ink); background: var(--bg); }
+.chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; border: 1px solid var(--rule); background: var(--surface); border-radius: 999px; padding: 4px 11px; font-family: var(--f-display); font-size: .8125rem; font-weight: 600; color: var(--ink-2); cursor: pointer; white-space: nowrap; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+.chip .n { font-family: var(--f-mono); font-weight: 400; opacity: .7; margin-left: 4px; }
+.progress { display: flex; align-items: center; gap: 10px; font-family: var(--f-mono); font-size: var(--step--1); color: var(--ink-3); }
+.bar { flex: 1; height: 4px; background: var(--rule); border-radius: 2px; overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--accent); width: 0; transition: width .3s ease; }
+
+/* Feed */
+main .wrap { padding-block: 18px 60px; display: grid; gap: 14px; }
+.banner { padding: 10px 14px; border-radius: 8px; background: var(--accent-soft); color: var(--ink); font-size: .95rem; }
+.round-head { font-family: var(--f-display); font-stretch: 85%; text-transform: uppercase; letter-spacing: .12em; font-size: var(--step--1); color: var(--ink-3); font-weight: 700; display: flex; align-items: center; gap: 10px; margin-top: 10px; }
+.round-head::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
+
+.card { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; }
+.card-head { display: grid; gap: 8px; padding: 16px 18px 14px; cursor: pointer; }
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-family: var(--f-display); font-size: .78rem; font-weight: 650; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-3); }
+.topic { color: var(--tc, var(--ink-2)); display: inline-flex; align-items: center; gap: 6px; }
+.topic::before { content: ""; width: 8px; height: 8px; border-radius: 2px; background: var(--tc, var(--ink-3)); }
+.kind { border: 1px solid currentColor; border-radius: 4px; padding: 0 5px; font-size: .7rem; }
+.kind.opinion { color: var(--accent); }
+.mins { font-family: var(--f-mono); text-transform: none; letter-spacing: 0; font-weight: 400; }
+.rated { margin-left: auto; font-family: var(--f-mono); text-transform: none; letter-spacing: 0; font-weight: 500; color: var(--good); }
+.card h3 { margin: 0; font-family: var(--f-display); font-stretch: 88%; font-weight: 720; font-size: var(--step-2); line-height: 1.18; text-wrap: balance; letter-spacing: -.005em; }
+.update-of { font-size: .875rem; color: var(--ink-3); font-style: italic; }
+.tldr { margin: 0; padding-left: 18px; color: var(--ink-2); font-size: .98rem; display: grid; gap: 3px; }
+.toggle { justify-self: start; background: none; border: 0; padding: 2px 0; font-family: var(--f-display); font-weight: 650; font-size: .85rem; color: var(--accent); cursor: pointer; }
+
+.card-body { border-top: 1px solid var(--rule); padding: 18px; display: grid; gap: 16px; }
+.prose { font-size: var(--step-1); line-height: 1.62; max-width: 66ch; }
+.prose p { margin: 0 0 .85em; }
+.prose p:last-child { margin-bottom: 0; }
+.why { background: var(--accent-soft); border-radius: 8px; padding: 12px 14px; font-size: 1.02rem; }
+.why strong { font-family: var(--f-display); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; display: block; margin-bottom: 2px; color: var(--accent); }
+.sources h4, .slip h4 { margin: 0 0 6px; font-family: var(--f-display); font-size: .78rem; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-3); font-weight: 700; }
+.sources ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: .95rem; }
+.sources li { min-width: 0; overflow-wrap: anywhere; }
+.sources .outlet { font-family: var(--f-display); font-weight: 650; font-size: .85rem; margin-right: 6px; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; font-family: var(--f-mono); font-size: .75rem; color: var(--ink-3); }
+
+/* Rating slip */
+.slip { border-top: 1px dashed var(--rule); padding: 16px 18px 18px; display: grid; gap: 14px; background: color-mix(in srgb, var(--bg) 55%, var(--surface)); }
+.scales { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 12px 24px; }
+.scale { display: grid; gap: 2px; }
+.scale label { font-family: var(--f-display); font-weight: 650; font-size: .875rem; }
+.scale .hint { font-size: .8rem; color: var(--ink-3); font-family: var(--f-display); }
+.stars { display: flex; gap: 2px; }
+.star { width: 40px; height: 40px; border: 0; background: none; padding: 4px; cursor: pointer; color: var(--star-off); border-radius: 6px; }
+.star svg { width: 100%; height: 100%; display: block; fill: currentColor; }
+.star.on { color: var(--accent); }
+.qtags { display: flex; flex-wrap: wrap; gap: 6px; }
+.qtag { border: 1px solid var(--rule); background: var(--surface); border-radius: 999px; padding: 4px 11px; font-family: var(--f-display); font-size: .8rem; font-weight: 600; color: var(--ink-2); cursor: pointer; }
+.qtag[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+.note label { display: block; font-family: var(--f-display); font-weight: 650; font-size: .875rem; margin-bottom: 4px; }
+.note textarea { width: 100%; min-height: 74px; resize: vertical; border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px; background: var(--surface); font-family: var(--f-body); font-size: 1rem; line-height: 1.45; }
+.saved { font-family: var(--f-mono); font-size: .75rem; color: var(--ink-3); min-height: 1em; }
+.saved.ok { color: var(--good); }
+.saved.err { color: var(--t-china); }
+
+/* Archive + About */
+.panel { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); padding: 18px; display: grid; gap: 12px; }
+.panel h2 { margin: 0; font-family: var(--f-display); font-stretch: 88%; font-size: var(--step-2); font-weight: 720; }
+.arch-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.arch-list button { width: 100%; text-align: left; display: flex; justify-content: space-between; gap: 12px; border: 0; background: none; padding: 10px 8px; border-radius: 6px; cursor: pointer; font-family: var(--f-display); font-weight: 600; }
+.arch-list button:hover { background: var(--bg); }
+.arch-list .m { font-family: var(--f-mono); font-weight: 400; color: var(--ink-3); font-size: .8rem; }
+.md h3 { font-family: var(--f-display); font-size: 1rem; margin: 14px 0 4px; }
+.md ul { margin: 0; padding-left: 18px; }
+.md p { margin: 0 0 6px; color: var(--ink-2); }
+.tbl-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .9rem; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+th { font-family: var(--f-display); font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-3); }
+td.num { font-family: var(--f-mono); text-align: right; }
+.empty { color: var(--ink-3); font-style: italic; }
+footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); font-size: .75rem; padding-bottom: 30px; }
+
+@media (max-width: 480px) {
+  .date { font-size: 1.65rem; }
+  .card h3 { font-size: 1.25rem; }
+  .card-head, .card-body, .slip { padding-left: 14px; padding-right: 14px; }
+  .star { width: 44px; height: 44px; }
+}
+@media (prefers-reduced-motion: reduce) { .spin { animation: none; } .bar i { transition: none; } }
+</style>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="mast-top">
+      <span class="brand">Daily <b>Brief</b></span>
+      <span class="issue" id="issue"></span>
+    </div>
+    <h1 class="date" id="date">Today's brief</h1>
+    <div class="mast-stats" id="stats"></div>
+    <aside class="changes" id="changes" hidden>
+      <h2>Changed because of your feedback</h2>
+      <ul id="changes-list"></ul>
+    </aside>
+    <div class="mast-actions">
+      <button class="btn btn-accent" id="refresh" type="button">Refresh: add more articles</button>
+      <span class="status-line" id="refresh-status" role="status"></span>
+    </div>
+  </div>
+</header>
+
+<nav class="rail" aria-label="Sections">
+  <div class="wrap">
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" id="tab-today" aria-selected="true" data-view="today">Today</button>
+      <button class="tab" role="tab" id="tab-archive" aria-selected="false" data-view="archive">Archive</button>
+      <button class="tab" role="tab" id="tab-about" aria-selected="false" data-view="about">What I've learned</button>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Filter by topic"></div>
+    <div class="progress" id="progress-row"><span id="progress-text">0 / 0 rated</span><span class="bar"><i id="progress-bar"></i></span></div>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap" id="view"></div>
+</main>
+<footer id="foot"></footer>
+
+<script id="brief-data" type="application/json">__BRIEF_DATA__</script>
+<script>
+(function () {
+  "use strict";
+  var DATA;
+  try { DATA = JSON.parse(document.getElementById("brief-data").textContent); }
+  catch (e) { DATA = null; }
+  if (!DATA || !DATA.edition) {
+    document.getElementById("view").innerHTML = '<p class="empty">No edition data in this page.</p>';
+    return;
+  }
+
+  var OFFLINE = DATA.mode === "offline";
+  var TOPICS = {
+    industry: "Industry", uk_politics: "UK Politics", ukraine: "Ukraine War", nato: "NATO & Defence",
+    china: "China", ai: "AI in Practice", us_politics: "US Politics", wildcard: "Wildcard"
+  };
+  var TOPIC_ORDER = ["industry", "uk_politics", "ukraine", "nato", "china", "ai", "us_politics", "wildcard"];
+  var QUICK = [
+    ["more", "More like this"], ["less", "Less like this"], ["too_long", "Too long"],
+    ["too_shallow", "Too shallow"], ["already_knew", "Already knew"], ["biased", "Biased"], ["great_source", "Great source"]
+  ];
+  var STAR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6 6.5.8-4.8 4.5 1.2 6.5L12 17.3l-5.8 3.1 1.2-6.5L2.6 9.4l6.5-.8z"/></svg>';
+
+  var editions = [DATA.edition].concat(DATA.archive || []);
+  var byDate = {};
+  editions.forEach(function (e) { byDate[e.date] = e; });
+  var state = {
+    view: "today",
+    date: DATA.edition.date,
+    filter: "all",
+    open: {},
+    ratings: {},      // key `${date}_${id}` -> rating object
+    db: null
+  };
+
+  function $(id) { return document.getElementById(id); }
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function key(date, id) { return date + "_" + id; }
+  function fmtDate(iso, opts) {
+    var d = new Date(iso + "T12:00:00");
+    return d.toLocaleDateString("en-GB", opts || { weekday: "long", day: "numeric", month: "long" });
+  }
+  function words(a) { return a.body.join(" ").split(/\s+/).filter(Boolean).length; }
+
+  // ---------- local storage (per-device cache; the only store offline) ----------
+  var LS_KEY = "daily-brief-ratings-v1";
+  function lsLoad() { try { return JSON.parse(localStorage.getItem(LS_KEY) || "{}") || {}; } catch (e) { return {}; } }
+  function lsSave() { try { localStorage.setItem(LS_KEY, JSON.stringify(state.ratings)); } catch (e) {} }
+  state.ratings = lsLoad();
+
+  // ---------- db (live viewer) ----------
+  var pending = {}, writing = {}, timers = {};
+  function connectDb() {
+    if (OFFLINE || !window.claude || !window.claude.use) return;
+    window.claude.use("db").then(function (db) {
+      if (!db) return;
+      state.db = db;
+      var dates = editions.map(function (e) { return e.date; }).slice(0, 30);
+      db.collection("ratings").where("date", "in", dates).onSnapshot(function (snap) {
+        snap.docs.forEach(function (d) {
+          var v = d.data();
+          if (!v) return;
+          var k = d.id;
+          // Keep the local copy while this page has an unsaved edit for it.
+          if (pending[k] || writing[k]) return;
+          state.ratings[k] = Object.assign({}, v);
+        });
+        lsSave();
+        renderAll(true);
+      }, function () { setDbStatus("Ratings sync stopped. Reload the page to reconnect."); });
+    }).catch(function () {});
+  }
+  function setDbStatus(msg) {
+    var b = $("db-banner");
+    if (b) { b.textContent = msg; b.hidden = !msg; }
+  }
+
+  function queueSave(date, art) {
+    var k = key(date, art.id);
+    var r = state.ratings[k];
+    r.updated_at = new Date().toISOString();
+    lsSave();
+    showSaved(k, "Saving…", "");
+    if (!state.db) { showSaved(k, OFFLINE ? "Saved on this device" : "Saved on this device (not synced)", "ok"); return; }
+    pending[k] = true;
+    clearTimeout(timers[k]);
+    timers[k] = setTimeout(function () { flush(k); }, 700);
+  }
+  function flush(k) {
+    if (writing[k]) { timers[k] = setTimeout(function () { flush(k); }, 400); return; }
+    delete pending[k];
+    writing[k] = true;
+    var body = JSON.parse(JSON.stringify(state.ratings[k]));
+    state.db.doc("ratings/" + k).set(body).then(function () {
+      writing[k] = false;
+      showSaved(k, "Saved ✓", "ok");
+    }, function (e) {
+      writing[k] = false;
+      var code = e && e.code;
+      showSaved(k, code === "quota_exceeded" ? "Storage is full. Tell Claude to prune old ratings." :
+        code === "invalid_argument" ? "This view can't save ratings." : "Not saved. Check your connection and change a rating to retry.", "err");
+    });
+  }
+  function showSaved(k, msg, cls) {
+    var el = document.querySelector('[data-saved="' + k + '"]');
+    if (el) { el.textContent = msg; el.className = "saved " + (cls || ""); }
+  }
+
+  function ratingFor(date, art) {
+    var k = key(date, art.id);
+    if (!state.ratings[k]) {
+      state.ratings[k] = {
+        date: date, article_id: art.id, round: art.round || 1, topic: art.topic, title: art.title, kind: art.kind,
+        read_minutes: art.read_minutes, tags: art.tags || [],
+        outlets: (art.sources || []).map(function (s) { return s.outlet; }),
+        relevance: 0, quality: 0, quick_tags: [], feedback: "", updated_at: null
+      };
+    }
+    return state.ratings[k];
+  }
+  function isRated(date, art) {
+    var r = state.ratings[key(date, art.id)];
+    return !!(r && (r.relevance || r.quality));
+  }
+
+  // ---------- refresh ----------
+  var REFRESH_LS = "daily-brief-refresh";
+  function refreshSetup() {
+    var btn = $("refresh"), st = $("refresh-status");
+    if (OFFLINE) {
+      btn.hidden = true;
+      st.innerHTML = 'Offline copy. Ratings here stay on this device.' + (DATA.viewer_url ? ' <a href="' + esc(DATA.viewer_url) + '" style="color:var(--sky-ink)">Open the live brief</a> to teach the agent.' : '');
+      return;
+    }
+    if (!DATA.trigger_id) {
+      btn.disabled = true;
+      st.textContent = "Refresh switches on once the morning routine is set up.";
+      return;
+    }
+    var last = null;
+    try { last = JSON.parse(localStorage.getItem(REFRESH_LS) || "null"); } catch (e) {}
+    var latestRound = Math.max.apply(null, DATA.edition.articles.map(function (a) { return a.round || 1; }));
+    if (last && last.date === DATA.edition.date && last.round >= latestRound && Date.now() - last.at < 45 * 60000) {
+      st.textContent = "Refresh requested at " + new Date(last.at).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" }) + ". New articles usually arrive within 20 minutes; this page updates by itself.";
+    }
+    btn.addEventListener("click", function () {
+      if (!window.claude || !window.claude.use) { st.textContent = "Refresh only works inside claude.ai."; return; }
+      btn.disabled = true;
+      st.innerHTML = '<span class="spin" aria-hidden="true"></span> Asking the agent…';
+      window.claude.use("mcp").then(function (mcp) {
+        if (!mcp) throw { code: "not_granted" };
+        return mcp.callTool("Claude Code Remote", "fire_trigger", { trigger_id: DATA.trigger_id, text: "mode=refresh date=" + DATA.edition.date });
+      }).then(function () {
+        try { localStorage.setItem(REFRESH_LS, JSON.stringify({ date: DATA.edition.date, round: latestRound, at: Date.now() })); } catch (e) {}
+        st.textContent = "Agent started. Rate a few more articles while you wait: it reads ratings before it writes. New articles usually arrive within 20 minutes.";
+        setTimeout(function () { btn.disabled = false; }, 60000);
+      }).catch(function (e) {
+        btn.disabled = false;
+        var c = e && e.code;
+        st.textContent =
+          c === "server_not_connected" ? "Add the Claude Code Remote connector in claude.ai Settings → Connectors, then try again." :
+          c === "needs_reauth" ? "Reconnect Claude Code Remote in claude.ai Settings → Connectors." :
+          c === "approval_required" || c === "not_in_manifest" ? "Refresh needs your permission. Press it again and choose Allow." :
+          c === "not_granted" ? "This view can't start the agent. Open the brief on claude.ai." :
+          "Couldn't start the agent (" + (c || "error") + "). Try again in a minute.";
+      });
+    });
+  }
+
+  // ---------- rendering ----------
+  function renderMast() {
+    var ed = byDate[state.date];
+    $("date").textContent = fmtDate(ed.date);
+    var n = editions.length;
+    $("issue").textContent = (DATA.issue_number ? "No. " + DATA.issue_number + " · " : "") + ed.date;
+    var mins = ed.articles.reduce(function (s, a) { return s + (a.read_minutes || 2); }, 0);
+    var topics = {};
+    ed.articles.forEach(function (a) { topics[a.topic] = 1; });
+    $("stats").innerHTML = "<span><strong>" + ed.articles.length + "</strong> articles</span><span><strong>" + mins + "</strong> min reading</span><span><strong>" + Object.keys(topics).length + "</strong> topics</span>";
+    var ch = ed.changes || [];
+    $("changes").hidden = !ch.length;
+    $("changes-list").innerHTML = ch.map(function (c) { return "<li>" + esc(c) + "</li>"; }).join("");
+  }
+
+  function renderRail() {
+    var ed = byDate[state.date];
+    var counts = {};
+    ed.articles.forEach(function (a) { counts[a.topic] = (counts[a.topic] || 0) + 1; });
+    var chips = ['<button class="chip" data-filter="all" aria-pressed="' + (state.filter === "all") + '">All<span class="n">' + ed.articles.length + "</span></button>"];
+    chips.push('<button class="chip" data-filter="unrated" aria-pressed="' + (state.filter === "unrated") + '">Unrated</button>');
+    TOPIC_ORDER.forEach(function (t) {
+      if (!counts[t]) return;
+      chips.push('<button class="chip" data-filter="' + t + '" aria-pressed="' + (state.filter === t) + '">' + TOPICS[t] + '<span class="n">' + counts[t] + "</span></button>");
+    });
+    $("chips").innerHTML = chips.join("");
+    $("chips").hidden = state.view !== "today";
+    $("progress-row").hidden = state.view !== "today";
+    var rated = ed.articles.filter(function (a) { return isRated(ed.date, a); }).length;
+    $("progress-text").textContent = rated + " / " + ed.articles.length + " rated";
+    $("progress-bar").style.width = (ed.articles.length ? rated / ed.articles.length * 100 : 0) + "%";
+    document.querySelectorAll(".tab").forEach(function (t) { t.setAttribute("aria-selected", String(t.dataset.view === state.view)); });
+  }
+
+  function starRow(name, value, k) {
+    var out = '<div class="stars" role="radiogroup" aria-label="' + name + '">';
+    for (var i = 1; i <= 5; i++) {
+      out += '<button type="button" class="star' + (i <= value ? " on" : "") + '" role="radio" aria-checked="' + (i === value) + '" aria-label="' + i + ' of 5" data-k="' + k + '" data-scale="' + name.toLowerCase() + '" data-v="' + i + '">' + STAR + "</button>";
+    }
+    return out + "</div>";
+  }
+
+  function cardHtml(date, a) {
+    var k = key(date, a.id);
+    var r = state.ratings[k];
+    var open = !!state.open[k] || OFFLINE;
+    var rated = r && (r.relevance || r.quality);
+    var h = '<article class="card" id="card-' + k + '" style="--tc: var(--t-' + esc(a.topic) + ')">';
+    h += '<div class="card-head" data-toggle="' + k + '">';
+    h += '<div class="meta"><span class="topic">' + esc(TOPICS[a.topic] || a.topic) + "</span>";
+    if (a.kind && a.kind !== "news") h += '<span class="kind ' + esc(a.kind) + '">' + (a.kind === "opinion" ? "Opinion" : "Analysis") + "</span>";
+    h += '<span class="mins">' + (a.read_minutes || 2) + " min</span>";
+    if (rated) h += '<span class="rated">Rated R' + (r.relevance || "–") + " · Q" + (r.quality || "–") + "</span>";
+    h += "</div>";
+    h += "<h3>" + esc(a.title) + "</h3>";
+    if (a.update_of) h += '<div class="update-of">Update to: ' + esc(a.update_of) + "</div>";
+    h += '<ul class="tldr">' + (a.tldr || []).map(function (t) { return "<li>" + esc(t) + "</li>"; }).join("") + "</ul>";
+    if (!OFFLINE) h += '<button type="button" class="toggle" aria-expanded="' + open + '">' + (open ? "Close" : "Read the full article") + "</button>";
+    h += "</div>";
+    if (open) {
+      h += '<div class="card-body"><div class="prose">' + a.body.map(function (p) { return "<p>" + esc(p) + "</p>"; }).join("") + "</div>";
+      if (a.why_it_matters) h += '<div class="why"><strong>' + (a.topic === "industry" ? "Why it matters for KHD" : "Why it matters") + "</strong>" + esc(a.why_it_matters) + "</div>";
+      h += '<div class="sources"><h4>Sources</h4><ul>' + (a.sources || []).map(function (s) {
+        return '<li><span class="outlet">' + esc(s.outlet) + '</span><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.title || s.url) + "</a></li>";
+      }).join("") + "</ul></div>";
+      if (a.tags && a.tags.length) h += '<div class="tags">' + a.tags.map(function (t) { return "<span>#" + esc(t) + "</span>"; }).join("") + "</div>";
+      h += "</div>";
+      h += slipHtml(date, a);
+    }
+    return h + "</article>";
+  }
+
+  function slipHtml(date, a) {
+    var k = key(date, a.id);
+    var r = state.ratings[k] || { relevance: 0, quality: 0, quick_tags: [], feedback: "" };
+    var h = '<div class="slip"><h4>Rate this article</h4><div class="scales">';
+    h += '<div class="scale"><label>Relevance</label><span class="hint">Do you want stories like this?</span>' + starRow("Relevance", r.relevance, k) + "</div>";
+    h += '<div class="scale"><label>Quality</label><span class="hint">Was it well written and well sourced?</span>' + starRow("Quality", r.quality, k) + "</div>";
+    h += '</div><div class="qtags">' + QUICK.map(function (q) {
+      var on = (r.quick_tags || []).indexOf(q[0]) >= 0;
+      return '<button type="button" class="qtag" data-k="' + k + '" data-q="' + q[0] + '" aria-pressed="' + on + '">' + q[1] + "</button>";
+    }).join("") + "</div>";
+    h += '<div class="note"><label for="fb-' + k + '">Notes for tomorrow\'s agent</label><textarea id="fb-' + k + '" data-k="' + k + '" placeholder="e.g. More on this. Explain the background next time. Less from this outlet.">' + esc(r.feedback) + "</textarea></div>";
+    h += '<div class="saved" data-saved="' + k + '"></div></div>';
+    return h;
+  }
+
+  function renderToday() {
+    var ed = byDate[state.date];
+    var list = ed.articles.filter(function (a) {
+      if (state.filter === "all") return true;
+      if (state.filter === "unrated") return !isRated(ed.date, a);
+      return a.topic === state.filter;
+    });
+    var h = '<div class="banner" id="db-banner" hidden></div>';
+    if (state.date !== DATA.edition.date) h += '<div class="banner">You are reading the edition for ' + fmtDate(state.date) + '. <button type="button" class="toggle" data-go-today="1">Back to today</button></div>';
+    var round = 0;
+    var multiRound = (ed.rounds || []).length > 1;
+    list.forEach(function (a) {
+      if (multiRound && (a.round || 1) !== round) {
+        round = a.round || 1;
+        var meta = (ed.rounds || []).filter(function (x) { return x.round === round; })[0];
+        h += '<div class="round-head">' + (round === 1 ? "Morning edition" : "Refresh " + (round - 1)) + (meta && meta.generated_at ? " · " + new Date(meta.generated_at).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" }) : "") + "</div>";
+      }
+      h += cardHtml(ed.date, a);
+    });
+    if (!list.length) h += '<p class="empty">' + (state.filter === "unrated" ? "Everything here is rated. Thank you." : "Nothing in this section today.") + "</p>";
+    $("view").innerHTML = h;
+  }
+
+  function renderArchive() {
+    var h = '<section class="panel"><h2>Recent editions</h2><ul class="arch-list">';
+    editions.forEach(function (e) {
+      var rated = e.articles.filter(function (a) { return isRated(e.date, a); }).length;
+      h += '<li><button type="button" data-date="' + e.date + '"><span>' + fmtDate(e.date) + '</span><span class="m">' + e.articles.length + " articles · " + rated + " rated</span></button></li>";
+    });
+    h += "</ul><p class=\"empty\">Older editions are kept in the GitHub repo.</p></section>";
+    $("view").innerHTML = h;
+  }
+
+  function mdToHtml(md) {
+    var out = [], inList = false;
+    md.split("\n").forEach(function (line) {
+      var t = line.trim();
+      if (/^- /.test(t)) {
+        if (!inList) { out.push("<ul>"); inList = true; }
+        out.push("<li>" + esc(t.slice(2)) + "</li>");
+        return;
+      }
+      if (inList) { out.push("</ul>"); inList = false; }
+      if (/^#{1,6} /.test(t)) {
+        var level = t.match(/^#+/)[0].length;
+        if (level > 1) out.push("<h3>" + esc(t.replace(/^#+ /, "")) + "</h3>");
+      } else if (t) out.push("<p>" + esc(t) + "</p>");
+    });
+    if (inList) out.push("</ul>");
+    return out.join("");
+  }
+
+  function renderAbout() {
+    var s = DATA.stats || {};
+    var h = '<section class="panel"><h2>What I\'ve learned about you</h2>';
+    var rows = TOPIC_ORDER.map(function (t) { return [t, (s.topics || {})[t]]; }).filter(function (x) { return x[1]; });
+    if (rows.length) {
+      h += '<div class="tbl-wrap"><table><thead><tr><th>Topic</th><th>Ratings</th><th>Relevance</th><th>Quality</th></tr></thead><tbody>';
+      rows.forEach(function (x) {
+        var v = x[1];
+        h += "<tr><td>" + TOPICS[x[0]] + '</td><td class="num">' + v.n + '</td><td class="num">' + (v.avg_relevance != null ? v.avg_relevance.toFixed(1) : "–") + '</td><td class="num">' + (v.avg_quality != null ? v.avg_quality.toFixed(1) : "–") + "</td></tr>";
+      });
+      h += "</tbody></table></div>";
+    } else {
+      h += '<p class="empty">No ratings processed yet. Scores appear here after the agent reads your first ratings.</p>';
+    }
+    h += '<div class="md">' + mdToHtml(DATA.learned || "") + "</div>";
+    if (DATA.standing) h += '<div class="md">' + mdToHtml(DATA.standing) + "</div>";
+    h += '<p class="empty">To correct anything here, leave a note on any article, or ask Claude to edit profile/learned.md.</p></section>';
+    $("view").innerHTML = h;
+  }
+
+  function renderAll(keepScroll) {
+    renderMast();
+    renderRail();
+    var y = window.scrollY;
+    var active = document.activeElement && document.activeElement.id;
+    if (state.view === "today") renderToday();
+    else if (state.view === "archive") renderArchive();
+    else renderAbout();
+    if (keepScroll) {
+      window.scrollTo(0, y);
+      if (active && $(active)) { try { $(active).focus({ preventScroll: true }); } catch (e) {} }
+    }
+  }
+
+  // ---------- events ----------
+  document.addEventListener("click", function (ev) {
+    var t = ev.target.closest("button, .card-head");
+    if (!t) return;
+    if (t.classList.contains("tab")) { state.view = t.dataset.view; renderAll(); window.scrollTo(0, 0); return; }
+    if (t.dataset.filter) { state.filter = t.dataset.filter; renderAll(); return; }
+    if (t.dataset.date) { state.date = t.dataset.date; state.view = "today"; state.filter = "all"; renderAll(); window.scrollTo(0, 0); return; }
+    if (t.dataset.goToday) { state.date = DATA.edition.date; renderAll(); return; }
+    if (t.classList.contains("star")) {
+      var parts = splitKey(t.dataset.k), a = findArt(parts);
+      if (!a) return;
+      var r = ratingFor(parts.date, a), v = +t.dataset.v;
+      r[t.dataset.scale] = r[t.dataset.scale] === v ? 0 : v;
+      rerenderCard(parts.date, a);
+      queueSave(parts.date, a);
+      renderRail();
+      return;
+    }
+    if (t.classList.contains("qtag")) {
+      var p2 = splitKey(t.dataset.k), a2 = findArt(p2);
+      if (!a2) return;
+      var r2 = ratingFor(p2.date, a2), q = t.dataset.q, i = r2.quick_tags.indexOf(q);
+      if (i >= 0) r2.quick_tags.splice(i, 1); else r2.quick_tags.push(q);
+      queueSave(p2.date, a2);
+      t.setAttribute("aria-pressed", String(i < 0));
+      return;
+    }
+    var head = ev.target.closest(".card-head");
+    if (head && !OFFLINE && !ev.target.closest("a")) {
+      var k = head.dataset.toggle;
+      state.open[k] = !state.open[k];
+      var p3 = splitKey(k), a3 = findArt(p3);
+      if (a3) rerenderCard(p3.date, a3);
+      if (!state.open[k]) { var c = $("card-" + k); if (c && c.getBoundingClientRect().top < 0) c.scrollIntoView({ block: "start" }); }
+    }
+  });
+  document.addEventListener("input", function (ev) {
+    var ta = ev.target;
+    if (ta.tagName !== "TEXTAREA" || !ta.dataset.k) return;
+    var p = splitKey(ta.dataset.k), a = findArt(p);
+    if (!a) return;
+    ratingFor(p.date, a).feedback = ta.value;
+    queueSave(p.date, a);
+  });
+
+  function splitKey(k) { var i = k.indexOf("_"); return { date: k.slice(0, i), id: k.slice(i + 1) }; }
+  function findArt(p) { var e = byDate[p.date]; return e && e.articles.filter(function (a) { return a.id === p.id; })[0]; }
+  function rerenderCard(date, a) {
+    var el = $("card-" + key(date, a.id));
+    if (!el) return;
+    var focusId = document.activeElement && document.activeElement.id;
+    var tmp = document.createElement("div");
+    tmp.innerHTML = cardHtml(date, a);
+    el.replaceWith(tmp.firstChild);
+    if (focusId && $(focusId)) $(focusId).focus({ preventScroll: true });
+  }
+
+  $("foot").textContent = "Daily Brief · generated " + (DATA.edition.generated_at ? new Date(DATA.edition.generated_at).toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" }) : DATA.edition.date) + (OFFLINE ? " · offline copy" : "");
+  refreshSetup();
+  renderAll();
+  connectDb();
+})();
+</script>

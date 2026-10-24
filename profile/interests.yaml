@@ -1,0 +1,118 @@
+# Peter's interest profile. The agent reads this every run.
+# Base quotas are the starting point; learned adjustments live in data/stats.json.
+
+edition:
+  target_articles: [12, 15]
+  cold_start_days: 14          # bigger editions and 2 wildcards during the first 14 days
+  cold_start_target: 16
+  read_time_mix:               # share of articles by estimated minutes
+    2: 0.65
+    3: 0.25
+    4: 0.10
+  words_per_minute: 220        # 2 min ≈ 440 words, 4 min ≈ 880
+
+topics:
+  industry:
+    label: "Industry"
+    base_quota: 2
+    min: 1
+    max: 3
+    brief: >
+      Food hygiene and conveyor belt sanitation, as it affects KHD Technology.
+      See profile/company.md for the full brief. Always end with "Why it matters for KHD".
+    lookback_hours: 72
+
+  china:
+    label: "China"
+    base_quota: 2
+    min: 1
+    max: 4
+    brief: "Economy, CCP politics, Taiwan, trade and tariffs, UK–China relations, espionage and security."
+    lookback_hours: 36
+
+  nato:
+    label: "NATO & Defence"
+    base_quota: 2
+    min: 1
+    max: 3
+    brief: "Alliance politics, defence spending, procurement, UK armed forces, European rearmament."
+    lookback_hours: 36
+
+  ukraine:
+    label: "Ukraine War"
+    base_quota: 2
+    min: 1
+    max: 3
+    brief: "Front line, diplomacy and ceasefire talks, Western aid, sanctions, Russian domestic situation."
+    lookback_hours: 36
+
+  uk_politics:
+    label: "UK Politics"
+    base_quota: 3
+    min: 2
+    max: 4
+    brief: "Westminster, the Conservatives and Reform UK, the economy and tax, immigration, business policy affecting UK manufacturers."
+    lookback_hours: 36
+
+  us_politics:
+    label: "US Politics"
+    base_quota: 1
+    min: 0
+    max: 2                      # HARD CAP. Never raised by learning.
+    hard_cap: true
+    brief: "Only the most significant US political story, or one with clear UK or trade consequences."
+    lookback_hours: 36
+
+  ai:
+    label: "AI in Practice"
+    base_quota: 2
+    min: 1
+    max: 3
+    brief: >
+      How people and businesses actually use AI: real workflows, tools, case studies,
+      small firms and manufacturing. Prefer practical pieces over funding rounds and model-release news.
+    lookback_hours: 72
+
+  wildcard:
+    label: "Wildcard"
+    base_quota: 1
+    min: 1
+    max: 2
+    brief: "One thing outside the profile that Peter would probably find interesting. Exploration slot: never removed."
+    lookback_hours: 72
+
+editorial_stance:
+  lean: centre-right
+  rules:
+    - Prefer centre-right outlets for commentary and framing.
+    - Facts must be accurate and supported by at least 2 sources. Never invent quotes, numbers or events.
+    - Label any article built mainly on opinion as "Opinion / Analysis" and name whose view it is.
+    - On contested stories, include the strongest counter-argument in one line.
+    - Write original summaries. Never copy paragraphs from sources; short quotes with attribution are fine.
+
+sources:
+  preferred_commentary:
+    - The Telegraph
+    - The Spectator
+    - The Times
+    - City AM
+    - UnHerd
+    - CapX
+    - The Critic
+    - ConservativeHome
+    - Daily Mail (news only)
+    - GB News (news only)
+    - Wall Street Journal
+    - The Free Press
+    - National Review
+    - Washington Examiner
+  facts_and_wires:
+    - Reuters
+    - AP
+    - BBC News (facts only)
+    - Financial Times
+  specialist:
+    ukraine_defence: [ISW, RUSI, Defense News, UK Defence Journal]
+    china: [South China Morning Post, Nikkei Asia, The Diplomat]
+    ai: [The Verge, Ars Technica, Ethan Mollick's One Useful Thing, Simon Willison's blog, MIT Technology Review]
+    industry: [Food Manufacture, Food Engineering, Food Processing, Bakery & Snacks, Baking Business, British Baker, New Food, Food Safety Magazine]
