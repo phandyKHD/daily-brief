@@ -1,108 +1,19 @@
 {
   "date": "2026-10-24",
-  "generated_at": "2026-10-24T21:01:16+00:00",
-  "changes": [],
+  "generated_at": "2026-10-24T21:02:13+00:00",
+  "changes": [
+    "First edition. Rate everything you read today, even quickly: the first two weeks are when the agent learns fastest."
+  ],
   "rounds": [
     {
       "round": 1,
       "mode": "daily",
-      "generated_at": "2026-10-24T21:01:16+00:00"
+      "generated_at": "2026-10-24T21:02:13+00:00"
     }
   ],
   "articles": [
     {
       "id": "a01",
-      "round": 1,
-      "topic": "industry",
-      "title": "David Wood Baking changes hands after receivership, with a safety record still in view",
-      "kind": "news",
-      "read_minutes": 2,
-      "tldr": [
-        "US lender Barings has completed a buyout of Leeds-based David Wood Baking, which employs more than 1,500 people at seven UK sites.",
-        "Receivers were put in over the company's shares in April; the deal value is undisclosed and a rebrand is promised.",
-        "Last month the firm was fined £333,333 after a worker cleaning a conveyor was dragged into an unguarded roller."
-      ],
-      "body": [
-        "Last week one of the larger private names in British bakery found a new owner. Barings, the North Carolina-based asset manager, has completed a buyout of David Wood Baking UK, working with managing director Karen Wood. The value was not disclosed. Barings and LeumiUK, which already lent to the business, stay on as lenders.",
-        "The deal closes a difficult chapter. Interpath's Anthony Johnson-Magee and Kristina Kicks were appointed joint receivers over the company's shares on 2 April, and are expected to step away shortly after completion. Food Manufacture reports the business makes bread, savoury pastry and ready meals at seven UK sites for Tesco, Asda, Sainsbury's and the Co-op, and employs more than 1,500 people.",
-        "The trouble goes back to September 2023, when a fire destroyed the company's Dudley bakery and production had to be spread across its other plants. In April 2024 Interpath arranged term debt and asset-finance facilities from Barings and Leumi to stabilise the group. Tom Swiers, Interpath's head of food and drink, said at the time that \"there is no greater destabilising event than a factory fire\". That refinancing evidently did not settle matters, and the lender has now ended up owning the business.",
-        "Karen Wood, who has led the company since autumn 2025, will stay on with finance chief Bruce Korican and operations director Aaron Corbett. She spoke of a \"fragile trading environment\" and inflation, and said a rebrand would be \"another step in that journey\". Barings' Abhi Bothra said the firm looked forward to supporting \"the next phase of growth\". No investment figures were given.",
-        "The new owners also inherit a poor safety record. On 1 September Medway Magistrates' Court fined the company £333,333, plus £7,644 costs, over an incident at its Sheerness factory in December 2023. A worker cleaning a sausage roll line put her hand through an unguarded conveyor roller; the conveyor, which had been switched off, started running and her arm was pulled in, causing multiple fractures. The Health and Safety Executive found the company had failed to stop access to the rotating parts. The firm said it has since invested in engineering standards, training and governance. It had already been fined more than £573,000 over separate injuries at its Bolton sites in 2022.",
-        "The pattern is familiar across UK bakery this autumn: Greggs is closing four manufacturing sites, while other plants, such as Geary's, are getting fresh money. Owners are concentrating volume on fewer, busier lines, and the companies that win are the ones that keep those lines running safely."
-      ],
-      "why_it_matters": "Why it matters for KHD: a lender-owned baker with seven sites, a promised fresh start and a court ruling over a worker hurt while cleaning a conveyor is a natural prospect. Pitch KHD's portable steam belt cleaners as a way to take people's hands off moving belts during sanitation. It is also worth a call to the operations director, Aaron Corbett, once the new owners have settled in.",
-      "sources": [
-        {
-          "outlet": "Food Manufacture",
-          "title": "Troubled David Wood Baking bought out by US finance firm",
-          "url": "https://www.foodmanufacture.co.uk/Article/2026/10/16/david-wood-baking-bought-out-by-us-finance-firm/"
-        },
-        {
-          "outlet": "Food Manufacture",
-          "title": "David Wood Baking fined over £300K after worker suffers serious injuries",
-          "url": "https://www.foodmanufacture.co.uk/Article/2026/09/07/david-woo-baking-fined-333k-after-workers-arm-broken/"
-        },
-        {
-          "outlet": "Interpath",
-          "title": "Interpath secures debt package for David Wood Baking as the business looks to the future",
-          "url": "https://interpath.com/media-hub/articles/interpath-secures-debt-package-for-david-wood-baking-as-the-business-looks-to-the-future/"
-        }
-      ],
-      "tags": [
-        "david wood baking",
-        "barings",
-        "bakery",
-        "hse",
-        "conveyor safety",
-        "receivership"
-      ],
-      "update_of": null
-    },
-    {
-      "id": "a02",
-      "round": 1,
-      "topic": "industry",
-      "title": "Listeria pulls SuperValu and Centra smoked salmon off shelves in Ireland and Northern Ireland",
-      "kind": "news",
-      "read_minutes": 2,
-      "tldr": [
-        "Ireland's FSAI issued a Category 1 recall on 20 October for 18 SuperValu and Centra smoked fish and prawn cocktail lines after Listeria monocytogenes was found.",
-        "The UK Food Standards Agency followed with an alert for Northern Ireland, where every use-by date is affected.",
-        "Neither regulator has named the supplier or the cause, which points to a problem at a shared source rather than one bad batch."
-      ],
-      "body": [
-        "Musgrave Group's SuperValu and Centra chains are recalling their smoked salmon, smoked mackerel and prawn cocktail ranges in both parts of Ireland after tests found Listeria monocytogenes.",
-        "The Food Safety Authority of Ireland issued the recall on Tuesday 20 October as a Category 1 \"for action\" alert, its most serious class. It lists 18 products, from 40g to 300g packs. These include SuperValu's standard, organic, whiskey-infused and gin-infused smoked salmon, hot-smoked BBQ salmon, peppered salmon darnes, Irish smoked mackerel and prawn cocktail, as well as Centra's smoked salmon, BBQ salmon, applewood smoked salmon and Wild Atlantic prawn cocktail. The country of origin is given as Ireland. Retailers must take the products off sale and display recall notices; consumers are told not to eat them.",
-        "The UK Food Standards Agency has issued a matching alert for Northern Ireland, where Musgrave also trades. Food Manufacture reported on Friday that the Northern Irish recall covers all use-by dates of the affected SuperValu and Centra salmon and prawn cocktail packs. Customers are being offered refunds in store.",
-        "What is missing matters. Neither the FSAI nor the FSA names the processor, and neither says how the bacteria got in. A recall that runs across every use-by date and several product types, from cold-smoked and hot-smoked fish to prawns, points to a shared source at a supplier rather than a single bad batch. Until investigators report, that is an inference, not a finding.",
-        "There is also a delay built into the risk. The FSAI notes that listeriosis has an average incubation of three weeks and can take anywhere from 3 to 70 days to appear. Healthy adults may have only mild, flu-like symptoms, but the infection can be severe for pregnant women, newborns, older people and anyone with a weakened immune system. The published notices do not mention any illnesses so far, but given that time lag, the absence of reported cases is not yet a clean bill of health.",
-        "This is the latest in a run of Listeria withdrawals this autumn. Food Manufacture lists a Waitrose black olive product on 14 September, a Sainsbury's product on 8 September and two cheeses from an Irish buffalo cheese maker on 2 September. For own-label retailers, each one means removing a whole range, not just a single line, and handing the bill back to the supplier."
-      ],
-      "why_it_matters": "Why it matters for KHD: Listeria in ready-to-eat fish usually means a hunt through the processing environment, conveyors included, and a recall on this scale will push Irish and UK chilled processors to tighten sanitation. KHD's low-moisture steam belt cleaning, which needs no chemicals, is a good fit for chilled ready-to-eat lines where operators want less water on the floor. This is worth raising with any Irish distributor or chilled-food prospect.",
-      "sources": [
-        {
-          "outlet": "Food Safety Authority of Ireland",
-          "title": "Recall of several Supervalu and Inspired by Centra smoked salmon, mackerel and prawn cocktail products",
-          "url": "https://www.fsai.ie/news-and-alerts/food-alerts/recall-of-several-supervalu-and-inspired-by-centra"
-        },
-        {
-          "outlet": "Food Manufacture",
-          "title": "Two major retailers pull seafood products over Listeria contamination",
-          "url": "https://www.foodmanufacture.co.uk/Article/2026/10/23/two-retailers-pull-salmon-and-prawn-products-over-listeria/"
-        }
-      ],
-      "tags": [
-        "listeria",
-        "recall",
-        "smoked salmon",
-        "supervalu",
-        "fsai",
-        "northern ireland"
-      ],
-      "update_of": null
-    },
-    {
-      "id": "a03",
       "round": 1,
       "topic": "uk_politics",
       "title": "Healey's first Budget may raise tax on passing a family firm to the next generation",
@@ -148,6 +59,97 @@
         "capital gains tax",
         "business rates",
         "succession"
+      ],
+      "update_of": null
+    },
+    {
+      "id": "a02",
+      "round": 1,
+      "topic": "industry",
+      "title": "David Wood Baking changes hands after receivership, with a safety record still in view",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "US lender Barings has completed a buyout of Leeds-based David Wood Baking, which employs more than 1,500 people at seven UK sites.",
+        "Receivers were put in over the company's shares in April; the deal value is undisclosed and a rebrand is promised.",
+        "Last month the firm was fined £333,333 after a worker cleaning a conveyor was dragged into an unguarded roller."
+      ],
+      "body": [
+        "Last week one of the larger private names in British bakery found a new owner. Barings, the North Carolina-based asset manager, has completed a buyout of David Wood Baking UK, working with managing director Karen Wood. The value was not disclosed. Barings and LeumiUK, which already lent to the business, stay on as lenders.",
+        "The deal closes a difficult chapter. Interpath's Anthony Johnson-Magee and Kristina Kicks were appointed joint receivers over the company's shares on 2 April, and are expected to step away shortly after completion. Food Manufacture reports the business makes bread, savoury pastry and ready meals at seven UK sites for Tesco, Asda, Sainsbury's and the Co-op, and employs more than 1,500 people.",
+        "The trouble goes back to September 2023, when a fire destroyed the company's Dudley bakery and production had to be spread across its other plants. In April 2024 Interpath arranged term debt and asset-finance facilities from Barings and Leumi to stabilise the group. Tom Swiers, Interpath's head of food and drink, said at the time that \"there is no greater destabilising event than a factory fire\". That refinancing evidently did not settle matters, and the lender has now ended up owning the business.",
+        "Karen Wood, who has led the company since autumn 2025, will stay on with finance chief Bruce Korican and operations director Aaron Corbett. She spoke of a \"fragile trading environment\" and inflation, and said a rebrand would be \"another step in that journey\". Barings' Abhi Bothra said the firm looked forward to supporting \"the next phase of growth\". No investment figures were given.",
+        "The new owners also inherit a poor safety record. On 1 September Medway Magistrates' Court fined the company £333,333, plus £7,644 costs, over an incident at its Sheerness factory in December 2023. A worker cleaning a sausage roll line put her hand through an unguarded conveyor roller; the conveyor, which had been switched off, started running and her arm was pulled in, causing multiple fractures. The Health and Safety Executive found the company had failed to stop access to the rotating parts. The firm said it has since invested in engineering standards, training and governance. It had already been fined more than £573,000 over separate injuries at its Bolton sites in 2022.",
+        "The pattern is familiar across UK bakery this autumn: Greggs is closing four manufacturing sites, while other plants, such as Geary's, are getting fresh money. Owners are concentrating volume on fewer, busier lines, and the companies that win are the ones that keep those lines running safely."
+      ],
+      "why_it_matters": "A lender-owned baker with seven sites, a promised fresh start and a court ruling over a worker hurt while cleaning a conveyor is a natural prospect. Pitch KHD's portable steam belt cleaners as a way to take people's hands off moving belts during sanitation. It is also worth a call to the operations director, Aaron Corbett, once the new owners have settled in.",
+      "sources": [
+        {
+          "outlet": "Food Manufacture",
+          "title": "Troubled David Wood Baking bought out by US finance firm",
+          "url": "https://www.foodmanufacture.co.uk/Article/2026/10/16/david-wood-baking-bought-out-by-us-finance-firm/"
+        },
+        {
+          "outlet": "Food Manufacture",
+          "title": "David Wood Baking fined over £300K after worker suffers serious injuries",
+          "url": "https://www.foodmanufacture.co.uk/Article/2026/09/07/david-woo-baking-fined-333k-after-workers-arm-broken/"
+        },
+        {
+          "outlet": "Interpath",
+          "title": "Interpath secures debt package for David Wood Baking as the business looks to the future",
+          "url": "https://interpath.com/media-hub/articles/interpath-secures-debt-package-for-david-wood-baking-as-the-business-looks-to-the-future/"
+        }
+      ],
+      "tags": [
+        "david wood baking",
+        "barings",
+        "bakery",
+        "hse",
+        "conveyor safety",
+        "receivership"
+      ],
+      "update_of": null
+    },
+    {
+      "id": "a03",
+      "round": 1,
+      "topic": "industry",
+      "title": "Listeria pulls SuperValu and Centra smoked salmon off shelves in Ireland and Northern Ireland",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "Ireland's FSAI issued a Category 1 recall on 20 October for 18 SuperValu and Centra smoked fish and prawn cocktail lines after Listeria monocytogenes was found.",
+        "The UK Food Standards Agency followed with an alert for Northern Ireland, where every use-by date is affected.",
+        "Neither regulator has named the supplier or the cause, which points to a problem at a shared source rather than one bad batch."
+      ],
+      "body": [
+        "Musgrave Group's SuperValu and Centra chains are recalling their smoked salmon, smoked mackerel and prawn cocktail ranges in both parts of Ireland after tests found Listeria monocytogenes.",
+        "The Food Safety Authority of Ireland issued the recall on Tuesday 20 October as a Category 1 \"for action\" alert, its most serious class. It lists 18 products, from 40g to 300g packs. These include SuperValu's standard, organic, whiskey-infused and gin-infused smoked salmon, hot-smoked BBQ salmon, peppered salmon darnes, Irish smoked mackerel and prawn cocktail, as well as Centra's smoked salmon, BBQ salmon, applewood smoked salmon and Wild Atlantic prawn cocktail. The country of origin is given as Ireland. Retailers must take the products off sale and display recall notices; consumers are told not to eat them.",
+        "The UK Food Standards Agency has issued a matching alert for Northern Ireland, where Musgrave also trades. Food Manufacture reported on Friday that the Northern Irish recall covers all use-by dates of the affected SuperValu and Centra salmon and prawn cocktail packs. Customers are being offered refunds in store.",
+        "What is missing matters. Neither the FSAI nor the FSA names the processor, and neither says how the bacteria got in. A recall that runs across every use-by date and several product types, from cold-smoked and hot-smoked fish to prawns, points to a shared source at a supplier rather than a single bad batch. Until investigators report, that is an inference, not a finding.",
+        "There is also a delay built into the risk. The FSAI notes that listeriosis has an average incubation of three weeks and can take anywhere from 3 to 70 days to appear. Healthy adults may have only mild, flu-like symptoms, but the infection can be severe for pregnant women, newborns, older people and anyone with a weakened immune system. The published notices do not mention any illnesses so far, but given that time lag, the absence of reported cases is not yet a clean bill of health.",
+        "This is the latest in a run of Listeria withdrawals this autumn. Food Manufacture lists a Waitrose black olive product on 14 September, a Sainsbury's product on 8 September and two cheeses from an Irish buffalo cheese maker on 2 September. For own-label retailers, each one means removing a whole range, not just a single line, and handing the bill back to the supplier."
+      ],
+      "why_it_matters": "Listeria in ready-to-eat fish usually means a hunt through the processing environment, conveyors included, and a recall on this scale will push Irish and UK chilled processors to tighten sanitation. KHD's low-moisture steam belt cleaning, which needs no chemicals, is a good fit for chilled ready-to-eat lines where operators want less water on the floor. This is worth raising with any Irish distributor or chilled-food prospect.",
+      "sources": [
+        {
+          "outlet": "Food Safety Authority of Ireland",
+          "title": "Recall of several Supervalu and Inspired by Centra smoked salmon, mackerel and prawn cocktail products",
+          "url": "https://www.fsai.ie/news-and-alerts/food-alerts/recall-of-several-supervalu-and-inspired-by-centra"
+        },
+        {
+          "outlet": "Food Manufacture",
+          "title": "Two major retailers pull seafood products over Listeria contamination",
+          "url": "https://www.foodmanufacture.co.uk/Article/2026/10/23/two-retailers-pull-salmon-and-prawn-products-over-listeria/"
+        }
+      ],
+      "tags": [
+        "listeria",
+        "recall",
+        "smoked salmon",
+        "supervalu",
+        "fsai",
+        "northern ireland"
       ],
       "update_of": null
     },
@@ -437,7 +439,7 @@
         "China's Communist Party Central Committee will meet in Beijing from Monday 26 to Thursday 29 October for its fifth plenary session since the current committee was formed in 2022. The dates were set at a Politburo meeting chaired by Xi Jinping in September and reported by the state news agency Xinhua.",
         "This plenum has a narrow and political agenda. According to the Politburo's summary, it will deal with \"several major issues concerning the sustained advancement of full and rigorous party self-governance\" and must \"tackle and resolve well the prominent problems facing party-building\". In party language that means discipline, political loyalty and the anti-corruption campaign. More than 300 full and alternate members are expected to attend.",
         "The backdrop explains the emphasis. In July the party expelled Ma Xingrui, a Politburo member and former head of the state aerospace conglomerate, citing a \"serious violation of law and discipline\" and what investigators called family corruption: using his influence to benefit relatives, arranging jobs and accepting gifts. He was the third sitting Politburo member purged since 2025, and at least 24 Central Committee members have been expelled or investigated since 2022, alongside a string of senior generals. Analysts quoted in coverage of Ma's fall read the campaign as a way of enforcing loyalty to Xi as much as cleaning up graft.",
-        "The timing matters more than the theme. The South China Morning Post describes this plenum as probably the party's most important meeting before the 21st national congress in autumn 2027, where the next leadership line-up will be settled and Xi is expected to secure a fourth five-year term as general secretary. Plenums are where gaps left by purged officials are formally filled and where expulsions are confirmed, so the communiqué on Thursday and any accompanying personnel announcements will be read for signs of who is rising and who has fallen.",
+        "The timing matters more than the theme. The South China Morning Post describes this plenum as probably the party's most important meeting before the 21st national congress in autumn 2027, where the next leadership line-up will be settled. Plenums are where gaps left by purged officials are formally filled and where expulsions are confirmed, so the communiqué on Thursday and any accompanying personnel announcements will be read for signs of who is rising and who has fallen.",
         "Three things are worth watching. First, whether the plenum formally confirms the removal of disgraced members of the Central Committee and names replacements, which would show how far the purges have reshaped the body that will manage the 2027 transition. Second, whether further expulsions of senior military figures are confirmed, given how many generals the campaign has already swept up. Third, whether a successor figure is promoted, which so far Xi has carefully avoided.",
         "The counter-view is that plenums of this kind are mostly ritual: the decisions are made beforehand, the communiqué is formulaic, and outsiders over-read it. That is fair as far as policy goes. But for a party whose next congress will set its leadership for another five years, the question of who is still standing is itself the news.",
         "For British businesses with Chinese exposure, a discipline-focused meeting is a reminder that politics, not economics, is setting Beijing's priorities. Results should be out by the end of next week."
@@ -526,6 +528,90 @@
     {
       "id": "a12",
       "round": 1,
+      "topic": "ai",
+      "title": "CloudNC turns AI on the machine shop's quoting bottleneck",
+      "kind": "analysis",
+      "read_minutes": 2,
+      "tldr": [
+        "CloudNC is building Quote Agent, an AI tool that reads incoming RFQs and drafts costings, cycle times and design-for-manufacture feedback.",
+        "A human estimator still reviews, edits and approves every quote before it goes out.",
+        "It targets the slow, expert-heavy step that decides which jobs a subcontract shop wins."
+      ],
+      "body": [
+        "For most small engineering firms the bottleneck is not the machines. It is the handful of experienced people who can look at a drawing, work out how a part would be made and put a price on it before a competitor does. CloudNC, the software company behind the CAM Assist machining tool, is now aiming AI squarely at that job.",
+        "Its new product, Quote Agent, takes an incoming request for quotation and analyses the part. According to MachineToolNews.ai, which interviewed chief executive Theo Saville this month, the system produces routing, costing and cycle-time estimates, flags design-for-manufacture problems while the quote is being prepared, and automates quality \"ballooning\", the tedious numbering of drawing dimensions that links them to inspection records. It also supports first-article inspection paperwork.",
+        "The important design choice is what it does not do. The tool does not send quotes by itself. A human estimator reviews the output and applies commercial judgement before anything goes to the customer. MachineToolNews.ai sums up Saville's case as \"making scarce manufacturing expertise more productive rather than removing it from the workflow.\" In other words, the senior estimator becomes an editor rather than a typist.",
+        "CloudNC positions Quote Agent upstream of its existing CAM Assist product, which generates CNC toolpaths. Put together, the intended chain runs from RFQ to costing, design feedback, inspection preparation, CAM programming and finally the machine. The company raised $20 million in September, led by US investor Nimble Venture, partly to fund the launch. Develop3D reported then that Quote Agent would be available in late 2026. \"Machine shops everywhere are under pressure to quote and program faster,\" Saville said at the time.",
+        "Why it is worth watching: quoting is where a small subcontractor's margin is won or lost. Quote too high and the job goes elsewhere; quote too low and the shop works for nothing. Speed matters too, because buyers often go with whoever answers first. A tool that turns a two-hour estimate into a fifteen-minute review could let a firm bid for more work without hiring another estimator, who would be hard to find anyway.",
+        "The caveats are real. No pricing, customer names or performance figures have been published, and estimates are only as good as the data behind them. A shop's real costs depend on its own machines, labour rates and habits, which a general model may not capture at first. The sensible approach for any firm trying such a tool is to run it alongside its own estimators on a batch of past jobs and compare the numbers before trusting it on live bids."
+      ],
+      "why_it_matters": "KHD builds special-design cleaners and buys in machined parts. AI quoting could shorten lead times from subcontractors, and the same review-the-draft pattern could apply to KHD's own quotes for bespoke belt cleaners.",
+      "sources": [
+        {
+          "outlet": "MachineToolNews.ai",
+          "title": "CloudNC's Theo Saville: AI Takes on One of CNC Machining's Biggest Bottlenecks",
+          "url": "https://machinetoolnews.ai/ai-cnc-quoting-cloudnc-quote-agent/"
+        },
+        {
+          "outlet": "Develop3D",
+          "title": "$20 million investment for CloudNC to expand AI machining tools",
+          "url": "https://develop3d.com/manufacture/20-million-investment-for-clondnc-to-expand-ai-machining-tools/"
+        }
+      ],
+      "tags": [
+        "cloudnc",
+        "cnc machining",
+        "quoting",
+        "ai agents",
+        "small manufacturers"
+      ],
+      "update_of": null
+    },
+    {
+      "id": "a13",
+      "round": 1,
+      "topic": "ai",
+      "title": "Agent Skills: writing down how your firm does things, once, for any AI",
+      "kind": "analysis",
+      "read_minutes": 2,
+      "tldr": [
+        "Anthropic has handed its Agent Skills format to a Linux Foundation body, so no single AI company controls it.",
+        "A skill is just a folder with a written instruction file, plus any scripts or reference documents, that teaches an AI agent one task.",
+        "More than 70 tools, including ChatGPT and GitHub Copilot, already read the format, so a skill written once is portable."
+      ],
+      "body": [
+        "Most of the useful knowledge in a small business is procedural: how we cost a job, how we write up a service visit, which checks go in a technical file. General-purpose AI assistants are clever but know none of this. The usual fix has been to paste long instructions into every chat. A quieter standard, Agent Skills, is becoming the more durable answer, and this week it got a new home.",
+        "On 22 October Anthropic, the maker of Claude, said it was donating Agent Skills to the Agentic AI Foundation, part of the Linux Foundation. Anthropic co-founded that body with Block and OpenAI and had already given it the Model Context Protocol, the standard that lets AI tools connect to other software. \"We're committed to keeping Agent Skills open, community-driven, and vendor-neutral,\" the company said. Engineers from Anthropic, Google, OpenAI and others will maintain it, with a roadmap covering versioned releases, a formal proposal process and security guidance.",
+        "The idea is simple. In Anthropic's words, \"a skill is a folder containing a SKILL.md file that teaches an agent a specific task or domain.\" The folder can also hold scripts and reference material the agent needs. Anthropic says it developed the approach while building its Claude Code tool, after finding that raw capability often lacked the procedural knowledge real business tasks need.",
+        "Adoption has been fast. Anthropic says more than 70 agent platforms have integrated the format since it was published in December 2025, naming ChatGPT, Cursor, GitHub Copilot and VS Code, and that one million skills have been published. Simon Willison, the independent developer and commentator, noted that he had predicted the move to the foundation last December.",
+        "For a business owner the practical point is portability. Because the format is plain files and is now vendor-neutral, a skill describing, say, how to draft a quotation in house style, or how to check a drawing against company standards, should work across rival AI tools. The firm is not locked into one supplier, and the instructions double as a written procedure that staff can read too.",
+        "Two cautions. Skills can include scripts, so one downloaded from a stranger deserves the same scrutiny as any other software; the foundation's promise of security guidance is an admission that this is still being worked out. And a skill only captures what someone bothers to write down. The hard part, as ever, is getting experienced staff to put their judgement on paper."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Anthropic",
+          "title": "Donating Agent Skills to the Agentic AI Foundation",
+          "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+        },
+        {
+          "outlet": "Simon Willison's Weblog",
+          "title": "Donating Agent Skills to the Agentic AI Foundation",
+          "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/"
+        }
+      ],
+      "tags": [
+        "agent skills",
+        "anthropic",
+        "linux foundation",
+        "open standards",
+        "ai agents"
+      ],
+      "update_of": null
+    },
+    {
+      "id": "a14",
+      "round": 1,
       "topic": "us_politics",
       "title": "Trump lifts some Canadian tariffs to help Susan Collins ten days before the midterms",
       "kind": "news",
@@ -564,12 +650,101 @@
         "trade"
       ],
       "update_of": null
+    },
+    {
+      "id": "a15",
+      "round": 1,
+      "topic": "wildcard",
+      "title": "Britain pays to keep its Belgian gas pipeline open this winter",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "National Gas has struck a deal to keep the Bacton–Zeebrugge pipeline's import capacity at about 27.8GW instead of letting it fall to 16.5GW.",
+        "Ofgem has approved it as an insurance policy; households will pay about £1.19 a year for five years.",
+        "Forecasters expect enough gas and power this winter, but storage is low and prices have soared since February."
+      ],
+      "body": [
+        "Britain has agreed to pay to keep one of its main gas links with the Continent fully open this winter. National Gas, which runs the transmission network, has reached a deal with Interconnector Ltd to hold import capacity on the 235km pipeline between Zeebrugge in Belgium and Bacton in Norfolk at about 27.8GW. Without it, capacity would have dropped to roughly 16.5GW this month. The deal was struck on 22 October and Ofgem has approved it.",
+        "The operator had wanted to cut capacity because of high running and maintenance costs and weak commercial demand for flows into Britain. Capacity had already fallen from about 33.5GW. National Gas will recover the cost through charges on gas users, which Ofgem puts at about £1.19 a year per household for five years. The regulator will consult on how those costs are recovered.",
+        "Ofgem calls the deal an insurance policy: extra import room for an exceptionally cold winter or the failure of another major supply source, not a sign that it expects a shortage. Jack Presley Abbott, its director of energy systems management and security, said the system remains secure but the amount of gas that can be imported from Europe \"has fallen significantly\".",
+        "The official winter outlooks published the same week are reassuring on paper. National Gas forecasts peak demand of 493 million cubic metres a day against peak supply capacity of 592, a buffer of 99. In a \"highly unlikely\" stress case, such as loss of the largest single piece of the network, that buffer shrinks to 18. \"Great Britain is expected to have sufficient gas supply capability to meet demand throughout winter 2026/27,\" said Glenn Bryn-Jacobsen, its director of energy systems and resilience.",
+        "The electricity system operator, NESO, expects a spare margin of 5.9GW, or 9.5% of peak, during a typical cold spell, similar to recent winters. It warns of a small number of tight days in December and January, when it may issue margin notices asking for extra generation.",
+        "The bigger worry is price and dependence. According to The National, UK gas storage was about 48% full earlier this month, the lowest in Europe, and front-month gas prices are up about 180% since the US-Iran war began in February. Domestic North Sea output keeps declining, so Britain leans ever harder on pipelines and tankers it does not control.",
+        "The counter-argument: critics may ask why consumers should underwrite a private pipeline whose owner finds it uneconomic. Ofgem's answer is that £1.19 a year is cheap cover against a winter shortfall that would cost industry far more."
+      ],
+      "why_it_matters": "High gas and power prices raise running costs for UK food factories, which sharpens interest in sanitation methods that use less hot water and energy.",
+      "sources": [
+        {
+          "outlet": "Energy Live News",
+          "title": "UK secures Belgian gas lifeline in winter supply deal",
+          "url": "https://www.energylivenews.com/2026/10/23/uk-secures-belgian-gas-lifeline-in-winter-supply-deal/"
+        },
+        {
+          "outlet": "The National",
+          "title": "UK power supply forecasts warn of 'tight winter days' as costs soar",
+          "url": "https://www.thenationalnews.com/news/uk/2026/10/23/uk-power-supply-forecasts-warn-of-tight-winter-days-as-costs-soar/"
+        }
+      ],
+      "tags": [
+        "gas",
+        "ofgem",
+        "energy security",
+        "interconnector",
+        "winter outlook"
+      ],
+      "update_of": null
+    },
+    {
+      "id": "a16",
+      "round": 1,
+      "topic": "wildcard",
+      "title": "Metamaterials: Britain co-invented them, now it wants to make them",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "The government has published a ten-year roadmap to turn UK research on metamaterials into products and factories.",
+        "Metamaterials get their properties from engineered structure rather than chemistry, with uses from 6G antennas to battery cooling and knee implants.",
+        "The UK leads on research quality but lags on patents and scale-up, the familiar British gap."
+      ],
+      "body": [
+        "Metamaterials sound like science fiction but the principle is plain engineering. Instead of relying on what a material is made of, designers build repeating tiny structures, so-called meta-atoms, whose combined shape gives the material properties no ordinary substance has. They can steer radio waves, absorb sound, manage heat or flex in unusual ways. The field was co-discovered in Britain in 2000, and on 22 October the government published a roadmap aimed at making sure Britain also makes money from it.",
+        "The UK Metamaterials Commercialisation Roadmap was published by the government's business and science department with the Institute of Physics and Cambridge's Institute for Manufacturing, through a strategy group co-sponsored by the Ministry of Defence. Science minister Chris McDonald said metamaterials \"represent a significant opportunity to strengthen the UK's technology and industrial base.\"",
+        "The diagnosis will be familiar to anyone in British manufacturing. The UK ranks first in the world for the impact and quality of its metamaterials research and fourth for output. But it files fewer patents than other leading nations, its funding comes in bursts rather than a steady pipeline, its scale-up and manufacturing capability is described as immature and fragmented, and there is no national skills plan. There is not even an agreed international definition, and few standards exist.",
+        "The roadmap's answer rests on five themes: ecosystem, innovation, manufacturing and scale-up, assurance (testing and standards) and skills. It sets out foundations by 2030, including early demonstrators and a visible funding pipeline, then centres of excellence and pilot production lines by 2035, and a self-sustaining, privately funded industry after that.",
+        "Applications cited range from 5G and 6G connectivity and defence sensing to battery thermal management in electric cars, knee implants, protective clothing, acoustic panels and spectral imaging. The University of Birmingham, which co-leads the 1,300-member UK Metamaterials Network with Exeter, adds wireless power, better solar systems and recovering waste heat. The document even lists food and agriculture among adjacent sectors.",
+        "Existing money is modest: metamaterials are a named theme in a National Materials Innovation Programme worth over £80 million, and a dedicated research hub has £19.6 million. The roadmap itself commits no new funding. It warns that without investment in manufacturing and scale-up, the UK could lose ground despite its research lead. Sceptics will note how often that warning has been issued about British inventions, from graphene onwards, and how rarely it has been heeded."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "GOV.UK",
+          "title": "Metamaterials Commercialisation Roadmap",
+          "url": "https://www.gov.uk/government/publications/uk-metamaterials-commercialisation-strategic-roadmap/metamaterials-commercialisation-roadmap"
+        },
+        {
+          "outlet": "University of Birmingham",
+          "title": "Birmingham experts drive roadmap to set course for UK leadership in metamaterials innovation",
+          "url": "https://www.birmingham.ac.uk/news/2026/birmingham-experts-drive-roadmap-to-set-course-for-uk-leadership-in-metamaterials-innovation"
+        }
+      ],
+      "tags": [
+        "metamaterials",
+        "advanced materials",
+        "industrial strategy",
+        "uk science",
+        "manufacturing scale-up"
+      ],
+      "update_of": null
     }
   ],
   "run": {
     "mode": "daily",
-    "duration_minutes": 0,
-    "fetches": 0,
-    "notes": []
+    "duration_minutes": 12,
+    "fetches": 67,
+    "notes": [
+      "First edition, built by hand during setup.",
+      "Several outlets (Reuters, Telegraph, BBC, SCMP, The Grocer) blocked fetching; syndicated copies were used.",
+      "Some stories stretched beyond the lookback window: China plenum preview and GDP, CloudNC, Trump sanctions waiver."
+    ]
   }
 }

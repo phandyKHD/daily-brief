@@ -49,6 +49,8 @@ def main():
         a["update_of"] = a.get("update_of") or None
         # The viewer adds its own "Why it matters" heading, so drop one the desk wrote into the text.
         a["why_it_matters"] = re.sub(r"^\s*why it matters[^:]{0,20}:\s*", "", a.get("why_it_matters") or "", flags=re.I) or None
+        if a["why_it_matters"]:
+            a["why_it_matters"] = a["why_it_matters"][0].upper() + a["why_it_matters"][1:]
     new.sort(key=lambda a: (0 if lead and a["title"] == lead else 1, ORDER.index(a["topic"]) if a["topic"] in ORDER else 99))
     if lead and new[0]["title"] != lead:
         sys.exit(f"--lead title not found: {lead}")

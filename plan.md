@@ -229,6 +229,12 @@ Relevance and quality are tracked **separately** because they answer different q
 
 ---
 
+## Status (24 Oct 2026)
+
+- Done: Phases 0–2, Phase 3 (email with every article in full in the body; no attachment), Phase 4 routine (`trig_015jAPGDAeWMNzWYLAzn97pB`, 04:07 Europe/London daily) and the Refresh button. Learning-loop scripts are written; they run for real from the first morning with ratings.
+- Viewer: https://claude.ai/artifact/2Cu5Wokp6MMSy3xkigWmo7
+- Open: the routine has no Gmail connector yet. Add Gmail to the "Daily Brief" routine in claude.ai routines settings, or the morning run will skip the email.
+
 ## 11. Implementation phases
 
 Each phase ends with something usable.

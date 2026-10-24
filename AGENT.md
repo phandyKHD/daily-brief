@@ -21,9 +21,8 @@ Today's date: run `TZ=Europe/London date +%F`. Use that date everywhere.
 
 The viewer stores ratings in its Artifact database (collection `ratings`, one document per article, id `<date>_<articleId>`).
 
-1. Load the `ArtifactData` tool (ToolSearch `select:ArtifactData`) and `list` the `ratings` collection on `config.viewer_artifact_url`. Page through everything.
-2. Save the raw result to `dist/ratings-export.json` (a JSON array of `{id, data}` objects).
-3. Run `python3 scripts/ingest_ratings.py dist/ratings-export.json`. It appends new or changed ratings to `data/ratings.jsonl`, adds notes to `data/feedback-log.md` and recomputes `data/stats.json`. It prints a summary including every new note. Read that summary carefully.
+1. Load the `ArtifactData` tool (ToolSearch `select:ArtifactData`) and `list` the `ratings` collection on `config.viewer_artifact_url` with `query.limit` 1000 and `out_dir` `dist/ratings-export`. Follow `next_cursor` if there is one.
+2. Run `python3 scripts/ingest_ratings.py dist/ratings-export`. It appends new or changed ratings to `data/ratings.jsonl`, adds notes to `data/feedback-log.md` and recomputes `data/stats.json`. It prints a summary including every new note. Read that summary carefully.
 
 If `ArtifactData` is unavailable or fails, carry on without new ratings and record the failure in the edition's `run.notes`.
 
@@ -120,11 +119,12 @@ In **refresh** mode, load today's file, append the new articles and a new `round
 
 ## 8. Email (daily mode only)
 
-Load `mcp__Gmail__send_message` and send to `config.recipient`:
+Load `mcp__Gmail__send_message` (ToolSearch `select:mcp__Gmail__send_message`) and send to `config.recipient`. If the Gmail tool is not available in this session, skip the email and add "Email not sent: Gmail connector not attached to the routine" to `run.notes`.
 
 - **subject:** `Daily Brief · Sat 25 Oct · 14 reads, 38 min`
-- **htmlBody:** output of `python3 scripts/build.py <date> --email-body` (headlines, TL;DRs, the changes note and the viewer link)
-- **attachments:** one item: `content` = base64 of `dist/offline-<date>.html`, `filename` = `daily-brief-<date>.html`, `mimeType` = `text/html`
+- **htmlBody:** the exact output of `python3 scripts/build.py <date> --email-body` (contents, TL;DRs, the changes note, every article in full and the viewer link). It is long: read it in chunks and pass it verbatim. The full text in the body is what makes the brief readable offline in the mail app.
+- **body:** one plain-text line with the article count, reading time and the viewer link.
+- No attachment (a base64 copy of the viewer would be several times larger and is not needed).
 
 ## 9. Finish
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Merge ratings exported from the viewer's Artifact database into the repo.
 
-Usage: python3 scripts/ingest_ratings.py dist/ratings-export.json
+Usage: python3 scripts/ingest_ratings.py dist/ratings-export.json   (or a directory written by ArtifactData out_dir)
 
 The export is a JSON array of {"id": "<date>_<articleId>", "data": {...}} objects
 (the documents in the `ratings` collection; a bare list of rating bodies also works).
@@ -105,10 +105,24 @@ def main():
     if len(sys.argv) != 2:
         print(__doc__)
         sys.exit(2)
-    with open(sys.argv[1], encoding="utf-8") as f:
-        raw = json.load(f)
-    if isinstance(raw, dict):
-        raw = raw.get("docs") or raw.get("documents") or raw.get("items") or []
+    src = sys.argv[1]
+    if os.path.isdir(src):
+        # ArtifactData read with out_dir: one JSON file per document, named <doc_id>.json
+        raw = []
+        for root, _, files in os.walk(src):
+            for name in sorted(files):
+                if name.endswith(".json"):
+                    with open(os.path.join(root, name), encoding="utf-8") as f:
+                        d = json.load(f)
+                    if "data" not in d or not isinstance(d["data"], dict):
+                        d = {"data": d}
+                    d.setdefault("id", name[:-5])
+                    raw.append(d)
+    else:
+        with open(src, encoding="utf-8") as f:
+            raw = json.load(f)
+        if isinstance(raw, dict):
+            raw = raw.get("docs") or raw.get("documents") or raw.get("items") or []
     latest = load_existing()
     now = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     new, changed, notes = 0, 0, []

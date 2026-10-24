@@ -95,9 +95,9 @@ def email_body(date, config):
            '<div style="padding:16px 20px">']
     if url:
         out.append(f'<p style="font:600 14px Arial,sans-serif"><a href="{e(url)}" style="color:#c8611e">Open the live brief to read and rate</a>. '
-                   'The attached file works offline.</p>')
+                   'Every article is in full below, so this email works offline.</p>')
     else:
-        out.append('<p style="font:600 14px Arial,sans-serif">The attached file has every article and works offline.</p>')
+        out.append('<p style="font:600 14px Arial,sans-serif">Every article is in full below, so this email works offline.</p>')
     if ed.get("changes"):
         out.append('<div style="border-left:3px solid #c8611e;padding:6px 12px;margin:12px 0;background:#fbeee3">'
                    '<b style="font:700 12px Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:#c8611e">Changed because of your feedback</b><ul style="margin:4px 0 0;padding-left:18px">')
@@ -109,9 +109,23 @@ def email_body(date, config):
             current = a["topic"]
             out.append(f'<h3 style="font:700 12px Arial,sans-serif;text-transform:uppercase;letter-spacing:.1em;color:#7a8098;margin:22px 0 6px;border-bottom:1px solid #dfe2ea;padding-bottom:4px">{e(TOPIC_LABELS.get(current, current))}</h3>')
         kind = "" if a["kind"] == "news" else f' <span style="font:11px Arial,sans-serif;color:#c8611e">{"OPINION" if a["kind"] == "opinion" else "ANALYSIS"}</span>'
-        out.append(f'<div style="margin:10px 0 14px"><div style="font:700 17px Arial,sans-serif;line-height:1.25">{e(a["title"])}{kind}</div>'
-                   f'<div style="font:12px monospace;color:#7a8098">{a["read_minutes"]} min</div>'
-                   '<ul style="margin:4px 0 0;padding-left:18px;color:#4a5068">' + "".join(f"<li>{e(t)}</li>" for t in a["tldr"]) + "</ul></div>")
+        out.append(f'<div style="margin:10px 0 14px"><a href="#{a["id"]}" style="font:700 16px Arial,sans-serif;line-height:1.25;color:#161b2e;text-decoration:none">{e(a["title"])}</a>{kind}'
+                   f' <span style="font:12px monospace;color:#7a8098">{a["read_minutes"]} min</span>'
+                   '<ul style="margin:4px 0 0;padding-left:18px;color:#4a5068;font-size:15px">' + "".join(f"<li>{e(t)}</li>" for t in a["tldr"]) + "</ul></div>")
+    # Full articles below the contents, so the whole brief is readable offline in the mail app.
+    out.append('<h2 style="font:800 13px Arial,sans-serif;text-transform:uppercase;letter-spacing:.14em;color:#c8611e;margin:34px 0 0;border-top:3px solid #c8611e;padding-top:10px">Full articles</h2>')
+    for a in ed["articles"]:
+        out.append(f'<div id="{a["id"]}" style="margin:22px 0;padding-bottom:18px;border-bottom:1px solid #dfe2ea">'
+                   f'<div style="font:700 11px Arial,sans-serif;text-transform:uppercase;letter-spacing:.1em;color:#7a8098">{e(TOPIC_LABELS.get(a["topic"], a["topic"]))} · {a["read_minutes"]} min</div>'
+                   f'<div style="font:700 19px Arial,sans-serif;line-height:1.25;margin:4px 0 8px">{e(a["title"])}</div>')
+        out += [f"<p>{e(para)}</p>" for para in a["body"]]
+        if a.get("why_it_matters"):
+            label = "Why it matters for KHD" if a["topic"] == "industry" else "Why it matters"
+            out.append(f'<p style="background:#fbeee3;padding:8px 12px;font-size:15px"><b style="font:700 11px Arial,sans-serif;text-transform:uppercase;color:#c8611e">{label}</b><br>{e(a["why_it_matters"])}</p>')
+        out.append('<p style="font:12px Arial,sans-serif;color:#7a8098">Sources: ' + " · ".join(
+            f'<a href="{e(s["url"])}" style="color:#7a8098">{e(s["outlet"])}</a>' for s in a["sources"]) + "</p></div>")
+    if url:
+        out.append(f'<p style="font:600 14px Arial,sans-serif;text-align:center"><a href="{e(url)}" style="color:#c8611e">Rate today\'s articles in the live brief</a></p>')
     out.append("</div></div>")
     return "".join(out)
 
