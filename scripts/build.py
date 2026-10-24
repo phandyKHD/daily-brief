@@ -95,7 +95,8 @@ def email_body(date, config):
            '<div style="padding:16px 20px">']
     if url:
         out.append(f'<p style="font:600 14px Arial,sans-serif"><a href="{e(url)}" style="color:#c8611e">Open the live brief to read and rate</a>. '
-                   'Every article is in full below, so this email works offline.</p>')
+                   'Every article is in full below, so this email works offline. '
+                   'For a PDF, tap <b>Save edition as PDF</b> in the live brief.</p>')
     else:
         out.append('<p style="font:600 14px Arial,sans-serif">Every article is in full below, so this email works offline.</p>')
     if ed.get("changes"):

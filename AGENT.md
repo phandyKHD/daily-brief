@@ -125,7 +125,7 @@ Load `mcp__Gmail__send_message` (ToolSearch `select:mcp__Gmail__send_message`) a
 - **subject:** `Daily Brief · Sat 25 Oct · 14 reads, 38 min`
 - **htmlBody:** the exact output of `python3 scripts/build.py <date> --email-body` (contents, TL;DRs, the changes note, every article in full and the viewer link). It is long: read it in chunks and pass it verbatim. The full text in the body is what makes the brief readable offline in the mail app.
 - **body:** one plain-text line with the article count, reading time and the viewer link.
-- No attachment (a base64 copy of the viewer would be several times larger and is not needed).
+- No attachment. Do not try to attach the PDF: passing a ~90 KB base64 file through the Gmail tool failed in testing. The PDFs are available from the viewer instead.
 
 ## 9. Finish
 
