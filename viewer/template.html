@@ -132,6 +132,13 @@ main .wrap { padding-block: 18px 60px; display: grid; gap: 14px; }
 .card h3 { margin: 0; font-family: var(--f-display); font-stretch: 88%; font-weight: 720; font-size: var(--step-2); line-height: 1.18; text-wrap: balance; letter-spacing: -.005em; }
 .update-of { font-size: .875rem; color: var(--ink-3); font-style: italic; }
 .tldr { margin: 0; padding-left: 18px; color: var(--ink-2); font-size: .98rem; display: grid; gap: 3px; }
+.head-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.thumbs { display: inline-flex; gap: 6px; margin-left: auto; }
+.thumb { width: 40px; height: 36px; border: 1px solid var(--rule); background: var(--surface); border-radius: 999px; padding: 7px; cursor: pointer; color: var(--ink-3); }
+.thumb svg { width: 100%; height: 100%; display: block; fill: currentColor; }
+.thumb.down svg { transform: scaleY(-1); }
+.thumb:hover { border-color: var(--ink-3); }
+.thumb[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
 .toggle { justify-self: start; background: none; border: 0; padding: 2px 0; font-family: var(--f-display); font-weight: 650; font-size: .85rem; color: var(--accent); cursor: pointer; }
 
 .card-body { border-top: 1px solid var(--rule); padding: 18px; display: grid; gap: 16px; }
@@ -282,6 +289,7 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     ["more", "More like this"], ["less", "Less like this"], ["too_long", "Too long"],
     ["too_shallow", "Too shallow"], ["already_knew", "Already knew"], ["biased", "Biased"], ["great_source", "Great source"]
   ];
+  var THUMB = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10v11H3V10h4zm2 11h8.3a2 2 0 0 0 2-1.6l1.4-7A2 2 0 0 0 18.7 10H14l.8-4.2a1.6 1.6 0 0 0-2.9-1.2L9 10v11z"/></svg>';
   var STAR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6 6.5.8-4.8 4.5 1.2 6.5L12 17.3l-5.8 3.1 1.2-6.5L2.6 9.4l6.5-.8z"/></svg>';
 
   var editions = [DATA.edition].concat(DATA.archive || []);
@@ -320,17 +328,29 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
       state.db = db;
       var dates = editions.map(function (e) { return e.date; }).slice(0, 30);
       db.collection("ratings").where("date", "in", dates).onSnapshot(function (snap) {
+        var changed = [];
         snap.docs.forEach(function (d) {
           var v = d.data();
           if (!v) return;
-          var k = d.id;
-          // Keep the local copy while this page has an unsaved edit for it.
+          var k = d.id, local = state.ratings[k];
+          // Keep the local copy while this page has an unsaved edit for it,
+          // and ignore echoes of our own writes (same or older timestamp).
           if (pending[k] || writing[k]) return;
+          if (local && local.updated_at && v.updated_at && local.updated_at >= v.updated_at) return;
           // Snapshot data is frozen (arrays included), so keep a deep, editable copy.
           state.ratings[k] = JSON.parse(JSON.stringify(v));
+          changed.push(k);
         });
+        if (!changed.length) return;
         lsSave();
-        renderAll(true);
+        // Patch only the cards that changed, and never the one you are typing in.
+        var active = document.activeElement;
+        changed.forEach(function (k) {
+          var card = $("card-" + k), p = splitKey(k), a = findArt(p);
+          if (card && a && !(active && card.contains(active))) rerenderCard(p.date, a);
+        });
+        renderRail();
+        if (state.view === "archive") renderArchive();
       }, function () { setDbStatus("Ratings sync stopped. Reload the page to reconnect."); });
     }).catch(function () {});
   }
@@ -339,7 +359,7 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     if (b) { b.textContent = msg; b.hidden = !msg; }
   }
 
-  function queueSave(date, art) {
+  function queueSave(date, art, delay) {
     var k = key(date, art.id);
     var r = state.ratings[k];
     r.updated_at = new Date().toISOString();
@@ -348,7 +368,7 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     if (!state.db) { showSaved(k, OFFLINE ? "Saved on this device" : "Saved on this device (not synced)", "ok"); return; }
     pending[k] = true;
     clearTimeout(timers[k]);
-    timers[k] = setTimeout(function () { flush(k); }, 700);
+    timers[k] = setTimeout(function () { flush(k); }, delay || 700);
   }
   function flush(k) {
     if (writing[k]) { timers[k] = setTimeout(function () { flush(k); }, 400); return; }
@@ -377,14 +397,14 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
         date: date, article_id: art.id, round: art.round || 1, topic: art.topic, title: art.title, kind: art.kind,
         read_minutes: art.read_minutes, tags: art.tags || [],
         outlets: (art.sources || []).map(function (s) { return s.outlet; }),
-        relevance: 0, quality: 0, quick_tags: [], feedback: "", updated_at: null
+        relevance: 0, quality: 0, summary_vote: 0, quick_tags: [], feedback: "", updated_at: null
       };
     }
     return state.ratings[k];
   }
   function isRated(date, art) {
     var r = state.ratings[key(date, art.id)];
-    return !!(r && (r.relevance || r.quality));
+    return !!(r && (r.relevance || r.quality || r.summary_vote));
   }
 
   // ---------- refresh ----------
@@ -616,17 +636,24 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     var r = state.ratings[k];
     var open = !!state.open[k] || OFFLINE;
     var rated = r && (r.relevance || r.quality);
+    var vote = (r && r.summary_vote) || 0;
     var h = '<article class="card" id="card-' + k + '" style="--tc: var(--t-' + esc(a.topic) + ')">';
     h += '<div class="card-head" data-toggle="' + k + '">';
     h += '<div class="meta"><span class="topic">' + esc(TOPICS[a.topic] || a.topic) + "</span>";
     if (a.kind && a.kind !== "news") h += '<span class="kind ' + esc(a.kind) + '">' + (a.kind === "opinion" ? "Opinion" : "Analysis") + "</span>";
     h += '<span class="mins">' + (a.read_minutes || 2) + " min</span>";
     if (rated) h += '<span class="rated">Rated R' + (r.relevance || "–") + " · Q" + (r.quality || "–") + "</span>";
+    else if (vote) h += '<span class="rated">' + (vote > 0 ? "Want more" : "Not for me") + "</span>";
     h += "</div>";
     h += "<h3>" + esc(a.title) + "</h3>";
     if (a.update_of) h += '<div class="update-of">Update to: ' + esc(a.update_of) + "</div>";
     h += '<ul class="tldr">' + (a.tldr || []).map(function (t) { return "<li>" + esc(t) + "</li>"; }).join("") + "</ul>";
+    h += '<div class="head-actions">';
     if (!OFFLINE) h += '<button type="button" class="toggle" aria-expanded="' + open + '">' + (open ? "Close" : "Read the full article") + "</button>";
+    h += '<span class="thumbs" role="group" aria-label="Quick rating from the summary">' +
+      '<button type="button" class="thumb" data-vote="1" data-k="' + k + '" aria-pressed="' + (vote > 0) + '" aria-label="Want more like this" title="Want more like this">' + THUMB + "</button>" +
+      '<button type="button" class="thumb down" data-vote="-1" data-k="' + k + '" aria-pressed="' + (vote < 0) + '" aria-label="Not for me" title="Not for me">' + THUMB + "</button></span>";
+    h += "</div>";
     h += "</div>";
     if (open) {
       var paras = a.body.map(function (p) { return "<p>" + esc(p) + "</p>"; });
@@ -765,6 +792,16 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     if (t.dataset.filter) { state.filter = t.dataset.filter; renderAll(); return; }
     if (t.dataset.date) { state.date = t.dataset.date; state.view = "today"; state.filter = "all"; renderAll(); window.scrollTo(0, 0); return; }
     if (t.dataset.goToday) { state.date = DATA.edition.date; renderAll(); return; }
+    if (t.dataset.vote) {
+      var pv = splitKey(t.dataset.k), av = findArt(pv);
+      if (!av) return;
+      var rv = ratingFor(pv.date, av), v = +t.dataset.vote;
+      rv.summary_vote = rv.summary_vote === v ? 0 : v;
+      rerenderCard(pv.date, av);
+      queueSave(pv.date, av);
+      renderRail();
+      return;
+    }
     if (t.dataset.share) { doShare(t); return; }
     if (t.dataset.pdf) {
       var pp = splitKey(t.dataset.pdf), pa = findArt(pp);
@@ -807,7 +844,13 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     var p = splitKey(ta.dataset.k), a = findArt(p);
     if (!a) return;
     ratingFor(p.date, a).feedback = ta.value;
-    queueSave(p.date, a);
+    queueSave(p.date, a, 1500);
+  });
+  document.addEventListener("focusout", function (ev) {
+    var ta = ev.target;
+    if (ta.tagName !== "TEXTAREA" || !ta.dataset.k || !pending[ta.dataset.k]) return;
+    clearTimeout(timers[ta.dataset.k]);
+    flush(ta.dataset.k);
   });
 
   function splitKey(k) { var i = k.indexOf("_"); return { date: k.slice(0, i), id: k.slice(i + 1) }; }

@@ -21,7 +21,9 @@ RATINGS = os.path.join(ROOT, "data", "ratings.jsonl")
 FEEDBACK = os.path.join(ROOT, "data", "feedback-log.md")
 STATS = os.path.join(ROOT, "data", "stats.json")
 HALF_LIFE_DAYS = 7  # EWMA weight halves every 7 days, so ~14 days dominate
-COMPARE = ("relevance", "quality", "quick_tags", "feedback")
+COMPARE = ("relevance", "quality", "summary_vote", "quick_tags", "feedback")
+# A thumbs vote from the summary stands in for relevance when no stars were given.
+VOTE_RELEVANCE = {1: 4.0, -1: 1.5}
 
 
 def load_existing():
@@ -43,13 +45,14 @@ def normalise(doc):
     r["key"] = key
     r["relevance"] = int(r.get("relevance") or 0)
     r["quality"] = int(r.get("quality") or 0)
+    r["summary_vote"] = int(r.get("summary_vote") or 0)
     r["quick_tags"] = sorted(r.get("quick_tags") or [])
     r["feedback"] = (r.get("feedback") or "").strip()
     return r
 
 
 def is_empty(r):
-    return not (r["relevance"] or r["quality"] or r["quick_tags"] or r["feedback"])
+    return not (r["relevance"] or r["quality"] or r.get("summary_vote") or r["quick_tags"] or r["feedback"])
 
 
 def stats_from(latest, today):
@@ -59,9 +62,10 @@ def stats_from(latest, today):
     def add(bucket, name, r, w):
         b = acc[bucket].setdefault(name, {"n": 0, "rel_sum": 0, "rel_n": 0, "q_sum": 0, "q_n": 0, "ew_sum": 0.0, "ew_w": 0.0})
         b["n"] += 1
-        if r["relevance"]:
-            b["rel_sum"] += r["relevance"]; b["rel_n"] += 1
-            b["ew_sum"] += r["relevance"] * w; b["ew_w"] += w
+        rel = r["relevance"] or VOTE_RELEVANCE.get(r.get("summary_vote") or 0, 0)
+        if rel:
+            b["rel_sum"] += rel; b["rel_n"] += 1
+            b["ew_sum"] += rel * w; b["ew_w"] += w
         if r["quality"]:
             b["q_sum"] += r["quality"]; b["q_n"] += 1
 
@@ -165,6 +169,10 @@ def main():
     print(f"Ingested {new} new and {changed} changed ratings ({len(latest)} total).")
     for name, s in stats["topics"].items():
         print(f"  topic {name:12s} n={s['n']:3d} rel={s['avg_relevance']} q={s['avg_quality']} ewma={s['ewma_relevance']}")
+    ups = sum(1 for r in latest.values() if r.get("summary_vote") == 1)
+    downs = sum(1 for r in latest.values() if r.get("summary_vote") == -1)
+    if ups or downs:
+        print(f"  summary votes: {ups} up, {downs} down (counted as relevance 4 / 1.5 where no stars were given)")
     if stats["quick_tags"]:
         print("  quick tags:", ", ".join(f"{k}×{v['n']}" for k, v in stats["quick_tags"].items()))
     if notes:

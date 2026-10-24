@@ -37,6 +37,7 @@ Use the ingest summary and `data/stats.json`:
 - **Tags**: tags with average relevance ≥ 4 (at least 2 ratings) become search leads. Tags ≤ 2 are avoided.
 - **Sources**: outlets with average quality ≥ 4 are preferred. Outlets < 2.5 after 3+ ratings are not used as a primary source.
 - **Length**: if `too_long` is frequent or 4-minute pieces score low on quality, shift toward 2 minutes. If `too_shallow` is frequent, allow more 3–4 minute pieces.
+- **Thumbs from the summary** (`summary_vote` +1/−1) mean Peter judged the story from its headline and TL;DR alone. They count as relevance 4 / 1.5 when no stars were given (`ingest_ratings.py` already does this). A thumbs-down on a summary is a strong signal about the story angle or topic, not the writing.
 - **Unrated articles** older than 3 days count as a weak negative for their topic only.
 - Update `profile/learned.md` with anything new, citing dates. On **Sundays**, rewrite it compactly, removing outdated or contradicted points.
 - Write 1–3 short plain sentences for the edition's `changes` field saying what changed because of Peter's feedback (e.g. "More China coverage: you rated it 4.6 this week."). Empty list if nothing changed.
