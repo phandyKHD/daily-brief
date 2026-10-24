@@ -74,8 +74,14 @@ Give each desk: today's date, its slot counts and leads, the relevant `interests
 > - 3–6 lowercase `tags` naming the main entities and themes (e.g. `taiwan`, `reform uk`, `drones`, `listeria`, `ai agents`).
 > - If a story continues one from the last 7 days, set `update_of` to that article's title and focus on what is new.
 >
+> - **Visuals.** Add a `visual` only when the story turns on numbers that a picture makes clearer: a comparison, a trend or two or three headline figures. Aim for 4–6 per edition, never forced. Every number must appear in the article body and come from a source you read; never estimate, interpolate or add data points. Choose the form by the job:
+>   - `bar`: compare 2–10 values in the same unit (before/after, countries, categories). Negative values are fine.
+>   - `line`: a trend over time with 4–24 points, in order (only if a source gives the whole series).
+>   - `stats`: 1–4 headline figures that don't share a scale (e.g. "7+" ships hit, "~30" sailors missing). Values may be short strings.
+>   Shape: `{"type": "bar"|"line"|"stats", "title": "…", "note": "what is measured, period, unit" (optional), "data": [{"label": "…", "value": 4.5}], "prefix": "£" (optional), "unit": "%" (optional), "decimals": 1 (optional), "highlight": "<one data label to emphasise>" (optional), "source": "outlet(s)"}`. One unit per chart: never mix £ and %, or two scales, in one chart. Otherwise `visual` is `null`.
+>
 > Output a JSON array of objects with exactly these fields:
-> `topic, title, kind, read_minutes, tldr (3 short strings), body (array of paragraph strings), why_it_matters (string or null), sources (array of {outlet, title, url}), tags (array), update_of (string or null)`.
+> `topic, title, kind, read_minutes, tldr (3 short strings), body (array of paragraph strings), why_it_matters (string or null), sources (array of {outlet, title, url}), tags (array), update_of (string or null), visual (object or null)`.
 > Write it to the given file path, then reply with one line per article: title and word count.
 
 ## 5. Edit
@@ -103,7 +109,7 @@ Run `python3 scripts/assemble_edition.py <date> daily --lead "<exact title of th
   "articles": [ { "id": "a01", "round": 1, "topic": "…", "title": "…", "kind": "news",
                   "read_minutes": 2, "tldr": ["…","…","…"], "body": ["…"],
                   "why_it_matters": null, "sources": [{"outlet":"…","title":"…","url":"…"}],
-                  "tags": ["…"], "update_of": null } ],
+                  "tags": ["…"], "update_of": null, "visual": null } ],
   "run": {"mode": "daily", "duration_minutes": 0, "fetches": 0, "notes": []}
 }
 ```

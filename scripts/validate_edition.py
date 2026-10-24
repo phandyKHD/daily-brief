@@ -34,6 +34,35 @@ def check_link(url):
         return False
 
 
+def check_visual(v):
+    errs = []
+    if not isinstance(v, dict):
+        return ["must be an object or null"]
+    if v.get("type") not in ("bar", "line", "stats"):
+        errs.append("type must be bar, line or stats")
+    for f in ("title", "source"):
+        if not (isinstance(v.get(f), str) and v[f].strip()):
+            errs.append(f"needs a {f}")
+    data = v.get("data")
+    if not isinstance(data, list):
+        return errs + ["data must be a list"]
+    lo, hi = {"bar": (2, 10), "line": (4, 24), "stats": (1, 4)}.get(v.get("type"), (1, 24))
+    if not lo <= len(data) <= hi:
+        errs.append(f"{v.get('type')} needs {lo}-{hi} data points, has {len(data)}")
+    for d in data:
+        if not (isinstance(d, dict) and isinstance(d.get("label"), str) and d["label"].strip()):
+            errs.append("every data point needs a label")
+            break
+        ok = isinstance(d.get("value"), (int, float)) and not isinstance(d.get("value"), bool)
+        if v.get("type") == "stats":
+            ok = ok or (isinstance(d.get("value"), str) and 0 < len(d["value"]) <= 12)
+        if not ok:
+            errs.append(f"bad value for '{d['label']}' (numbers only; stats may use a short string)")
+    if v.get("highlight") and v["highlight"] not in [d.get("label") for d in data if isinstance(d, dict)]:
+        errs.append("highlight must match a data label")
+    return errs
+
+
 def validate(ed, check_links=False):
     errors, warnings = [], []
     for f in ("date", "generated_at", "changes", "rounds", "articles", "run"):
@@ -96,6 +125,8 @@ def validate(ed, check_links=False):
             errors.append(f"{where}: needs 3-6 tags")
         elif any(t != t.lower() for t in a["tags"]):
             errors.append(f"{where}: tags must be lowercase")
+        if a.get("visual") is not None:
+            errors += [f"{where}: visual: {e}" for e in check_visual(a["visual"])]
         per_round_topic.setdefault(a["round"], {}).setdefault(a["topic"], 0)
         per_round_topic[a["round"]][a["topic"]] += 1
 

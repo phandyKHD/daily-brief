@@ -60,7 +60,26 @@
         "business rates",
         "succession"
       ],
-      "update_of": null
+      "update_of": null,
+      "visual": {
+        "type": "bar",
+        "title": "Tax on handing down a £1m business by share buy-back",
+        "note": "Taxed as a capital gain today versus as income under the reported proposal (higher-rate taxpayer).",
+        "prefix": "£",
+        "unit": "k",
+        "data": [
+          {
+            "label": "Now: capital gains tax at 24%",
+            "value": 240
+          },
+          {
+            "label": "Proposed: income tax at up to 45%",
+            "value": 450
+          }
+        ],
+        "highlight": "Proposed: income tax at up to 45%",
+        "source": "Business Matters"
+      }
     },
     {
       "id": "a02",
@@ -108,7 +127,8 @@
         "conveyor safety",
         "receivership"
       ],
-      "update_of": null
+      "update_of": null,
+      "visual": null
     },
     {
       "id": "a03",
@@ -151,7 +171,8 @@
         "fsai",
         "northern ireland"
       ],
-      "update_of": null
+      "update_of": null,
+      "visual": null
     },
     {
       "id": "a04",
@@ -194,7 +215,8 @@
         "christopher harborne",
         "polling"
       ],
-      "update_of": null
+      "update_of": null,
+      "visual": null
     },
     {
       "id": "a05",
@@ -237,7 +259,8 @@
         "andy burnham",
         "wildfires"
       ],
-      "update_of": null
+      "update_of": null,
+      "visual": null
     },
     {
       "id": "a06",
@@ -280,7 +303,26 @@
         "abu dhabi",
         "witkoff"
       ],
-      "update_of": null
+      "update_of": null,
+      "visual": {
+        "type": "stats",
+        "title": "The territory question",
+        "data": [
+          {
+            "label": "of Ukraine held by Russia, per Zelensky",
+            "value": "19.3%"
+          },
+          {
+            "label": "what giving up the whole Donbas would mean",
+            "value": "25%"
+          },
+          {
+            "label": "Russian drones launched overnight into Friday",
+            "value": "176"
+          }
+        ],
+        "source": "Kyiv Post; ISW"
+      }
     },
     {
       "id": "a07",
@@ -328,7 +370,8 @@
         "diesel",
         "tariffs"
       ],
-      "update_of": null
+      "update_of": null,
+      "visual": null
     },
     {
       "id": "a08",
@@ -377,7 +420,26 @@
         "germany",
         "shipping"
       ],
-      "update_of": null
+      "update_of": null,
+      "visual": {
+        "type": "stats",
+        "title": "Black Sea shipping under attack",
+        "data": [
+          {
+            "label": "cargo ships hit off Romania and Bulgaria in two weeks",
+            "value": "7+"
+          },
+          {
+            "label": "sailors killed or missing",
+            "value": "~30"
+          },
+          {
+            "label": "nautical miles off Constanta where Khoryv sank",
+            "value": "13"
+          }
+        ],
+        "source": "Al Jazeera (wire reports)"
+      }
     },
     {
       "id": "a09",
@@ -421,7 +483,8 @@
         "f-35a",
         "uk armed forces"
       ],
-      "update_of": null
+      "update_of": null,
+      "visual": null
     },
     {
       "id": "a10",
@@ -474,7 +537,8 @@
         "anti-corruption",
         "2027 party congress"
       ],
-      "update_of": null
+      "update_of": null,
+      "visual": null
     },
     {
       "id": "a11",
@@ -523,7 +587,38 @@
         "trade surplus",
         "property"
       ],
-      "update_of": null
+      "update_of": null,
+      "visual": {
+        "type": "bar",
+        "title": "China's economy: exports strong, home demand weak",
+        "note": "Year-on-year change. GDP is for July to September; investment figures cover January to September.",
+        "unit": "%",
+        "decimals": 1,
+        "data": [
+          {
+            "label": "GDP, third quarter",
+            "value": 4.5
+          },
+          {
+            "label": "Industrial output, September",
+            "value": 5.5
+          },
+          {
+            "label": "Retail sales, September",
+            "value": 1.1
+          },
+          {
+            "label": "Fixed-asset investment, 9 months",
+            "value": -7.2
+          },
+          {
+            "label": "Property investment, 9 months",
+            "value": -20.6
+          }
+        ],
+        "highlight": "Property investment, 9 months",
+        "source": "National Bureau of Statistics via Il Sole 24 Ore and Kaohoon International"
+      }
     },
     {
       "id": "a12",
@@ -565,7 +660,8 @@
         "ai agents",
         "small manufacturers"
       ],
-      "update_of": null
+      "update_of": null,
+      "visual": null
     },
     {
       "id": "a13",
@@ -607,7 +703,8 @@
         "open standards",
         "ai agents"
       ],
-      "update_of": null
+      "update_of": null,
+      "visual": null
     },
     {
       "id": "a14",
@@ -649,7 +746,8 @@
         "canada",
         "trade"
       ],
-      "update_of": null
+      "update_of": null,
+      "visual": null
     },
     {
       "id": "a15",
@@ -692,7 +790,30 @@
         "interconnector",
         "winter outlook"
       ],
-      "update_of": null
+      "update_of": null,
+      "visual": {
+        "type": "bar",
+        "title": "Bacton–Zeebrugge import capacity",
+        "note": "Gigawatts of gas import capacity on the pipeline.",
+        "unit": "GW",
+        "decimals": 1,
+        "data": [
+          {
+            "label": "Earlier capacity",
+            "value": 33.5
+          },
+          {
+            "label": "Kept this winter under the new deal",
+            "value": 27.8
+          },
+          {
+            "label": "Without the deal",
+            "value": 16.5
+          }
+        ],
+        "highlight": "Kept this winter under the new deal",
+        "source": "Energy Live News"
+      }
     },
     {
       "id": "a16",
@@ -734,7 +855,8 @@
         "uk science",
         "manufacturing scale-up"
       ],
-      "update_of": null
+      "update_of": null,
+      "visual": null
     }
   ],
   "run": {

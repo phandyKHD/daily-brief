@@ -82,6 +82,41 @@ def offline_document(body):
     return head + body + "</body></html>"
 
 
+def fmt_num(v, vis):
+    if isinstance(v, str):
+        return v
+    d = vis.get("decimals")
+    if d is None:
+        d = 1 if (v % 1 and abs(v) < 10) else 0
+    return ("−" if v < 0 else "") + (vis.get("prefix") or "") + f"{abs(v):,.{d}f}" + (vis.get("unit") or "")
+
+
+def email_figure(vis):
+    """Charts as plain HTML tables: mail apps strip SVG and scripts."""
+    e = html.escape
+    out = ['<div style="border-top:1px solid #dfe2ea;border-bottom:1px solid #dfe2ea;padding:10px 0;margin:12px 0">',
+           f'<div style="font:700 14px Arial,sans-serif">{e(vis["title"])}</div>']
+    if vis.get("note"):
+        out.append(f'<div style="font:13px Arial,sans-serif;color:#4a5068">{e(vis["note"])}</div>')
+    if vis["type"] == "stats":
+        out.append('<table cellpadding="0" cellspacing="6" style="width:100%"><tr>' + "".join(
+            f'<td style="background:#f4f5f8;padding:8px 10px;vertical-align:top"><div style="font:700 20px Arial,sans-serif">{e(fmt_num(d["value"], vis))}</div>'
+            f'<div style="font:12px Arial,sans-serif;color:#4a5068">{e(d["label"])}</div></td>' for d in vis["data"]) + "</tr></table>")
+    else:
+        # Line charts become a compact bar list too: every value stays readable without images.
+        top = max(abs(d["value"]) for d in vis["data"]) or 1
+        out.append('<table cellpadding="0" cellspacing="0" style="width:100%;margin-top:6px;font:12px Arial,sans-serif">')
+        for d in vis["data"]:
+            pct = max(1, round(abs(d["value"]) / top * 100))
+            colour = "#c8611e" if vis.get("highlight") == d["label"] else "#2c4f9e"
+            out.append(f'<tr><td style="width:34%;padding:3px 8px 3px 0;color:#4a5068">{e(d["label"])}</td>'
+                       f'<td style="padding:3px 0"><div style="background:{colour};height:12px;width:{pct}%;border-radius:0 3px 3px 0"></div></td>'
+                       f'<td style="width:70px;padding:3px 0 3px 8px;font-weight:700;white-space:nowrap">{e(fmt_num(d["value"], vis))}</td></tr>')
+        out.append("</table>")
+    out.append(f'<div style="font:11px Arial,sans-serif;color:#7a8098;margin-top:4px">Source: {e(vis["source"])}</div></div>')
+    return "".join(out)
+
+
 def email_body(date, config):
     ed = load_edition(date)
     e = html.escape
@@ -119,7 +154,11 @@ def email_body(date, config):
         out.append(f'<div id="{a["id"]}" style="margin:22px 0;padding-bottom:18px;border-bottom:1px solid #dfe2ea">'
                    f'<div style="font:700 11px Arial,sans-serif;text-transform:uppercase;letter-spacing:.1em;color:#7a8098">{e(TOPIC_LABELS.get(a["topic"], a["topic"]))} · {a["read_minutes"]} min</div>'
                    f'<div style="font:700 19px Arial,sans-serif;line-height:1.25;margin:4px 0 8px">{e(a["title"])}</div>')
-        out += [f"<p>{e(para)}</p>" for para in a["body"]]
+        paras = [f"<p>{e(para)}</p>" for para in a["body"]]
+        if a.get("visual"):
+            at = min(2, len(paras))
+            paras = paras[:at] + [email_figure(a["visual"])] + paras[at:]
+        out += paras
         if a.get("why_it_matters"):
             label = "Why it matters for KHD" if a["topic"] == "industry" else "Why it matters"
             out.append(f'<p style="background:#fbeee3;padding:8px 12px;font-size:15px"><b style="font:700 11px Arial,sans-serif;text-transform:uppercase;color:#c8611e">{label}</b><br>{e(a["why_it_matters"])}</p>')
