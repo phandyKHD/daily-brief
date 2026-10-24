@@ -296,7 +296,8 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
           var k = d.id;
           // Keep the local copy while this page has an unsaved edit for it.
           if (pending[k] || writing[k]) return;
-          state.ratings[k] = Object.assign({}, v);
+          // Snapshot data is frozen (arrays included), so keep a deep, editable copy.
+          state.ratings[k] = JSON.parse(JSON.stringify(v));
         });
         lsSave();
         renderAll(true);
@@ -636,8 +637,9 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     if (t.classList.contains("qtag")) {
       var p2 = splitKey(t.dataset.k), a2 = findArt(p2);
       if (!a2) return;
-      var r2 = ratingFor(p2.date, a2), q = t.dataset.q, i = r2.quick_tags.indexOf(q);
-      if (i >= 0) r2.quick_tags.splice(i, 1); else r2.quick_tags.push(q);
+      var r2 = ratingFor(p2.date, a2), q = t.dataset.q, cur = (r2.quick_tags || []).slice(), i = cur.indexOf(q);
+      if (i >= 0) cur.splice(i, 1); else cur.push(q);
+      r2.quick_tags = cur;
       queueSave(p2.date, a2);
       t.setAttribute("aria-pressed", String(i < 0));
       return;
