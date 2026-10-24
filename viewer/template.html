@@ -208,6 +208,7 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     </aside>
     <div class="mast-actions">
       <button class="btn btn-accent" id="refresh" type="button">Refresh: add more articles</button>
+      <button class="btn btn-ghost" id="edition-pdf" type="button">Save edition as PDF</button>
       <span class="status-line" id="refresh-status" role="status"></span>
     </div>
   </div>
@@ -363,6 +364,7 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     var btn = $("refresh"), st = $("refresh-status");
     if (OFFLINE) {
       btn.hidden = true;
+      $("edition-pdf").hidden = true;
       st.innerHTML = 'Offline copy. Ratings here stay on this device.' + (DATA.viewer_url ? ' <a href="' + esc(DATA.viewer_url) + '" style="color:var(--sky-ink)">Open the live brief</a> to teach the agent.' : '');
       return;
     }
@@ -470,6 +472,27 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     } catch (e) { fallback(); }
   }
 
+  // PDFs are built by scripts/make_pdf.py and published next to the page as pdf/<date>/<file>.pdf.
+  function savePdf(path, filename, msgEl) {
+    function say(t) { if (msgEl) msgEl.textContent = t; }
+    if (!window.claude || !window.claude.use) { say("Saving PDFs only works inside claude.ai."); return; }
+    say("Preparing PDF…");
+    var blobP = fetch(path).then(function (r) { if (!r.ok) throw { code: "missing" }; return r.arrayBuffer(); });
+    Promise.all([window.claude.use("downloads"), blobP]).then(function (res) {
+      if (!res[0]) throw { code: "unavailable" };
+      return res[0].save({ filename: filename, data: res[1] });
+    }).then(function () {
+      say("Saved. Share it from your Downloads or Files app.");
+    }).catch(function (e) {
+      var c = e && e.code;
+      say(c === "declined" ? "Not saved." :
+        c === "missing" ? "No PDF for this edition yet. It is made with each morning's brief." :
+        c === "rate_limited" ? "A save is already open. Finish that one first." :
+        c === "unavailable" || c === "not_granted" ? "This view can't save files. Open the brief on claude.ai." :
+        "Couldn't save the PDF (" + (c || "error") + ").");
+    });
+  }
+
   function starRow(name, value, k) {
     var out = '<div class="stars" role="radiogroup" aria-label="' + name + '">';
     for (var i = 1; i <= 5; i++) {
@@ -503,6 +526,7 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
       }).join("") + "</ul></div>";
       if (a.tags && a.tags.length) h += '<div class="tags">' + a.tags.map(function (t) { return "<span>#" + esc(t) + "</span>"; }).join("") + "</div>";
       h += '<div class="share"><h4 style="margin:0;font-family:var(--f-display);font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-3)">Share</h4><div class="share-row">' +
+        (OFFLINE ? "" : '<button type="button" class="share-btn" data-pdf="' + k + '">Save as PDF</button>') +
         '<button type="button" class="share-btn" data-share="summary" data-k="' + k + '">Copy summary</button>' +
         '<button type="button" class="share-btn" data-share="full" data-k="' + k + '">Copy full article</button>' +
         '<a class="share-btn" target="_blank" rel="noopener" href="mailto:?subject=' + encodeURIComponent(a.title) + '&body=' + encodeURIComponent(shareText(a, "summary")) + '">Email</a>' +
@@ -624,6 +648,12 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     if (t.dataset.date) { state.date = t.dataset.date; state.view = "today"; state.filter = "all"; renderAll(); window.scrollTo(0, 0); return; }
     if (t.dataset.goToday) { state.date = DATA.edition.date; renderAll(); return; }
     if (t.dataset.share) { doShare(t); return; }
+    if (t.dataset.pdf) {
+      var pp = splitKey(t.dataset.pdf), pa = findArt(pp);
+      if (pa) savePdf("pdf/" + pp.date + "/" + pa.id + ".pdf", pa.title.replace(/[^\w\s-]/g, "").trim().slice(0, 80) + ".pdf", document.querySelector('[data-share-msg="' + t.dataset.pdf + '"]'));
+      return;
+    }
+    if (t.id === "edition-pdf") { savePdf("pdf/" + state.date + "/daily-brief-" + state.date + ".pdf", "daily-brief-" + state.date + ".pdf", $("refresh-status")); return; }
     if (t.classList.contains("star")) {
       var parts = splitKey(t.dataset.k), a = findArt(parts);
       if (!a) return;
