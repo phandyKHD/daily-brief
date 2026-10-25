@@ -1,9 +1,9 @@
 {
   "recipient": "peter@khdtechnology.com",
   "timezone": "Europe/London",
-  "schedule": "04:07 Europe/London daily, ready by about 04:30",
+  "schedule": "04:07 Europe/London daily, fires into the project session",
   "viewer_artifact_url": "https://claude.ai/artifact/2Cu5Wokp6MMSy3xkigWmo7",
-  "routine_trigger_id": "trig_015jAPGDAeWMNzWYLAzn97pB",
+  "routine_trigger_id": "trig_01B3VqdUwQVEsL28h1oeCqx1",
   "archive_days": 7,
   "max_fetches_per_run": 40
 }

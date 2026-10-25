@@ -15,7 +15,13 @@ import json
 import os
 import sys
 
-from reportlab import rl_config
+try:
+    from reportlab import rl_config
+except ModuleNotFoundError:
+    # Some images have two Pythons and only /usr/bin/python3 has reportlab.
+    if sys.executable != "/usr/bin/python3" and os.path.exists("/usr/bin/python3"):
+        os.execv("/usr/bin/python3", ["/usr/bin/python3"] + sys.argv)
+    raise
 from reportlab.lib.colors import HexColor
 from reportlab.lib.enums import TA_LEFT
 from reportlab.lib.pagesizes import A4

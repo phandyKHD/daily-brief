@@ -11,11 +11,18 @@ Today's date: run `TZ=Europe/London date +%F`. Use that date everywhere.
 
 ---
 
+## Where this runs
+
+The "Daily Brief" routine (`config.routine_trigger_id`) fires into Peter's own long-lived Claude Code session, the one that built this project. That session has everything the run needs: push access to `phandyKHD/daily-brief`, the Gmail connector, and the Artifact and ArtifactData tools. The 04:07 run and every Refresh press arrive there as a new message. Keep the main conversation lean: do research and the email send in subagents, and read files in pieces rather than whole.
+
 ## 0. Before you start
 
-1. Read `config.json`, `profile/interests.yaml`, `profile/company.md`, `profile/standing-instructions.md`, `profile/learned.md`, `data/stats.json`.
-2. List the last 7 files in `data/editions/` and note every article title and tag (for dedupe).
-3. `profile/standing-instructions.md` outranks everything else. Read it first and obey it.
+1. `cd /home/user/daily-brief && git pull origin main` and `rm -rf dist/desk-*.json dist/ratings-export`.
+2. **Recover anything a failed run left only in the viewer.** `Artifact` read of `config.viewer_artifact_url`, then `python3 scripts/recover_from_viewer.py <saved html path>`. If it recovers anything, commit it as `Recover state from viewer` before continuing.
+
+3. Read `config.json`, `profile/interests.yaml`, `profile/company.md`, `profile/standing-instructions.md`, `profile/learned.md`, `data/stats.json`.
+4. List the last 7 files in `data/editions/` and note every article title and tag (for dedupe).
+5. `profile/standing-instructions.md` outranks everything else. Read it first and obey it.
 
 ## 1. Ingest ratings and feedback
 
@@ -127,10 +134,10 @@ In **refresh** mode, load today's file, append the new articles and a new `round
 
 ## 8. Email (daily mode only)
 
-Load `mcp__Gmail__send_message` (ToolSearch `select:mcp__Gmail__send_message`) and send to `config.recipient`. If the Gmail tool is not available in this session, skip the email and add "Email not sent: Gmail connector not attached to the routine" to `run.notes`.
+Send it from a subagent (the body is ~80 KB and should not pass through the main conversation). The subagent loads `mcp__Gmail__send_message` (ToolSearch `select:mcp__Gmail__send_message`), reads the email file in chunks and sends to `config.recipient`. If the Gmail tool is not available in this session, skip the email and add "Email not sent: Gmail connector not attached to the routine" to `run.notes`.
 
 - **subject:** `Daily Brief · Sat 25 Oct · 14 reads, 38 min`
-- **htmlBody:** the exact output of `python3 scripts/build.py <date> --email-body` (contents, TL;DRs, the changes note, every article in full and the viewer link). It is long: read it in chunks and pass it verbatim. The full text in the body is what makes the brief readable offline in the mail app.
+- **htmlBody:** the exact contents of `dist/email-<date>.html`, written by `python3 scripts/build.py <date> --email-body > dist/email-<date>.html` (contents, TL;DRs, the changes note, every article in full and the viewer link). It is long: read it in chunks and pass it verbatim. The full text in the body is what makes the brief readable offline in the mail app.
 - **body:** one plain-text line with the article count, reading time and the viewer link.
 - No attachment. Do not try to attach the PDF: passing a ~90 KB base64 file through the Gmail tool failed in testing. The PDFs are available from the viewer instead.
 

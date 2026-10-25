@@ -1,1 +1,875 @@
-{"updated": null, "topics": {}, "tags": {}, "sources": {}, "read_time": {}, "quick_tags": {}}
+{
+  "updated": "2026-10-25T04:08:02+00:00",
+  "quick_tags": {
+    "more": {
+      "n": 3,
+      "by_topic": {
+        "uk_politics": 1,
+        "industry": 2
+      }
+    },
+    "too_long": {
+      "n": 2,
+      "by_topic": {
+        "nato": 1,
+        "industry": 1
+      }
+    }
+  },
+  "topics": {
+    "ai": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "china": {
+      "n": 2,
+      "avg_relevance": 3.5,
+      "avg_quality": null,
+      "ewma_relevance": 3.5
+    },
+    "industry": {
+      "n": 3,
+      "avg_relevance": 4.33,
+      "avg_quality": 3.67,
+      "ewma_relevance": 4.33
+    },
+    "nato": {
+      "n": 2,
+      "avg_relevance": 4.5,
+      "avg_quality": 3.5,
+      "ewma_relevance": 4.5
+    },
+    "uk_politics": {
+      "n": 5,
+      "avg_relevance": 4.2,
+      "avg_quality": 3.75,
+      "ewma_relevance": 4.2
+    },
+    "ukraine": {
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "us_politics": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "wildcard": {
+      "n": 2,
+      "avg_relevance": 4.5,
+      "avg_quality": 3.0,
+      "ewma_relevance": 4.5
+    }
+  },
+  "tags": {
+    "2027 party congress": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "abu dhabi": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "acquisitions": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "advanced materials": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "ai agents": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "andy burnham": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.0
+    },
+    "anti-corruption": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "bakery": {
+      "n": 2,
+      "avg_relevance": 5.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 5.0
+    },
+    "barings": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "be ready campaign": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.0
+    },
+    "black sea": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 4.0
+    },
+    "budget 2026": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "business rates": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "canada": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "capital gains tax": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "ccp": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "ceasefire talks": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "china economy": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "christopher harborne": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "cloudnc": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "cma": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "cnc machining": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "conservatives": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.0
+    },
+    "conveyor safety": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "cyber security": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.0
+    },
+    "david wood baking": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "diesel": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "drones": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 4.0
+    },
+    "energy security": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "exports": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "f-35a": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 5.0
+    },
+    "family business": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "france": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 5.0
+    },
+    "frozen dough": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "fsai": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.0
+    },
+    "gas": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "gdp": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "germany": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 4.0
+    },
+    "graham act": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "greens": {
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.0
+    },
+    "hse": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "hybrid warfare": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 4.0
+    },
+    "industrial strategy": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "interconnector": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "investment": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "john healey": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "labour": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.0
+    },
+    "lib dems": {
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.0
+    },
+    "listeria": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.0
+    },
+    "manufacturing scale-up": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "metamaterials": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "midterms": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "nigel farage": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "northern ireland": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.0
+    },
+    "nuclear deterrence": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 5.0
+    },
+    "ofgem": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "opinium": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "php": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.0
+    },
+    "plenum": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "polanski": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "polling": {
+      "n": 3,
+      "avg_relevance": 4.33,
+      "avg_quality": 3.5,
+      "ewma_relevance": 4.33
+    },
+    "property": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "quoting": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "raf": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 5.0
+    },
+    "recall": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.0
+    },
+    "receivership": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "reform": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.0
+    },
+    "reform uk": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "resilience": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.0
+    },
+    "romania": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 4.0
+    },
+    "russian oil": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "sanctions": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "security guarantees": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "shipping": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 4.0
+    },
+    "small manufacturers": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "smoked salmon": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.0
+    },
+    "standards commissioner": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "succession": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "supervalu": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.0
+    },
+    "susan collins": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "tariffs": {
+      "n": 2,
+      "avg_relevance": 3.5,
+      "avg_quality": null,
+      "ewma_relevance": 3.5
+    },
+    "trade": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "trade surplus": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "trump": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "typhoon": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 5.0
+    },
+    "uk armed forces": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 5.0
+    },
+    "uk science": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "wildfires": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.0
+    },
+    "winter outlook": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "witkoff": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "xi jinping": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "zelensky": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    }
+  },
+  "sources": {
+    "AP (via PBS NewsHour)": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "Al Jazeera": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 4.0
+    },
+    "Brit Brief": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "Business Matters": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "Defense News": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 4.0
+    },
+    "Develop3D": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "Energy Live News": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "Food Manufacture": {
+      "n": 3,
+      "avg_relevance": 4.33,
+      "avg_quality": 3.67,
+      "ewma_relevance": 4.33
+    },
+    "Food Safety Authority of Ireland": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.0
+    },
+    "Forces News": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 5.0
+    },
+    "Fox Business": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "GOV.UK": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "GOV.UK (Ministry of Defence)": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 5.0
+    },
+    "Ground News (aggregating South China Morning Post)": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "HuffPost UK": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "ISW (via Kyiv Post)": {
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 4.0
+    },
+    "Il Sole 24 Ore": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "Interpath": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "Just Food (via Yahoo Finance)": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "Kaohoon International (citing Reuters)": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "Kyiv Post": {
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "LBC": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.0
+    },
+    "MachineToolNews.ai": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "Newsquawk": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "Opinium": {
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.0
+    },
+    "PollCheck": {
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.0
+    },
+    "RFE/RL": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "Reuters (via Dawn)": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.0
+    },
+    "Reuters (via Internazionale)": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "South China Morning Post": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "The Globe and Mail": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "The Guardian (via Shango Media)": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "The National": {
+      "n": 2,
+      "avg_relevance": 3.5,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.5
+    },
+    "The Standard (Hong Kong)": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "University of Birmingham": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "Yeni Safak": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "YouGov": {
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.0
+    }
+  },
+  "read_time": {
+    "2": {
+      "n": 17,
+      "avg_relevance": 4.0,
+      "avg_quality": 3.44,
+      "ewma_relevance": 4.0
+    },
+    "3": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    }
+  },
+  "kind": {
+    "analysis": {
+      "n": 6,
+      "avg_relevance": 4.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.0
+    },
+    "news": {
+      "n": 12,
+      "avg_relevance": 4.08,
+      "avg_quality": 3.5,
+      "ewma_relevance": 4.08
+    }
+  }
+}
