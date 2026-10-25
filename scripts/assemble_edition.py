@@ -24,7 +24,7 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ORDER = ["industry", "uk_politics", "ukraine", "nato", "china", "ai", "us_politics", "wildcard"]
-FIELDS = ["topic", "title", "kind", "read_minutes", "tldr", "body", "why_it_matters", "sources", "tags", "update_of", "visual", "from_brief"]
+FIELDS = ["topic", "title", "kind", "read_minutes", "tldr", "body", "why_it_matters", "sources", "tags", "update_of", "visual", "from_brief", "request_focus"]
 BRIEF_FIELDS = ["topic", "title", "summary", "sources", "tags"]
 
 
@@ -63,6 +63,7 @@ def main():
         a["update_of"] = a.get("update_of") or None
         a["visual"] = a.get("visual") or None
         a["from_brief"] = a.get("from_brief") or None
+        a["request_focus"] = a.get("request_focus") or None
         # The viewer adds its own "Why it matters" heading, so drop one the desk wrote into the text.
         a["why_it_matters"] = re.sub(r"^\s*why it matters[^:]{0,20}:\s*", "", a.get("why_it_matters") or "", flags=re.I) or None
         if a["why_it_matters"]:

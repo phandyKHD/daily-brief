@@ -119,6 +119,9 @@ a { color: inherit; }
 .req.done { border-color: var(--good); color: var(--good); background: transparent; }
 .req:disabled { opacity: .6; cursor: default; }
 .asked { color: var(--accent); }
+.focus-box { display: grid; gap: 4px; }
+.focus-box label { font-family: var(--f-display); font-weight: 650; font-size: .82rem; color: var(--ink-2); }
+.focus-box textarea { width: 100%; min-height: 56px; resize: vertical; border: 1px solid var(--rule); border-radius: 8px; padding: 8px 10px; background: var(--surface); font-family: var(--f-body); font-size: 1rem; line-height: 1.4; }
 .req-bar { position: sticky; bottom: max(12px, env(safe-area-inset-bottom, 0px)); z-index: 4; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 14px; background: var(--ink); color: var(--surface); border-radius: 12px; padding: 10px 12px 10px 16px; font-family: var(--f-display); font-size: .9rem; box-shadow: 0 6px 24px rgba(0,0,0,.18); }
 .req-bar .btn-accent { padding: 7px 14px; }
 .chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
@@ -378,7 +381,7 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
       db.collection("requests").where("date", "in", dates).onSnapshot(function (snap) {
         var next = {};
         snap.docs.forEach(function (d) { var v = d.data(); if (v) next[d.id] = JSON.parse(JSON.stringify(v)); });
-        Object.keys(reqPending).forEach(function (k) { if (reqPending[k] === "add") next[k] = next[k] || state.requests[k]; else delete next[k]; });
+        Object.keys(reqPending).forEach(function (k) { if (reqPending[k] === "add") next[k] = state.requests[k] || next[k]; else delete next[k]; });
         state.requests = next;
         renderTabsCount();
         if (state.view === "more" && !(document.activeElement && document.activeElement.tagName === "TEXTAREA")) renderMore(true);
@@ -549,8 +552,13 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     }
     h += '<span class="thumbs" role="group" aria-label="Quick rating">' + ["up", "mid", "down"].map(function (v) {
       return '<button type="button" class="thumb ' + v + '" data-vote="' + v + '" data-k="' + k + '" aria-pressed="' + (vote === v) + '" aria-label="' + VOTE_LABEL[v] + '" title="' + VOTE_LABEL[v] + '">' + THUMB + "</button>";
-    }).join("") + "</span></div></article>";
-    return h;
+    }).join("") + "</span></div>";
+    if (!OFFLINE && req && req.status === "pending") {
+      h += '<div class="focus-box"><label for="focus-' + k + '">Anything to focus on? (optional)</label>' +
+        '<textarea id="focus-' + k + '" data-focus="' + k + '" placeholder="e.g. What it means for UK bakeries. Who supplies their equipment?">' + esc(req.focus || "") + "</textarea>" +
+        '<span class="saved" data-saved="req-' + k + '"></span></div>';
+    }
+    return h + "</article>";
   }
   // The article key (date_aXX) written from a brief, if any edition has one.
   function findWrittenUp(bk) {
@@ -589,6 +597,7 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     }
     queueSave(p.date, b);
     renderMore(true);
+    if (!has) { var fb = $("focus-" + k); if (fb) fb.focus({ preventScroll: true }); }
     if (!state.db) return;
     reqPending[k] = has ? "remove" : "add";
     var ref = state.db.doc("requests/" + k);
@@ -760,7 +769,10 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     h += "</div>";
     h += "<h3>" + esc(a.title) + "</h3>";
     if (a.update_of) h += '<div class="update-of">Update to: ' + esc(a.update_of) + "</div>";
-    if (a.from_brief) h += '<div class="update-of asked">You asked for this one from More stories.</div>';
+    if (a.from_brief) {
+      var fq = state.requests[a.from_brief], ff = (fq && fq.focus) || a.request_focus;
+      h += '<div class="update-of asked">You asked for this one from More stories' + (ff ? ': \u201c' + esc(ff) + '\u201d' : ".") + "</div>";
+    }
     h += '<ul class="tldr">' + (a.tldr || []).map(function (t) { return "<li>" + esc(t) + "</li>"; }).join("") + "</ul>";
     h += '<div class="head-actions">';
     if (!OFFLINE) h += '<button type="button" class="toggle" aria-expanded="' + open + '">' + (open ? "Close" : "Read the full article") + "</button>";
@@ -970,7 +982,34 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     ratingFor(p.date, a).feedback = ta.value;
     queueSave(p.date, a, 1500);
   });
+  var focusTimers = {};
+  function saveFocus(k) {
+    clearTimeout(focusTimers[k]);
+    var rq = state.requests[k];
+    if (!rq || !state.db) return;
+    var el = document.querySelector('[data-saved="req-' + k + '"]');
+    reqPending[k] = "add";
+    state.db.doc("requests/" + k).set(JSON.parse(JSON.stringify(rq))).then(function () {
+      delete reqPending[k];
+      if (el) { el.textContent = "Saved ✓"; el.className = "saved ok"; }
+    }, function () {
+      delete reqPending[k];
+      if (el) { el.textContent = "Not saved. Check your connection and type again to retry."; el.className = "saved err"; }
+    });
+  }
+  document.addEventListener("input", function (ev) {
+    var k = ev.target.dataset && ev.target.dataset.focus;
+    if (!k || !state.requests[k]) return;
+    state.requests[k].focus = ev.target.value;
+    reqPending[k] = "add";
+    var el = document.querySelector('[data-saved="req-' + k + '"]');
+    if (el) { el.textContent = "Saving…"; el.className = "saved"; }
+    clearTimeout(focusTimers[k]);
+    focusTimers[k] = setTimeout(function () { saveFocus(k); }, 1200);
+  });
   document.addEventListener("focusout", function (ev) {
+    var fk = ev.target.dataset && ev.target.dataset.focus;
+    if (fk && focusTimers[fk]) saveFocus(fk);
     var ta = ev.target;
     if (ta.tagName !== "TEXTAREA" || !ta.dataset.k || !pending[ta.dataset.k]) return;
     clearTimeout(timers[ta.dataset.k]);
