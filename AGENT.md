@@ -17,7 +17,7 @@ The "Daily Brief" routine (`config.routine_trigger_id`) fires into Peter's own l
 
 ## 0. Before you start
 
-1. `cd /home/user/daily-brief && git pull origin main` and `rm -rf dist/desk-*.json dist/ratings-export`.
+1. `cd /home/user/daily-brief && git pull origin main` and `rm -rf dist/desk-*.json dist/briefs-*.json dist/ratings-export dist/requests-export`.
 2. **Recover anything a failed run left only in the viewer.** `Artifact` read of `config.viewer_artifact_url`, then `python3 scripts/recover_from_viewer.py <saved html path>`. If it recovers anything, commit it as `Recover state from viewer` before continuing.
 
 3. Read `config.json`, `profile/interests.yaml`, `profile/company.md`, `profile/standing-instructions.md`, `profile/learned.md`, `data/stats.json`.
