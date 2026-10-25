@@ -164,6 +164,18 @@ def email_body(date, config):
             out.append(f'<p style="background:#fbeee3;padding:8px 12px;font-size:15px"><b style="font:700 11px Arial,sans-serif;text-transform:uppercase;color:#c8611e">{label}</b><br>{e(a["why_it_matters"])}</p>')
         out.append('<p style="font:12px Arial,sans-serif;color:#7a8098">Sources: ' + " · ".join(
             f'<a href="{e(s["url"])}" style="color:#7a8098">{e(s["outlet"])}</a>' for s in a["sources"]) + "</p></div>")
+    if ed.get("briefs"):
+        out.append('<h2 style="font:800 13px Arial,sans-serif;text-transform:uppercase;letter-spacing:.14em;color:#c8611e;margin:34px 0 4px;border-top:3px solid #c8611e;padding-top:10px">'
+                   f'More stories ({len(ed["briefs"])})</h2>')
+        out.append('<p style="font:13px Arial,sans-serif;color:#4a5068;margin:0 0 8px">Short summaries. Open the live brief and press "Write this up" on any you want in full.</p>')
+        current = None
+        for b in ed["briefs"]:
+            if b["topic"] != current:
+                current = b["topic"]
+                out.append(f'<h3 style="font:700 11px Arial,sans-serif;text-transform:uppercase;letter-spacing:.1em;color:#7a8098;margin:16px 0 4px">{e(TOPIC_LABELS.get(current, current))}</h3>')
+            src = " · ".join(f'<a href="{e(x["url"])}" style="color:#7a8098">{e(x["outlet"])}</a>' for x in b["sources"])
+            out.append(f'<div style="margin:6px 0 10px"><b style="font:700 14px Arial,sans-serif">{e(b["title"])}</b>'
+                       f'<div style="font-size:14px;color:#4a5068">{e(b["summary"])} <span style="font:11px Arial,sans-serif">{src}</span></div></div>')
     if url:
         out.append(f'<p style="font:600 14px Arial,sans-serif;text-align:center"><a href="{e(url)}" style="color:#c8611e">Rate today\'s articles in the live brief</a></p>')
     out.append("</div></div>")

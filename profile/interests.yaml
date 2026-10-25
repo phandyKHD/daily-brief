@@ -2,9 +2,10 @@
 # Base quotas are the starting point; learned adjustments live in data/stats.json.
 
 edition:
-  target_articles: [12, 15]
+  target_articles: [15, 18]        # full articles
+  target_briefs: [40, 60]          # short summaries in the More stories tab
   cold_start_days: 14          # bigger editions and 2 wildcards during the first 14 days
-  cold_start_target: 16
+  cold_start_target: 18
   read_time_mix:               # share of articles by estimated minutes
     2: 0.65
     3: 0.25

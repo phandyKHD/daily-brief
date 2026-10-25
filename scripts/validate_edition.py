@@ -130,6 +130,27 @@ def validate(ed, check_links=False):
         per_round_topic.setdefault(a["round"], {}).setdefault(a["topic"], 0)
         per_round_topic[a["round"]][a["topic"]] += 1
 
+    seen_b = set()
+    for i, b in enumerate(ed.get("briefs") or []):
+        where = f"brief {b.get('id', i)}"
+        missing = {"id", "round", "topic", "title", "summary", "sources", "tags"} - b.keys()
+        if missing:
+            errors.append(f"{where}: missing {sorted(missing)}")
+            continue
+        if not re.fullmatch(r"b\d{2,3}", b["id"]) or b["id"] in seen_b:
+            errors.append(f"{where}: id must be unique and look like b01")
+        seen_b.add(b["id"])
+        if b["topic"] not in TOPICS:
+            errors.append(f"{where}: unknown topic '{b['topic']}'")
+        wc = len(str(b["summary"]).split())
+        if not 20 <= wc <= 100:
+            errors.append(f"{where}: summary is {wc} words (20-100)")
+        if not (isinstance(b["sources"], list) and 1 <= len(b["sources"]) <= 3 and all(isinstance(x, dict) and x.get("outlet") and str(x.get("url", "")).startswith("http") for x in b["sources"])):
+            errors.append(f"{where}: needs 1-3 sources with outlet and url")
+        if b["title"].strip().lower() in seen_titles:
+            errors.append(f"{where}: repeats a full article's title")
+        if not (isinstance(b["tags"], list) and 1 <= len(b["tags"]) <= 6):
+            errors.append(f"{where}: needs 1-6 tags")
     totals = {}
     for counts in per_round_topic.values():
         for t, n in counts.items():
@@ -159,7 +180,7 @@ def main():
         print(f"FAILED: {len(errors)} error(s)")
         sys.exit(1)
     mins = sum(a["read_minutes"] for a in ed["articles"])
-    print(f"OK: {len(ed['articles'])} articles, {mins} min reading")
+    print(f"OK: {len(ed['articles'])} articles, {mins} min reading, {len(ed.get('briefs') or [])} briefs")
 
 
 if __name__ == "__main__":

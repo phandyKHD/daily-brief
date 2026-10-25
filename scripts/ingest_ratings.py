@@ -21,7 +21,7 @@ RATINGS = os.path.join(ROOT, "data", "ratings.jsonl")
 FEEDBACK = os.path.join(ROOT, "data", "feedback-log.md")
 STATS = os.path.join(ROOT, "data", "stats.json")
 HALF_LIFE_DAYS = 7  # EWMA weight halves every 7 days, so ~14 days dominate
-COMPARE = ("relevance", "quality", "summary_vote", "quick_tags", "feedback")
+COMPARE = ("relevance", "quality", "summary_vote", "requested", "quick_tags", "feedback")
 # A thumbs vote from the summary stands in for relevance when no stars were given.
 VOTE_RELEVANCE = {"up": 4.0, "mid": 3.0, "down": 1.5}
 
@@ -53,7 +53,7 @@ def normalise(doc):
 
 
 def is_empty(r):
-    return not (r["relevance"] or r["quality"] or r.get("summary_vote") or r["quick_tags"] or r["feedback"])
+    return not (r["relevance"] or r["quality"] or r.get("summary_vote") or r.get("requested") or r["quick_tags"] or r["feedback"])
 
 
 def stats_from(latest, today):
@@ -63,7 +63,8 @@ def stats_from(latest, today):
     def add(bucket, name, r, w):
         b = acc[bucket].setdefault(name, {"n": 0, "rel_sum": 0, "rel_n": 0, "q_sum": 0, "q_n": 0, "ew_sum": 0.0, "ew_w": 0.0})
         b["n"] += 1
-        rel = r["relevance"] or VOTE_RELEVANCE.get(r.get("summary_vote") or "", 0)
+        # Stars win; then a "Write this up" request (strongest signal); then a summary vote.
+        rel = r["relevance"] or (4.5 if r.get("requested") else 0) or VOTE_RELEVANCE.get(r.get("summary_vote") or "", 0)
         if rel:
             b["rel_sum"] += rel; b["rel_n"] += 1
             b["ew_sum"] += rel * w; b["ew_w"] += w

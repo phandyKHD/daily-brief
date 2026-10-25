@@ -296,6 +296,16 @@ def edition_pdf(ed, path):
         story += divider() if story and not isinstance(story[-1], CondPageBreak) else []
         story.append(CondPageBreak(60 * mm))
         story += article_flowables(a)
+    if ed.get("briefs"):
+        story += divider() + [CondPageBreak(50 * mm), Paragraph(f'MORE STORIES ({len(ed["briefs"])})', S["whyh"]), Spacer(1, 4)]
+        current = None
+        for b in ed["briefs"]:
+            if b["topic"] != current:
+                current = b["topic"]
+                story.append(Paragraph(clean(TOPIC.get(current, (current,))[0].upper()), S["toch"]))
+            src = "  ".join(f'<link href="{clean(x["url"])}" color="#7a8098"><u>{clean(x["outlet"])}</u></link>' for x in b["sources"])
+            story.append(KeepTogether([Paragraph(clean(b["title"]), S["toc"]),
+                                       Paragraph(f'{clean(b["summary"])}  <font color="#7a8098" size="7.5">{src}</font>', S["tocsub"])]))
     doc.build(story)
 
 
