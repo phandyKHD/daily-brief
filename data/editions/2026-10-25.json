@@ -837,5 +837,901 @@
       "Thin sourcing: China plenum piece rests mainly on Brookings (SCMP blocked); Ukraine pieces rely heavily on Defense News; YouGov 18-19 Oct figures taken from a search snippet; US lead sources 2-3 weeks old; AI piece outside 72h lookback; Brussels hybrid-imports story older than 36h lookback.",
       "No ISW/RUSI front-line piece this edition (blocked or stale)."
     ]
-  }
+  },
+  "briefs": [
+    {
+      "id": "b01",
+      "round": 1,
+      "topic": "industry",
+      "title": "Foyle Food Group puts £15m into Omagh beef plant upgrade",
+      "summary": "Northern Ireland beef processor Foyle Food Group is spending £15 million modernising its Omagh site, adding automated warehousing and packing equipment. Invest NI is contributing £2.9 million through its Agri-Food Investment Initiative, and the project creates seven jobs. It is another sign of UK meat plants automating rather than hiring.",
+      "sources": [
+        {
+          "outlet": "Agriland",
+          "title": "Beef processor invests £15m to upgrade production process",
+          "url": "https://www.agriland.co.uk/farming-news/beef-processor-invests-15m-to-upgrade-production-process/"
+        },
+        {
+          "outlet": "Food Manufacture",
+          "title": "Foyle Food Group to invest £15M into site upgrade",
+          "url": "https://www.foodmanufacture.co.uk/Article/2026/10/21/foyle-food-group-to-invest-15-million-into-omagh-site-upgrade/"
+        }
+      ],
+      "tags": [
+        "foyle food group",
+        "plant investment",
+        "automation",
+        "northern ireland"
+      ]
+    },
+    {
+      "id": "b02",
+      "round": 1,
+      "topic": "industry",
+      "title": "Boparan backs Bernard Matthews with £100m turkey investment",
+      "summary": "Boparan Private Office, owner of 2 Sisters, is putting £100 million into Bernard Matthews. The money goes on building improvements, a new lairage, new processing and refrigeration equipment, robotics and digital tools, centred on the Halesworth, Suffolk site that handles about 100,000 turkeys a week. New high-protein products are part of the plan.",
+      "sources": [
+        {
+          "outlet": "Food Manufacture",
+          "title": "2 Sisters owner pumps £100M into Bernard Matthews turkey production",
+          "url": "https://www.foodmanufacture.co.uk/Article/2026/10/19/2-sisters-owner-backs-bernard-matthews-with-100m-investment/"
+        }
+      ],
+      "tags": [
+        "bernard matthews",
+        "boparan",
+        "plant investment",
+        "poultry"
+      ]
+    },
+    {
+      "id": "b03",
+      "round": 1,
+      "topic": "industry",
+      "title": "Commercial Bakeries buys Washington cracker maker Partners",
+      "summary": "Toronto-based Commercial Bakeries, backed by Graham Partners, has acquired Partners, A Tasteful Choice Company, which runs a baking plant in Des Moines, Washington, with several cracker lines and automated packaging. Terms were not disclosed. It is the group's third bolt-on since 2023, after Imagine Baking and Hollandia Bakeries, and gives it a nationwide North American footprint for private-label crackers.",
+      "sources": [
+        {
+          "outlet": "Cision Newswire",
+          "title": "Commercial Bakeries announces the strategic acquisition of Partners, A Tasteful Choice Company",
+          "url": "https://www.newswire.ca/news-releases/commercial-bakeries-announces-the-strategic-acquisition-of-partners-a-tasteful-choice-company-809441572.html"
+        }
+      ],
+      "tags": [
+        "commercial bakeries",
+        "acquisition",
+        "crackers",
+        "bakery"
+      ]
+    },
+    {
+      "id": "b04",
+      "round": 1,
+      "topic": "industry",
+      "title": "Salmonella-tainted broccoli sprouting seeds recalled, with some shipped to the UK",
+      "summary": "Wild West Seed of Albany, Oregon, is recalling 9,476 pounds of broccoli sprouting seeds in 50-pound bags over Salmonella contamination. The seeds went to eleven US states and the United Kingdom. No illnesses have been reported, and the firm told customers by letter rather than a public release, a reminder of how quietly some upstream recalls travel.",
+      "sources": [
+        {
+          "outlet": "Food Safety News",
+          "title": "Sprouting seeds recalled because of Salmonella contamination",
+          "url": "https://www.foodsafetynews.com/2026/10/sprouting-seeds-recalled-because-of-salmonella-contamination/"
+        }
+      ],
+      "tags": [
+        "salmonella",
+        "recall",
+        "sprouts",
+        "seeds"
+      ]
+    },
+    {
+      "id": "b05",
+      "round": 1,
+      "topic": "industry",
+      "title": "FDA warns on smoked sprats after firm refuses to recall",
+      "summary": "The FDA has publicly warned consumers off cold smoked sprats from D&M Smoked Fish of Jamaica, New York, after an inspection found no controls to prevent Clostridium botulinum growth and toxin formation. The agency asked for a recall of all product on the market, but the company declined. No illnesses have been reported.",
+      "sources": [
+        {
+          "outlet": "Food Safety News",
+          "title": "FDA issues warning about cold smoked fish because of botulism risk; company refuses to recall product",
+          "url": "https://www.foodsafetynews.com/2026/10/fda-issues-warning-about-cold-smoked-fish-because-of-botulism-risk-company-refuses-to-recall-product/"
+        }
+      ],
+      "tags": [
+        "fda",
+        "botulism",
+        "process controls",
+        "seafood"
+      ]
+    },
+    {
+      "id": "b06",
+      "round": 1,
+      "topic": "industry",
+      "title": "Austria warns against raw Sicilian cherry tomatoes as Salmonella spreads across Europe",
+      "summary": "Austrian authorities have told consumers not to eat raw cherry tomatoes from Ragusa and Caltanissetta in Sicily after 21 confirmed Salmonella Strathcona cases, seven in hospital. Italy has reported more than 130 cases around Brescia and Bergamo, and ECDC counts over 160 confirmed infections in ten countries since July, with risk continuing while the produce is delivered.",
+      "sources": [
+        {
+          "outlet": "Food Safety News",
+          "title": "Austrian tomato warning follows Salmonella infections",
+          "url": "https://www.foodsafetynews.com/2026/10/austrian-tomato-warning-follows-salmonella-infections/"
+        }
+      ],
+      "tags": [
+        "salmonella",
+        "tomatoes",
+        "outbreak",
+        "ecdc"
+      ]
+    },
+    {
+      "id": "b07",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Burnham calls for 'honest discussion' on EU free movement",
+      "summary": "Andy Burnham told the Sunday Times he wants an honest, evidence-based debate about a possible return to free movement with the EU, and is weighing options up to single market or full membership. Labour's 2024 manifesto ruled these out, so any big change would likely wait for an election. Nigel Farage called it a betrayal of Brexit voters and Chris Philp said there can be no return to free movement; Burnham meets EU leaders in Brussels on 20 November.",
+      "sources": [
+        {
+          "outlet": "ITV News",
+          "title": "Burnham: Time for 'honest discussion' about freedom of movement with EU",
+          "url": "https://www.itv.com/news/2026-10-24/burnham-time-for-honest-discussion-about-freedom-of-movement-with-eu"
+        }
+      ],
+      "tags": [
+        "burnham",
+        "eu",
+        "free movement",
+        "brexit"
+      ]
+    },
+    {
+      "id": "b08",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Badenoch attacks Labour's 'fictional cuts' and urges spending restraint before Budget",
+      "summary": "In a pre-Budget speech Kemi Badenoch urged Burnham and Healey to 'live within our means', arguing investors are not buying Labour's promised spending cuts as gilt yields reach 6%, the highest since 1998. The Conservatives offer an alternative £70bn of savings, mostly from welfare, plus fewer civil servants and less foreign aid. Labour said the Tories have 'zero credibility on the economy'.",
+      "sources": [
+        {
+          "outlet": "LBC",
+          "title": "'They don't know Labour like we do': Badenoch to take aim at 'fictional' spending cut promises ahead of crunch Budget",
+          "url": "https://www.lbc.co.uk/article/kemi-badenoch-labour-budget-5Hjdk87_2/"
+        }
+      ],
+      "tags": [
+        "conservatives",
+        "badenoch",
+        "budget",
+        "gilts",
+        "public spending"
+      ]
+    },
+    {
+      "id": "b09",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Banks brace for higher profits surcharge in Wednesday's Budget",
+      "summary": "Healey may raise the bank surcharge from 3% back to 8%, reversing Jeremy Hunt's cut; the TUC says that would raise £2.25bn a year. UK Finance warns further rises risk damaging competitiveness, and Lloyds and NatWest shares fell about 2% when the reports emerged. Healey summoned the bosses of Barclays, HSBC, Lloyds and NatWest to a pre-Budget meeting; the Treasury has not confirmed any change.",
+      "sources": [
+        {
+          "outlet": "Irish News (PA)",
+          "title": "The Budget: What will be in it? What might be in it? What can be ruled out?",
+          "url": "https://www.irishnews.com/news/uk/the-budget-what-will-be-in-it-what-might-be-in-it-what-can-be-ruled-out-ZF5LPLKT4BKQZIH5VWOQUWNS6Q/"
+        },
+        {
+          "outlet": "ITV News",
+          "title": "Bank shares drop on reports Chancellor planning Budget tax raid",
+          "url": "https://www.itv.com/news/2026-10-16/bank-shares-drop-on-reports-chancellor-planning-budget-tax-raid"
+        }
+      ],
+      "tags": [
+        "budget",
+        "banks",
+        "bank surcharge",
+        "healey",
+        "tax"
+      ]
+    },
+    {
+      "id": "b10",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Budget to plug £4.7bn defence gap but no new path to 3%",
+      "summary": "Wednesday's Budget is expected to find about £4.7bn to fill a gap in the Defence Investment Plan, taking spending to 2.7% of GDP by 2027, but no further military investment. The route to NATO's 3.5% by 2035, and a date for 3%, is deferred to next year's spending review. Shadow Defence Secretary James Cartlidge said 'Russia doesn't work to Treasury timetables'.",
+      "sources": [
+        {
+          "outlet": "Irish News (PA)",
+          "title": "The Budget: What will be in it? What might be in it? What can be ruled out?",
+          "url": "https://www.irishnews.com/news/uk/the-budget-what-will-be-in-it-what-might-be-in-it-what-can-be-ruled-out-ZF5LPLKT4BKQZIH5VWOQUWNS6Q/"
+        },
+        {
+          "outlet": "LBC",
+          "title": "Healey's budget to ditch 3% defence spending target by 2030",
+          "url": "https://www.lbc.co.uk/politics/uk-politics/healey-defence-budget-latest/"
+        }
+      ],
+      "tags": [
+        "defence spending",
+        "budget",
+        "nato",
+        "healey"
+      ]
+    },
+    {
+      "id": "b11",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "ITV undercover investigation exposes Reform UK vetting failures",
+      "summary": "An ITV Exposure reporter who worked inside Reform's headquarters as a press officer recorded senior officials saying they must 'defend the indefensible'. It found Farage kept on a mayoral candidate his own communications director called racist, and a councillor registered on a white supremacist dating site. Two Reform councillors have since resigned; Robert Jenrick said 'every party has bad apples'.",
+      "sources": [
+        {
+          "outlet": "ITV News",
+          "title": "Reform officials admit they 'defend the indefensible' after allegations against party figures",
+          "url": "https://www.itv.com/news/2026-10-15/reform-officials-admit-they-defend-the-indefensible-amid-racism-claims"
+        }
+      ],
+      "tags": [
+        "reform uk",
+        "farage",
+        "vetting",
+        "itv exposure"
+      ]
+    },
+    {
+      "id": "b12",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Farage pledges to halt asylum processing and deport 90,000 awaiting appeals",
+      "summary": "At a press conference in Hythe, Kent, Nigel Farage said a Reform government would suspend asylum processing and deport about 90,000 people waiting for appeal decisions, calling it a 'national security emergency'. Asylum tribunals, legal refugee routes and resettlement schemes would be scrapped for a full parliament. Separately he called Burnham a 'liar' over the PM's claim that Russia interfered in the Brexit vote.",
+      "sources": [
+        {
+          "outlet": "LBC",
+          "title": "'There was no Russian interference': Farage blasts Andy Burnham as 'liar' after PM claimed Kremlin meddled in Brexit vote",
+          "url": "https://www.lbc.co.uk/article/farage-burnham-liar-brexit-vote-5Hjdjmq_2/"
+        }
+      ],
+      "tags": [
+        "reform uk",
+        "farage",
+        "asylum",
+        "immigration"
+      ]
+    },
+    {
+      "id": "b13",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "CBI asks Healey for employer NI relief and cheaper electricity",
+      "summary": "The CBI's Budget submission asks the Chancellor to raise the employer National Insurance threshold from £5,000 to £6,000 to encourage hiring young workers, take policy costs off business electricity bills, reform business rates and simplify tax. Chief executive Rain Newton-Smith said business 'needs a reason to invest' and warned further cost increases would undermine the government's growth plans.",
+      "sources": [
+        {
+          "outlet": "City AM",
+          "title": "Healey told to cut employment taxes and energy bills to boost business",
+          "url": "https://www.cityam.com/?p=2465998"
+        }
+      ],
+      "tags": [
+        "cbi",
+        "national insurance",
+        "energy costs",
+        "budget",
+        "business rates"
+      ]
+    },
+    {
+      "id": "b14",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Burnham wants to 'go further' on business rates, within limited room",
+      "summary": "Andy Burnham told BBC Radio 5 Live he wants to go further on business rates for high street firms at Wednesday's Budget, building on the 20% relief for pubs, clubs and music venues, and to bring forward VAT cuts on electricity that would help the smallest businesses. He admitted 'the cost of doing business is too high' but said he would not promise anything he cannot fully fund.",
+      "sources": [
+        {
+          "outlet": "AJ Bell (PA)",
+          "title": "UK PM says he wants to go \"further\" on business rates at the budget",
+          "url": "https://www.ajbell.co.uk/news/articles/uk-pm-says-he-wants-go-further-business-rates-budget"
+        }
+      ],
+      "tags": [
+        "business rates",
+        "burnham",
+        "budget",
+        "small business"
+      ]
+    },
+    {
+      "id": "b15",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "North Sea industry presses Healey to bring forward windfall tax replacement",
+      "summary": "Offshore Energies UK wants the Budget to confirm the Energy Profits Levy, which puts a 78% headline rate on North Sea profits, will be replaced by the planned Oil and Gas Revenue Levy in early 2027 rather than 2030. OEUK says the new regime would unlock £50bn of investment. Unconfirmed reports have suggested Healey is instead considering extending the current levy.",
+      "sources": [
+        {
+          "outlet": "Energy-pedia",
+          "title": "Six months on: Industry urgently needs a firm date for Treasury's North Sea tax plan, says Offshore Energies UK",
+          "url": "https://www.energy-pedia.com/news/united-kingdom/six-months-on--industry-urgently-needs-a-firm-date-for-treasury%E2%80%99s-north-sea-tax-plan--says-offshore-energies-uk-205207"
+        },
+        {
+          "outlet": "The Scotsman",
+          "title": "Andy Burnham urged to use 'pivotal' Budget to hand North Sea oil and gas an investment future",
+          "url": "https://www.scotsman.com/news/politics/andy-burnham-oil-and-gas-budget-north-sea-9268639"
+        }
+      ],
+      "tags": [
+        "north sea",
+        "energy profits levy",
+        "oil and gas",
+        "budget"
+      ]
+    },
+    {
+      "id": "b16",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Ministers hire EY to weigh Tata Steel's request for more Port Talbot money",
+      "summary": "The government has commissioned EY, in a contract worth about £1m, to assess Tata Steel's request for extra support for its Port Talbot electric arc furnace, likely in the hundreds of millions. Grid connection delays could push opening to late 2028 or 2029, on top of the existing £500m grant. Nationalised British Steel already costs taxpayers £1.3m a day.",
+      "sources": [
+        {
+          "outlet": "Nation.Cymru",
+          "title": "UK Government commission £1m review of Tata Steel's extra funding request",
+          "url": "https://nation.cymru/news/uk-government-commission-1m-review-of-tata-steels-extra-funding-request/"
+        }
+      ],
+      "tags": [
+        "tata steel",
+        "port talbot",
+        "steel",
+        "industrial policy"
+      ]
+    },
+    {
+      "id": "b17",
+      "round": 1,
+      "topic": "ukraine",
+      "title": "Germany in talks to buy Ukraine's Bars jet-powered strike drones",
+      "summary": "Berlin is negotiating to buy Ukraine's Bars jet-powered drones, which have a 1,000km range and reach 700km/h, as Germany plans to buy thousands of cheap deep-strike weapons from European makers. The German army currently fields only Taurus cruise missiles, and the US has warned allies of years-long missile delivery delays. The two countries agreed in July to jointly produce Bars.",
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Germany in talks to buy Ukrainian jet powered drones",
+          "url": "https://kyivindependent.com/germany-in-talks-to-buy-ukrainian-jet-powered-drones/"
+        }
+      ],
+      "tags": [
+        "germany",
+        "drones",
+        "deep strike",
+        "defence industry"
+      ]
+    },
+    {
+      "id": "b18",
+      "round": 1,
+      "topic": "ukraine",
+      "title": "Kyiv sanctions dozens of Russian firms supplying missile production",
+      "summary": "Zelensky imposed sanctions on 51 Russian individuals and 44 companies supplying materials and tools for Iskander, Kalibr, Kh-101 and Kinzhal missiles, plus 32 people and 35 firms in wider military supply chains. RUSAL was singled out over aluminium oxide imports. Ukrainian intelligence says Russia is producing about 10,000 drones a month and stockpiling 700 ballistic missiles.",
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Ukraine sanctions Russian arms suppliers as Moscow ramps up attacks",
+          "url": "https://kyivindependent.com/ukraine-sanctions-russian-arms-suppliers-as-moscow-ramps-up-attacks/"
+        }
+      ],
+      "tags": [
+        "sanctions",
+        "missiles",
+        "rusal",
+        "russian defence industry"
+      ]
+    },
+    {
+      "id": "b19",
+      "round": 1,
+      "topic": "ukraine",
+      "title": "Sanctioned Novatek secretly backed Alaska LNG project, NYT reports",
+      "summary": "The New York Times reports that Novatek, the Russian LNG producer under US sanctions since 2022, sought minority shareholder status in Polar LNG, a planned Alaska gas export project discussed by envoys Steve Witkoff and Jared Kushner with Putin in September. Polar LNG's former chief executive John Riddle says he resigned after learning of the link, having been told the money came from a UAE company.",
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Sanctioned Russian energy giant secretly funded US gas project, NYT reports",
+          "url": "https://kyivindependent.com/sanctioned-russian-energy-giant-secretly-funded-us-gas-project-nyt-reports/"
+        }
+      ],
+      "tags": [
+        "novatek",
+        "sanctions",
+        "lng",
+        "us-russia"
+      ]
+    },
+    {
+      "id": "b20",
+      "round": 1,
+      "topic": "ukraine",
+      "title": "Ukraine's military satellite links restored as Musk accuses Kyiv of breaching Starlink terms",
+      "summary": "Zelensky confirmed that Starshield operations have been restored to normal speed, with Ukraine's defence ministry reporting speeds above 400km/h and a stable connection. The restoration comes as Elon Musk claims Ukraine violated Starlink's terms, part of a wider crisis that has prompted Finnish tech firms to offer help building a sovereign Ukrainian satellite system.",
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Starshield operations restored to normal speed, Zelensky confirms as Elon Musk claims Ukraine violated Starlink terms",
+          "url": "https://kyivindependent.com/starshield-operations-restored-above-400-km-h-ukraines-defense-ministry-says/"
+        },
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Amid Starlink crisis, Finnish tech giants announce plan to help Ukraine build its own sovereign satellite system",
+          "url": "https://kyivindependent.com/amid-starlink-crisis-finnish-tech-giants-announce-plan-to-help-ukraine-build-its-own-sovereign-satellite-system/"
+        }
+      ],
+      "tags": [
+        "starlink",
+        "starshield",
+        "elon musk",
+        "satellites"
+      ]
+    },
+    {
+      "id": "b21",
+      "round": 1,
+      "topic": "ukraine",
+      "title": "Ukrainian drones reportedly hit Siberian targets 2,500km from the border",
+      "summary": "Monitoring channels report Ukrainian strikes on a petrochemical plant and a warehouse in Siberia, about 2,500km from the border, extending the reach of Kyiv's long-range campaign. On the same day the General Staff confirmed a strike on an electronics plant in Oryol, while drone attacks forced flight restrictions at four Moscow airports. The Siberian strikes have not been officially confirmed.",
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Ukrainian forces reportedly strike Russian targets 2,500 kilometers from border",
+          "url": "https://kyivindependent.com/ukrainian-forces-reportedly-strike-russian-targets-2-500-kilometers-from-border/"
+        },
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Ukrainian forces strike Oryol electronics plant, General Staff confirms, drone attacks shut down Moscow airports",
+          "url": "https://kyivindependent.com/ukrainian-drone-attack-triggers-shut-down-of-moscow-airports-drone-debris-reported-on-tarmac/"
+        }
+      ],
+      "tags": [
+        "long-range strikes",
+        "drones",
+        "siberia",
+        "russian industry"
+      ]
+    },
+    {
+      "id": "b22",
+      "round": 1,
+      "topic": "nato",
+      "title": "Industry tells MPs the Defence Investment Plan is 'not investable as it stands'",
+      "summary": "Make UK chief executive Stephen Phipson told the Defence Committee the Defence Investment Plan sets out themes but lacks the contracts and programme detail firms need before building factories. ADS's Kevin Craven said it covers four years rather than ten and only about 50–55% of decade-long spend, warning that backloaded spending risks a bottleneck when new production lines take two to four years.",
+      "sources": [
+        {
+          "outlet": "UK Defence Journal",
+          "title": "Investment plan not investable as it stands, MPs told",
+          "url": "https://ukdefencejournal.org.uk/investment-plan-not-investable-as-it-stands-mps-told/"
+        }
+      ],
+      "tags": [
+        "defence investment plan",
+        "make uk",
+        "procurement",
+        "defence industry"
+      ]
+    },
+    {
+      "id": "b23",
+      "round": 1,
+      "topic": "nato",
+      "title": "Britain and France to co-lead planning for a Strait of Hormuz shipping mission",
+      "summary": "Armed Forces Minister Louise Sandher-Jones told Parliament the UK is co-leading planning with France for a multinational military mission to give commercial shipping safe passage through the Strait of Hormuz. The Royal Navy already runs autonomous mine countermeasures in the Gulf from a support ship, having replaced its Sandown-class minehunters. No timetable or force size has been given.",
+      "sources": [
+        {
+          "outlet": "UK Defence Journal",
+          "title": "Britain and France to lead Hormuz transit mission",
+          "url": "https://ukdefencejournal.org.uk/britain-and-france-to-lead-hormuz-transit-mission/"
+        }
+      ],
+      "tags": [
+        "strait of hormuz",
+        "royal navy",
+        "france",
+        "shipping security"
+      ]
+    },
+    {
+      "id": "b24",
+      "round": 1,
+      "topic": "nato",
+      "title": "UK and Germany review 2,000km Deep Precision Strike programme",
+      "summary": "Defence minister Luke Pollard hosted Germany's armaments state secretary Jens Plötner in London to review joint programmes under the 2024 Trinity House Agreement, including Deep Precision Strike, a planned long-range weapon with a reach beyond 2,000km. The two countries also agreed this month to deepen space cooperation and set up a counter-hybrid partnership against grey-zone threats.",
+      "sources": [
+        {
+          "outlet": "UK Defence Journal",
+          "title": "Britain and Germany review joint strike programme",
+          "url": "https://ukdefencejournal.org.uk/britain-and-germany-review-joint-strike-programme/"
+        }
+      ],
+      "tags": [
+        "germany",
+        "deep precision strike",
+        "long-range strike",
+        "trinity house"
+      ]
+    },
+    {
+      "id": "b25",
+      "round": 1,
+      "topic": "nato",
+      "title": "MoD promises a simple 'front door' for small defence suppliers by year end",
+      "summary": "Defence minister Luke Pollard says the MoD will publish a simple set of procurement entry points for small and medium-sized firms by the end of 2026, to cut barriers to working with defence directly or through its supply chain. It follows July's SME Action Plan. Figures he gave showed direct MoD contracts to Tees Valley SMEs falling from two worth £1.48m in 2023/24 to none in 2025/26.",
+      "sources": [
+        {
+          "outlet": "UK Defence Journal",
+          "title": "Simple front door for defence suppliers due this year",
+          "url": "https://ukdefencejournal.org.uk/simple-front-door-for-defence-suppliers-due-this-year/"
+        }
+      ],
+      "tags": [
+        "procurement",
+        "smes",
+        "ministry of defence",
+        "defence industry"
+      ]
+    },
+    {
+      "id": "b26",
+      "round": 1,
+      "topic": "china",
+      "title": "Beijing objects to US plan to widen curbs on investment into China",
+      "summary": "China's Ministry of Commerce on Saturday expressed \"grave concern\" and \"firm opposition\" to a US Treasury proposal that would expand and tighten restrictions on American outbound investment into China. The spokesperson made the remarks in reply to a media question, adding another irritant to US-China trade relations ahead of key deadlines in the two sides' truce.",
+      "sources": [
+        {
+          "outlet": "Business Today (Malaysia)",
+          "title": "Beijing Raises Concern Over Washington's Proposal To Curb Outbound Investment Into China",
+          "url": "https://www.businesstoday.com.my/2026/10/24/beijing-raises-concern-over-washingtons-proposal-to-curb-outbound-investment-into-china/"
+        }
+      ],
+      "tags": [
+        "us-china trade",
+        "outbound investment",
+        "us treasury",
+        "mofcom"
+      ]
+    },
+    {
+      "id": "b27",
+      "round": 1,
+      "topic": "china",
+      "title": "Taiwan says Chinese militia boats are extending 'battlefield preparation' into the western Pacific",
+      "summary": "Taiwan's Coast Guard says China is pairing maritime militia vessels with coast guard ships to extend what it calls \"battlefield preparation\" around Taiwan and further into the western Pacific. It warned the operations also put pressure on Japan and the Philippines, a sign that Beijing's grey-zone tactics are spreading beyond the Taiwan Strait.",
+      "sources": [
+        {
+          "outlet": "US News (Reuters)",
+          "title": "Taiwan Says China Using Militia Boats to Expand 'Battlefield Preparation' in Western Pacific",
+          "url": "https://www.usnews.com/news/world/articles/2026-10-23/taiwan-says-china-using-militia-boats-to-expand-battlefield-preparation-in-western-pacific"
+        }
+      ],
+      "tags": [
+        "taiwan",
+        "maritime militia",
+        "grey zone",
+        "western pacific"
+      ]
+    },
+    {
+      "id": "b28",
+      "round": 1,
+      "topic": "china",
+      "title": "China protests UK border searches and phone seizures of its nationals",
+      "summary": "China's embassy in London has formally protested after Border Force questioned Chinese nationals, including trade delegates, and seized phones and other devices. UK officials said they acted under the Counterterrorism and Border Security Act 2019. The row follows MI5's September alert that a Chinese body was funding UK academic research on behalf of Beijing's Ministry of State Security.",
+      "sources": [
+        {
+          "outlet": "South China Morning Post",
+          "title": "China protests UK border searches, phone seizures amid growing espionage tensions",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3371459/china-protests-uk-border-searches-phone-seizures-amid-growing-espionage-tensions"
+        },
+        {
+          "outlet": "Global Times",
+          "title": "China raises serious concerns over UK detention and questioning of Chinese nationals",
+          "url": "https://www.globaltimes.cn/page/202610/1372643.shtml"
+        }
+      ],
+      "tags": [
+        "uk-china relations",
+        "espionage",
+        "border force",
+        "mi5"
+      ]
+    },
+    {
+      "id": "b29",
+      "round": 1,
+      "topic": "china",
+      "title": "Clock ticks on China's rare earth export pause, due to lapse on 10 November",
+      "summary": "China's suspension of the expanded rare earth export controls it announced in October 2025 runs only until 10 November, and Beijing has not published a renewal. Its commerce ministry says wider trade arrangements with the US now run to 10 January 2027 but did not explicitly mention rare earths. The separate licensing regime for seven heavy rare earths remains in force throughout.",
+      "sources": [
+        {
+          "outlet": "Technology.org",
+          "title": "China's Rare-Earth Export Pause: What Ends on 10 November",
+          "url": "https://www.technology.org/2026/10/19/china-rare-earth-export-pause-november-10/"
+        },
+        {
+          "outlet": "RAWMATERIALS.net",
+          "title": "Rare Earth Export Controls: China Confirms Extension of Trade Arrangements With U.S.",
+          "url": "https://rawmaterials.net/rare-earth-export-controls-china-confirms-extension-of-trade-arrangements-with-u-s/"
+        }
+      ],
+      "tags": [
+        "rare earths",
+        "export controls",
+        "us-china trade",
+        "supply chains"
+      ]
+    },
+    {
+      "id": "b30",
+      "round": 1,
+      "topic": "ai",
+      "title": "Korean factories move AI from spotting defects to running lines",
+      "summary": "Korean suppliers are using AI to act on the line, not just flag faults. Aizera links quality and process AI at food maker Pulmuone to suggest coagulant or cutting changes when tofu drifts off spec; MakinaRocks lets an agent re-check defect calls and restart battery equipment; Innergy pre-sets galvanising furnace temperatures. Plans are tested in digital twins and held within safe equipment limits.",
+      "sources": [
+        {
+          "outlet": "Seoul Economic Daily",
+          "title": "Factory AI Moves Beyond Spotting Defects to Running Production Lines",
+          "url": "https://en.sedaily.com/technology/2026/10/21/factory-ai-moves-beyond-spotting-defects-to-running"
+        }
+      ],
+      "tags": [
+        "manufacturing",
+        "process control",
+        "food processing",
+        "digital twins"
+      ]
+    },
+    {
+      "id": "b31",
+      "round": 1,
+      "topic": "ai",
+      "title": "Rockwell launches AI 'conductor' for factory engineering work",
+      "summary": "Rockwell Automation has unveiled FactoryTalk Conductor, which coordinates AI agents and workflows across its engineering tools, letting users start tasks such as controller programming in plain language. It previews at Automation Fair in Boston and ships in early 2027. Rockwell's own 2026 report says a third of manufacturing operations are already AI-augmented.",
+      "sources": [
+        {
+          "outlet": "Stock Titan (PR Newswire)",
+          "title": "Rockwell Automation introduces FactoryTalk Conductor, an AI-native orchestration platform",
+          "url": "https://www.stocktitan.net/news/ROK/rockwell-automation-introduces-factory-talk-conductor-an-ai-native-j16nuljpvfck.html"
+        }
+      ],
+      "tags": [
+        "rockwell automation",
+        "ai agents",
+        "manufacturing",
+        "plc programming"
+      ]
+    },
+    {
+      "id": "b32",
+      "round": 1,
+      "topic": "ai",
+      "title": "Ex-Tesla engineers pitch robot stations that retool in minutes",
+      "summary": "San Francisco start-up Industrial Next, founded by former Tesla engineers, builds self-contained robotic stations that learn tasks through simulation and demonstration instead of hand-written scripts, so a line can be switched in minutes rather than weeks. Its stations already peel film and thread cables for a smartphone maker, and BMW is evaluating the technology.",
+      "sources": [
+        {
+          "outlet": "TechCrunch",
+          "title": "Industrial Next wants factory robots to switch tasks in minutes, not weeks",
+          "url": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/"
+        }
+      ],
+      "tags": [
+        "robotics",
+        "changeover",
+        "manufacturing",
+        "bmw"
+      ]
+    },
+    {
+      "id": "b33",
+      "round": 1,
+      "topic": "ai",
+      "title": "Nearly half of workers use unapproved 'shadow AI' tools",
+      "summary": "A roundup of recent surveys finds 45% of workers use AI tools their employer has not approved at least monthly. Deloitte says worker access to AI grew 50% in a year, yet under 60% of those with access use it daily and 84% of organisations have not redesigned jobs around it. Ricoh found 53% of workers say AI creates friction or extra work.",
+      "sources": [
+        {
+          "outlet": "Tech Insider",
+          "title": "45% of Workers Use Shadow AI as Firms Push Tools",
+          "url": "https://tech-insider.org/shadow-ai-45-percent-workers-ricoh-deloitte-2026/"
+        }
+      ],
+      "tags": [
+        "shadow ai",
+        "workplace",
+        "surveys",
+        "adoption"
+      ]
+    },
+    {
+      "id": "b34",
+      "round": 1,
+      "topic": "ai",
+      "title": "NatWest finds an AI growth gap opening between UK firms",
+      "summary": "A NatWest survey of 1,400 UK SMEs and mid-market businesses found 44% use AI now and another 41% expect to within five years. Only 6% of users have reached what the bank calls transformational adoption, and it warns smaller firms risk missing out. Other surveys put UK SME use between 16% and 54%, depending on definitions.",
+      "sources": [
+        {
+          "outlet": "NatWest Group",
+          "title": "AI growth gap emerging across UK businesses, as smaller firms risk missing out on AI opportunity",
+          "url": "https://www.natwestgroup.com/news-and-insights/news-room/press-releases/2026/ai-growth-gap-emerging-across-uk-businesses-as-smaller-firms-ris.html"
+        },
+        {
+          "outlet": "ISER, University of Essex",
+          "title": "Major jump in tech adoption as study finds half of SMEs using AI",
+          "url": "https://www.iser.essex.ac.uk/research/news/2026/03/19/major-jump-in-tech-adoption-as-study-finds-half-of-smes-using-ai-with-limited-headcount-impact-so-far"
+        }
+      ],
+      "tags": [
+        "smes",
+        "uk",
+        "adoption",
+        "natwest"
+      ]
+    },
+    {
+      "id": "b35",
+      "round": 1,
+      "topic": "us_politics",
+      "title": "Justice Department sues to block Alaska Senate certification if Republican loses",
+      "summary": "The Trump administration has sued to stop certification of Alaska's Senate result if Republican Dan Sullivan loses to Democrat Mary Peltola, citing voter confusion from a second candidate named Daniel J. Sullivan on the ballot. Alaska courts had already refused to remove him and state officials say ballots distinguish the candidates clearly, but Trump said he personally directed the suit, a striking federal intervention days before the 3 November midterms.",
+      "sources": [
+        {
+          "outlet": "US News (AP)",
+          "title": "Trump Administration Sues to Block Senate Race Certification in Alaska if Republican Loses, AP Reports",
+          "url": "https://www.usnews.com/news/politics/articles/2026-10-23/trump-administration-sues-to-block-senate-race-certification-in-alaska-if-republican-loses-ap-reports"
+        },
+        {
+          "outlet": "Fox News",
+          "title": "2026 Midterm Elections: Trump, Obama Rally Michigan",
+          "url": "https://www.foxnews.com/live-news/midterm-elections-2026-trump-obama-michigan-alaska-october-25"
+        }
+      ],
+      "tags": [
+        "midterms",
+        "alaska",
+        "senate",
+        "justice department"
+      ]
+    },
+    {
+      "id": "b36",
+      "round": 1,
+      "topic": "us_politics",
+      "title": "Obama and Trump converge on Michigan as Senate majority fight tightens",
+      "summary": "Barack Obama rallied in Detroit and Cleveland on Saturday for Democrats including Michigan Senate nominee Abdul El-Sayed and Ohio's Sherrod Brown, calling the midterms a 'circuit breaker' on Trump. Trump rallies in Port Huron today for Mike Rogers, who faces El-Sayed in one of the tightest races as Republicans try to hold the Senate.",
+      "sources": [
+        {
+          "outlet": "Yahoo News (Reuters)",
+          "title": "Obama unloads on Trump while stumping for Democrats ahead of midterms",
+          "url": "https://www.yahoo.com/news/politics/articles/obama-unloads-trump-while-stumping-024012567.html"
+        },
+        {
+          "outlet": "Fox News",
+          "title": "2026 Midterm Elections: Trump, Obama Rally Michigan",
+          "url": "https://www.foxnews.com/live-news/midterm-elections-2026-trump-obama-michigan-alaska-october-25"
+        }
+      ],
+      "tags": [
+        "midterms",
+        "senate",
+        "michigan",
+        "obama",
+        "trump"
+      ]
+    },
+    {
+      "id": "b37",
+      "round": 1,
+      "topic": "us_politics",
+      "title": "Administration presses California counties to identify noncitizen voters",
+      "summary": "Federal officials have demanded that California county election officials identify suspected noncitizen voters, a request California officials have rejected, according to a Reuters-reported story. It adds to a wider pre-midterm clash between the Trump administration and states over who controls election administration, alongside the Alaska certification lawsuit.",
+      "sources": [
+        {
+          "outlet": "US News (Reuters)",
+          "title": "Trump Administration Demands County Election Officials Identify Noncitizen Voters in California, Report Says",
+          "url": "https://www.usnews.com/news/politics/articles/2026-10-24/trump-administration-demands-county-election-officials-identify-noncitizen-voters-in-california-report-says"
+        }
+      ],
+      "tags": [
+        "midterms",
+        "california",
+        "voting",
+        "election integrity"
+      ]
+    },
+    {
+      "id": "b38",
+      "round": 1,
+      "topic": "wildcard",
+      "title": "Single positron held for months in a one-particle quantum cyclotron",
+      "summary": "Gerald Gabrielse's group at Northwestern has trapped a single positron in a cold Penning trap and resolved its lowest quantum cyclotron states, reported in Physical Review Letters. The aim is to measure the positron's magnetic moment as precisely as the electron's, giving the most stringent test of CPT symmetry for leptons in the Standard Model.",
+      "sources": [
+        {
+          "outlet": "Phys.org",
+          "title": "Physicists trap and tame single particle of antimatter for months",
+          "url": "https://phys.org/news/2026-10-physicists-particle-antimatter-months.html"
+        },
+        {
+          "outlet": "Interesting Engineering",
+          "title": "Scientists trap positron particle",
+          "url": "https://interestingengineering.com/science/scientists-trap-positron-particle-physics"
+        }
+      ],
+      "tags": [
+        "antimatter",
+        "positron",
+        "cpt symmetry",
+        "precision measurement"
+      ]
+    },
+    {
+      "id": "b39",
+      "round": 1,
+      "topic": "wildcard",
+      "title": "Lost Schrödinger manuscript surfaces in an Austrian library",
+      "summary": "Physics historian Flavio Del Santo of the University of Geneva has analysed a three-page Schrödinger manuscript that sat unnoticed in an Austrian library for more than 80 years. It bears on the 1940s debate over whether hidden variables could explain light passing through polarisers, and sheds light on Schrödinger's long-held view that some features of nature are genuinely unpredictable.",
+      "sources": [
+        {
+          "outlet": "Phys.org",
+          "title": "Lost Schrödinger manuscript reveals his true view of quantum randomness",
+          "url": "https://phys.org/news/2026-10-lost-schrdinger-manuscript-reveals-true.html"
+        },
+        {
+          "outlet": "ScienceAlert",
+          "title": "Lost Schrödinger manuscript",
+          "url": "https://www.sciencealert.com/?p=225123"
+        }
+      ],
+      "tags": [
+        "schrodinger",
+        "quantum foundations",
+        "hidden variables",
+        "history of physics"
+      ]
+    },
+    {
+      "id": "b40",
+      "round": 1,
+      "topic": "wildcard",
+      "title": "SLAC's X-ray laser sets record for shortest high-energy pulses",
+      "summary": "SLAC's Linac Coherent Light Source has measured hard X-ray pulses of about 9 keV lasting just 100 to 400 attoseconds, the shortest high-energy pulses recorded at an X-ray free-electron laser, published in Nature Photonics. The hard part was proving the duration, done indirectly via amplified spontaneous emission. Such pulses could follow electron motion deep inside atoms and dense plasmas.",
+      "sources": [
+        {
+          "outlet": "Newswise (SLAC)",
+          "title": "SLAC's X-ray laser sets a record for shortest high-energy pulses ever generated by an XFEL",
+          "url": "https://www.newswise.com/articles/slac-s-x-ray-laser-sets-a-record-for-shortest-high-energy-pulses-ever-generated-by-an-xfel"
+        },
+        {
+          "outlet": "Phys.org",
+          "title": "X-ray free-electron laser sets new record for shortest high-energy pulses",
+          "url": "https://phys.org/news/2026-10-ray-free-electron-laser-shortest.html"
+        }
+      ],
+      "tags": [
+        "x-ray laser",
+        "attosecond",
+        "slac",
+        "ultrafast physics"
+      ]
+    },
+    {
+      "id": "b41",
+      "round": 1,
+      "topic": "wildcard",
+      "title": "Quasar survey backs prediction that black holes get kicked out of galaxies",
+      "summary": "A team at ELTE in Budapest analysing about 100,000 quasars reports statistical evidence that some supermassive black holes have been ejected from their galaxies' centres after galaxy mergers. The result supports a prediction made about a decade ago that merging black holes can be kicked out of their host's core, an effect that has been hard to confirm.",
+      "sources": [
+        {
+          "outlet": "Phys.org",
+          "title": "Supermassive black holes ejected from galactic centers? Quasar survey supports decade-old prediction",
+          "url": "https://phys.org/news/2026-10-supermassive-black-holes-ejected-galactic.html"
+        }
+      ],
+      "tags": [
+        "black holes",
+        "quasars",
+        "astrophysics",
+        "galaxy mergers"
+      ]
+    }
+  ]
 }

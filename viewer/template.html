@@ -578,11 +578,14 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     if (!b) return;
     var r = ratingFor(p.date, b), has = !!state.requests[k];
     if (has && state.requests[k].status !== "pending") return;
-    if (has) { delete state.requests[k]; r.requested = false; } else {
+    if (has) {
+      delete state.requests[k]; r.requested = false;
+      if (r.auto_vote) { r.summary_vote = ""; r.auto_vote = false; }
+    } else {
       state.requests[k] = { date: p.date, brief_id: b.id, topic: b.topic, title: b.title, summary: b.summary,
         sources: b.sources || [], tags: b.tags || [], requested_at: new Date().toISOString(), status: "pending" };
       r.requested = true;
-      if (!r.summary_vote) r.summary_vote = "up";
+      if (!r.summary_vote) { r.summary_vote = "up"; r.auto_vote = true; }
     }
     queueSave(p.date, b);
     renderMore(true);
