@@ -130,7 +130,7 @@ In **refresh** mode, load today's file, append the new articles and a new `round
 2. `python3 scripts/build.py <date>`. This writes `dist/live.html` (the viewer page) and `dist/offline-<date>.html`.
 3. `python3 scripts/make_pdf.py <date>`. This writes `dist/pdf/<date>/daily-brief-<date>.pdf` (whole edition, for the email) and `dist/pdf/<date>/<articleId>.pdf` (one per article, for the viewer's Save as PDF button).
 4. Commit everything (`data/`, `profile/`) with message `Edition <date>` (or `Edition <date> round N`) and push to `main`.
-5. Republish the viewer: `Artifact` publish with `file_path: dist/live.html`, `url: config.viewer_artifact_url`, `root: dist` and `files` listing every PDF in `dist/pdf/<date>/` as `{"path": "pdf/<date>/<file>.pdf"}`. Omit `capabilities` so the stored declaration is kept. If the publish is refused because the artifact has not been read in this session, read it with `action: "read"` first, then publish.
+5. Republish the viewer: `Artifact` publish with `file_path: dist/live.html`, `url: config.viewer_artifact_url`, `root: dist` and `files` listing every PDF in `dist/pdf/<date>/` as `{"path": "pdf/<date>/<file>.pdf"}`. Omit `capabilities` so the stored declaration is kept. If the publish is refused because the artifact has not been read in this session, read it with `action: "read"` first, then publish. If it is refused because some PDF paths were already published by another run, publish again without those paths in `files` (the existing PDFs stay).
 
 ## 8. Email (daily mode only)
 
