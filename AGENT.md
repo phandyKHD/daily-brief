@@ -80,7 +80,7 @@ Give each desk: today's date, its slot counts and leads, the relevant `interests
 > - At least 2 independent sources you actually read, and all facts must come from them. Never invent quotes, figures or events. If you can't verify something, leave it out.
 > - Lean on centre-right outlets for commentary and framing; use wires and specialists for facts.
 > - Plain, direct British English. No clickbait titles. No filler.
-> - `read_minutes` 2 → 380–500 words of body; 3 → 580–720; 4 → 780–950. Mostly 2.
+> - `read_minutes` 2 → 380–500 words of body; 3 → 580–720; 4 → 780–950. Mostly 2. Use 1 (200–330 words, dense with facts) only when Peter asks for a quick read in a focus note.
 > - `kind`: `news` (reporting), `analysis` (explains why or what next), or `opinion` (built mainly on a commentator's argument; say whose in the body).
 > - On contested stories add one line with the strongest counter-argument.
 > - Industry articles must have `why_it_matters` aimed at KHD Technology (see `profile/company.md`). Others may have it if it adds value, otherwise `null`.

@@ -4,13 +4,19 @@
   "changes": [
     "More on UK politics polling: you asked for the other parties alongside Reform, so there is a full poll comparison.",
     "Two science wildcards this time, because you rated the metamaterials piece 5 and mentioned your physics degree.",
-    "Stories kept to mostly 2 minutes after two 'too long' flags."
+    "Stories kept to mostly 2 minutes after two 'too long' flags.",
+    "Afternoon refresh: all 15 stories you asked for in More stories, written up with your focus notes."
   ],
   "rounds": [
     {
       "round": 1,
       "mode": "daily",
       "generated_at": "2026-10-25T04:11:32+00:00"
+    },
+    {
+      "round": 2,
+      "mode": "refresh",
+      "generated_at": "2026-10-25T16:15:35+00:00"
     }
   ],
   "articles": [
@@ -825,6 +831,969 @@
       ],
       "update_of": null,
       "visual": null
+    },
+    {
+      "id": "a17",
+      "round": 2,
+      "topic": "industry",
+      "title": "Boparan puts £100m into Bernard Matthews, with Halesworth first in line",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "Boparan Private Office, owner of 2 Sisters, is investing £100m in Bernard Matthews' turkey business.",
+        "Halesworth in Suffolk, which handles about 100,000 turkeys a week and employs about 700, gets a new lairage, processing and refrigeration kit, robotics and digital tools.",
+        "The pitch is year-round, high-protein turkey for a market Boparan links to GLP-1 weight-loss drugs."
+      ],
+      "body": [
+        "Ranjit Singh Boparan's investment vehicle, Boparan Private Office (BPO), is putting £100m into Bernard Matthews, the turkey business it already owns. Announced on 19 October, the money is aimed at meeting what BPO describes as rising demand for protein-rich food. Boparan is best known as the owner of 2 Sisters Food Group.",
+        "The main Bernard Matthews site at Halesworth, Suffolk is \"at the forefront\" of the spending. It processes around 100,000 turkeys a week and has about 700 staff. The plan covers general building improvements, new staff amenities, a new lairage (the holding area where birds wait before slaughter), new processing and refrigeration equipment, and \"advanced digital tools and robotics\". BPO says the work should raise animal welfare standards.",
+        "What the announcement does not give is just as telling. There is no breakdown of the £100m by category, no completion date and no figure for extra capacity: a spokesperson told Just Food they could not say how production at Halesworth would rise. The spokesperson also declined to discuss investment plans at other sites. Bernard Matthews' Sunderland plant, which with Halesworth makes the existing mince, meatballs and drumsticks, was not singled out for spending.",
+        "The commercial logic is to stop turkey being a Christmas product. Boparan said the business is \"about to ramp up turkey production for the traditional British Christmas\" but sees room to sell turkey all year. BPO explicitly links that to the growing use of GLP-1 weight-loss drugs in the UK, pitching turkey as convenient, high in protein and low in fat and calories. Two new products, Gochujang Turkey Strips and Moroccan Style Turkey Koftas, are in development and under discussion with retail customers.",
+        "The investment sits inside BPO's wider £2bn NextGen programme, which the company says will modernise factories and farms across its network, improve welfare and environmental standards and support a net zero target for 2035. Part of the digital spend is already visible on farms: according to the spokesperson, AI tracks individual birds in barns and they are weighed remotely.",
+        "Bernard Matthews will also lean on Heidemark, the family-owned German turkey and chicken processor that BPO's holding company bought in February. Boparan said the group would learn from its new European partners and create opportunities for British turkey farmers.",
+        "One caution: a headline investment figure spread across buildings, welfare, amenities and kit tells outsiders little about how much will go on the processing hall itself. The equipment orders, and their timing, will only become clear as contracts are let."
+      ],
+      "why_it_matters": "New processing and refrigeration lines at a high-volume poultry plant mean new conveyors and new sanitation routines, and BPO is visibly chasing labour savings through robotics. KHD should approach Bernard Matthews (and 2 Sisters engineering) now, while kit is being specified, with a steam belt-cleaning case built on less labour, water and chemical use and no line teardown.",
+      "sources": [
+        {
+          "outlet": "Food Manufacture",
+          "title": "2 Sisters owner pumps £100M into Bernard Matthews turkey production",
+          "url": "https://www.foodmanufacture.co.uk/Article/2026/10/19/2-sisters-owner-backs-bernard-matthews-with-100m-investment/"
+        },
+        {
+          "outlet": "Just Food",
+          "title": "2 Sisters owner invests in Bernard Matthews turkey plants",
+          "url": "https://www.just-food.com/newsletters/2-sisters-owner-invests-in-bernard-matthews-turkey-plants"
+        }
+      ],
+      "tags": [
+        "bernard matthews",
+        "boparan",
+        "plant investment",
+        "poultry",
+        "2 sisters"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "stats",
+        "title": "Bernard Matthews investment at a glance",
+        "data": [
+          {
+            "label": "Investment by BPO",
+            "value": "£100m"
+          },
+          {
+            "label": "Turkeys a week at Halesworth",
+            "value": "~100,000"
+          },
+          {
+            "label": "Staff at Halesworth",
+            "value": "~700"
+          },
+          {
+            "label": "Wider NextGen programme",
+            "value": "£2bn"
+          }
+        ],
+        "source": "Food Manufacture, Just Food"
+      },
+      "from_brief": "2026-10-25_b02",
+      "request_focus": null
+    },
+    {
+      "id": "a18",
+      "round": 2,
+      "topic": "uk_politics",
+      "title": "Burnham reopens the free movement question, and Farage and the Tories pounce",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "Burnham told the Sunday Times he wants a \"factual, quite evidence-based\" debate on a possible return to EU free movement.",
+        "He ruled out the euro and Schengen, but would not make staying outside free movement a red line; Labour's 2024 manifesto ruled it out.",
+        "Farage called it \"a total betrayal\" and Philp said there can be \"no return\"; Burnham meets EU leaders in Brussels on 20 November."
+      ],
+      "body": [
+        "Andy Burnham has put free movement with the EU back on the table for discussion. In an interview with the Sunday Times, published today, the Prime Minister said the country needed \"a very factual, quite evidence-based debate\" about a possible return to it. He has not committed to restoring it.",
+        "His case is that migration has changed since Brexit. He said free movement \"had very significant challenges associated with it\", but that EU migration \"perhaps wasn't as difficult\" as today's. EU workers often stayed a few years and then went home; \"revolving door migration where people would come and then go back is different,\" he said, adding: \"The balance of migration has changed, hasn't it, since then?\"",
+        "There are limits. Burnham said he could not see himself \"ever recommending anything that would involve joining the euro or Schengen\". But City AM reports he would not treat staying outside free movement as a red line in future talks with Brussels. That is a clear shift: Labour's 2024 manifesto ruled out free movement, the single market and a customs union.",
+        "One correction to how the story first ran: the wider menu of options, from closer economic cooperation up to rejoining the single market, the customs union or the EU itself, comes from remarks Burnham made last month, not this interview. On timing, he said any fundamental change would need a mandate at a general election, which is due by 2029. So nothing big is likely to change before then, but the next Labour manifesto now looks like a live battleground.",
+        "The reaction from the right was immediate. Nigel Farage called the remarks \"a total betrayal of Brexit Britain and his Makerfield pitch\", a dig at Burnham's own seat, and said Burnham was \"deluded\" to claim migration was different inside the EU. \"We will fight this dishonesty,\" he said. Chris Philp, the shadow home secretary, said a return would mean \"handing back control of our borders\" and that \"the British people voted to end free movement, and there can be no return to it.\" The Conservatives would oppose any attempt to restore it.",
+        "The strongest argument on Burnham's side is economic: closer access to the European market would ease friction for exporters, and business surveys keep asking for better trade terms. One, by KPMG and the British Chamber of Commerce in Germany and reported by Die Welt, found 71% of firms wanted the UK government to improve trade relations. The counter is political and practical: the EU has long said single market access comes with free movement attached, and the Leave vote was in large part about ending it.",
+        "The next marker is the UK-EU summit in Brussels on 20 November, where Burnham is expected to set out options for a closer relationship. Watch whether he talks about a youth mobility scheme, which would be a small step, or something closer to the single market, which would make free movement unavoidable."
+      ],
+      "why_it_matters": "For a manufacturer, any move towards the single market would mean fewer border checks and easier hiring from Europe, but it is at least an election away and will be fought hard by both the Conservatives and Reform.",
+      "sources": [
+        {
+          "outlet": "City AM",
+          "title": "Burnham sparks Brexit row over return to EU free movement",
+          "url": "https://www.cityam.com/burnham-sparks-brexit-row-over-return-to-eu-free-movement/"
+        },
+        {
+          "outlet": "Newscord (round-up of BBC, ITV, LBC and others)",
+          "title": "Andy Burnham Seeks Honest Discussion With EU On Returning Free Movement: how 11 outlets framed it",
+          "url": "https://newscord.org/article/andy-burnham-seeks-honest-discussion-with-eu-on-returning-free-movement--Story_20261025_Burnhamopentohonestdee4cb71b"
+        }
+      ],
+      "tags": [
+        "andy burnham",
+        "eu",
+        "free movement",
+        "brexit",
+        "reform uk"
+      ],
+      "update_of": null,
+      "visual": null,
+      "from_brief": "2026-10-25_b07",
+      "request_focus": null
+    },
+    {
+      "id": "a19",
+      "round": 2,
+      "topic": "uk_politics",
+      "title": "Badenoch's pre-Budget pitch: stop relying on cuts that may never come",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "Badenoch told Healey to \"live within our means\", arguing Labour's plans rest on late-parliament cuts that \"investors simply aren't buying\".",
+        "Her backdrop: the 30-year gilt yield topped 6% in early October, the highest since 1998, and debt interest is heading for about £110bn this year.",
+        "The Tories say they have found more than £70bn of savings, mostly from welfare; Labour says they have \"zero credibility on the economy\"."
+      ],
+      "body": [
+        "Kemi Badenoch used a speech in London on Tuesday to set out the Conservative case ahead of John Healey's first Budget this Wednesday. Her central charge is that Labour's deficit plans depend on \"fictional cuts\": big squeezes on public spending pencilled in for the final year of the spending period, which ministers may never have to deliver if an election comes first. \"Fictional cuts are not going to cut it. Investors simply aren't buying it,\" she said.",
+        "She urged Andy Burnham and Healey to \"live within our means\" and \"stop borrowing so much\" to fund public works. Her evidence is the bond market. The 30-year gilt yield, which tracks the cost of long-term government borrowing, topped 6% in early October, its highest since 1998, during a wider global rise in yields. The original summary of this story said simply that gilt yields had reached 6%; it was the 30-year yield. City AM reports that yields eased from that peak but rose again on Tuesday after stronger-than-expected wage growth.",
+        "Badenoch argued the UK pays more to borrow than any other G7 country, nearly two percentage points more than Germany. Debt interest is expected to be about £110bn this year and to rise above £130bn by 2030. She accepted that the wars in Ukraine and Iran are pushing rates up everywhere, but said that was \"no more Labour's fault\" than it was the Tories' when the Ukraine war began. \"The whole argument on defence spending would go away if our interest rates were reduced,\" she added.",
+        "Her alternative is a package the party says finds more than £70bn of savings, largely from welfare, alongside fewer civil servants and less foreign aid. The reports do not break the figure down further, so it cannot yet be checked line by line. \"We do not think it is fair to leave our children saddled with debts we were too idle or cowardly to pay,\" she said.",
+        "Labour's reply was sharp. A spokesperson said the Conservatives have \"zero credibility on the economy\", pointed out that Badenoch's shadow chancellor was an architect of the 2022 mini-budget and said her \"sums don't add up\". Labour also cited £500bn of private investment it says it has secured and growth that has come in faster than expected. It has some outside support: the IMF has praised the deficit reduction, to which Badenoch replied: \"They clearly don't know the Labour Party like we do.\"",
+        "The counter-argument to Badenoch is that she is attacking cuts for being too far off while proposing deeper ones of her own, mostly to welfare, which is politically the hardest area to cut. The IFS has also warned that higher inflation could open a £35bn hole in departmental budgets, which squeezes both parties' arithmetic. Wednesday will show whether Healey takes her challenge seriously and moves savings forward, or keeps the back-loaded plan and relies on the markets staying calm."
+      ],
+      "why_it_matters": "Gilt yields set the cost of business borrowing and asset finance. If markets keep doubting the fiscal plan, firms pay for it through higher rates, whoever is right about the cuts.",
+      "sources": [
+        {
+          "outlet": "City AM",
+          "title": "Badenoch urges Healey to avoid 'fictional cuts'",
+          "url": "https://www.cityam.com/badenoch-urges-healey-to-avoid-fictional-cuts/"
+        },
+        {
+          "outlet": "LBC",
+          "title": "'They don't know Labour like we do': Badenoch to take aim at 'fictional' spending cut promises ahead of crunch Budget",
+          "url": "https://www.lbc.co.uk/article/kemi-badenoch-labour-budget-5Hjdk87_2/"
+        }
+      ],
+      "tags": [
+        "kemi badenoch",
+        "conservatives",
+        "budget",
+        "gilts",
+        "public spending"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "stats",
+        "title": "The borrowing backdrop",
+        "note": "30-year gilt yield peak in early October; debt interest forecasts; Conservative savings claim",
+        "data": [
+          {
+            "label": "30-year gilt yield, highest since 1998",
+            "value": "6%+"
+          },
+          {
+            "label": "Debt interest this year",
+            "value": "~£110bn"
+          },
+          {
+            "label": "Debt interest by 2030",
+            "value": "£130bn+"
+          },
+          {
+            "label": "Tory savings claim",
+            "value": "£70bn+"
+          }
+        ],
+        "source": "City AM, LBC"
+      },
+      "from_brief": "2026-10-25_b08",
+      "request_focus": null
+    },
+    {
+      "id": "a20",
+      "round": 2,
+      "topic": "uk_politics",
+      "title": "Reform's plan to shut the asylum system for a parliament: what it would do",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "Announced on 12 October in Hythe, Reform would suspend the asylum system for a full parliament and void claims in progress.",
+        "About 90,000 outstanding asylum and humanitarian protection appeals would not be heard; the claimants would be deported.",
+        "Labour called it \"desperation\"; the Tories said it \"largely copies\" their own BORDERS plan. Farage separately called Burnham a \"liar\" over Russia and Brexit."
+      ],
+      "body": [
+        "Nigel Farage's most radical asylum pledge yet is now nearly two weeks old, but it has set the terms of the right's immigration debate ahead of the Budget. Speaking in Hythe, Kent, on 12 October, in front of a replica of a 230-person dinghy, Farage said a Reform government would suspend the asylum system for a full parliamentary term, about five years, and declare void any applications in progress. He was joined by Zia Yusuf, Reform's home affairs spokesman.",
+        "The detail goes further than the headline. All asylum tribunals, legal refugee routes and resettlement schemes would be scrapped. Roughly 90,000 outstanding asylum and humanitarian protection appeals would not be heard, and the claimants would be deported. That figure covers people appealing against refused claims, not everyone waiting for a first decision. Anyone granted asylum in the past five years would have their case reviewed by the Home Office, and people who came on recent resettlement schemes would be deported, as Reform says there is \"no mandate\" for them.",
+        "To make removals happen, Reform would use \"visa freezes\" on nationals of Pakistan, Afghanistan, Syria, Eritrea, Sudan and Somalia unless those countries take back deportees, and tariffs and airline bans against other countries with trade ties to Britain.",
+        "Farage told the Telegraph the country faces \"a national security emergency\" and that \"we cannot accept more asylum seekers\" while nobody knows how many people are in the UK illegally. He called the plan \"nothing radical or crazy\" and disputed Labour's claim of a 40% cut in small boat crossings, pointing to 20,000 people processed through Dover in nine months.",
+        "Labour's chair, Bridget Phillipson, called it \"a clear sign of desperation and weakness\", said Farage was reacting to \"scandals, police investigations and a growing challenge from Restore\", and called it a \"carbon copy\" of Restore Britain's policy. Chris Philp, the shadow home secretary, said it \"largely copies\" the Conservatives: banning asylum claims by illegal arrivals, abolishing the immigration tribunal and ending resettlement routes are already Tory policy. The Conservative BORDERS plan also includes leaving the ECHR. Reform has not said whether its own plan needs that.",
+        "That is the strongest objection. Refusing to hear appeals and deporting people with pending cases would be likely to face legal challenge under the Refugee Convention and the ECHR, and would depend on countries agreeing to take people back. The visa and tariff threats are Reform's answer to the second problem. It has not yet answered the first.",
+        "At the same event Farage called Andy Burnham \"a liar\" after the Prime Minister said he had been told this summer that Russia interfered in the 2016 referendum. Farage said Boris Johnson was told there was no interference when he was Foreign Secretary. Foreign Office minister Stephen Doughty said Russia had tried to interfere but had not succeeded."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "LBC",
+          "title": "'There was no Russian interference': Farage blasts Andy Burnham as 'liar' after PM claimed Kremlin meddled in Brexit vote",
+          "url": "https://www.lbc.co.uk/article/farage-burnham-liar-brexit-vote-5Hjdjmq_2/"
+        },
+        {
+          "outlet": "LBC",
+          "title": "Reform to suspend asylum system for five years if elected",
+          "url": "https://www.lbc.co.uk/article/reform-to-suspend-asylum-system-for-five-years-if-electe-farage-5Hjdjkb_2/"
+        },
+        {
+          "outlet": "Brit Brief (citing The Telegraph)",
+          "title": "Farage vows to suspend asylum system and deport 90,000 if Reform wins",
+          "url": "https://britbrief.co.uk/politics/liberties/farage-vows-to-suspend-asylum-system-and-deport-90000.html"
+        }
+      ],
+      "tags": [
+        "reform uk",
+        "nigel farage",
+        "asylum",
+        "immigration",
+        "echr"
+      ],
+      "update_of": null,
+      "visual": null,
+      "from_brief": "2026-10-25_b12",
+      "request_focus": null
+    },
+    {
+      "id": "a21",
+      "round": 2,
+      "topic": "uk_politics",
+      "title": "North Sea producers want Healey to end the windfall tax three years early",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "OEUK wants Wednesday's Budget to replace the 78% Energy Profits Levy with the planned Oil and Gas Revenue Levy from January 2027, not 2030.",
+        "It claims this would unlock £50bn of investment and raise £14.9bn more over a decade, mostly through payroll taxes.",
+        "Healey has been reported, without confirmation, to be weighing a further extension of the current levy instead."
+      ],
+      "body": [
+        "The oil and gas industry is pressing John Healey to use Wednesday's Budget to bring forward the end of the North Sea windfall tax. Offshore Energies UK, the trade body, wants the Energy Profits Levy replaced by its planned permanent successor, the Oil and Gas Revenue Levy, from January 2027 instead of 2030.",
+        "The current levy was introduced in 2022 and has since been raised and extended; it now gives North Sea production profits a headline tax rate of 78% and is legislated to run until March 2030. The replacement would work differently: a 35% levy on revenues that applies only when oil is above $90 a barrel and gas above 90p a therm, on top of the standard 30% ring-fenced corporation tax and 10% supplementary charge. In other words, it would bite when prices spike rather than taxing ordinary profits as a windfall.",
+        "OEUK first wrote to Healey in early September, six months after his predecessor Rachel Reeves said the government backed ending the levy \"in principle\". The group's chief executive, David Whitehouse, called an earlier switch a \"win-win\" and said: \"We are not arguing against higher taxes during periods of high prices.\" His complaint is that the current regime treats \"ordinary commercial North Sea returns\" as a windfall.",
+        "The industry's numbers are large. OEUK says the new regime would unlock £50bn of investment. Its annual report, covered by Bloomberg, claims that starting in 2027 would bring in £2.4bn more in industry taxes over the next decade than the current path, plus £12.6bn in extra payroll taxes, £14.9bn in all. It also says faster tax changes and a \"pragmatic approach to licensing\" could support 111 more projects. These are the industry's own estimates and have not been independently tested.",
+        "The worry is that Healey goes the other way. Unconfirmed reports said he was considering extending the levy again. With headroom thin and borrowing costs high, a windfall tax on energy firms is an easy source of revenue. The case for that is simple: high prices driven by war have produced profits that firms did not earn through extra investment, and the Treasury needs the money now. The industry's reply is that investment is already falling. BP said in August it is working to exit the North Sea, and the sector blames the levy and Labour's ban on new exploration drilling.",
+        "There are mixed signals from Downing Street. Burnham this week tied the approval of drilling at the Jackdaw gas field, which the government expects to raise domestic gas output by 6% at its peak, to a review of removing standing charges from gas bills. That suggests he sees some domestic production as useful. Wednesday will show whether the Treasury agrees."
+      ],
+      "why_it_matters": "North Sea gas supply and investment feed into industrial energy prices. A clear, earlier end to the windfall tax would support domestic supply; another extension would point the other way.",
+      "sources": [
+        {
+          "outlet": "Offshore Energies UK",
+          "title": "OEUK writes to Chancellor seeking urgent talks on North Sea tax regime",
+          "url": "https://oeuk.org.uk/?p=261711"
+        },
+        {
+          "outlet": "Rigzone (Bloomberg)",
+          "title": "OEUK Says UK to Gain From Replacing Oil Windfall Tax Early",
+          "url": "https://www.rigzone.com/news/wire/oeuk_says_uk_to_gain_from_replacing_oil_windfall_tax_early-15-sep-2026-184620-article/"
+        },
+        {
+          "outlet": "Energy-pedia",
+          "title": "Six months on: Industry urgently needs a firm date for Treasury's North Sea tax plan, says Offshore Energies UK",
+          "url": "https://www.energy-pedia.com/news/united-kingdom/six-months-on--industry-urgently-needs-a-firm-date-for-treasury%E2%80%99s-north-sea-tax-plan--says-offshore-energies-uk-205207"
+        },
+        {
+          "outlet": "PoliticsHome",
+          "title": "PM Says Government Plans To Remove Standing Charges From Energy Bills",
+          "url": "https://www.politicshome.com/news/article/pm-says-government-exploring-removing-standing-charges-gas-bills"
+        }
+      ],
+      "tags": [
+        "north sea",
+        "energy profits levy",
+        "oil and gas",
+        "budget",
+        "john healey"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "stats",
+        "title": "Windfall tax now and the planned replacement",
+        "note": "Headline rates and OEUK's own estimates",
+        "data": [
+          {
+            "label": "Energy Profits Levy headline rate",
+            "value": "78%"
+          },
+          {
+            "label": "Planned replacement levy (oil > $90, gas > 90p)",
+            "value": "35%"
+          },
+          {
+            "label": "Investment OEUK says it would unlock",
+            "value": "£50bn"
+          },
+          {
+            "label": "Extra tax over a decade, OEUK estimate",
+            "value": "£14.9bn"
+          }
+        ],
+        "source": "Offshore Energies UK, Rigzone (Bloomberg)"
+      },
+      "from_brief": "2026-10-25_b15",
+      "request_focus": null
+    },
+    {
+      "id": "a22",
+      "round": 2,
+      "topic": "ukraine",
+      "title": "Germany in talks to buy Ukraine's Bars jet drones as it shops for cheap deep-strike weapons",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "Berlin is negotiating to buy Ukraine's jet-powered Bars strike drones, a German official says.",
+        "The talks are part of a German plan to buy masses of cheap long-range weapons; its army has only the Taurus.",
+        "Published range figures for Bars differ (700–800km in July, 1,000km now), and most performance data come from Ukrainian sources."
+      ],
+      "body": [
+        "Germany is negotiating with Ukraine to buy Bars jet-powered strike drones, a German official told the Kyiv Independent on Friday. The talks are a step beyond the arrangement agreed in July, under which Germany pays for Bars production and every drone goes to Ukraine's own forces. This time Berlin is shopping for itself.",
+        "The context comes from Bloomberg, which reported on 23 October that Germany plans to buy thousands of deep-strike weapons from European arms makers. Officials told it that German strategic thinking now turns on \"masses of cheap missiles to overwhelm enemy air defenses\". The German army's only long-range weapon today is the medium-range Taurus cruise missile, and the US has warned allies to expect delays of years on missile deliveries.",
+        "Bars is a jet-powered missile-drone. The Kyiv Independent gives it a range of 1,000km and a top speed of up to 700km/h. The specialist outlet Militarnyi, reporting the July deal, put the range at about 700–800km and said it is fired from a ground launcher with solid-fuel booster rockets. The maker is not named, for security reasons. A company representative told the Ukrainian outlet NV in September that the army launches about 2,000 Bars a month, against Russian oil refineries, power plants and substations. On 10 October Zelensky said Bars had also proved one of the most effective interceptors against Russia's jet-powered attack drones.",
+        "The July agreement was signed by Ukraine's foreign minister, Andrii Sybiha, and Germany's defence minister, Boris Pistorius, on the sidelines of the NATO summit in Ankara, under Kyiv's \"Build with Ukraine\" scheme for producing Ukrainian weapons abroad. Germany is already Ukraine's biggest foreign partner in defence technology: a September report by the Kyiv School of Economics Institute counted 36 Ukrainian-German joint ventures.",
+        "Bars has been on Berlin's list for a while. In June, Politico reported from German defence ministry documents, as summarised by Defence24, that procurement officials were evaluating Bars and Fire Point's FP-5 Flamingo, and had asked the US-Israeli firm Covenant for proposals. The same reporting set out a four-track plan: a low-cost cruise missile in service from 2027, the US Typhon launcher with a Tomahawk option around 2029, an Anglo-German cruise missile around 2032 and a hypersonic weapon around 2035. Diehl Defence said it was in talks with Fire Point to build the Flamingo in Germany.",
+        "For Kyiv, a German order would turn a wartime improvisation into an export product and help pay for the production lines it relies on. The case against: almost all published performance data for Ukraine's missile-drones come from Ukrainian officials or the makers, and the two range figures for Bars do not even agree."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Germany in talks to buy Ukrainian jet powered drones",
+          "url": "https://kyivindependent.com/germany-in-talks-to-buy-ukrainian-jet-powered-drones/"
+        },
+        {
+          "outlet": "Militarnyi",
+          "title": "Bars Jet-Powered Drones for Ukraine to Be Produced in Germany",
+          "url": "https://militarnyi.com/en/news/bars-jet-powered-drones-for-ukraine-to-be-produced-in-germany/"
+        },
+        {
+          "outlet": "Defence24",
+          "title": "Trump's pullback spurs Berlin's missile hunt in Israel and Ukraine",
+          "url": "https://defence24.com/industry/trumps-pullback-spurs-berlins-missile-hunt-in-israel-and-ukraine"
+        }
+      ],
+      "tags": [
+        "germany",
+        "bars",
+        "drones",
+        "deep strike",
+        "defence industry"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "stats",
+        "title": "Bars in figures",
+        "note": "Range and speed as reported by the Kyiv Independent; monthly launches per a manufacturer representative to NV (September)",
+        "data": [
+          {
+            "label": "Range (km)",
+            "value": "1,000"
+          },
+          {
+            "label": "Top speed (km/h)",
+            "value": "700"
+          },
+          {
+            "label": "Launched per month",
+            "value": "~2,000"
+          },
+          {
+            "label": "Ukrainian-German defence JVs",
+            "value": "36"
+          }
+        ],
+        "source": "Kyiv Independent"
+      },
+      "from_brief": "2026-10-25_b17",
+      "request_focus": null
+    },
+    {
+      "id": "a23",
+      "round": 2,
+      "topic": "ukraine",
+      "title": "Starshield speed cap lifted as Musk accuses Ukraine of breaking Starlink's terms",
+      "kind": "news",
+      "read_minutes": 3,
+      "tldr": [
+        "Ukraine says its military satellite links work again for terminals moving at more than 400km/h, after a cap of about 160km/h from 14 October.",
+        "The '400km/h' is how fast a drone can fly and stay connected, not a data speed.",
+        "Musk says Kyiv broke Starlink's terms by using it for drone strikes; Ukrainian officials say that was technically impossible."
+      ],
+      "body": [
+        "Ukraine's drones can use Starlink and its military version, Starshield, at full speed again. \"The speeds are now where they need to be,\" Volodymyr Zelensky said on Saturday. Only a day earlier he had said the restrictions were \"still in effect\". His defence ministry added: \"We record a speed of more than 400 kilometres per hour, the connection is stable.\"",
+        "That figure is easy to misread. It is not a data rate but the speed at which a moving terminal keeps its connection. From the night of 13–14 October, without warning, connections were cut for terminals moving faster than about 160km/h (100mph), according to the Wall Street Journal's reporting as relayed by the Kyiv Post. Short-range FPV drones, which use direct radio links, and fixed terminals at the front were largely unaffected. The damage fell on faster drones flying beyond radio range: interceptors, medium-range strike drones, reconnaissance and relay aircraft. Russia's jet-powered attack drones fly at about 300km/h, and Kyiv had argued that its interceptors need a reliable link at up to 450km/h.",
+        "The effect showed quickly. Institute for the Study of War data cited by Newsweek show Ukrainian drone strikes on Russian vehicles fell to fewer than 50 on 14 October. Since July they had regularly run at 100 to 150 a day, and topped 200 earlier in October. By around 20 October they were back above 50.",
+        "Who ordered the cap is still disputed. The Journal reported, citing US officials, that Elon Musk did; Reuters had earlier reported that the order came from inside the White House. Musk said Starshield is owned and controlled by the US government and that the president decides any limits. Donald Trump denied responsibility. Marco Rubio said on 18 October that Ukraine has no access to Starshield, and Pete Hegseth suggested on 20 October that the issue was the terms of service Kyiv must follow. The Journal then reported that Trump told Musk on 21 October to lift the limits. Senator Richard Blumenthal opened an inquiry and Andy Burnham raised the matter with Trump.",
+        "Hours after the restoration, Musk wrote on X that Ukraine's military had \"violated Starlink terms of service and used it for offensive drone strikes to kill people\", adding that the \"loophole was closed last week\" and that if Starlink were switched off \"the Ukrainian front line would collapse immediately\". Serhii Sternenko, a former defence ministry adviser, replied that whitelists have applied since February, that mobile terminals must be on a special list tied to Starshield, and that using commercial Starlink for drone missions is \"technically impossible\". Serhii Beskrestnov, a presidential adviser, said Ukrainian Starlink terminals already had a 70–90km/h limit and did not work over Russian territory, and that Musk seemed unaware of it.",
+        "The episode has sharpened Kyiv's interest in an alternative. On 22 October, during a visit by Finland's prime minister, Petteri Orpo, the Finnish firms ICEYE and Nokia signed a letter of intent with Ukraine's defence ministry to develop a sovereign broadband satellite network in low Earth orbit. Ukraine would own the satellites, ground stations and terminals; Nokia Defense's chairman, Mikko Hautala, said it would give Ukraine \"control over the connectivity it depends on\". No cost or launch timeline has been given, so for now the front still runs on SpaceX.",
+        "Musk's case, in short, is that a commercial provider may set the terms on which its network is used in war. Kyiv's answer is that a supplier which can throttle a front line overnight is a supplier it cannot rely on."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Starshield operations restored to normal speed, Zelensky confirms as Elon Musk claims Ukraine violated Starlink terms",
+          "url": "https://kyivindependent.com/starshield-operations-restored-above-400-km-h-ukraines-defense-ministry-says/"
+        },
+        {
+          "outlet": "Kyiv Post (reporting the Wall Street Journal)",
+          "title": "Musk ordered Starlink restrictions on Ukraine, WSJ reports",
+          "url": "https://www.kyivpost.com/post/87694"
+        },
+        {
+          "outlet": "Newsweek",
+          "title": "Chart shows Ukraine strikes plummeted since Starshield restrictions",
+          "url": "https://www.newsweek.com/chart-shows-ukraine-strikes-plummeted-since-starshield-restrictions-12598166"
+        },
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Amid Starlink crisis, Finnish tech giants announce plan to help Ukraine build its own sovereign satellite system",
+          "url": "https://kyivindependent.com/amid-starlink-crisis-finnish-tech-giants-announce-plan-to-help-ukraine-build-its-own-sovereign-satellite-system/"
+        }
+      ],
+      "tags": [
+        "starlink",
+        "starshield",
+        "elon musk",
+        "drones",
+        "satellites"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "bar",
+        "title": "How fast a drone can fly and stay connected",
+        "note": "Terminal speed in km/h; 'restored' is the defence ministry's 'more than 400'",
+        "data": [
+          {
+            "label": "Cap from 14 Oct",
+            "value": 160
+          },
+          {
+            "label": "Russian jet attack drones",
+            "value": 300
+          },
+          {
+            "label": "Restored (24 Oct)",
+            "value": 400
+          },
+          {
+            "label": "Kyiv's interceptor need",
+            "value": 450
+          }
+        ],
+        "unit": " km/h",
+        "highlight": "Cap from 14 Oct",
+        "source": "Kyiv Post (WSJ), Kyiv Independent"
+      },
+      "from_brief": "2026-10-25_b20",
+      "request_focus": null
+    },
+    {
+      "id": "a24",
+      "round": 2,
+      "topic": "ukraine",
+      "title": "Ukraine's drones reach Siberia again: what flies 2,500km and what it is hitting",
+      "kind": "analysis",
+      "read_minutes": 3,
+      "tldr": [
+        "Monitoring channels say drones hit a petrochemical plant and an Ozon warehouse in Omsk, 2,500km away; Russia confirms only a drone attack on a 'logistics hub'.",
+        "This is not new reach: Omsk's refinery was hit in July and on 8 October, reportedly by Fire Point FP-1s.",
+        "The targets are shifting from oil towards missile inputs: electronics, synthetic rubber, titanium."
+      ],
+      "body": [
+        "Late on Friday the Ukrainian monitoring channel Exilenova Plus reported strikes in Omsk, about 2,500km from the border. A fire broke out at Omsky Kauchuk, one of Russia's largest petrochemical plants, which makes synthetic rubber and a petrol additive; the channel claims it also supplies rocket fuel for Iskander missiles. An Ozon online-retail warehouse was reportedly hit as well. The regional governor, Vitaliy Khotsenko, confirmed only that \"a logistics hub in Omsk was attacked by a drone\". Kyiv has not claimed the strike, and the Kyiv Independent could not verify it.",
+        "Two details in the early reports need correcting. This is not a new range record: Ukraine first hit the Omsk refinery, Russia's largest, on 6 July and again on 8 October. And the Oryol strike and the closure of Moscow's airports came on 23 October, a day before Omsk; the General Staff confirmed Oryol on the 24th.",
+        "Nobody has said which drone flew to Omsk this time, and Ukraine rarely does. But two types carry most of the deep campaign. The FP-1, made by the private firm Fire Point, is a launcher-fired, twin-boom kamikaze drone weighing 60–120kg and costing about $55,000, EUobserver reports. The original reaches about 1,600km. Militarnyi says FP-1s made the 8 October Omsk strike, and that an upgraded model, renamed FP-6 and in service since July, has a wider wing that doubles as a fuel tank; Fire Point's designer, Denys Shtilerman, claims up to 3,400km.",
+        "The state-built An-196 Liutyi, from Antonov and Ukroboronprom, takes off from a runway like a light aircraft, weighs up to 300kg and carries a 50–75kg warhead. At about $200,000 it costs roughly four times an FP-1. EUobserver says it navigates by matching camera images against stored pictures of the target, reportedly without Starlink. Zelensky said an upgraded version, which Militarnyi credits with up to 2,500km, hit the Ukhta refinery in Komi, about 1,700km away, on 9 October. The jet-powered Bars is faster but, at a reported 1,000km, shorter-legged.",
+        "What is being hit matters as much as how far. Through the summer the campaign went after refineries: EUobserver reports that Russia extended its petrol export ban to 31 January 2027 amid its worst fuel crisis since the Soviet collapse. This week's targets lean towards weapons inputs. On 23 October drones hit the Proton-Electrotex electronics plant in Oryol, which reportedly supplies parts for Iskander-M missiles and Pantsir air defences; the General Staff said the strike \"complicates the production of components\" for cruise and ballistic missiles. On the 24th it reported hits on the Tolyattikauchuk synthetic-rubber plant, saying such rubbers go into solid rocket fuel, and on an aircraft at Yeysk. On Sunday monitoring channels claimed a strike on the Avisma titanium-sponge plant in Berezniki, more than 1,400km away; Perm's governor said 11 drones were downed and an industrial site slightly damaged, with five workers hurt.",
+        "The Moscow raid on 23 October showed the side-effects. Flights were suspended at Sheremetyevo, Domodedovo, Vnukovo and Zhukovsky; Sheremetyevo had 85 cancellations and 229 delays, and the mayor, Sergei Sobyanin, said 17 drones were shot down. Zelensky says Ukraine does not threaten civil aviation, but that airlines and insurers should price drone risk in Russian airspace into their decisions.",
+        "The logic, as the analyst Visingr put it to EUobserver, is that \"Russia simply cannot cover 100 percent of its territory with air-defence systems\". The caution: many of these hits rest on monitoring channels, Russian governors routinely report most drones downed and damage \"minor\", and the true effect on missile output is not yet visible."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Ukrainian forces reportedly strike Russian targets 2,500 kilometers from border",
+          "url": "https://kyivindependent.com/ukrainian-forces-reportedly-strike-russian-targets-2-500-kilometers-from-border/"
+        },
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Ukrainian forces strike Oryol electronics plant, General Staff confirms, drone attacks shut down Moscow airports",
+          "url": "https://kyivindependent.com/ukrainian-drone-attack-triggers-shut-down-of-moscow-airports-drone-debris-reported-on-tarmac/"
+        },
+        {
+          "outlet": "Militarnyi",
+          "title": "Ukraine Uses Updated AN-196 RS and FP-6 Long-Range Drones",
+          "url": "https://militarnyi.com/en/news/ukraine-an-196-rs-fp-6-long-range-drones/"
+        },
+        {
+          "outlet": "EUobserver",
+          "title": "FP-1, Liutyi, Hornet: The drones behind Russia's new fuel crisis",
+          "url": "https://euobserver.com/230994/fp-1-liutyi-hornet-the-drones-behind-russias-new-fuel-crisis-ukraine-battlefield-update-day-1619/"
+        },
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Ukraine strikes Russian titanium plant, facility producing missile, drone components, monitoring channels claim",
+          "url": "https://kyivindependent.com/ukraine-strikes-russian-titanium-plant-more-than-1-400-kilometers-from-border-monitoring-channel-claims/"
+        }
+      ],
+      "tags": [
+        "long-range strikes",
+        "drones",
+        "fp-1",
+        "liutyi",
+        "russian industry",
+        "siberia"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "bar",
+        "title": "How far this month's targets are from Ukraine's border",
+        "note": "Approximate distances as reported, km",
+        "data": [
+          {
+            "label": "Oryol (23 Oct)",
+            "value": 160
+          },
+          {
+            "label": "Berezniki (25 Oct)",
+            "value": 1400
+          },
+          {
+            "label": "Ukhta (9 Oct)",
+            "value": 1700
+          },
+          {
+            "label": "Omsk (8 and 24 Oct)",
+            "value": 2500
+          }
+        ],
+        "unit": " km",
+        "highlight": "Omsk (8 and 24 Oct)",
+        "source": "Kyiv Independent, Militarnyi"
+      },
+      "from_brief": "2026-10-25_b21",
+      "request_focus": "like to know about the drones used and general context "
+    },
+    {
+      "id": "a25",
+      "round": 2,
+      "topic": "nato",
+      "title": "Industry tells MPs the Defence Investment Plan is 'not investable as it stands'",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "Make UK's Stephen Phipson told the Defence Committee firms will not build factories on the plan as written: it has themes but no contracts or programme detail.",
+        "ADS's Kevin Craven said the plan is detailed only for four years, to 2029, and sketches roughly 50–55% of ten-year spending.",
+        "Spending ramped up late in the period would hit a bottleneck, he warned, because a new production line takes two to four years to build."
+      ],
+      "body": [
+        "The Defence Investment Plan was supposed to give industry the confidence to expand. Its biggest trade bodies have now told MPs it does not. Giving evidence to the Commons Defence Committee, Make UK chief executive Stephen Phipson said: \"This is not investable as it stands at the moment.\" The direction of travel was welcome, he said, but the contracts, programmes and procurement detail that firms need before building new capacity were missing. The UK Defence Journal reported the session on Saturday.",
+        "The plan was published on 30 June and sets out £298bn of investment over the next four years, according to ADS, the aerospace and defence trade body. ADS welcomed it at the time and said the real test would be turning it into contracts. On the evidence given to MPs, that test has not yet been passed.",
+        "ADS chief executive Kevin Craven explained the gap. The old defence equipment plan laid out a detailed pipeline of purchases over ten years. The new plan concentrates on the first four, up to 2029, and in rough terms accounts for about 50% to 55% of total spending over the decade. Some money has been brought forward to improve readiness, he said, but there is not enough detail to give firms certainty. \"Intent is not the same as a commitment that is suitable for investors in defence,\" he told the committee.",
+        "Craven's sharper warning was about timing. Industrial capacity cannot be switched on overnight: building a new production line from scratch takes two to four years, depending on what is involved. If spending is pushed towards the end of the period, firms will all compete for the same skills, money and materials at once, creating a bottleneck just when the armed forces need the kit.",
+        "Liberal Democrat MP Ian Roome asked how damaging it would be if the next spending review failed to provide a funded path towards defence spending of 3% of national income, and whether industry would invest on the current plan regardless. Phipson's answer was no: firms will invest only once the shape of the programme is certain. ADS has called for a \"clear and deliverable trajectory\" to 3% of GDP by 2030 and 3.5% by 2035.",
+        "Julian David of techUK added that delay itself costs the country money, because inflation and shortages of electronic components push up prices the longer orders are held back. Arnab Dutt of the Federation of Small Businesses also gave evidence.",
+        "The counter-argument is that the plan is not empty: ADS itself said in June that its clarity would help industry, and some spending has been brought forward for readiness. But for manufacturers being asked to commit capital, the message from the witness table was consistent: a theme is not an order book."
+      ],
+      "why_it_matters": "Any UK manufacturer weighing defence work faces the same problem the trade bodies describe: without named programmes and contract timing, it is hard to justify new capacity.",
+      "sources": [
+        {
+          "outlet": "UK Defence Journal",
+          "title": "Investment plan not investable as it stands, MPs told",
+          "url": "https://ukdefencejournal.org.uk/investment-plan-not-investable-as-it-stands-mps-told/"
+        },
+        {
+          "outlet": "ADS Group",
+          "title": "The Defence Investment Plan 2026",
+          "url": "https://www.adsgroup.org.uk/knowledge/the-defence-investment-plan-2026/"
+        }
+      ],
+      "tags": [
+        "defence investment plan",
+        "make uk",
+        "ads",
+        "procurement",
+        "defence industry"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "stats",
+        "title": "What industry told MPs",
+        "data": [
+          {
+            "label": "Investment in the plan",
+            "value": "£298bn"
+          },
+          {
+            "label": "Years covered in detail",
+            "value": "4"
+          },
+          {
+            "label": "Share of 10-year spend sketched",
+            "value": "50–55%"
+          },
+          {
+            "label": "Years to build a production line",
+            "value": "2–4"
+          }
+        ],
+        "source": "UK Defence Journal; ADS"
+      },
+      "from_brief": "2026-10-25_b22",
+      "request_focus": null
+    },
+    {
+      "id": "a26",
+      "round": 2,
+      "topic": "nato",
+      "title": "What is known about the UK-German 2,000km Deep Precision Strike missile",
+      "kind": "analysis",
+      "read_minutes": 2,
+      "tldr": [
+        "Defence minister Luke Pollard hosted Germany's armaments state secretary Jens Plötner at Lancaster House on 15 October to review Deep Precision Strike.",
+        "The programme is studying two missiles, a stealthy cruise missile and a hypersonic glide vehicle, with a range beyond 2,000km and service entry in the 2030s.",
+        "Hard details are scarce: no cost, no performance figures and no named prime contractor have been published."
+      ],
+      "body": [
+        "Britain and Germany are developing a missile that could hit targets more than 2,000km away. On 15 October Luke Pollard, Minister for Defence Readiness and Industry, hosted Jens Plötner, Germany's State Secretary for Armament and Innovation, at Lancaster House to review the programme, called Deep Precision Strike, and the two countries' wider defence-industrial work. Below is what is on the public record, and what is not.",
+        "The meeting. The talks took place under the UK–Germany Ministerial Group on Equipment and Capability Cooperation. Also present were Rupert Pearce, Britain's National Armaments Director, and his German counterpart, Vice Admiral Carsten Stawitzki. A panel at the German Embassy included Philipp Kerth of Hypersonica and Katherine Williams of Rolls-Royce. Pollard called Germany \"one of our closest and most valued defence partners\", the UK Defence Journal reported.",
+        "The weapon. Range is the one hard figure: more than 2,000km, according to the Ministry of Defence. Service entry is expected in the 2030s. In a written answer to Conservative MP Stuart Anderson in August, Pollard said: \"The programme includes Stealthy Cruise and Hypersonic Glide Vehicle missile solutions.\" The first relies on low detectability and powered flight; the second is launched, travels at hypersonic speed and manoeuvres towards its target. The work starts with ground-launched missiles, with air- and sea-launched versions to be explored later.",
+        "The paperwork. The programme was promised in the Trinity House Agreement of October 2024, which covers air, land, maritime, cyber and space cooperation and now sits under the Kensington Treaty signed in July 2025. A memorandum of understanding signed in March 2026 let British and German teams align their military requirements and start work with industry. The MoD says the programme is open to other countries.",
+        "Where it stands. According to Pollard's August answer, joint teams are delivering technical work already contracted with industry and preparing follow-on contracts. He reported \"positive alignment\" on key programme parameters. UK funding is \"outlined under the Defence Investment Plan\".",
+        "What is missing. No programme cost has been published. Neither government has released performance figures beyond range, propulsion details or launch platforms, and the MoD names no companies as contractors. The appearance of Rolls-Royce and Hypersonica on the embassy panel shows who is in the conversation, not who has the work. Given industry's complaint this week that the Defence Investment Plan lacks programme-level detail, a missile with a range but no published budget is a fair example of the problem.",
+        "The wider relationship. Germany is already operating from Britain: German P-8 Poseidon patrol aircraft crews have flown from Lossiemouth, and Rheinmetall has expanded in the UK, including a gun barrel factory at Telford announced under Trinity House. During the Prime Minister's visit to Berlin on 8 October the two countries agreed to deepen space cooperation and to set up a Counter-Hybrid Partnership against grey-zone threats."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "UK Defence Journal",
+          "title": "Britain and Germany review joint strike programme",
+          "url": "https://ukdefencejournal.org.uk/britain-and-germany-review-joint-strike-programme/"
+        },
+        {
+          "outlet": "GOV.UK (Ministry of Defence)",
+          "title": "UK and Germany meet to advance Deep Precision Strike missile programme to boost national security",
+          "url": "https://www.gov.uk/government/news/uk-and-germany-meet-to-advance-deep-precision-strike-missile-programme-to-boost-national-security"
+        },
+        {
+          "outlet": "UK Defence Journal",
+          "title": "UK-German strike programme includes hypersonic weapon",
+          "url": "https://ukdefencejournal.org.uk/uk-german-strike-programme-includes-hypersonic-weapon/"
+        }
+      ],
+      "tags": [
+        "germany",
+        "deep precision strike",
+        "hypersonic",
+        "trinity house",
+        "long-range strike"
+      ],
+      "update_of": null,
+      "visual": null,
+      "from_brief": "2026-10-25_b24",
+      "request_focus": "Details if they exist "
+    },
+    {
+      "id": "a27",
+      "round": 2,
+      "topic": "nato",
+      "title": "The MoD's new 'front door' for small firms, and what a defence start-up should know",
+      "kind": "analysis",
+      "read_minutes": 3,
+      "tldr": [
+        "The MoD will publish a single guide to its procurement entry points for small and medium-sized firms by the end of 2026.",
+        "It wants to lift direct SME spending from £1.24bn in 2024/25 to £2bn in 2027/28, part of a £2.5bn rise in total SME spend by summer 2028.",
+        "The routes in already exist: the Defence Sourcing Portal, Commercial X for contracts up to £50m, UK Defence Innovation and the Office for Small Business Growth."
+      ],
+      "body": [
+        "The Ministry of Defence will publish a simple \"front door\" listing its procurement entry points for small and medium-sized firms by the end of this year. Defence minister Luke Pollard made the promise in answers to Conservative MP Matt Vickers, the UK Defence Journal reported on Friday. Below is the practical detail a would-be founder needs.",
+        "The money. Defence spends about £5bn a year with SMEs, according to the MoD's SME Action Plan published in July. Only around a quarter goes on direct contracts; the rest flows through prime contractors' supply chains. The target is an extra £2.5bn a year by summer 2028, a 50% rise. Direct SME spend was £1.24bn in 2024/25, out of £31.6bn of total procurement. The targets are £1.48bn in 2026/27 and £2bn in 2027/28, with indirect spend rising from £4.5bn to £5.5bn. About 12,000 SMEs already sit in defence supply chains.",
+        "Who counts. Under the Procurement Act 2023, an SME has fewer than 250 staff and either turnover of £44m or less or a balance sheet of £38m or less.",
+        "Where to start. Pollard said the MoD always encourages SMEs to join the Defence Sourcing Portal \"in the first instance\". Opportunities going to open competition are flagged as pipeline notices on the Find a Tender platform. The Defence Office for Small Business Growth, set up in January, offers a website, a contact centre and an anonymous helpline. The SME Commercial Pathway is now public.",
+        "Faster routes. Commercial X handles contracts of up to £50m and under two years, and runs the Neutral Vendor Framework for Innovation, a Dynamic Marketplace and the Defence Unicorn Fund. UK Defence Innovation holds what the plan calls a \"significant budget\" for SME investment and runs regional defence and security clusters. Dstl has a Co-Creation Portal and a sister company, Ploughshare, which licenses its technology.",
+        "Help on offer. A three-month accelerator pilot run by the High Value Manufacturing Catapult and Make UK Defence is taking 20 SMEs. A separate scheme, Vanguard, run by Make UK Defence and AWS, gives five businesses a shared budget of over £750,000 in its first phase. The Defence Exports Unit offers free export support. Supplier events run through the Defence Sourcing Portal and trade shows such as DSEI and DPRTE.",
+        "The rules on bidding. Pollard said the law and MoD policy require experience, financial-standing and accreditation demands to be proportionate to each contract. The action plan promises less unnecessary bidding paperwork and a published share of direct SME spend at least once a year.",
+        "The timetable. The action plan sets dated steps: a guide to entry points and portals from the second quarter, which is the \"front door\" Pollard has now promised by December; a pledge for strategic partners and prime contractors on working with small suppliers; a review of social value, offsets, consortium bids and open frameworks from the third quarter; and digital self-help tools with out-of-hours support by the fourth. Small firms also get a voice through the Defence Industrial Joint Council.",
+        "Other pots. The plan points to a £250m Defence Growth Deals programme and a £182m skills package under the Defence Industrial Strategy. The MoD also promises to engage lenders ahead of a Defence Finance and Investment Strategy and to make clear that ESG rules do not hinder defence finance.",
+        "The catch. The figures Pollard gave for Tees Valley show how hard direct work is to win. Small firms there won two direct MoD contracts worth £1.48m in 2023/24, two worth £322,000 in 2024/25 and none in 2025/26. techUK has welcomed the plan but said no activity in it has a named owner and the small business office will need far more capacity. The realistic first step for most start-ups is still a subcontract to a prime, not a direct MoD contract."
+      ],
+      "why_it_matters": "For a UK manufacturer with engineering skills, the supply chain is where most of the £5bn goes: three-quarters of SME defence spend is indirect.",
+      "sources": [
+        {
+          "outlet": "UK Defence Journal",
+          "title": "Simple front door for defence suppliers due this year",
+          "url": "https://ukdefencejournal.org.uk/simple-front-door-for-defence-suppliers-due-this-year/"
+        },
+        {
+          "outlet": "GOV.UK (Ministry of Defence)",
+          "title": "Ministry of Defence's Small and Medium-sized Enterprise (SME) Action Plan",
+          "url": "https://www.gov.uk/government/publications/mod-small-and-medium-sized-enterprise-sme-action-plan/ministry-of-defences-small-and-medium-sized-enterprise-sme-action-plan"
+        }
+      ],
+      "tags": [
+        "procurement",
+        "smes",
+        "ministry of defence",
+        "defence industry",
+        "start-ups"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "bar",
+        "title": "MoD direct spending with small firms",
+        "note": "Direct contracts with SMEs, £bn a year; 2024/25 actual, later years targets",
+        "prefix": "£",
+        "unit": "bn",
+        "decimals": 2,
+        "data": [
+          {
+            "label": "2024/25 actual",
+            "value": 1.24
+          },
+          {
+            "label": "2026/27 target",
+            "value": 1.48
+          },
+          {
+            "label": "2027/28 target",
+            "value": 2.0
+          }
+        ],
+        "highlight": "2027/28 target",
+        "source": "MoD SME Action Plan"
+      },
+      "from_brief": "2026-10-25_b25",
+      "request_focus": "Lots of snappy details interested if I ever want to do a startup\n"
+    },
+    {
+      "id": "a28",
+      "round": 2,
+      "topic": "china",
+      "title": "China protests UK border searches and phone seizures of its nationals",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "China's embassy says several Chinese nationals, including trade delegates, were held and questioned at length at the UK border and had phones and other devices seized.",
+        "Beijing says it has lodged \"stern representations\"; the embassy says the officers cited the Counter-Terrorism and Border Security Act 2019. No UK statement has been published.",
+        "It comes three weeks after MI5's first public alert naming a Chinese research funder as a front for Beijing's spy agency."
+      ],
+      "body": [
+        "China has formally protested to Britain over the treatment of its citizens at the UK border. The facts as reported:",
+        "What happened. On Tuesday 20 October the Chinese embassy in London posted a notice on its consular WeChat account saying several Chinese nationals had been held and questioned for long periods when entering or leaving the UK. In several cases officers seized mobile phones and other personal electronic devices. Those affected included members of Chinese trade and business delegations, people visiting relatives and ordinary tourists.",
+        "What is not known. The embassy gave no number of cases, no dates, no names and no length of detention. The published accounts, including those of Chinese state media Global Times and CGTN, relay the embassy's notice. No UK government response has been published.",
+        "The legal basis. According to the embassy, British officers said they were acting under \"relevant provisions\" of the Counter-Terrorism and Border Security Act 2019. The embassy did not say which. That Act's Schedule 3 is the power aimed at state threats: it lets officers stop, question, search and detain a person at a UK port to determine whether they are involved in \"hostile activity\" on behalf of a foreign state, and to retain, copy, use and destroy articles found in a search. Its use is overseen by the Investigatory Powers Commissioner, who can authorise keeping or destroying material and reports on how the power is used. Whether Schedule 3 was the provision used here has not been confirmed.",
+        "Beijing's response. China has expressed \"grave concern\", lodged \"stern representations\" with the UK and will keep urging Britain to stop what it calls arbitrary detention and questioning, CGTN reported. The embassy told citizens to protect their property and privacy and to learn UK border rules.",
+        "The backdrop. On 30 September MI5 issued its first independently published espionage alert, naming the China General Technology Research Institute as a front for China's Ministry of State Security. MI5 said more than 100 UK-based academics had worked on projects it funded in artificial intelligence, cybersecurity, covert communications and steganography. Security Minister Dan Jarvis wrote to university leaders asking them to end ties; those who carry on risk prosecution under the National Security Act 2023. The embassy called the accusations fabricated, and earlier this month also rejected espionage claims by the head of MI5, Global Times reported.",
+        "The stakes. China is Britain's third-largest trading partner, and the government has been trying to improve trade ties, including approving plans this year for China's largest embassy in Europe, in London. The border row shows how hard it is to run that policy alongside a tougher stance on espionage."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Global Times",
+          "title": "China raises serious concerns over UK detention and questioning of Chinese nationals",
+          "url": "https://www.globaltimes.cn/page/202610/1372643.shtml"
+        },
+        {
+          "outlet": "CGTN",
+          "title": "Chinese Embassy in UK urges citizens to be vigilant over border checks",
+          "url": "https://news.cgtn.com/news/2026-10-20/Chinese-Embassy-in-UK-urges-citizens-to-be-vigilant-over-border-checks-1RoD8L8mANy/p.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "MI5 warns UK academics to cut ties with Chinese group over alleged spying",
+          "url": "https://www.aljazeera.com/news/2026/9/30/mi5-warns-uk-academics-to-cut-ties-with-chinese-group-over-alleged-spying"
+        },
+        {
+          "outlet": "Investigatory Powers Commissioner's Office",
+          "title": "Schedule 3",
+          "url": "https://www.ipco.org.uk/what-we-do/additional-functions/schedule-3"
+        }
+      ],
+      "tags": [
+        "uk-china relations",
+        "espionage",
+        "border force",
+        "mi5",
+        "schedule 3"
+      ],
+      "update_of": null,
+      "visual": null,
+      "from_brief": "2026-10-25_b28",
+      "request_focus": "brief with details facts facts facts"
+    },
+    {
+      "id": "a29",
+      "round": 2,
+      "topic": "ai",
+      "title": "Korean factories hand AI the controls, inside safe limits",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "Korean suppliers are moving AI from flagging faults to changing machine settings on the line.",
+        "At Pulmuone's tofu lines, Aizera's process AI proposes coagulant and cutting changes when quality drifts.",
+        "Plans are tested in digital twins, kept within safe ranges, and the AI loses control if anything looks unfamiliar."
+      ],
+      "body": [
+        "Seoul Economic Daily reports on 21 October that a group of Korean industrial-AI firms is moving beyond defect spotting to setting process conditions themselves. Three examples stand out.",
+        "Food: Aizera works on Pulmuone's tofu lines. It merges coagulation, pressing and cutting data into one time-series database, corrects clock differences between machines and works out dwell time per stage. A quality AI watches coagulation state and weight deviation; a process AI then proposes changes to the coagulant supply ratio or cutting conditions. The report says it proposes; it does not say it acts unaided.",
+        "Steel: Innergy runs predictive control on the furnace of KG Steel's continuous galvanising line. It sets zone temperatures from the current coil and the next coil's thickness, grade and sequence, and feeds them into the live control system. Its optimiser trades quality against fuel: a hotter furnace improves sheet quality but uses more fuel.",
+        "Batteries: on an EV battery line, a MakinaRocks agent re-checks a defect call; if the part is judged good, it restarts the equipment and adjusts pressing torque.",
+        "The hard part is data plumbing. Sensors log every second, but inspection results arrive only after a batch ends, so data must be aligned for transit time between stages and for machine clocks that disagree.",
+        "Safety rules are strict. Control plans are tried in a virtual factory trained on plant data, the AI may only search within the equipment's safe range and what operators allow, it loses control authority and alerts a manager in unfamiliar situations, and the plant falls back to conventional control on failure. Innergy's chief executive, Choi Jae-sik, wants PLC and DCS interlocks kept separate from the AI and control granted in stages by process risk. Retrained models are deployed only if they beat the current one.",
+        "The backdrop: Nvidia and Siemens are pushing the same idea at Siemens' Erlangen electronics plant, which the companies say now runs about 100 AI agents; their joint industrial AI operating system aims to lift factory automation from about 30-40% today to as much as 70-80%. No yield or savings figures were given for the Korean sites."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Seoul Economic Daily",
+          "title": "Factory AI Moves Beyond Spotting Defects to Running Production Lines",
+          "url": "https://en.sedaily.com/technology/2026/10/21/factory-ai-moves-beyond-spotting-defects-to-running"
+        },
+        {
+          "outlet": "Manufacturing.net",
+          "title": "Siemens Cuts Engineering Effort by 85%, Time-to-Market by 40% at AI Pilot Plant",
+          "url": "https://www.manufacturing.net/operations/news/22976730/siemens-cuts-engineering-effort-by-85-timetomarket-by-40-at-ai-pilot-plant"
+        }
+      ],
+      "tags": [
+        "manufacturing",
+        "process control",
+        "food processing",
+        "digital twins",
+        "south korea"
+      ],
+      "update_of": null,
+      "visual": null,
+      "from_brief": "2026-10-25_b30",
+      "request_focus": "brief article 90 second read packed with details "
+    },
+    {
+      "id": "a30",
+      "round": 2,
+      "topic": "ai",
+      "title": "Industrial Next's retool-in-minutes robots: nothing to buy yet, but ideas to copy",
+      "kind": "analysis",
+      "read_minutes": 2,
+      "tldr": [
+        "Ex-Tesla founders say their robot stations learn new tasks by simulation and demonstration, not code, and retool in minutes.",
+        "Proof so far is phone assembly for an unnamed customer and an evaluation, not an order, from BMW.",
+        "KHD cannot buy it today; the transferable lesson is to make its own kit and service easier to set up and teach."
+      ],
+      "body": [
+        "Industrial Next, a San Francisco start-up shown on TechCrunch's Startup Battlefield stage on 13 October, builds self-contained robot stations driven by its own foundation models, which link vision, task context and motion. New tasks are taught by simulation and demonstration rather than hand-written scripts, and the company says a line can be retooled \"in minutes rather than weeks\".",
+        "It was founded in 2021 by two former Tesla engineers: Lukas Pankau, once Tesla's lead electrical architect who later worked at Waymo, and Allen Pan, who led Tesla's autonomous factory work. Robots first practise in a high-fidelity simulator built to match real-world physics, which Pankau says gives them \"an understanding of the process in general\".",
+        "The claimed results are specific but unverified. Stations already help make what TechCrunch calls one of the world's most popular smartphones (the customer is not named): threading a delicate flex cable, snapping a tiny connector cap in place and peeling protective film from camera modules \"at or above human speed with 100% accuracy\", including on a phone model the robots had never seen. BMW's Group Technology Office has agreed to evaluate the technology. As Runtime Wire notes, that is an evaluation partnership with no named line, timetable or commercial rollout.",
+        "So, can KHD buy it? Not in any practical sense yet. Neither report gives a price, a sales model, station dimensions or a funding figure, and every application shown is small-part electronics assembly, a long way from a food factory or a small engineering workshop.",
+        "What KHD could copy is the thinking. Industrial Next's pitch is that old-style automation forces firms to simplify products to suit rigid robots, and that changeover time, not the robot, is the real cost. That applies to KHD in two ways. In its own workshop, any automation worth considering is the kind that switches quickly between products, for example between Jet System and Spinner builds, rather than a fixed cell. And for customers, KHD already sells on easy setup with no pneumatics or complex controls. Making changeover between belt types, and the training of new operators, visibly faster (short video guides, preset settings by belt type) is the same idea at KHD's scale.",
+        "The strongest counter-argument: much of this is still a start-up's claim. Until a named customer reports results or BMW places an order, treat \"minutes, not weeks\" as a promise rather than a benchmark."
+      ],
+      "why_it_matters": "Nothing to buy yet. Watch for a priced, general-purpose version; meanwhile, faster changeover between belt types and quicker operator training are a selling point KHD can build into its own systems now.",
+      "sources": [
+        {
+          "outlet": "TechCrunch",
+          "title": "Industrial Next wants factory robots to switch tasks in minutes, not weeks",
+          "url": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/"
+        },
+        {
+          "outlet": "Runtime Wire",
+          "title": "Industrial Next partners with BMW to test AI-powered factory robots",
+          "url": "https://runtimewire.com/article/industrial-next-factory-robots-reprogrammable-2022"
+        }
+      ],
+      "tags": [
+        "robotics",
+        "changeover",
+        "manufacturing",
+        "bmw",
+        "industrial next"
+      ],
+      "update_of": null,
+      "visual": null,
+      "from_brief": "2026-10-25_b32",
+      "request_focus": "anything I can buy for KHD or replicate"
+    },
+    {
+      "id": "a31",
+      "round": 2,
+      "topic": "wildcard",
+      "title": "How SLAC timed an X-ray flash lasting a few hundred attoseconds",
+      "kind": "analysis",
+      "read_minutes": 3,
+      "tldr": [
+        "SLAC's LCLS has measured hard X-ray pulses of about 9 keV lasting 100 to 400 attoseconds, a record for an X-ray free-electron laser.",
+        "Making the pulses was not the hard part; proving how short they were was, done with a copper foil and two detectors.",
+        "Pulses that short can catch electrons deep inside atoms, and dense plasmas, before they move or the X-rays damage them."
+      ],
+      "body": [
+        "Researchers at SLAC National Accelerator Laboratory in California report in Nature Photonics (published 20 October; lead author Ichiro Inoue of the University of Tokyo) that the Linac Coherent Light Source (LCLS) produced hard X-ray pulses of about 9 kiloelectronvolts lasting between 100 and 400 attoseconds. That is the shortest high-energy pulse yet recorded at an X-ray free-electron laser. Here is the physics, step by step.",
+        "Step one: how the machine makes X-rays. A UV laser hits a copper plate and knocks out a burst of electrons. A section of SLAC's linear accelerator drives them to very high energy, and then they pass through an undulator: thousands of magnets a few millimetres apart with alternating poles. Each magnet pushes the electrons the other way, so they wiggle, and wiggling charges radiate. The clever bit is that, as they travel, the electrons organise themselves into thin parallel sheets, so the light they emit stays in step and adds up like a laser instead of a lamp. SLAC says this makes pulses about a billion times brighter than synchrotron X-ray sources. Normal LCLS pulses last femtoseconds, thousandths of a trillionth of a second.",
+        "Step two: what the numbers mean. An attosecond is 10^-18 seconds, a thousand times shorter than a femtosecond. In 100 attoseconds light travels only about 30 nanometres. A 9 keV photon has a wavelength of roughly 0.14 nanometres, around the spacing of atoms in a solid. \"Hard\" X-rays, above 5 keV, get deep into material and can pin down where electrons sit at atomic scale; \"soft\" X-rays, below 5 keV, suit the outer electrons in chemical bonds. Agostino Marinelli's SLAC team made soft attosecond X-rays in 2019. This is the step up to hard ones.",
+        "Step three: why shortness matters. Think of a camera flash. Electrons inside atoms move on attosecond timescales, so a longer flash blurs them. Marinelli says the new pulses are \"fast enough to record electronic motion frozen in time\". There is a second benefit: intense X-rays damage what they hit, but a short enough pulse is over before the damage happens. Inoue says it lets researchers capture an electronic state \"in its pristine state\".",
+        "Step four: the hard part, proving it. No detector can time a flash this short directly, and Marinelli calls the measurement \"really, really difficult\". Part of the reason is basic wave physics: the shorter a pulse, the wider its spread of photon energies must be, but a broad spectrum alone does not prove a pulse is short, because a long, messy pulse can be broad too. So the team took two readings of the same shot. Part of the beam went to a detector that recorded its spectrum. The rest was focused to a spot about 150 nanometres wide on copper foil. The copper atoms, hit hard, fluoresced forwards in a burst of amplified spontaneous emission, and that light carries information about the incoming pulse's energy, shape and duration. Combining the two gave the length. SLAC's account does not set out the analysis in detail; that is in the paper. Marinelli says it is the first diagnostic to show the pulses are only a few hundred attoseconds long.",
+        "What it is for: Oxford plasma physicist Sam Vinko says the pulses let his group measure core-excited states in dense plasma, like those in stars and fusion experiments, \"before they had time to evolve\". Tais Gorkhover of the University of Hamburg hopes they will help \"truly disentangle nuclear and electronic dynamics\" in imaging, and speculates they might one day help control how matter interacts with light.",
+        "The fair caveat: the press accounts give no uncertainty figures or pulse energies, and the range of 100 to 400 attoseconds is wide. The value is less a single number than a measurement method that now works at hard X-ray energies."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Newswise (SLAC)",
+          "title": "SLAC's X-ray laser sets a record for shortest high-energy pulses ever generated by an XFEL",
+          "url": "https://www.newswise.com/articles/slac-s-x-ray-laser-sets-a-record-for-shortest-high-energy-pulses-ever-generated-by-an-xfel"
+        },
+        {
+          "outlet": "Phys.org",
+          "title": "X-ray free-electron laser sets new record for shortest high-energy pulses",
+          "url": "https://phys.org/news/2026-10-ray-free-electron-laser-shortest.html"
+        },
+        {
+          "outlet": "SLAC",
+          "title": "LCLS overview",
+          "url": "https://lcls.slac.stanford.edu/overview"
+        }
+      ],
+      "tags": [
+        "x-ray laser",
+        "attosecond",
+        "slac",
+        "ultrafast physics",
+        "nature photonics"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "stats",
+        "title": "The record pulses in numbers",
+        "data": [
+          {
+            "label": "Photon energy",
+            "value": "~9 keV"
+          },
+          {
+            "label": "Pulse length",
+            "value": "100–400 as"
+          },
+          {
+            "label": "Focus spot on copper",
+            "value": "~150 nm"
+          },
+          {
+            "label": "Soft/hard X-ray boundary",
+            "value": "5 keV"
+          }
+        ],
+        "source": "SLAC via Newswise, Phys.org"
+      },
+      "from_brief": "2026-10-25_b40",
+      "request_focus": "walk me through the physics easy mode "
     }
   ],
   "run": {
@@ -1731,6 +2700,351 @@
         "quasars",
         "astrophysics",
         "galaxy mergers"
+      ]
+    },
+    {
+      "id": "b42",
+      "round": 2,
+      "topic": "industry",
+      "title": "Food Manufacture launches FM360 one-day event in Birmingham for February 2027",
+      "summary": "Food Manufacture will hold its first event, Food Manufacture 360, at the Hilton Metropole in Birmingham on 9 February 2027. The one-day programme covers food economics, resilience, EU realignment, allergens, fraud and GLP-1s, with speakers from Mondelez, Compleat Food Group and Baker&Baker. Handtmann is networking partner. A possible place to meet UK factory technical and operations staff.",
+      "sources": [
+        {
+          "outlet": "Food Manufacture",
+          "title": "Food Manufacture 360 to debut in Birmingham - February 2027",
+          "url": "https://www.foodmanufacture.co.uk/Article/2026/10/21/food-manufacture-360-to-debut-in-birmingham-february-2027/"
+        }
+      ],
+      "tags": [
+        "trade shows",
+        "food manufacture 360",
+        "birmingham",
+        "networking"
+      ]
+    },
+    {
+      "id": "b43",
+      "round": 2,
+      "topic": "industry",
+      "title": "French ready-meal maker Fleury Michon buys Allplants",
+      "summary": "Fleury Michon, the French charcuterie, ready-meal and surimi maker founded in 1905, has bought plant-based ready-meal brand Allplants from Ella and Matt Mills, who rescued it from administration in early 2025. Terms were not disclosed. The Mills family says it will now focus on soup manufacturing, distribution and media. Another sign of continental groups buying into UK chilled and frozen food.",
+      "sources": [
+        {
+          "outlet": "Food Manufacture",
+          "title": "Allplants sold to French food manufacturer",
+          "url": "https://www.foodmanufacture.co.uk/Article/2026/10/21/allplants-sold-to-french-food-manufacturer-fleury-michon/"
+        }
+      ],
+      "tags": [
+        "fleury michon",
+        "allplants",
+        "acquisition",
+        "ready meals"
+      ]
+    },
+    {
+      "id": "b44",
+      "round": 2,
+      "topic": "uk_politics",
+      "title": "Ousted Starmer-era ministers press Healey for a pro-business Budget",
+      "summary": "About 30 Labour backbenchers, including former cabinet ministers Steve Reed, Darren Jones and Peter Kyle, met on Tuesday to urge Healey to cut business costs and stick to his plan not to raise capital gains tax. A Public First poll found only 26% think Labour is good for business. Healey told the Times he would back \"bloody-minded\" entrepreneurs.",
+      "sources": [
+        {
+          "outlet": "PoliticsHome",
+          "title": "Former Starmerite Ministers Push For Pro-Business Budget Policies",
+          "url": "https://www.politicshome.com/news/article/former-starmerite-ministers-push-for-pro-business-budget-policies"
+        }
+      ],
+      "tags": [
+        "labour",
+        "budget",
+        "capital gains tax",
+        "business policy"
+      ]
+    },
+    {
+      "id": "b45",
+      "round": 2,
+      "topic": "uk_politics",
+      "title": "Burnham asks ministers to look at scrapping gas standing charges",
+      "summary": "At PMQs on 21 October Burnham asked the Chancellor and Energy Secretary to examine removing standing charges from gas bills, which average nearly 27p a day, and report back. He linked it to approving the Jackdaw gas field, expected to lift domestic gas output by 6% at peak. No funding mechanism or start date has been given; the Greens said Labour had abandoned climate credibility.",
+      "sources": [
+        {
+          "outlet": "PoliticsHome",
+          "title": "PM Says Government Plans To Remove Standing Charges From Energy Bills",
+          "url": "https://www.politicshome.com/news/article/pm-says-government-exploring-removing-standing-charges-gas-bills"
+        }
+      ],
+      "tags": [
+        "energy bills",
+        "standing charges",
+        "jackdaw",
+        "andy burnham"
+      ]
+    },
+    {
+      "id": "b46",
+      "round": 2,
+      "topic": "uk_politics",
+      "title": "No 10 holds homelessness summit as pressure builds to unfreeze housing allowance",
+      "summary": "Downing Street hosts a homelessness summit with MPs and charities on Monday, two days before the Budget. Burnham has pledged to end rough sleeping and put £442m towards a bed for every rough sleeper by Christmas, but councils say the Local Housing Allowance freeze is pushing people into homelessness, and there is concern it will not be uprated on Wednesday.",
+      "sources": [
+        {
+          "outlet": "PoliticsHome",
+          "title": "No 10 To Hold Pre-Budget Homelessness Summit",
+          "url": "https://www.politicshome.com/news/article/no-10-to-host-pre-budget-homelessness-summit"
+        }
+      ],
+      "tags": [
+        "homelessness",
+        "local housing allowance",
+        "budget",
+        "andy burnham"
+      ]
+    },
+    {
+      "id": "b47",
+      "round": 2,
+      "topic": "uk_politics",
+      "title": "Burnham's electoral reform push meets resistance inside his own cabinet",
+      "summary": "Burnham has set up a national commission on electoral reform and promised a manifesto commitment to change the voting system, but senior figures are sceptical: Angela Rayner has called herself a \"first-past-the-post girl\" and Healey campaigned against AV in 2011. Around 100 Labour MPs backed the commission; More in Common warns PR could make Restore Britain a kingmaker.",
+      "sources": [
+        {
+          "outlet": "PoliticsHome",
+          "title": "Burnham Faces Labour MP Resistance On Electoral Reform",
+          "url": "https://www.politicshome.com/news/article/burnham-faces-labour-mp-resistance-electoral-reform"
+        }
+      ],
+      "tags": [
+        "electoral reform",
+        "proportional representation",
+        "labour",
+        "andy burnham"
+      ]
+    },
+    {
+      "id": "b48",
+      "round": 2,
+      "topic": "ukraine",
+      "title": "Melania Trump brokers a local ceasefire to evacuate occupied Oleshky",
+      "summary": "Russia and Ukraine have agreed a localised ceasefire around Russian-occupied Oleshky in Kherson Oblast, mediated by Melania Trump, starting at 03:00 Kyiv time on 27 October. It is meant to let aid in and civilians leave a city cut off for months. Ukraine's ombudsman called it \"extremely difficult to implement\", and the roads are reported to be mined.",
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Ukraine confirms Oleshky ceasefire mediated by Melania Trump between Russia, Ukraine",
+          "url": "https://kyivindependent.com/breaking-russia-ukraine-agree-to-oleshky-ceasefire-mediated-by-melania-trump-white-house-says/"
+        }
+      ],
+      "tags": [
+        "oleshky",
+        "ceasefire",
+        "melania trump",
+        "kherson",
+        "humanitarian"
+      ]
+    },
+    {
+      "id": "b49",
+      "round": 2,
+      "topic": "ukraine",
+      "title": "Kremlin says three-way talks with Ukraine and the US can resume after 4 November",
+      "summary": "Putin's aide Yuri Ushakov said on Sunday that Moscow is ready to resume trilateral talks after Russia's National Unity Day on 4 November, calling the first meeting a \"trial run\" and saying a deal \"still needs work\". Zelensky expects a round in the first half of November, possibly in Abu Dhabi. Moscow still demands the rest of Donbas.",
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Moscow ready to resume trilateral talks with Ukraine, US after Nov. 4, Kremlin aide says",
+          "url": "https://kyivindependent.com/moscow-ready-to-resume-trilateral-talks-with-ukraine-us-after-nov-4-kremlin-aide-says/"
+        }
+      ],
+      "tags": [
+        "peace talks",
+        "ushakov",
+        "kremlin",
+        "abu dhabi",
+        "witkoff"
+      ]
+    },
+    {
+      "id": "b50",
+      "round": 2,
+      "topic": "ukraine",
+      "title": "Seized Metro Russia gives 1 billion roubles to a war fund without Metro AG's approval",
+      "summary": "Metro AG says its Russian arm, placed under Kremlin control by a Putin decree on 28 September, donated 1 billion roubles (about €11m) to a front-line equipment fund without its consent. Other seized Western firms, including Can-Pack, AkzoNobel and Rockwool, have made similar donations this year, a warning for any company still holding Russian assets.",
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Kremlin-seized German company Metro AG transfers 1 billion rubles to Russian military without approval",
+          "url": "https://kyivindependent.com/kremlin-seized-german-company-metro-ag-transfers-1-billion-rubles-to-russian-military-without-approval/"
+        }
+      ],
+      "tags": [
+        "metro ag",
+        "asset seizures",
+        "russia",
+        "western companies",
+        "germany"
+      ]
+    },
+    {
+      "id": "b51",
+      "round": 2,
+      "topic": "ukraine",
+      "title": "Russia hits four Epicentr hypermarkets in under 24 hours",
+      "summary": "Russian strikes hit four hypermarkets of Epicentr, one of Ukraine's largest retail chains, in Zaporizhzhia, Kharkiv, Vinnytsia and Poltava on 24–25 October, injuring a woman in Poltava. The company called it the \"total destruction of the network\"; five of its sites had already been hit in the previous 48 hours, and by August ten of its centres had been destroyed.",
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "In less than 24 hours, Russia hits 4 hypermarkets belonging to one of Ukraine's largest retail chains",
+          "url": "https://kyivindependent.com/in-less-than-24-hours-russia-hits-4-hypermarkets-belonging-to-one-of-ukraines-largest-retail-chains/"
+        }
+      ],
+      "tags": [
+        "epicentr",
+        "retail",
+        "russian strikes",
+        "civilian infrastructure"
+      ]
+    },
+    {
+      "id": "b52",
+      "round": 2,
+      "topic": "nato",
+      "title": "NATO's Neptune Strike runs three European carrier groups with no US carrier taking part",
+      "summary": "NATO's final Neptune Strike exercise of 2026 runs from 16 October to 5 November with 17 nations, more than 20 warships and 40 aircraft, led by HMS Prince of Wales in the North Atlantic and Arctic, Italy's Cavour and Turkey's Anadolu in the Mediterranean. No US carrier group is taking part, which The Aviationist links to the US-Iran conflict.",
+      "sources": [
+        {
+          "outlet": "The Aviationist",
+          "title": "Three Maritime Strike Groups Spearhead NATO's Neptune Strike 26-4",
+          "url": "https://theaviationist.com/2026/10/23/three-maritime-strike-groups-spearhead-natos-neptune-strike-26-4"
+        }
+      ],
+      "tags": [
+        "neptune strike",
+        "hms prince of wales",
+        "carrier strike group",
+        "royal navy",
+        "exercises"
+      ]
+    },
+    {
+      "id": "b53",
+      "round": 2,
+      "topic": "nato",
+      "title": "Armed forces minister tells MPs Russia is running a sabotage campaign across Europe",
+      "summary": "Armed Forces Minister Louise Sandher-Jones told Parliament that Russia is conducting \"a campaign of hybrid attacks and sabotage across Europe\" and that Britain works with the US to deter it. In a separate answer she said the UK \"stands ready to defend every inch of Allied territory\", citing its pledge to reach NATO's 3.5% of GDP target by 2035.",
+      "sources": [
+        {
+          "outlet": "UK Defence Journal",
+          "title": "Russia running sabotage campaign across Europe",
+          "url": "https://ukdefencejournal.org.uk/russia-running-sabotage-campaign-across-europe"
+        }
+      ],
+      "tags": [
+        "russia",
+        "sabotage",
+        "hybrid warfare",
+        "uk armed forces"
+      ]
+    },
+    {
+      "id": "b54",
+      "round": 2,
+      "topic": "china",
+      "title": "Taiwan to make unlicensed AI chip and server exports to China a crime",
+      "summary": "Taiwan's economics minister Kung Ming-hsin says advanced chips and AI servers will be added to the export control list, so unauthorised shipments to China could bring criminal charges under the Foreign Trade Act. The move is part of Taiwan's trade commitments to the US. No start date has been set; an August case over 130 servers had to rely on forgery and breach-of-trust charges.",
+      "sources": [
+        {
+          "outlet": "Taiwan News",
+          "title": "Taiwan to impose strict controls on AI chip exports to China",
+          "url": "https://www.taiwannews.com.tw/en/news/6459737"
+        }
+      ],
+      "tags": [
+        "taiwan",
+        "export controls",
+        "ai chips",
+        "semiconductors",
+        "us-taiwan trade"
+      ]
+    },
+    {
+      "id": "b55",
+      "round": 2,
+      "topic": "china",
+      "title": "German president Steinmeier makes a five-day state visit to China from Tuesday",
+      "summary": "China's foreign ministry says German President Frank-Walter Steinmeier will make a state visit from 27 to 31 October at Xi Jinping's invitation, meeting Xi, Premier Li Qiang and Zhao Leji in Beijing and Anhui province. It comes as the EU moves to cap Chinese imports, and Beijing says it hopes the trip will \"cement mutual trust\".",
+      "sources": [
+        {
+          "outlet": "Ministry of Foreign Affairs of the PRC",
+          "title": "Foreign Ministry Spokesperson Mao Ning's Regular Press Conference on October 23, 2026",
+          "url": "https://br.china-embassy.gov.cn/por/szxw/202610/t20261023_12045956.htm"
+        }
+      ],
+      "tags": [
+        "germany",
+        "steinmeier",
+        "xi jinping",
+        "china-eu relations"
+      ]
+    },
+    {
+      "id": "b56",
+      "round": 2,
+      "topic": "ai",
+      "title": "Anthropic launches Claude Duet, a background agent for small businesses",
+      "summary": "Anthropic's Claude Duet app, in research preview for Pro and Max subscribers via a waitlist, is aimed at professionals and small firms. It builds daily briefings and dashboards, runs tasks in the background on its own virtual machine and asks for approval on sensitive steps such as payments. It cannot trade securities or move money between accounts. Meta and OpenAI have rival small-business agents.",
+      "sources": [
+        {
+          "outlet": "TechCrunch",
+          "title": "Claude Duet app is Anthropic's bet on agents",
+          "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/"
+        }
+      ],
+      "tags": [
+        "ai agents",
+        "anthropic",
+        "small business",
+        "claude duet"
+      ]
+    },
+    {
+      "id": "b57",
+      "round": 2,
+      "topic": "ai",
+      "title": "Anthropic and London's Hg reportedly set up an AI consultancy",
+      "summary": "Anthropic is setting up an AI consultancy with London private equity firm Hg, according to the Financial Times as reported by City AM. It is expected to launch by the end of 2026 in London and Berlin, serving B2B software companies and white-collar groups. Accenture's shares fell more than 4% on the report. Hg declined to comment.",
+      "sources": [
+        {
+          "outlet": "City AM",
+          "title": "Anthropic partners with British private equity firm to launch consultancy arm",
+          "url": "https://cityam.com/anthropic-partners-with-london-based-private-equity-firm-to-launch-consultancy-arm"
+        }
+      ],
+      "tags": [
+        "anthropic",
+        "hg",
+        "consultancy",
+        "ai adoption"
+      ]
+    },
+    {
+      "id": "b58",
+      "round": 2,
+      "topic": "wildcard",
+      "title": "Quantum interference traps electrons inside a metal for the first time",
+      "summary": "Columbia University researchers report in Science that electron waves in the layered metal Pd5AlI2 become trapped near atomic defects, a 'bound state in the continuum' previously seen only with light. Competing hopping paths for electrons cancel through destructive interference. The team says such states could aid quantum sensing and computing, and plans to place defects deliberately to tune them.",
+      "sources": [
+        {
+          "outlet": "Phys.org",
+          "title": "Quantum interference traps electron waves in metal for first time",
+          "url": "https://phys.org/news/2026-10-quantum-electron-metal.html"
+        }
+      ],
+      "tags": [
+        "quantum physics",
+        "condensed matter",
+        "columbia university",
+        "metals"
       ]
     }
   ]

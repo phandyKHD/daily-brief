@@ -13,7 +13,7 @@ TOPICS = {"industry", "china", "nato", "ukraine", "uk_politics", "us_politics", 
 KINDS = {"news", "analysis", "opinion"}
 HARD_CAPS = {"us_politics": 2}
 # Allowed body word counts per read_minutes (slightly wider than the desk brief targets).
-WORD_RANGES = {2: (340, 560), 3: (520, 780), 4: (720, 1000)}
+WORD_RANGES = {1: (180, 339), 2: (340, 560), 3: (520, 780), 4: (720, 1000)}
 ARTICLE_FIELDS = {"id", "round", "topic", "title", "kind", "read_minutes", "tldr", "body",
                   "why_it_matters", "sources", "tags", "update_of"}
 
@@ -102,7 +102,7 @@ def validate(ed, check_links=False):
         if not (isinstance(a["body"], list) and a["body"] and all(isinstance(p, str) for p in a["body"])):
             errors.append(f"{where}: body must be a non-empty list of strings")
         elif a["read_minutes"] not in WORD_RANGES:
-            errors.append(f"{where}: read_minutes must be 2, 3 or 4")
+            errors.append(f"{where}: read_minutes must be 1, 2, 3 or 4")
         else:
             lo, hi = WORD_RANGES[a["read_minutes"]]
             wc = word_count(a["body"])
@@ -147,7 +147,8 @@ def validate(ed, check_links=False):
             errors.append(f"{where}: summary is {wc} words (20-100)")
         if not (isinstance(b["sources"], list) and 1 <= len(b["sources"]) <= 3 and all(isinstance(x, dict) and x.get("outlet") and str(x.get("url", "")).startswith("http") for x in b["sources"])):
             errors.append(f"{where}: needs 1-3 sources with outlet and url")
-        if b["title"].strip().lower() in seen_titles:
+        written_up = any(a.get("from_brief") == f"{ed['date']}_{b['id']}" for a in ed["articles"])
+        if b["title"].strip().lower() in seen_titles and not written_up:
             errors.append(f"{where}: repeats a full article's title")
         if not (isinstance(b["tags"], list) and 1 <= len(b["tags"]) <= 6):
             errors.append(f"{where}: needs 1-6 tags")
