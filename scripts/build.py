@@ -17,6 +17,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
+import geo  # noqa: E402
 
 ROOT = common.HOME
 TOPIC_LABELS = common.labels()
@@ -53,11 +54,12 @@ def payload(date, mode, config, placeholder=False):
     ed = ({"date": date, "placeholder": True, "generated_at": None, "changes": [], "rounds": [{"round": 1, "mode": "daily"}],
            "articles": [], "briefs": [], "run": {}} if placeholder else load_edition(date))
     setup = common.setup()
+    geo.attach(ed)
     issue = len([f for f in glob.glob(p("data", "editions", "*.json")) if os.path.basename(f)[:10] <= date])
     data = {
         "mode": mode,
         "edition": ed,
-        "archive": archive_for(date, config.get("archive_days", 7)) if mode == "live" else [],
+        "archive": [geo.attach(e) for e in archive_for(date, config.get("archive_days", 7))] if mode == "live" else [],
         "issue_number": issue,
         "learned": read(p("profile", "learned.md")),
         "standing": read(p("profile", "standing-instructions.md")),
@@ -107,6 +109,11 @@ def email_figure(vis):
            f'<div style="font:700 14px Arial,sans-serif">{e(vis["title"])}</div>']
     if vis.get("note"):
         out.append(f'<div style="font:13px Arial,sans-serif;color:#4a5068">{e(vis["note"])}</div>')
+    if vis["type"] == "map":
+        out.append('<ol style="margin:6px 0 0;padding-left:20px;font:13px Arial,sans-serif">' + "".join(
+            f'<li><b>{e(p["label"])}</b>{(" – " + e(p["detail"])) if p.get("detail") else ""}</li>' for p in vis["points"]) + "</ol>")
+        out.append(f'<div style="font:11px Arial,sans-serif;color:#7a8098;margin-top:4px">Map in the live brief. Source: {e(vis["source"])}</div></div>')
+        return "".join(out)
     if vis["type"] == "stats":
         out.append('<table cellpadding="0" cellspacing="6" style="width:100%"><tr>' + "".join(
             f'<td style="background:#f4f5f8;padding:8px 10px;vertical-align:top"><div style="font:700 20px Arial,sans-serif">{e(fmt_num(d["value"], vis))}</div>'

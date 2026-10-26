@@ -23,6 +23,10 @@
   --focus: #3b62d6;
   --chart: #2c4f9e;           /* single data series (validated: band, chroma, contrast) */
   --chart-grid: #e6e8ef;
+  --map-sea: #e8eef6;
+  --map-land: #f7f6f2;
+  --map-border: #b9bfcc;
+  --map-hl: #f1e2cf;
 
   --t-industry: #8a5a12;
   --t-china: #b0322a;
@@ -50,6 +54,7 @@
     --rule: #2a3046; --accent: #ec8a45; --accent-ink: #1a1206; --accent-soft: #33241a;
     --sky: #0a0d19; --sky-ink: #eef0f7; --sky-2: #8e98bb; --good: #5cc28a; --star-off: #3a4058; --focus: #8aa6ff;
     --chart: #86a6f0; --chart-grid: #262c40;
+    --map-sea: #121a2e; --map-land: #232a3f; --map-border: #4a536d; --map-hl: #4a3524;
     --t-industry: #d9a65a; --t-china: #ef7a70; --t-nato: #86a6f0; --t-ukraine: #6cc2db;
     --t-uk_politics: #b994ea; --t-us_politics: #a9aebd; --t-ai: #62c99f; --t-wildcard: #ea86bf;
     color-scheme: dark;
@@ -60,6 +65,7 @@
   --rule: #2a3046; --accent: #ec8a45; --accent-ink: #1a1206; --accent-soft: #33241a;
   --sky: #0a0d19; --sky-ink: #eef0f7; --sky-2: #8e98bb; --good: #5cc28a; --star-off: #3a4058; --focus: #8aa6ff;
     --chart: #86a6f0; --chart-grid: #262c40;
+    --map-sea: #121a2e; --map-land: #232a3f; --map-border: #4a536d; --map-hl: #4a3524;
   --t-industry: #d9a65a; --t-china: #ef7a70; --t-nato: #86a6f0; --t-ukraine: #6cc2db;
   --t-uk_politics: #b994ea; --t-us_politics: #a9aebd; --t-ai: #62c99f; --t-wildcard: #ea86bf;
   color-scheme: dark;
@@ -201,6 +207,24 @@ main .wrap { padding-block: 18px 60px; display: grid; gap: 14px; }
 .fig svg .hit { fill: transparent; }
 .fig svg .hit:hover + .dot, .fig svg g.pt:hover .dot { r: 6; }
 .fig svg g.row:hover .bar { opacity: .85; }
+.map-wrap { position: relative; border-radius: 8px; overflow: hidden; }
+.fig svg.map { overflow: hidden; background: var(--map-sea); }
+.fig svg.map .land { fill: var(--map-land); stroke: var(--map-border); stroke-width: .7; stroke-linejoin: round; }
+.fig svg.map .land.hl { fill: var(--map-hl); }
+.fig svg.map .pt circle { stroke: var(--surface); stroke-width: 1.5; }
+.fig svg.map .pt.strike circle, .fig svg.map .pt.target circle { fill: var(--accent); }
+.fig svg.map .pt.base circle, .fig svg.map .pt.origin circle { fill: var(--chart); }
+.fig svg.map .pt.place circle { fill: var(--ink-2); }
+.fig svg.map .pt text.num { fill: var(--accent-ink); font-weight: 700; font-family: var(--f-display); }
+.fig svg.map .pt.base text.num, .fig svg.map .pt.origin text.num, .fig svg.map .pt.place text.num { fill: #fff; }
+.fig svg.map text.plabel { fill: var(--ink); font-weight: 650; paint-order: stroke; stroke: var(--map-land); stroke-width: 3.5px; stroke-linejoin: round; }
+.fig svg.map text.cname { fill: var(--ink-3); font-family: var(--f-display); font-style: italic; letter-spacing: .04em; }
+.map-key { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: .92rem; }
+.map-key li { display: grid; grid-template-columns: 1.6rem 1fr; gap: 6px; align-items: baseline; }
+.map-key .n { display: inline-grid; place-items: center; width: 1.3rem; height: 1.3rem; border-radius: 50%; font-family: var(--f-display); font-weight: 700; font-size: .72rem; color: var(--accent-ink); background: var(--accent); }
+.map-key .n.base, .map-key .n.origin { background: var(--chart); color: #fff; }
+.map-key .n.place { background: var(--ink-2); color: var(--surface); }
+.map-key b { font-family: var(--f-display); font-weight: 650; }
 .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 10px; }
 .stat { background: var(--bg); border-radius: 8px; padding: 10px 12px; display: grid; gap: 2px; align-content: start; }
 .stat .v { font-family: var(--f-display); font-weight: 700; font-size: 1.6rem; line-height: 1.1; color: var(--ink); }
@@ -861,9 +885,47 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     out += '<text class="val" x="' + (X(n - 1) + 10) + '" y="' + (Y(vals[n - 1]) + 5) + '" font-size="14">' + esc(fmtNum(vals[n - 1], vis)) + "</text>";
     return out + "</svg>";
   }
+  function mapSvg(vis) {
+    var m = vis._map;
+    if (!m) return '<p class="empty">Map unavailable.</p>';
+    var out = '<div class="map-wrap"><svg class="map" viewBox="0 0 ' + m.w + " " + m.h + '" role="img" aria-label="' + esc(vis.title) + '">';
+    m.paths.forEach(function (p) { out += '<path class="land' + (p.hl ? " hl" : "") + '" d="' + p.d + '"><title>' + esc(p.name) + "</title></path>"; });
+    var few = m.points.length <= 8;
+    // Size marks for the real screen width, so labels stay readable on a phone.
+    var k = m.w / figW(), r = 9 * k, fs = 13 * k, nfs = 11 * k;
+    var boxes = m.points.map(function (p) { return [p.x - r, p.y - r, p.x + r, p.y + r]; });
+    function hits(b) {
+      if (b[0] < 2 || b[2] > m.w - 2 || b[1] < 2 || b[3] > m.h - 2) return true;
+      return boxes.some(function (o) { return b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1]; });
+    }
+    m.points.forEach(function (p) {
+      var lab = "";
+      if (few) {
+        // Try right, left, above, below; take the first spot that collides with nothing.
+        var tw = p.label.length * fs * 0.58, gap = r + 3 * k, opts = [
+          { x: p.x + gap, y: p.y + fs * 0.35, a: "start", b: [p.x + gap, p.y - fs * 0.6, p.x + gap + tw, p.y + fs * 0.45] },
+          { x: p.x - gap, y: p.y + fs * 0.35, a: "end", b: [p.x - gap - tw, p.y - fs * 0.6, p.x - gap, p.y + fs * 0.45] },
+          { x: p.x, y: p.y - gap - 2 * k, a: "middle", b: [p.x - tw / 2, p.y - gap - fs, p.x + tw / 2, p.y - gap] },
+          { x: p.x, y: p.y + gap + fs * 0.85, a: "middle", b: [p.x - tw / 2, p.y + gap, p.x + tw / 2, p.y + gap + fs] }
+        ];
+        var pick = opts.filter(function (o) { return !hits(o.b); })[0] || opts[0];
+        boxes.push(pick.b);
+        lab = '<text class="plabel" x="' + pick.x.toFixed(1) + '" y="' + pick.y.toFixed(1) + '" font-size="' + fs.toFixed(1) + '" text-anchor="' + pick.a + '">' + esc(p.label) + "</text>";
+      }
+      out += '<g class="pt ' + esc(p.kind) + '"><title>' + esc(p.label + (p.detail ? ": " + p.detail : "")) + "</title>" +
+        '<circle cx="' + p.x + '" cy="' + p.y + '" r="' + r.toFixed(1) + '"/><text class="num" x="' + p.x + '" y="' + (p.y + nfs * 0.36).toFixed(1) + '" font-size="' + nfs.toFixed(1) + '" text-anchor="middle">' + p.n + "</text>" + lab + "</g>";
+    });
+    out += "</svg></div>";
+    out += '<ol class="map-key">' + m.points.map(function (p) {
+      return '<li><span class="n ' + esc(p.kind) + '">' + p.n + "</span><span><b>" + esc(p.label) + "</b>" + (p.detail ? " – " + esc(p.detail) : "") + "</span></li>";
+    }).join("") + "</ol>";
+    return out;
+  }
   function figureHtml(vis) {
     var body;
-    if (vis.type === "stats") {
+    if (vis.type === "map") {
+      body = mapSvg(vis);
+    } else if (vis.type === "stats") {
       body = '<div class="stats">' + vis.data.map(function (x) {
         return '<div class="stat"><span class="v">' + esc(typeof x.value === "number" ? fmtNum(x.value, vis) : x.value) + '</span><span class="l">' + esc(x.label) + "</span></div>";
       }).join("") + "</div>";

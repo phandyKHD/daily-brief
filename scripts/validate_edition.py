@@ -42,11 +42,24 @@ def check_visual(v):
     errs = []
     if not isinstance(v, dict):
         return ["must be an object or null"]
-    if v.get("type") not in ("bar", "line", "stats"):
-        errs.append("type must be bar, line or stats")
+    if v.get("type") not in ("bar", "line", "stats", "map"):
+        errs.append("type must be bar, line, stats or map")
     for f in ("title", "source"):
         if not (isinstance(v.get(f), str) and v[f].strip()):
             errs.append(f"needs a {f}")
+    if v.get("type") == "map":
+        pts = v.get("points")
+        if not (isinstance(pts, list) and 1 <= len(pts) <= 25):
+            return errs + ["map needs 1-25 points"]
+        for p in pts:
+            if not (isinstance(p, dict) and isinstance(p.get("label"), str) and p["label"].strip()
+                    and isinstance(p.get("lat"), (int, float)) and isinstance(p.get("lon"), (int, float))
+                    and -90 <= p["lat"] <= 90 and -180 <= p["lon"] <= 180):
+                errs.append(f"bad map point: {p}")
+                break
+            if p.get("kind", "place") not in ("strike", "target", "base", "origin", "place"):
+                errs.append(f"map point kind must be strike, target, base, origin or place: {p.get('label')}")
+        return errs
     data = v.get("data")
     if not isinstance(data, list):
         return errs + ["data must be a list"]

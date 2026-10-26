@@ -33,6 +33,7 @@ from reportlab.platypus import (BaseDocTemplate, CondPageBreak, Frame, KeepToget
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
+import geo  # noqa: E402
 
 ROOT = common.HOME
 rl_config.useA85 = 0  # binary Flate streams: about 20% smaller than ASCII85
@@ -196,6 +197,47 @@ def clean_plain(text):
     return text.encode("cp1252", "replace").decode("cp1252")
 
 
+def map_drawing(vis, W):
+    m = vis.get("_map") or geo.basemap(vis)
+    sc = W / m["w"]
+    H = m["h"] * sc
+    dr = Drawing(W, H)
+    dr.add(Rect(0, 0, W, H, fillColor=HexColor("#e8eef6"), strokeColor=None))
+    for p in m["paths"]:
+        path = Path(fillColor=HexColor("#f1e2cf") if p["hl"] else HexColor("#f7f6f2"), strokeColor=HexColor("#b9bfcc"), strokeWidth=0.5)
+        for seg in p["d"].split("Z"):
+            if not seg.strip():
+                continue
+            pts = [tuple(map(float, xy.split(","))) for xy in seg[1:].split("L")]
+            path.moveTo(pts[0][0] * sc, H - pts[0][1] * sc)
+            for x, y in pts[1:]:
+                path.lineTo(x * sc, H - y * sc)
+            path.closePath()
+        dr.add(path)
+    colours = {"strike": ACCENT, "target": ACCENT, "base": CHART, "origin": CHART}
+    boxes = [(p["x"] * sc - 7, H - p["y"] * sc - 7, p["x"] * sc + 7, H - p["y"] * sc + 7) for p in m["points"]]
+
+    def free(b):
+        if b[0] < 1 or b[2] > W - 1 or b[1] < 1 or b[3] > H - 1:
+            return False
+        return not any(b[0] < o[2] and b[2] > o[0] and b[1] < o[3] and b[3] > o[1] for o in boxes)
+    for p in m["points"]:
+        x, y = p["x"] * sc, H - p["y"] * sc
+        dr.add(Circle(x, y, 6.5, fillColor=colours.get(p["kind"], INK2), strokeColor=HexColor("#ffffff"), strokeWidth=1.2))
+        dr.add(String(x, y - 2.5, str(p["n"]), fontName="Helvetica-Bold", fontSize=7, fillColor=HexColor("#ffffff"), textAnchor="middle"))
+        if len(m["points"]) <= 8:
+            label = clean_plain(p["label"])
+            tw = len(label) * 4.6
+            opts = [(x + 9, y - 3, "start", (x + 9, y - 4, x + 9 + tw, y + 6)),
+                    (x - 9, y - 3, "end", (x - 9 - tw, y - 4, x - 9, y + 6)),
+                    (x, y + 9, "middle", (x - tw / 2, y + 8, x + tw / 2, y + 17)),
+                    (x, y - 16, "middle", (x - tw / 2, y - 17, x + tw / 2, y - 8))]
+            tx, ty, anchor, box = next((o for o in opts if free(o[3])), opts[0])
+            boxes.append(box)
+            dr.add(String(tx, ty, label, fontName="Helvetica-Bold", fontSize=8, fillColor=INK, textAnchor=anchor))
+    return dr
+
+
 def figure(vis):
     W = A4[0] - 40 * mm
     parts = [Spacer(1, 4), Paragraph(clean(vis["title"]), ParagraphStyle("ft", fontName="Helvetica-Bold", fontSize=9.5, leading=12, textColor=INK))]
@@ -209,6 +251,13 @@ def figure(vis):
         t.setStyle(TableStyle([("BACKGROUND", (0, 0), (-1, -1), HexColor("#f4f5f8")), ("LINEAFTER", (0, 0), (-2, -1), 3, HexColor("#ffffff")),
                                ("TOPPADDING", (0, 0), (-1, -1), 7), ("BOTTOMPADDING", (0, 0), (-1, -1), 8), ("VALIGN", (0, 0), (-1, -1), "TOP")]))
         parts.append(t)
+    elif vis["type"] == "map":
+        parts.append(map_drawing(vis, W))
+        parts.append(Spacer(1, 4))
+        for n, p in enumerate(vis["points"], 1):
+            detail = f' – {clean(p["detail"])}' if p.get("detail") else ""
+            parts.append(Paragraph(f'<b>{n}. {clean(p["label"])}</b>{detail}',
+                                   ParagraphStyle("mk", fontName="Helvetica", fontSize=8.5, leading=11, textColor=INK2)))
     elif vis["type"] == "line":
         parts.append(line_drawing(vis, W))
     else:
