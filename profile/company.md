@@ -10,9 +10,10 @@ Designs and manufactures portable, food-grade **conveyor belt cleaning systems**
 - **Fixed flat belt cleaners:** Single Fixed Head, Dual Fixed Head
 - **Special design** belt cleaners
 - **Steam generators:** KHD-16 (9 kW, 16 A), KHD-32 (18 kW, 32 A), KHD-36 (36 kW, 63 A)
+- **Egg-line cleaning (not public yet):** a steam system for cleaning egg lines from hatchery to packing. Do not mention it by name in articles; use it to judge relevance (egg producers, hatcheries, egg packing, poultry hatchery investment are prospects).
 - **Factory wall cleaner:** telescopic carbon-fibre steam mop, 3.2 kg, reaches 8–9 m
 
-Markets: food processing, especially **bakery** (bread lines, pans and trays), plus non-food uses. Belt types: wire mesh, spiral and modular. Sells direct in the UK and through distributors abroad.
+Markets: food processing, especially **bakery** (bread lines, pans and trays) and **egg lines**, plus non-food uses. KHD does **not** serve meat processing. Belt types: wire mesh, spiral and modular. Sells direct in the UK and through distributors abroad.
 
 Selling points: clean-in-place on the line, less labour, less water, energy and chemical use, fewer belt replacements, no pneumatics or complex controls.
 

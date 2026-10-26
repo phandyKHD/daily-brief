@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T09:47:57+00:00",
+  "updated": "2026-10-26T04:08:33+00:00",
   "quick_tags": {
     "more": {
       "n": 3,
@@ -18,55 +18,61 @@
   },
   "topics": {
     "ai": {
-      "n": 1,
-      "avg_relevance": 3.0,
-      "avg_quality": null,
-      "ewma_relevance": 3.0
-    },
-    "china": {
-      "n": 2,
-      "avg_relevance": 3.5,
-      "avg_quality": null,
-      "ewma_relevance": 3.5
-    },
-    "industry": {
-      "n": 3,
-      "avg_relevance": 4.33,
-      "avg_quality": 3.67,
-      "ewma_relevance": 4.33
-    },
-    "nato": {
-      "n": 2,
-      "avg_relevance": 4.5,
-      "avg_quality": 3.5,
-      "ewma_relevance": 4.5
-    },
-    "uk_politics": {
-      "n": 5,
-      "avg_relevance": 4.2,
-      "avg_quality": 3.75,
-      "ewma_relevance": 4.2
-    },
-    "ukraine": {
-      "n": 2,
+      "n": 6,
       "avg_relevance": 4.0,
       "avg_quality": null,
-      "ewma_relevance": 4.0
+      "ewma_relevance": 4.02
+    },
+    "china": {
+      "n": 8,
+      "avg_relevance": 3.94,
+      "avg_quality": 4.0,
+      "ewma_relevance": 3.95
+    },
+    "industry": {
+      "n": 13,
+      "avg_relevance": 3.88,
+      "avg_quality": 3.6,
+      "ewma_relevance": 3.86
+    },
+    "nato": {
+      "n": 9,
+      "avg_relevance": 4.44,
+      "avg_quality": 3.67,
+      "ewma_relevance": 4.44
+    },
+    "uk_politics": {
+      "n": 21,
+      "avg_relevance": 4.1,
+      "avg_quality": 3.86,
+      "ewma_relevance": 4.09
+    },
+    "ukraine": {
+      "n": 12,
+      "avg_relevance": 4.38,
+      "avg_quality": 3.8,
+      "ewma_relevance": 4.38
     },
     "us_politics": {
-      "n": 1,
+      "n": 2,
       "avg_relevance": 3.0,
       "avg_quality": null,
       "ewma_relevance": 3.0
     },
     "wildcard": {
-      "n": 2,
-      "avg_relevance": 4.5,
+      "n": 7,
+      "avg_relevance": 4.21,
       "avg_quality": 3.0,
-      "ewma_relevance": 4.5
+      "ewma_relevance": 4.21
     }
   },
   "tags": {
+    "2 sisters": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 5.0
+    },
     "2027 party congress": {
       "n": 1,
       "avg_relevance": 3.0,
@@ -79,10 +85,28 @@
       "avg_quality": null,
       "ewma_relevance": 4.0
     },
+    "acquisition": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
     "acquisitions": {
       "n": 1,
       "avg_relevance": 5.0,
       "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "adoption": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "ads": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 4.0,
       "ewma_relevance": 5.0
     },
     "advanced materials": {
@@ -91,17 +115,29 @@
       "avg_quality": 3.0,
       "ewma_relevance": 5.0
     },
-    "ai agents": {
+    "ai": {
       "n": 1,
-      "avg_relevance": 3.0,
+      "avg_relevance": 4.0,
       "avg_quality": null,
-      "ewma_relevance": 3.0
+      "ewma_relevance": 4.0
+    },
+    "ai agents": {
+      "n": 2,
+      "avg_relevance": 3.5,
+      "avg_quality": null,
+      "ewma_relevance": 3.52
+    },
+    "allied pinnacle": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
     },
     "andy burnham": {
-      "n": 1,
-      "avg_relevance": 3.0,
-      "avg_quality": 3.0,
-      "ewma_relevance": 3.0
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": 3.5,
+      "ewma_relevance": 4.05
     },
     "anti-corruption": {
       "n": 1,
@@ -109,11 +145,77 @@
       "avg_quality": null,
       "ewma_relevance": 3.0
     },
-    "bakery": {
+    "anti-submarine": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "antimatter": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "astronomy": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "astrophysics": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "asylum": {
       "n": 2,
+      "avg_relevance": 3.75,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.75
+    },
+    "attosecond": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "australia": {
+      "n": 1,
       "avg_relevance": 5.0,
-      "avg_quality": 4.0,
+      "avg_quality": 3.0,
       "ewma_relevance": 5.0
+    },
+    "automation": {
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 4.0
+    },
+    "badenoch": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "bakery": {
+      "n": 4,
+      "avg_relevance": 4.5,
+      "avg_quality": 3.67,
+      "ewma_relevance": 4.48
+    },
+    "bank surcharge": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "banks": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
     },
     "barings": {
       "n": 1,
@@ -121,16 +223,70 @@
       "avg_quality": 5.0,
       "ewma_relevance": 5.0
     },
+    "bars": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.0
+    },
     "be ready campaign": {
       "n": 1,
       "avg_relevance": 3.0,
       "avg_quality": 3.0,
       "ewma_relevance": 3.0
     },
+    "bernard matthews": {
+      "n": 2,
+      "avg_relevance": 4.75,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.75
+    },
+    "black holes": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
     "black sea": {
       "n": 1,
       "avg_relevance": 4.0,
       "avg_quality": 3.0,
+      "ewma_relevance": 4.0
+    },
+    "bmw": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "boparan": {
+      "n": 2,
+      "avg_relevance": 4.75,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.75
+    },
+    "border force": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "botulism": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "brexit": {
+      "n": 2,
+      "avg_relevance": 4.75,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.75
+    },
+    "budget": {
+      "n": 8,
+      "avg_relevance": 4.0,
+      "avg_quality": 5.0,
       "ewma_relevance": 4.0
     },
     "budget 2026": {
@@ -139,11 +295,29 @@
       "avg_quality": 5.0,
       "ewma_relevance": 5.0
     },
-    "business rates": {
+    "burnham": {
+      "n": 3,
+      "avg_relevance": 3.83,
+      "avg_quality": null,
+      "ewma_relevance": 3.83
+    },
+    "business policy": {
       "n": 1,
-      "avg_relevance": 5.0,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "business rates": {
+      "n": 3,
+      "avg_relevance": 4.0,
       "avg_quality": 5.0,
-      "ewma_relevance": 5.0
+      "ewma_relevance": 3.97
+    },
+    "business tax": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
     },
     "canada": {
       "n": 1,
@@ -157,17 +331,29 @@
       "avg_quality": 5.0,
       "ewma_relevance": 5.0
     },
-    "ccp": {
+    "cbi": {
       "n": 1,
-      "avg_relevance": 3.0,
+      "avg_relevance": 4.0,
       "avg_quality": null,
-      "ewma_relevance": 3.0
+      "ewma_relevance": 4.0
+    },
+    "ccp": {
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.05
     },
     "ceasefire talks": {
       "n": 1,
       "avg_relevance": 4.0,
       "avg_quality": null,
       "ewma_relevance": 4.0
+    },
+    "changeover": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
     },
     "china economy": {
       "n": 1,
@@ -199,11 +385,35 @@
       "avg_quality": null,
       "ewma_relevance": 3.0
     },
-    "conservatives": {
+    "coding agents": {
       "n": 1,
       "avg_relevance": 4.0,
-      "avg_quality": 4.0,
+      "avg_quality": null,
       "ewma_relevance": 4.0
+    },
+    "cold chain": {
+      "n": 1,
+      "avg_relevance": null,
+      "avg_quality": null,
+      "ewma_relevance": null
+    },
+    "commercial bakeries": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "companies house": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "conservatives": {
+      "n": 4,
+      "avg_relevance": 4.12,
+      "avg_quality": 4.5,
+      "ewma_relevance": 4.13
     },
     "conveyor safety": {
       "n": 1,
@@ -211,10 +421,34 @@
       "avg_quality": 5.0,
       "ewma_relevance": 5.0
     },
+    "cosmology": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "cpt symmetry": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "crackers": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
     "cyber security": {
       "n": 1,
       "avg_relevance": 3.0,
       "avg_quality": 3.0,
+      "ewma_relevance": 3.0
+    },
+    "dark energy": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
       "ewma_relevance": 3.0
     },
     "david wood baking": {
@@ -223,19 +457,109 @@
       "avg_quality": 5.0,
       "ewma_relevance": 5.0
     },
+    "deep precision strike": {
+      "n": 2,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "deep strike": {
+      "n": 2,
+      "avg_relevance": 4.25,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.25
+    },
+    "defence industry": {
+      "n": 5,
+      "avg_relevance": 4.5,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.5
+    },
+    "defence investment plan": {
+      "n": 2,
+      "avg_relevance": 4.75,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.75
+    },
+    "defence spending": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
     "diesel": {
       "n": 1,
       "avg_relevance": 4.0,
       "avg_quality": null,
       "ewma_relevance": 4.0
     },
+    "digital twins": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
     "drones": {
+      "n": 7,
+      "avg_relevance": 4.29,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.29
+    },
+    "e. coli": {
       "n": 1,
       "avg_relevance": 4.0,
-      "avg_quality": 3.0,
+      "avg_quality": null,
       "ewma_relevance": 4.0
     },
+    "ecdc": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "echr": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.0
+    },
+    "elon musk": {
+      "n": 2,
+      "avg_relevance": 4.75,
+      "avg_quality": 5.0,
+      "ewma_relevance": 4.75
+    },
+    "energy costs": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "energy profits levy": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
     "energy security": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "espionage": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "eu": {
+      "n": 3,
+      "avg_relevance": 4.5,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.5
+    },
+    "export controls": {
       "n": 1,
       "avg_relevance": 4.0,
       "avg_quality": null,
@@ -259,11 +583,53 @@
       "avg_quality": 5.0,
       "ewma_relevance": 5.0
     },
+    "farage": {
+      "n": 2,
+      "avg_relevance": 4.25,
+      "avg_quality": null,
+      "ewma_relevance": 4.25
+    },
+    "fda": {
+      "n": 2,
+      "avg_relevance": 3.5,
+      "avg_quality": null,
+      "ewma_relevance": 3.5
+    },
+    "food processing": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "food safety": {
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "foyle food group": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "fp-1": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.0
+    },
     "france": {
       "n": 1,
       "avg_relevance": 5.0,
       "avg_quality": 4.0,
       "ewma_relevance": 5.0
+    },
+    "free movement": {
+      "n": 2,
+      "avg_relevance": 4.75,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.75
     },
     "frozen dough": {
       "n": 1,
@@ -276,6 +642,12 @@
       "avg_relevance": 3.0,
       "avg_quality": 3.0,
       "ewma_relevance": 3.0
+    },
+    "galaxy mergers": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
     },
     "gas": {
       "n": 1,
@@ -290,10 +662,16 @@
       "ewma_relevance": 4.0
     },
     "germany": {
-      "n": 1,
-      "avg_relevance": 4.0,
-      "avg_quality": 3.0,
-      "ewma_relevance": 4.0
+      "n": 6,
+      "avg_relevance": 4.2,
+      "avg_quality": 3.5,
+      "ewma_relevance": 4.2
+    },
+    "gilts": {
+      "n": 2,
+      "avg_relevance": 4.25,
+      "avg_quality": 5.0,
+      "ewma_relevance": 4.25
     },
     "graham act": {
       "n": 1,
@@ -307,16 +685,64 @@
       "avg_quality": 4.0,
       "ewma_relevance": 4.0
     },
+    "grey zone": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "healey": {
+      "n": 4,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "high-north": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
     "hse": {
       "n": 1,
       "avg_relevance": 5.0,
       "avg_quality": 5.0,
       "ewma_relevance": 5.0
     },
+    "hybrid cars": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
     "hybrid warfare": {
       "n": 1,
       "avg_relevance": 4.0,
       "avg_quality": 3.0,
+      "ewma_relevance": 4.0
+    },
+    "hybrid-threats": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "hypersonic": {
+      "n": 1,
+      "avg_relevance": null,
+      "avg_quality": null,
+      "ewma_relevance": null
+    },
+    "immigration": {
+      "n": 2,
+      "avg_relevance": 3.75,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.75
+    },
+    "industrial policy": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
       "ewma_relevance": 4.0
     },
     "industrial strategy": {
@@ -325,17 +751,41 @@
       "avg_quality": 3.0,
       "ewma_relevance": 5.0
     },
+    "inflation": {
+      "n": 1,
+      "avg_relevance": null,
+      "avg_quality": null,
+      "ewma_relevance": null
+    },
     "interconnector": {
       "n": 1,
       "avg_relevance": 4.0,
       "avg_quality": null,
       "ewma_relevance": 4.0
     },
-    "investment": {
+    "interest rates": {
       "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "investment": {
+      "n": 2,
       "avg_relevance": 5.0,
       "avg_quality": 3.0,
       "ewma_relevance": 5.0
+    },
+    "iran": {
+      "n": 1,
+      "avg_relevance": null,
+      "avg_quality": null,
+      "ewma_relevance": null
+    },
+    "itv exposure": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
     },
     "john healey": {
       "n": 1,
@@ -343,8 +793,20 @@
       "avg_quality": 5.0,
       "ewma_relevance": 5.0
     },
-    "labour": {
+    "kayem foods": {
       "n": 1,
+      "avg_relevance": null,
+      "avg_quality": null,
+      "ewma_relevance": null
+    },
+    "kemi badenoch": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 4.0
+    },
+    "labour": {
+      "n": 2,
       "avg_relevance": 4.0,
       "avg_quality": 4.0,
       "ewma_relevance": 4.0
@@ -361,11 +823,65 @@
       "avg_quality": 3.0,
       "ewma_relevance": 3.0
     },
+    "liutyi": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.0
+    },
+    "lng": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "long-range strike": {
+      "n": 2,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "long-range strikes": {
+      "n": 2,
+      "avg_relevance": 4.25,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.25
+    },
+    "make uk": {
+      "n": 2,
+      "avg_relevance": 4.75,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.75
+    },
+    "manufacturing": {
+      "n": 3,
+      "avg_relevance": 4.33,
+      "avg_quality": null,
+      "ewma_relevance": 4.33
+    },
     "manufacturing scale-up": {
       "n": 1,
       "avg_relevance": 5.0,
       "avg_quality": 3.0,
       "ewma_relevance": 5.0
+    },
+    "maritime militia": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "materials": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "meat": {
+      "n": 1,
+      "avg_relevance": null,
+      "avg_quality": null,
+      "ewma_relevance": null
     },
     "metamaterials": {
       "n": 1,
@@ -373,23 +889,95 @@
       "avg_quality": 3.0,
       "ewma_relevance": 5.0
     },
+    "mi5": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
     "midterms": {
+      "n": 2,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "ministry of defence": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "missiles": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "mofcom": {
       "n": 1,
       "avg_relevance": 3.0,
       "avg_quality": null,
       "ewma_relevance": 3.0
     },
-    "nigel farage": {
+    "muffins": {
       "n": 1,
       "avg_relevance": 5.0,
       "avg_quality": 3.0,
       "ewma_relevance": 5.0
     },
-    "northern ireland": {
+    "national insurance": {
       "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "nato": {
+      "n": 3,
+      "avg_relevance": 4.33,
+      "avg_quality": 3.0,
+      "ewma_relevance": 4.33
+    },
+    "nature": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "natwest": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "nigel farage": {
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.95
+    },
+    "north sea": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "northern ireland": {
+      "n": 2,
       "avg_relevance": 3.0,
       "avg_quality": 3.0,
       "ewma_relevance": 3.0
+    },
+    "novatek": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "nspa": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
     },
     "nuclear deterrence": {
       "n": 1,
@@ -403,7 +991,37 @@
       "avg_quality": null,
       "ewma_relevance": 4.0
     },
+    "oil": {
+      "n": 1,
+      "avg_relevance": null,
+      "avg_quality": null,
+      "ewma_relevance": null
+    },
+    "oil and gas": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
     "opinium": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "outbound investment": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "outbreak": {
+      "n": 2,
+      "avg_relevance": 3.5,
+      "avg_quality": null,
+      "ewma_relevance": 3.5
+    },
+    "overcapacity": {
       "n": 1,
       "avg_relevance": 4.0,
       "avg_quality": null,
@@ -415,11 +1033,35 @@
       "avg_quality": 3.0,
       "ewma_relevance": 3.0
     },
-    "plenum": {
+    "physics": {
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 4.0
+    },
+    "pla": {
       "n": 1,
-      "avg_relevance": 3.0,
+      "avg_relevance": 5.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 5.0
+    },
+    "plant investment": {
+      "n": 3,
+      "avg_relevance": 4.17,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.17
+    },
+    "plc programming": {
+      "n": 1,
+      "avg_relevance": 4.0,
       "avg_quality": null,
-      "ewma_relevance": 3.0
+      "ewma_relevance": 4.0
+    },
+    "plenum": {
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.05
     },
     "polanski": {
       "n": 1,
@@ -428,12 +1070,84 @@
       "ewma_relevance": 4.0
     },
     "polling": {
-      "n": 3,
-      "avg_relevance": 4.33,
+      "n": 4,
+      "avg_relevance": 4.25,
       "avg_quality": 3.5,
-      "ewma_relevance": 4.33
+      "ewma_relevance": 4.24
+    },
+    "port talbot": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "positron": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "poultry": {
+      "n": 2,
+      "avg_relevance": 4.75,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.75
+    },
+    "power electronics": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "precision measurement": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "process control": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "process controls": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "procurement": {
+      "n": 4,
+      "avg_relevance": 4.5,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.5
     },
     "property": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "public finances": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "public spending": {
+      "n": 2,
+      "avg_relevance": 4.25,
+      "avg_quality": 5.0,
+      "ewma_relevance": 4.25
+    },
+    "purges": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 5.0
+    },
+    "quasars": {
       "n": 1,
       "avg_relevance": 4.0,
       "avg_quality": null,
@@ -451,8 +1165,14 @@
       "avg_quality": 4.0,
       "ewma_relevance": 5.0
     },
-    "recall": {
+    "rare earths": {
       "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "recall": {
+      "n": 3,
       "avg_relevance": 3.0,
       "avg_quality": 3.0,
       "ewma_relevance": 3.0
@@ -463,6 +1183,12 @@
       "avg_quality": 5.0,
       "ewma_relevance": 5.0
     },
+    "red tape": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
     "reform": {
       "n": 1,
       "avg_relevance": 4.0,
@@ -470,10 +1196,10 @@
       "ewma_relevance": 4.0
     },
     "reform uk": {
-      "n": 1,
-      "avg_relevance": 5.0,
-      "avg_quality": 3.0,
-      "ewma_relevance": 5.0
+      "n": 6,
+      "avg_relevance": 4.25,
+      "avg_quality": 3.33,
+      "ewma_relevance": 4.24
     },
     "resilience": {
       "n": 1,
@@ -481,11 +1207,59 @@
       "avg_quality": 3.0,
       "ewma_relevance": 3.0
     },
+    "review": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "robotics": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "rockwell automation": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
     "romania": {
       "n": 1,
       "avg_relevance": 4.0,
       "avg_quality": 3.0,
       "ewma_relevance": 4.0
+    },
+    "royal-navy": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "rusal": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "russia": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "russian defence industry": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "russian industry": {
+      "n": 2,
+      "avg_relevance": 4.25,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.25
     },
     "russian oil": {
       "n": 1,
@@ -493,11 +1267,35 @@
       "avg_quality": null,
       "ewma_relevance": 4.0
     },
-    "sanctions": {
+    "sabotage": {
       "n": 1,
       "avg_relevance": 4.0,
       "avg_quality": null,
       "ewma_relevance": 4.0
+    },
+    "salmonella": {
+      "n": 2,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "sanctions": {
+      "n": 4,
+      "avg_relevance": 4.25,
+      "avg_quality": 3.0,
+      "ewma_relevance": 4.26
+    },
+    "satellites": {
+      "n": 3,
+      "avg_relevance": 4.83,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.83
+    },
+    "seafood": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
     },
     "security guarantees": {
       "n": 1,
@@ -505,11 +1303,41 @@
       "avg_quality": null,
       "ewma_relevance": 4.0
     },
+    "seeds": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "semiconductors": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
     "shipping": {
       "n": 1,
       "avg_relevance": 4.0,
       "avg_quality": 3.0,
       "ewma_relevance": 4.0
+    },
+    "siberia": {
+      "n": 2,
+      "avg_relevance": 4.25,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.25
+    },
+    "slac": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "small business": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
     },
     "small manufacturers": {
       "n": 1,
@@ -517,10 +1345,34 @@
       "avg_quality": null,
       "ewma_relevance": 3.0
     },
+    "smes": {
+      "n": 2,
+      "avg_relevance": 4.25,
+      "avg_quality": null,
+      "ewma_relevance": 4.25
+    },
     "smoked salmon": {
       "n": 1,
       "avg_relevance": 3.0,
       "avg_quality": 3.0,
+      "ewma_relevance": 3.0
+    },
+    "software": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "space": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "sprouts": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
       "ewma_relevance": 3.0
     },
     "standards commissioner": {
@@ -529,11 +1381,35 @@
       "avg_quality": 3.0,
       "ewma_relevance": 5.0
     },
+    "starlink": {
+      "n": 3,
+      "avg_relevance": 4.83,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.83
+    },
+    "starshield": {
+      "n": 2,
+      "avg_relevance": 4.75,
+      "avg_quality": 5.0,
+      "ewma_relevance": 4.75
+    },
+    "steel": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
     "succession": {
       "n": 1,
       "avg_relevance": 5.0,
       "avg_quality": 5.0,
       "ewma_relevance": 5.0
+    },
+    "supernovae": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
     },
     "supervalu": {
       "n": 1,
@@ -541,23 +1417,53 @@
       "avg_quality": 3.0,
       "ewma_relevance": 3.0
     },
+    "supply chains": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
     "susan collins": {
       "n": 1,
       "avg_relevance": 3.0,
       "avg_quality": null,
       "ewma_relevance": 3.0
     },
-    "tariffs": {
-      "n": 2,
-      "avg_relevance": 3.5,
+    "taiwan": {
+      "n": 1,
+      "avg_relevance": 4.0,
       "avg_quality": null,
-      "ewma_relevance": 3.5
+      "ewma_relevance": 4.0
     },
-    "trade": {
+    "tariffs": {
+      "n": 4,
+      "avg_relevance": 3.75,
+      "avg_quality": null,
+      "ewma_relevance": 3.76
+    },
+    "tata steel": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "tax": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "tomatoes": {
       "n": 1,
       "avg_relevance": 3.0,
       "avg_quality": null,
       "ewma_relevance": 3.0
+    },
+    "trade": {
+      "n": 2,
+      "avg_relevance": 3.5,
+      "avg_quality": null,
+      "ewma_relevance": 3.52
     },
     "trade surplus": {
       "n": 1,
@@ -565,7 +1471,25 @@
       "avg_quality": null,
       "ewma_relevance": 4.0
     },
+    "trader joe's": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "trinity house": {
+      "n": 2,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
     "trump": {
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "type-26": {
       "n": 1,
       "avg_relevance": 4.0,
       "avg_quality": null,
@@ -576,6 +1500,12 @@
       "avg_relevance": 5.0,
       "avg_quality": 4.0,
       "ewma_relevance": 5.0
+    },
+    "uk": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
     },
     "uk armed forces": {
       "n": 1,
@@ -588,6 +1518,72 @@
       "avg_relevance": 5.0,
       "avg_quality": 3.0,
       "ewma_relevance": 5.0
+    },
+    "uk-china relations": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "ukraine": {
+      "n": 2,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "ultrafast physics": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "us treasury": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "us-china trade": {
+      "n": 2,
+      "avg_relevance": 3.5,
+      "avg_quality": null,
+      "ewma_relevance": 3.5
+    },
+    "us-policy": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "us-russia": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "usda": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "usda fsis": {
+      "n": 1,
+      "avg_relevance": null,
+      "avg_quality": null,
+      "ewma_relevance": null
+    },
+    "vetting": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "western pacific": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
     },
     "wildfires": {
       "n": 1,
@@ -607,11 +1603,23 @@
       "avg_quality": null,
       "ewma_relevance": 4.0
     },
-    "xi jinping": {
+    "workflow": {
       "n": 1,
-      "avg_relevance": 3.0,
+      "avg_relevance": 4.0,
       "avg_quality": null,
-      "ewma_relevance": 3.0
+      "ewma_relevance": 4.0
+    },
+    "x-ray laser": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "xi jinping": {
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.05
     },
     "zelensky": {
       "n": 1,
@@ -621,7 +1629,25 @@
     }
   },
   "sources": {
+    "ADS Group": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 5.0
+    },
+    "AJ Bell (PA)": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
     "AP (via PBS NewsHour)": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "Agriland": {
       "n": 1,
       "avg_relevance": 3.0,
       "avg_quality": null,
@@ -633,10 +1659,40 @@
       "avg_quality": 3.0,
       "ewma_relevance": 4.0
     },
+    "Asia Times": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "Battery-Tech Network": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "Briefs": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
     "Brit Brief": {
       "n": 1,
       "avg_relevance": 5.0,
       "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "Brit Brief (citing The Telegraph)": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 3.0
+    },
+    "Brookings Institution": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 4.0,
       "ewma_relevance": 5.0
     },
     "Business Matters": {
@@ -645,11 +1701,41 @@
       "avg_quality": 5.0,
       "ewma_relevance": 5.0
     },
-    "Defense News": {
+    "Business Today (Malaysia)": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "Cision Newswire": {
+      "n": 1,
+      "avg_relevance": 3.0,
+      "avg_quality": null,
+      "ewma_relevance": 3.0
+    },
+    "City AM": {
+      "n": 6,
+      "avg_relevance": 4.2,
+      "avg_quality": 4.5,
+      "ewma_relevance": 4.2
+    },
+    "Defence24": {
       "n": 1,
       "avg_relevance": 4.0,
-      "avg_quality": 3.0,
+      "avg_quality": 4.0,
       "ewma_relevance": 4.0
+    },
+    "Defense News": {
+      "n": 5,
+      "avg_relevance": 4.4,
+      "avg_quality": 3.0,
+      "ewma_relevance": 4.41
+    },
+    "Defense News (Reuters/FT report)": {
+      "n": 2,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
     },
     "Develop3D": {
       "n": 1,
@@ -657,23 +1743,47 @@
       "avg_quality": null,
       "ewma_relevance": 3.0
     },
+    "EUobserver": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.0
+    },
     "Energy Live News": {
       "n": 1,
       "avg_relevance": 4.0,
       "avg_quality": null,
       "ewma_relevance": 4.0
     },
+    "Energy-pedia": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
     "Food Manufacture": {
-      "n": 3,
-      "avg_relevance": 4.33,
-      "avg_quality": 3.67,
-      "ewma_relevance": 4.33
+      "n": 6,
+      "avg_relevance": 4.25,
+      "avg_quality": 3.75,
+      "ewma_relevance": 4.25
+    },
+    "Food Processing (Australia)": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
     },
     "Food Safety Authority of Ireland": {
       "n": 1,
       "avg_relevance": 3.0,
       "avg_quality": 3.0,
       "ewma_relevance": 3.0
+    },
+    "Food Safety News": {
+      "n": 5,
+      "avg_relevance": 3.25,
+      "avg_quality": null,
+      "ewma_relevance": 3.25
     },
     "Forces News": {
       "n": 1,
@@ -694,10 +1804,16 @@
       "ewma_relevance": 5.0
     },
     "GOV.UK (Ministry of Defence)": {
-      "n": 1,
+      "n": 2,
       "avg_relevance": 5.0,
       "avg_quality": 4.0,
       "ewma_relevance": 5.0
+    },
+    "Global Times": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
     },
     "Ground News (aggregating South China Morning Post)": {
       "n": 1,
@@ -711,13 +1827,43 @@
       "avg_quality": 3.0,
       "ewma_relevance": 5.0
     },
+    "ICO Optics": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "IN Food": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 3.0,
+      "ewma_relevance": 5.0
+    },
+    "ISER, University of Essex": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
     "ISW (via Kyiv Post)": {
       "n": 2,
       "avg_relevance": 4.0,
       "avg_quality": 3.0,
       "ewma_relevance": 4.0
     },
+    "ITV News": {
+      "n": 3,
+      "avg_relevance": 4.17,
+      "avg_quality": null,
+      "ewma_relevance": 4.17
+    },
     "Il Sole 24 Ore": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "Interesting Engineering": {
       "n": 1,
       "avg_relevance": 4.0,
       "avg_quality": null,
@@ -727,6 +1873,18 @@
       "n": 1,
       "avg_relevance": 5.0,
       "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "Irish News (PA)": {
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "Just Food": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 4.0,
       "ewma_relevance": 5.0
     },
     "Just Food (via Yahoo Finance)": {
@@ -741,14 +1899,26 @@
       "avg_quality": null,
       "ewma_relevance": 4.0
     },
+    "Kyiv Independent": {
+      "n": 8,
+      "avg_relevance": 4.31,
+      "avg_quality": 4.33,
+      "ewma_relevance": 4.31
+    },
     "Kyiv Post": {
       "n": 2,
       "avg_relevance": 4.0,
       "avg_quality": null,
       "ewma_relevance": 4.0
     },
-    "LBC": {
+    "Kyiv Post (reporting the Wall Street Journal)": {
       "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "LBC": {
+      "n": 6,
       "avg_relevance": 4.0,
       "avg_quality": 4.0,
       "ewma_relevance": 4.0
@@ -759,11 +1929,59 @@
       "avg_quality": null,
       "ewma_relevance": 3.0
     },
+    "Militarnyi": {
+      "n": 2,
+      "avg_relevance": 4.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.0
+    },
+    "NBC News": {
+      "n": 1,
+      "avg_relevance": null,
+      "avg_quality": null,
+      "ewma_relevance": null
+    },
+    "NatWest Group": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "Nation.Cymru": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "Newscord (round-up of BBC, ITV, LBC and others)": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 4.0,
+      "ewma_relevance": 5.0
+    },
     "Newsquawk": {
       "n": 1,
       "avg_relevance": 5.0,
       "avg_quality": 5.0,
       "ewma_relevance": 5.0
+    },
+    "Newsweek": {
+      "n": 1,
+      "avg_relevance": 5.0,
+      "avg_quality": 5.0,
+      "ewma_relevance": 5.0
+    },
+    "Newswise (SLAC)": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "OSW (Centre for Eastern Studies)": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
     },
     "Opinium": {
       "n": 2,
@@ -771,10 +1989,28 @@
       "avg_quality": 4.0,
       "ewma_relevance": 4.0
     },
+    "Phys.org": {
+      "n": 4,
+      "avg_relevance": 4.38,
+      "avg_quality": 3.0,
+      "ewma_relevance": 4.38
+    },
+    "Politics.co.uk": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
     "PollCheck": {
       "n": 2,
       "avg_relevance": 4.0,
       "avg_quality": 4.0,
+      "ewma_relevance": 4.0
+    },
+    "RAWMATERIALS.net": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
       "ewma_relevance": 4.0
     },
     "RFE/RL": {
@@ -790,16 +2026,70 @@
       "ewma_relevance": 3.0
     },
     "Reuters (via Internazionale)": {
+      "n": 2,
+      "avg_relevance": 3.5,
+      "avg_quality": null,
+      "ewma_relevance": 3.52
+    },
+    "Scalevise": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "Sci.News": {
       "n": 1,
       "avg_relevance": 3.0,
       "avg_quality": null,
       "ewma_relevance": 3.0
     },
-    "South China Morning Post": {
+    "ScienceDaily (University of Queensland release)": {
       "n": 1,
       "avg_relevance": 3.0,
       "avg_quality": null,
       "ewma_relevance": 3.0
+    },
+    "Seoul Economic Daily": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "Simon Willison's Weblog": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "Slate": {
+      "n": 1,
+      "avg_relevance": null,
+      "avg_quality": null,
+      "ewma_relevance": null
+    },
+    "South China Morning Post": {
+      "n": 3,
+      "avg_relevance": 4.17,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.2
+    },
+    "Stock Titan (PR Newswire)": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "TechCrunch": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
+    "Technology.org": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
     },
     "The Globe and Mail": {
       "n": 1,
@@ -819,11 +2109,41 @@
       "avg_quality": 3.0,
       "ewma_relevance": 3.5
     },
+    "The Scotsman": {
+      "n": 1,
+      "avg_relevance": 4.5,
+      "avg_quality": null,
+      "ewma_relevance": 4.5
+    },
     "The Standard (Hong Kong)": {
       "n": 1,
       "avg_relevance": 3.0,
       "avg_quality": null,
       "ewma_relevance": 3.0
+    },
+    "UK Defence Journal": {
+      "n": 6,
+      "avg_relevance": 4.5,
+      "avg_quality": 4.0,
+      "ewma_relevance": 4.5
+    },
+    "US News (Reuters)": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "USA Today (via Yahoo News)": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
+      "ewma_relevance": 4.0
+    },
+    "USDA FSIS": {
+      "n": 1,
+      "avg_relevance": null,
+      "avg_quality": null,
+      "ewma_relevance": null
     },
     "University of Birmingham": {
       "n": 1,
@@ -838,38 +2158,44 @@
       "ewma_relevance": 4.0
     },
     "YouGov": {
-      "n": 2,
+      "n": 3,
       "avg_relevance": 4.0,
       "avg_quality": 4.0,
+      "ewma_relevance": 4.0
+    },
+    "YouGov (via X)": {
+      "n": 1,
+      "avg_relevance": 4.0,
+      "avg_quality": null,
       "ewma_relevance": 4.0
     }
   },
   "read_time": {
     "2": {
-      "n": 17,
-      "avg_relevance": 4.0,
-      "avg_quality": 3.44,
-      "ewma_relevance": 4.0
+      "n": 39,
+      "avg_relevance": 4.19,
+      "avg_quality": 3.55,
+      "ewma_relevance": 4.2
     },
     "3": {
-      "n": 1,
-      "avg_relevance": 5.0,
-      "avg_quality": 5.0,
-      "ewma_relevance": 5.0
+      "n": 4,
+      "avg_relevance": 4.25,
+      "avg_quality": 4.67,
+      "ewma_relevance": 4.23
     }
   },
   "kind": {
     "analysis": {
-      "n": 6,
-      "avg_relevance": 4.0,
-      "avg_quality": 4.0,
-      "ewma_relevance": 4.0
+      "n": 15,
+      "avg_relevance": 4.15,
+      "avg_quality": 3.8,
+      "ewma_relevance": 4.16
     },
     "news": {
-      "n": 12,
-      "avg_relevance": 4.08,
-      "avg_quality": 3.5,
-      "ewma_relevance": 4.08
+      "n": 28,
+      "avg_relevance": 4.22,
+      "avg_quality": 3.67,
+      "ewma_relevance": 4.23
     }
   }
 }
