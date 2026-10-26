@@ -1,9 +1,11 @@
 {
   "recipient": "peter@khdtechnology.com",
   "timezone": "Europe/London",
-  "schedule": "04:07 Europe/London daily, fires into the project session",
+  "schedule": "newsroom 03:23, Peter's email 04:47, refresh checks every 2 hours 07:00-21:00 (Europe/London)",
   "viewer_artifact_url": "https://claude.ai/artifact/2Cu5Wokp6MMSy3xkigWmo7",
-  "routine_trigger_id": "trig_01B3VqdUwQVEsL28h1oeCqx1",
   "archive_days": 7,
-  "max_fetches_per_run": 40
+  "max_fetches_per_run": 40,
+  "newsroom_trigger_id": "trig_01SvGzTMbPPrMrT2z2pSW1bt",
+  "refresh_trigger_id": "trig_01F5a1bdFQDFyEcyzLaWxTFS",
+  "mail_trigger_id": "trig_01NU53GSwXhNn3XzyyLRHi1e"
 }

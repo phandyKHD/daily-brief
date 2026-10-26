@@ -5,6 +5,14 @@
       "name": "Peter",
       "artifact_url": "https://claude.ai/artifact/2Cu5Wokp6MMSy3xkigWmo7",
       "email": "peter@khdtechnology.com",
+      "active": true,
+      "send_email": true
+    },
+    {
+      "id": "wife",
+      "name": "",
+      "artifact_url": "https://claude.ai/artifact/GhNHyYesR5MRHZma9wxpYf",
+      "send_email": false,
       "active": true
     }
   ]
