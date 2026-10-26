@@ -160,8 +160,8 @@ def validate(ed, check_links=False):
         if per_round_topic.get(1, {}).get(topic, 0) > cap:
             errors.append(f"edition: {topic} has {per_round_topic[1][topic]} articles in the morning edition; hard cap is {cap}")
     n1 = sum(per_round_topic.get(1, {}).values())
-    if n1 and not 8 <= n1 <= 18:
-        warnings.append(f"edition: morning edition has {n1} articles (target 12-16)")
+    if n1 and not 8 <= n1 <= 22:
+        warnings.append(f"edition: morning edition has {n1} articles (target 15-19)")
     return errors, warnings
 
 

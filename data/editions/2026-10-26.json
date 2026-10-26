@@ -1,0 +1,2290 @@
+{
+  "date": "2026-10-26",
+  "generated_at": "2026-10-26T04:17:47+00:00",
+  "changes": [
+    "No meat-industry stories, and more on egg producers and hatcheries, as you noted.",
+    "Prices in pounds and UK units, with charts where numbers matter.",
+    "More defence and Ukraine (both rated about 4.4), and short 1-minute reads where hard facts are thin."
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "mode": "daily",
+      "generated_at": "2026-10-26T04:17:47+00:00"
+    }
+  ],
+  "articles": [
+    {
+      "id": "a01",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Healey's Budget and the owner-managed manufacturer: exit relief, energy and jobs taxes",
+      "kind": "analysis",
+      "read_minutes": 2,
+      "tldr": [
+        "Healey is reported to be preparing to cut back Business Asset Disposal Relief, the tax break owners use when they sell.",
+        "Make UK wants electricity levies moved into general taxation and the employer NI threshold cut reversed.",
+        "Nothing is confirmed until Wednesday; the Treasury will not comment on speculation."
+      ],
+      "body": [
+        "John Healey delivers his first Budget on Wednesday. For the owner of a small or mid-sized manufacturer, two questions matter most: what you will pay when you sell or retire, and what it will cost to run and staff a factory. Neither is settled yet, and the Treasury does not comment on speculation.",
+        "Start with selling up. The Telegraph reported last week that the Chancellor is preparing to scale back Business Asset Disposal Relief, the former entrepreneurs' relief, which lets owners pay a lower rate of capital gains tax on qualifying sales up to a lifetime limit of £1m. It has already been cut: Rachel Reeves raised the rate to 14%, and it rose again to 18% in April 2026. HMRC estimates the relief cost £800m in the latest tax year. The Treasury is reportedly weighing whether to use the savings for lower capital gains tax rates or for incentives aimed at founders who reinvest in new UK companies, an idea pushed by the Start Up Coalition and the Centre for British Progress. The Resolution Foundation, whose former chief executive Torsten Bell is now a Treasury minister, has called the relief \"Britain's worst tax break\".",
+        "The case against cutting it comes from the Federation of Small Businesses. Craig Beaumont said many owners fund their retirement through a sale, and the relief \"must not be thoughtlessly discarded\". Rathbones counted just under 5,800 business sales in 2025, the most in eight years. City AM reports that Healey has ruled out a rise in capital gains tax itself and has promised to back entrepreneurs who take risks, while founders lobby him to keep the relief.",
+        "This comes on top of the HMRC proposal, covered on Saturday, to tax share buy-backs used in family successions as income. An owner who planned to retire on a sale, or to hand the firm to the next generation, could face a higher bill either way.",
+        "Then running costs. Make UK's Budget submission asks Healey to move electricity policy levies into general taxation, to extend the British Industrial Competitiveness Scheme to all manufacturers and bring it forward, to reverse the cut in the employer National Insurance threshold, and to extend NI relief to all under-25s. It says Britain has Europe's highest industrial electricity prices, and that 56% of manufacturers think the country has become less attractive for investment over the past three to five years. The CBI wants the employer NI threshold raised from £5,000 to £6,000. Make UK's chief executive, Stephen Phipson, called the Budget \"the first real test\" of the government's plans to reindustrialise.",
+        "Its survey shows why. Spending on plant and machinery fell from 6.8% to 6.4% of turnover, and R&D from 6.2% to 5.1%. But 35% of manufacturers say a supportive tax regime would make them invest more, up from 24% last year.",
+        "On Wednesday, look for four things: any change to the relief's rate or £1m limit, the employer NI threshold, the treatment of energy levies, and whether reinvestment incentives for founders appear."
+      ],
+      "why_it_matters": "KHD is owner-managed, so any cut to Business Asset Disposal Relief bears directly on exit or retirement planning, and the employer NI threshold and industrial electricity levies affect the cost of hiring and running the workshop. Worth a word with the accountant before Wednesday about timing of any planned share transactions.",
+      "sources": [
+        {
+          "outlet": "London Loves Business",
+          "title": "'Bloody-minded entrepreneurs' promised backing, but £1bn tax break faces the chop",
+          "url": "https://londonlovesbusiness.com/bloody-minded-entrepreneurs-promised-backing-but-1bn-tax-break-faces-the-chop/"
+        },
+        {
+          "outlet": "City AM",
+          "title": "Healey's startup adviser quits ahead of Budget over 'sideshow' treatment of entrepreneurs",
+          "url": "https://www.cityam.com/healeys-startup-adviser-quits-ahead-of-budget-over-sideshow-treatment-of-entrepreneurs/"
+        },
+        {
+          "outlet": "The Manufacturer",
+          "title": "4 ways the Chancellor's first Budget can help manufacturing",
+          "url": "https://www.themanufacturer.com/articles/4-ways-the-chancellors-first-budget-can-help-manufacturing/"
+        },
+        {
+          "outlet": "City AM",
+          "title": "Healey warned 'indecision and delay have a cost' ahead of Budget",
+          "url": "https://www.cityam.com/healey-told-to-cut-employment-taxes-and-energy-bills-to-boost-business/"
+        }
+      ],
+      "tags": [
+        "budget 2026",
+        "john healey",
+        "business asset disposal relief",
+        "make uk",
+        "family business",
+        "national insurance"
+      ],
+      "update_of": "Healey's first Budget may raise tax on passing a family firm to the next generation",
+      "visual": {
+        "type": "bar",
+        "title": "Manufacturers are investing a smaller share of turnover",
+        "note": "Make UK survey, share of turnover, last year vs this year",
+        "data": [
+          {
+            "label": "Plant & machinery, last year",
+            "value": 6.8
+          },
+          {
+            "label": "Plant & machinery, now",
+            "value": 6.4
+          },
+          {
+            "label": "R&D, last year",
+            "value": 6.2
+          },
+          {
+            "label": "R&D, now",
+            "value": 5.1
+          }
+        ],
+        "unit": "%",
+        "decimals": 1,
+        "highlight": "R&D, now",
+        "source": "Make UK via The Manufacturer"
+      },
+      "from_brief": null,
+      "request_focus": null
+    },
+    {
+      "id": "a02",
+      "round": 1,
+      "topic": "industry",
+      "title": "Bird flu returns to a 32,000-hen free-range egg farm in Northumberland",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "H5N1 was confirmed on 19 October at a commercial free-range laying farm near Belford: about 32,000 hens will be culled.",
+        "It is the first H5N1 outbreak in British poultry this season, and Great Britain has lost its disease-free status for trade.",
+        "Egg producers' leaders say farm hygiene, fast culling and thorough cleansing and disinfection remain the main defence."
+      ],
+      "body": [
+        "Highly pathogenic avian influenza (H5N1) was confirmed on 19 October at a commercial free-range laying farm near Belford in north Northumberland. Farmers Weekly puts the flock at about 32,000 hens, all of which are to be culled. Defra has set up a 3km protection zone and a 10km surveillance zone around the premises.",
+        "Poultry Business describes it as the first confirmed H5N1 outbreak in poultry in Great Britain this season. It is the second highly pathogenic case overall: earlier in October an H5N5 strain was found in a small backyard flock at Ness on the Isle of Lewis. The commercial case has a wider consequence. Great Britain has lost its bird flu disease-free status, which affects international trade in poultry products.",
+        "The timing is no surprise to the industry. Migratory wild birds are arriving for the winter, and last season 100 premises were affected. Gary Ford, head of strategy at the British Free Range Egg Producers Association (BFREPA), called the case \"not unexpected, but clearly disappointing for the industry\". He said the control strategy has not changed: report early, cull fast, and clean and disinfect thoroughly. \"The main approach to this dreadful disease is, as we know, farm hygiene,\" he told Farmers Weekly.",
+        "Ford also noted how culling has changed. About 60% of infected premises last season were whole-house gassed, and he expects similar practice this year. Will Raw, chair of the NFU Poultry Board, urged keepers of flocks of every size to keep biosecurity high and watch for signs of disease. The British Egg Industry Council has asked producers to keep the highest biosecurity standards and to record feed and water use accurately, so that health problems show up early.",
+        "There is some public money for prevention. Defra's Animal Health and Welfare Pathway, launched in May, pays for vet-led biosecurity reviews on poultry farms in England. Each review is worth £430, and eligible businesses can claim up to three visits per site. The vet assesses disease risks and writes up recommended improvements.",
+        "Vaccination is still not the answer for now. Trials continue, including recent work on turkeys, and Ford said \"we believe it's effective, we believe it works\". But trading partners would have to accept vaccinated birds and their products, and that remains the main obstacle.",
+        "For now the official risk to wild birds across Great Britain is rated medium, and the risk of poultry being exposed is rated low."
+      ],
+      "why_it_matters": "Every infected egg farm must be cleaned and disinfected before it restocks, and the BFREPA is again putting farm hygiene first. That is a natural opening for conversations with egg producers, packers and hatcheries in the north of England about hygiene equipment this winter. The £430 Defra biosecurity reviews may also produce written recommendations that steam cleaning can answer.",
+      "sources": [
+        {
+          "outlet": "Farmers Weekly",
+          "title": "Bird flu confirmed at 32,000-bird free-range egg farm",
+          "url": "https://www.fwi.co.uk/news/bird-flu-confirmed-at-32000-bird-free-range-egg-farm"
+        },
+        {
+          "outlet": "Poultry Business",
+          "title": "Bird flu confirmed in commercial laying flock in Northumberland",
+          "url": "https://www.poultrynews.co.uk/health-welfare/bird-flu-confirmed-in-commercial-laying-flock-in-northumberland.html"
+        }
+      ],
+      "tags": [
+        "bird flu",
+        "h5n1",
+        "egg producers",
+        "biosecurity",
+        "northumberland",
+        "bfrepa"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "stats",
+        "title": "The Belford outbreak in numbers",
+        "data": [
+          {
+            "label": "Hens to be culled",
+            "value": "32,000"
+          },
+          {
+            "label": "Protection / surveillance zones",
+            "value": "3km / 10km"
+          },
+          {
+            "label": "Premises hit last season",
+            "value": "100"
+          },
+          {
+            "label": "Defra biosecurity review, per visit",
+            "value": "£430"
+          }
+        ],
+        "source": "Farmers Weekly, Poultry Business"
+      },
+      "from_brief": null,
+      "request_focus": null
+    },
+    {
+      "id": "a03",
+      "round": 1,
+      "topic": "industry",
+      "title": "Bimbo has spare bakery capacity and is hunting for the volume to fill it",
+      "kind": "analysis",
+      "read_minutes": 2,
+      "tldr": [
+        "The world's largest baker grew Q3 sales 3.6% and hit a record 15.7% margin, but North American volumes are still falling.",
+        "Its chief executive says the North American transformation is not finished until volume growth returns: \"we have installed capacity\".",
+        "US sandwich bread is shrinking in units, while specialty and crusty bread grow."
+      ],
+      "body": [
+        "Grupo Bimbo reported its third-quarter results on 22 October. On paper they were strong. Group sales rose 3.6% excluding currency effects, adjusted EBITDA rose 9.3% and the margin reached a record 15.7%. The company raised its forecast for margin improvement this year to between 85 and 120 basis points.",
+        "North America is the problem. Sales there rose only 1% excluding currency, and price and product mix did all the work. Volumes fell. The regional margin improved by 40 basis points to 10.8%, the fifth quarter in a row of better margins, and Bimbo gained share in four of its six North American categories.",
+        "Chief executive Alejandro Rodríguez Bas was frank about it. \"The transformation will not be completed until North America returns to sustained profitable volume growth,\" he said, and added: \"The reality is we have installed capacity.\" In other words, Bimbo spent years adding lines and now needs to sell more bread through them.",
+        "The market is not helping. Circana data quoted by Bakery & Snacks for the 52 weeks to 9 August shows US centre-store sandwich bread sales down 1.5% in value and 3.3% in units. Nine of the ten biggest sellers sold fewer loaves. Private label grew 0.7% in value but its units fell 2.6%. The growth is in specialty bread, up 9% in value and 6% in units.",
+        "So Bimbo is looking for new customers. Greg Koehrsen, president of Bimbo Bakeries USA, said the business has always focused on large-format retail, and that smaller shops and food service are where it is less established.",
+        "Meanwhile it keeps squeezing costs. Commercial Baking lists the productivity programme: less waste, better recipes and packaging, more efficient plants, and leaner manufacturing footprints and delivery routes. Some capital projects have been pushed into 2027, and spending next year should be slightly above this year's. Bimbo has committed about $1bn (roughly £750m at summer 2026 exchange rates) to US investment in 2026 to 2028. Finance chief Diego Gaxiola warned that \"2027 is going to be a challenge\" because of costs, and the company expects more inflation from fuel, energy and raw materials.",
+        "The counter-argument is that margins are at a record and the volume loss is industry-wide, not Bimbo's alone. But a baker with idle capacity is more likely to invest in plant efficiency than in new lines."
+      ],
+      "why_it_matters": "Big bakers with spare capacity are spending on efficiency, waste and leaner plants rather than on new lines. Faster belt changeovers and less water, chemical and labour per clean fit that brief, so lead KHD pitches with cost per clean rather than added capacity. The same pressure on mass-market sandwich bread is likely in UK plant bakeries.",
+      "sources": [
+        {
+          "outlet": "Bakery & Snacks",
+          "title": "Bimbo has the capacity but where are the bakery buyers?",
+          "url": "https://www.bakeryandsnacks.com/Article/2026/10/23/bimbos-bakery-challenge-as-north-american-volumes-fall/"
+        },
+        {
+          "outlet": "Commercial Baking",
+          "title": "Despite headwinds, Grupo Bimbo reports solid Q3 earnings",
+          "url": "https://commercialbaking.com/despite-headwinds-grupo-bimbo-reports-solid-q3-earnings/"
+        }
+      ],
+      "tags": [
+        "grupo bimbo",
+        "bakery",
+        "plant capacity",
+        "results",
+        "us bread market"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "bar",
+        "title": "US bread: where the growth is",
+        "note": "Change over 52 weeks to 9 August 2026, Circana, %",
+        "data": [
+          {
+            "label": "Sandwich bread, value",
+            "value": -1.5
+          },
+          {
+            "label": "Sandwich bread, units",
+            "value": -3.3
+          },
+          {
+            "label": "Private label, value",
+            "value": 0.7
+          },
+          {
+            "label": "Private label, units",
+            "value": -2.6
+          },
+          {
+            "label": "Specialty, value",
+            "value": 9
+          },
+          {
+            "label": "Specialty, units",
+            "value": 6
+          }
+        ],
+        "unit": "%",
+        "decimals": 1,
+        "highlight": "Specialty, value",
+        "source": "Circana via Bakery & Snacks"
+      },
+      "from_brief": null,
+      "request_focus": null
+    },
+    {
+      "id": "a04",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Ipsos gives Labour its biggest lead of the parliament, with the Tories second and the Greens down",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "Ipsos: Labour 32, Conservatives 24, Reform 20, Lib Dems 9, Greens 8.",
+        "Opinium also has Labour eight points ahead, but with Reform second.",
+        "Four of the six latest polls put the Conservatives ahead of Reform."
+      ],
+      "body": [
+        "Labour goes into the Budget with its best Ipsos poll of the parliament. The survey for LBC, carried out online between 15 and 22 October among 1,109 adults, puts Labour on 32%, up five points on September. The Conservatives are on 24% (up three), Reform UK 20% (down three), the Liberal Democrats 9% (up one) and the Greens 8% (down five).",
+        "Three things stand out. Labour's eight-point lead is the largest Ipsos has recorded this parliament. The Conservatives are in second place for the first time in the Ipsos series this parliament. And the Lib Dems have overtaken the Greens for fourth, after a five-point fall for Zack Polanski's party.",
+        "Other pollsters agree on the leader, not on second place. Opinium for The Observer, carried out from 21 to 23 October, has Labour on 30% (up one), Reform 22%, the Conservatives 20% (unchanged), the Greens 10% and the Lib Dems 9%. Its eight-point Labour lead is two points wider than in its previous poll. The Daily Britain's round-up of other recent polls lists Find Out Now at Labour 26, Conservatives 21, Reform 20; More in Common at 28, 23, 22; and YouGov at 27, 23, 22. Deltapoll has Labour 30, Reform 24, Conservatives 22. Four of the six latest polls put the Tories ahead of Reform; Opinium and Deltapoll do not.",
+        "Leader ratings move the same way. In the Ipsos poll, 35% are satisfied with Andy Burnham, up four, while 45% are dissatisfied. Kemi Badenoch is also on 35%, up seven and her best since becoming Leader of the Opposition. Nigel Farage fell to 22% and Polanski to 17%.",
+        "Ipsos's Keiran Pedley said Labour under Burnham is \"resurgent, consolidating voters on the left behind them\". The Greens' five-point slide fits that reading: Labour's gain appears to be coming mostly from voters on its left rather than directly from Reform. Pedley also warned that \"we should be mindful against overreacting to one poll\", and Ipsos noted that a tough Budget could throw Labour off course again.",
+        "The counter-argument is that the spread between pollsters is still wide. Labour's share runs from 26% to 32%, and whether Reform or the Conservatives are second depends on which firm you read. Wednesday's Budget, and the reaction to it in next week's polls, is the first real test of whether the Burnham bounce holds."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "LBC",
+          "title": "Labour sees another 'Burnham bounce' poll boost to 32% ahead of crunch budget week",
+          "url": "https://www.lbc.co.uk/article/labour-burnham-poll-boost-5HjdkPp_2/"
+        },
+        {
+          "outlet": "HuffPost UK",
+          "title": "Labour Storm Ahead In New Poll As Reform's Decline Worsens",
+          "url": "https://www.huffingtonpost.co.uk/entry/labour-poll-reform-uk-tories-election_uk_6ade2412e4b06b41b48d4547"
+        },
+        {
+          "outlet": "The Daily Britain",
+          "title": "Labour opens eight-point lead as new poll puts Conservatives ahead of Reform for second place",
+          "url": "https://thedailybritain.co.uk/latest-uk-polls-labour-lead-reform-conservatives-october-2026/"
+        }
+      ],
+      "tags": [
+        "polling",
+        "labour",
+        "conservatives",
+        "reform uk",
+        "greens",
+        "lib dems"
+      ],
+      "update_of": "Labour leads the polls under Burnham as Conservatives edge past Reform",
+      "visual": {
+        "type": "bar",
+        "title": "Ipsos voting intention, October",
+        "note": "Westminster voting intention, fieldwork 15-22 October 2026, %",
+        "data": [
+          {
+            "label": "Labour",
+            "value": 32
+          },
+          {
+            "label": "Conservatives",
+            "value": 24
+          },
+          {
+            "label": "Reform UK",
+            "value": 20
+          },
+          {
+            "label": "Lib Dems",
+            "value": 9
+          },
+          {
+            "label": "Greens",
+            "value": 8
+          }
+        ],
+        "unit": "%",
+        "highlight": "Conservatives",
+        "source": "Ipsos for LBC"
+      },
+      "from_brief": null,
+      "request_focus": null
+    },
+    {
+      "id": "a05",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Tories gain ground on Reform as voters doubt Farage's party is ready to govern",
+      "kind": "analysis",
+      "read_minutes": 2,
+      "tldr": [
+        "Only 19% now say Reform is ready to govern, down from 29% in September 2025; 24% say the same of the Tories.",
+        "The Conservatives are making defence their Budget attack line: fund 3% or resign.",
+        "Reform still owns immigration, at 28%, though that is down from 35% last November."
+      ],
+      "body": [
+        "The contest on the right has shifted over the autumn, and the latest Ipsos poll puts numbers on it. Asked whether each party is ready to govern, 24% now say the Conservatives are, up four points on last month. Reform UK is at 19%, down from 29% in September 2025.",
+        "Personal ratings point the same way. Kemi Badenoch's satisfaction score is 35%, up seven points and her highest since she became Leader of the Opposition. Nigel Farage's has slipped to 22%. On issues, Reform still leads on asylum and immigration with 28%, against Labour's 14%, but that is down from a peak of 35% in November 2025. The Conservatives narrowly lead on defence, 19% to Labour's 18%, while Labour leads on the economy (20% to 18%) and the cost of living (21% to 13%).",
+        "The Conservatives are using the Budget to press that defence advantage. After the Sunday Times reported that Healey will announce billions of pounds of defence investment on Wednesday, the shadow chancellor, Andrew Griffith, said: \"By the end of his Budget statement, John Healey must have fully funded three per cent defence spending, or resign.\" The demand is pointed because Healey quit as defence secretary in June over the same target. The shadow defence secretary, James Cartlidge, welcomed the investment with \"I welcome Labour copying our idea\", but said technology money was no substitute for training, equipment and ammunition. The Office for Budget Responsibility estimates that reaching 3% of GDP would need an extra £17.3bn in 2029-30.",
+        "Labour's reply came from the defence secretary, Wes Streeting, who said Badenoch's party had \"shrunk the British Army to its smallest size since the Napoleonic era\" and left a £17bn hole in the equipment plan.",
+        "The Tory message to right-leaning voters is blunt: a Conservative spokesman said \"a vote for any party other than the Conservatives risks condemning the country to a future under Labour.\"",
+        "Across the wider field, four of the six latest voting-intention polls now put the Conservatives ahead of Reform, according to a round-up by The Daily Britain. That is a reversal of the position for much of the past year, when Reform was regularly ahead of both main parties.",
+        "The counter-argument: Opinium and Deltapoll still put Reform second, Ipsos itself warns against reading too much into one poll, and Reform's lead on immigration, the issue that built its support, remains large."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "LBC",
+          "title": "Labour sees another 'Burnham bounce' poll boost to 32% ahead of crunch budget week",
+          "url": "https://www.lbc.co.uk/article/labour-burnham-poll-boost-5HjdkPp_2/"
+        },
+        {
+          "outlet": "City AM",
+          "title": "Healey to unveil billions in defence spending as Tories demand he resign",
+          "url": "https://www.cityam.com/healey-to-unveil-billions-in-defence-spending-as-tories-demand-he-resign/"
+        },
+        {
+          "outlet": "The Daily Britain",
+          "title": "Labour opens eight-point lead as new poll puts Conservatives ahead of Reform for second place",
+          "url": "https://thedailybritain.co.uk/latest-uk-polls-labour-lead-reform-conservatives-october-2026/"
+        }
+      ],
+      "tags": [
+        "conservatives",
+        "reform uk",
+        "kemi badenoch",
+        "nigel farage",
+        "defence spending",
+        "polling"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "bar",
+        "title": "Leader satisfaction, Ipsos October",
+        "note": "% satisfied with each leader, fieldwork 15-22 October 2026",
+        "data": [
+          {
+            "label": "Burnham",
+            "value": 35
+          },
+          {
+            "label": "Badenoch",
+            "value": 35
+          },
+          {
+            "label": "Farage",
+            "value": 22
+          },
+          {
+            "label": "Polanski",
+            "value": 17
+          }
+        ],
+        "unit": "%",
+        "highlight": "Badenoch",
+        "source": "Ipsos for LBC"
+      },
+      "from_brief": null,
+      "request_focus": null
+    },
+    {
+      "id": "a06",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Healey to route defence billions through the National Wealth Fund and British Business Bank",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "The Sunday Times says the Budget will put billions into UK defence firms via the two state-backed lenders, funded by borrowing.",
+        "Drone makers and AI companies are expected to benefit; the Treasury is said to be preparing £20.4bn more for the two bodies from 2028-29.",
+        "The 3% of GDP target is not expected to be met in this Budget."
+      ],
+      "body": [
+        "John Healey is expected to use Wednesday's Budget to announce billions of pounds of new defence investment, according to the Sunday Times. The money is not expected to come through the Ministry of Defence's own budget. Instead, City AM reports, it will be channelled through the National Wealth Fund and the British Business Bank to UK defence manufacturers and military technology firms, with drone makers and AI companies among those expected to benefit.",
+        "The method matters as much as the sum. The Sunday Times says the investment will be paid for with long-term borrowing rather than spending cuts. Because lending through these public financial institutions is expected to earn a return, it is treated differently from ordinary spending under the fiscal rules. That lets the Treasury put more into defence without breaching its rules, and the money would still count towards NATO spending targets. The Treasury is reported to be preparing £20.4bn of extra support for the two bodies from 2028-29, although how much of it will go to defence has not been confirmed.",
+        "No headline figure for defence has been given. UK Fact Check, which logged the Sunday Times report, notes that PA has reported Healey's promise to fill a £4.7bn \"black hole\" in the Defence Investment Plan, and that the Sunday Times does not say whether the new money would cover that gap. The Treasury has not confirmed the report.",
+        "The 3% target is the sore point. Healey resigned as defence secretary in June, arguing that the plan fell short and calling for a timetable to reach 3% of GDP by 2030. As Chancellor, he has said a full timetable will wait until next year's spending review, and PA reports that the 3% aim is not expected to be met in this Budget. The Office for Budget Responsibility estimates 3% would need an extra £17.3bn in 2029-30.",
+        "For manufacturers outside defence, what matters is the method of funding rather than the sum. Using the National Wealth Fund and British Business Bank as investors lets a Chancellor with little headroom back favoured sectors without the money showing up as day-to-day spending.",
+        "The counter-argument is that investment returns are not guaranteed and borrowing is still borrowing. Shadow defence secretary James Cartlidge said technology investment is no substitute for funding training, equipment and ammunition."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "City AM",
+          "title": "Healey to unveil billions in defence spending as Tories demand he resign",
+          "url": "https://www.cityam.com/healey-to-unveil-billions-in-defence-spending-as-tories-demand-he-resign/"
+        },
+        {
+          "outlet": "UK Fact Check",
+          "title": "Healey expected to unveil billions in new defence spending, Sunday Times reports",
+          "url": "https://www.ukfactcheck.com/live/budget-2026-live-latest-updates-analysis-and-fact-checks/healey-expected-to-unveil-billions-in-new-defence-spending"
+        }
+      ],
+      "tags": [
+        "budget 2026",
+        "defence spending",
+        "national wealth fund",
+        "british business bank",
+        "john healey"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "stats",
+        "title": "The defence numbers around the Budget",
+        "data": [
+          {
+            "label": "Extra support for NWF and BBB from 2028-29 (reported)",
+            "value": "£20.4bn"
+          },
+          {
+            "label": "Defence Investment Plan gap Healey promised to fill",
+            "value": "£4.7bn"
+          },
+          {
+            "label": "Extra needed for 3% of GDP in 2029-30 (OBR)",
+            "value": "£17.3bn"
+          }
+        ],
+        "source": "City AM, UK Fact Check (Sunday Times, PA)"
+      },
+      "from_brief": null,
+      "request_focus": null
+    },
+    {
+      "id": "a07",
+      "round": 1,
+      "topic": "ukraine",
+      "title": "Storm Shadows and drones hit Russian titanium and missile-battery plants",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "Drones struck the Avisma titanium plant in Berezniki, about 1,500km from Ukraine, on 25 October",
+        "Storm Shadow cruise missiles reportedly hit the Energiya plant in Yelets, which makes batteries for Iskander, Kinzhal and glide bombs",
+        "Russia admits damage at both sites but says the titanium plant kept working"
+      ],
+      "body": [
+        "Ukraine spent Sunday hitting two links in Russia's weapons supply chain at opposite ends of its range. One target was the Avisma titanium works in Berezniki in the Urals. The other was the Energiya power-source plant at Yelets in Lipetsk region, much closer to the border. Kyiv has not formally claimed either strike; the targets were identified by the Ukrainian monitoring channel Exilenova+ and other open-source analysts, and Russian governors confirmed attacks on unnamed industrial sites.",
+        "Avisma, part of VSMPO-Avisma, is one of the world's largest producers of titanium sponge and Russia's biggest titanium producer. Its metal goes into military aircraft and their engines, missiles, nuclear submarines, armoured vehicles and space hardware, and it has been under US sanctions since 2023. Berezniki lies about 170km north of Perm; the Kyiv Independent puts it more than 1,400km from the Ukrainian border and Euromaidan Press about 1,500km. Perm's governor, Dmitry Makhonin, said 11 drones were downed around 11am local time, that a facility in the north of the region suffered \"minor\" damage and kept operating, and that five employees were hurt. Neither outlet identifies the drone type used.",
+        "Yelets is about 250km from the border, and the weapon there was reportedly different. Exilenova+ said the plant was struck with Storm Shadow cruise missiles, the British-supplied air-launched weapon, and the Dnipro OSINT channel said at least two missiles hit two buildings. Energiya is described as Russia's largest maker of electrochemical power sources. According to Dnipro OSINT, its batteries go into Iskander-K and Iskander-M missiles, the Kh-47M2 Kinzhal air-launched ballistic missile, Zircon, the Pantsir air-defence system and UMPB D-30SN guided bombs. Exilenova+ calls it Russia's only producer of batteries for the planning and correction modules that turn old bombs into glide bombs. It also makes drone batteries. The plant has been hit before, in May and July 2025 and January 2026. Lipetsk's governor, Igor Artamonov, said an \"industrial zone\" was targeted and one person was injured.",
+        "The pattern is deliberate. Two days earlier Storm Shadows were reported to have hit the Proton-Electrotex electronics plant in Oryol, which Ukraine's General Staff says makes components for Iskander-M and S-71 cruise missiles; the Oryol governor said three bodies were found in the rubble. The same weekend monitoring channels reported a fire at the Omsky Kauchuk petrochemical plant in Omsk, about 2,500km from Ukraine.",
+        "The caution: none of the damage has been independently assessed, and Moscow says Avisma is working normally. Plants making components can often be repaired or their output spread elsewhere, so the real test is whether Russian missile and glide-bomb use drops in the weeks ahead."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Ukraine strikes Russian titanium plant, facility producing missile, drone components, monitoring channels claim",
+          "url": "https://kyivindependent.com/ukraine-strikes-russian-titanium-plant-more-than-1-400-kilometers-from-border-monitoring-channel-claims/"
+        },
+        {
+          "outlet": "Euromaidan Press",
+          "title": "Russian titanium plant in Urals reportedly hit by Ukrainian drones, 1,500 km from Ukraine",
+          "url": "https://euromaidanpress.com/2026/10/25/ukrainian-drones-reportedly-hit-russian-titanium-plant-in-perm-krai/"
+        },
+        {
+          "outlet": "Euromaidan Press",
+          "title": "Ukraine strikes Russian plant supplying batteries for ballistic missiles and glide bombs with Storm Shadow missiles, OSINT reports",
+          "url": "https://euromaidanpress.com/2026/10/25/ukraine-strikes-russian-plant-supplying-batteries-for-ballistic-missiles-and-glide-bombs/"
+        },
+        {
+          "outlet": "bne IntelliNews",
+          "title": "Missile War Monitor: Oryol strike toll rises to three as Kyiv claims hit on Proton-Electrotex plant",
+          "url": "https://www.intellinews.com/missile-war-monitor-oryol-strike-toll-rises-to-three-as-kyiv-claims-hit-on-proton-electrotex-plant-478551/"
+        }
+      ],
+      "tags": [
+        "long-range strikes",
+        "storm shadow",
+        "drones",
+        "titanium",
+        "missile industry",
+        "russia"
+      ],
+      "update_of": "Ukraine's drones reach Siberia again: what flies 2,500km and what it is hitting",
+      "visual": {
+        "type": "bar",
+        "title": "How far from Ukraine the weekend's targets lie",
+        "note": "Approximate distance from the Ukrainian border as reported, km",
+        "data": [
+          {
+            "label": "Yelets (Energiya)",
+            "value": 250
+          },
+          {
+            "label": "Berezniki (Avisma)",
+            "value": 1500
+          },
+          {
+            "label": "Omsk (Omsky Kauchuk)",
+            "value": 2500
+          }
+        ],
+        "unit": " km",
+        "highlight": "Berezniki (Avisma)",
+        "source": "Euromaidan Press, Kyiv Independent"
+      },
+      "from_brief": null,
+      "request_focus": null
+    },
+    {
+      "id": "a08",
+      "round": 1,
+      "topic": "ukraine",
+      "title": "Zelensky offers an energy truce and sets his terms for November's three-way talks",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "Ukraine will stop hitting Russian refineries if Russia stops hitting its power grid, Zelensky says",
+        "He wants technical talks on energy, grain and prisoners first; territory only at leader level",
+        "Moscow says talks can resume only after its 4 November holiday"
+      ],
+      "body": [
+        "Volodymyr Zelensky has set out what Ukraine will bring to the three-way talks with American and Russian negotiators expected in the first half of November, and put a concrete offer on the table: a mutual halt to strikes on energy. \"If you want us to stop striking Russia's diesel and oil refining infrastructure, it's very simple,\" he told Alla Mazur of the TSN programme on Sunday evening. \"An energy ceasefire. That's how it can work.\" He said he had put the idea to Ukraine's partners and described the refinery campaign as a response to Russian attacks on Ukraine's grid, \"a matter of fairness\".",
+        "His proposed agenda is narrow. \"Energy, grain, and people – these are the specifics,\" he said: an energy ceasefire, a new arrangement to protect grain shipping in the Black Sea, and prisoner exchanges. He stressed these were proposals to Washington rather than demands, and that a Russian refusal to discuss them would show whether the Kremlin was serious. He suggested Vladimir Putin might be agreeing to talk only to avoid friction with Washington before the US midterms on 3 November: \"We will very quickly see in November whether it was a trick or not.\"",
+        "On sequencing, he wants technical teams to meet before any meeting of himself, Putin and Donald Trump. Territory is a \"red line\" that only leaders can discuss, and \"we are not exchanging anything for anything\". Security guarantees \"cannot be dictated by the Russian side\", he said, and limits on Ukraine's army or neutrality are \"not up for discussion\". If NATO membership is blocked he wants the US and European countries to extend Article 5-style protection, and he would like to keep an army of 800,000 if it can be paid for, fewer if Ukraine joins NATO.",
+        "He also warned that easing sanctions before the talks would weaken Ukraine's hand, a pointed reference to Mr Trump's waiver on Russian oil exports earlier this month. After meeting the US envoy Steve Witkoff in Oslo, he said disputes over Starlink and US intelligence sharing were settled for now, but air defence shortages remained: \"There is progress; it's just very slow.\"",
+        "Moscow's timetable is looser. Kremlin aide Yuri Ushakov said on Sunday that \"the next deadline is now Nov. 4, our major holiday\" and that Russia would be ready to resume talks after that. The strongest case against Kyiv's approach is that it has little leverage: Mr Trump has told Mr Zelensky he has \"very few cards\", and an energy truce would also spare Russian refineries that Ukraine's drones have been hitting hard."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Zelensky details expectations for upcoming trilateral peace talks with Russia, US",
+          "url": "https://kyivindependent.com/zelensky-details-expectations-for-upcoming-trilateral-peace-talks-with-russia-us/"
+        },
+        {
+          "outlet": "Ukrinform",
+          "title": "President: Ukraine ready to halt strikes on oil refineries if Russia stops attacks on energy sector",
+          "url": "https://www.ukrinform.net/rubric-ato/4178073-president-ukraine-ready-to-halt-strikes-on-oil-refineries-if-russia-stops-attacks-on-energy-sector.html"
+        }
+      ],
+      "tags": [
+        "zelensky",
+        "peace talks",
+        "energy ceasefire",
+        "security guarantees",
+        "trump"
+      ],
+      "update_of": "Zelensky offers to freeze the front line but sets three conditions for a lasting armistice",
+      "visual": null,
+      "from_brief": null,
+      "request_focus": null
+    },
+    {
+      "id": "a09",
+      "round": 1,
+      "topic": "ukraine",
+      "title": "Named Russian war dead pass 280,000 in independent count",
+      "kind": "news",
+      "read_minutes": 1,
+      "tldr": [
+        "Mediazona and BBC Russian have identified 282,993 Russian military dead by name",
+        "6,880 names were added in under three weeks; 7,920 officers and 15 generals are confirmed",
+        "The journalists say the true toll is likely significantly higher"
+      ],
+      "body": [
+        "The independent Russian outlet Mediazona, working with the BBC's Russian service, has now confirmed the names of 282,993 Russian military personnel killed in Ukraine between the full-scale invasion on 24 February 2022 and 23 October 2026. The latest update added 6,880 names since the previous count in early October.",
+        "The figure is a floor, not an estimate. Each name has to be backed by an obituary, an official or media report, a verifiable post by relatives, or evidence such as photographs or funeral dates. Deaths that are never made public are missed, recent months are the least complete, and fighters of the Donetsk and Luhansk proxy forces are excluded unless they held Russian citizenship. The journalists say the real number is \"likely significantly higher\". Mediazona keeps a separate statistical estimate based on probate records and excess male mortality, but that was last updated in May with data to the end of 2025.",
+        "The list also shows how Russia is fighting. It contains 7,920 officers of the army and other security agencies and 15 generals. The officers' share of deaths fell from as much as 10% early in the war to 2–3% by November 2024, which Mediazona attributes to Russia's growing reliance on contract volunteers recruited for infantry assaults, who are far more likely to die. By September 2024 volunteers were again the largest category of the dead; convicts recruited from prisons dominated in early 2023 around Bakhmut, and have not been used en masse since. In the war's first six months, men aged 21 to 23 died in the largest numbers; volunteers now are generally over 30.",
+        "Other counts are larger because they measure something different. Ukraine's General Staff says Russia has lost 1,578,450 troops, a figure for killed and wounded together. The Center for Strategic and International Studies in Washington estimated in July about 1.4 million Russian casualties, against 525,000 to 625,000 for Ukraine. None of these can be checked independently, and Moscow publishes no figures."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Almost 283,000 Russian soldiers killed in Ukraine identified by media investigation",
+          "url": "https://kyivindependent.com/almost-283-000-russian-soldiers-killed-in-ukraine-identified-by-media-investigation-2/"
+        },
+        {
+          "outlet": "Mediazona",
+          "title": "Russian losses in the war with Ukraine. Mediazona count, updated",
+          "url": "https://en.zona.media/article/2026/10/09/casualties_eng-trl"
+        }
+      ],
+      "tags": [
+        "russia",
+        "casualties",
+        "mediazona",
+        "russian army",
+        "war dead"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "stats",
+        "title": "Russia's named war dead",
+        "note": "Confirmed by name, 24 Feb 2022 to 23 Oct 2026",
+        "data": [
+          {
+            "label": "Named dead",
+            "value": "282,993"
+          },
+          {
+            "label": "Added since early October",
+            "value": "6,880"
+          },
+          {
+            "label": "Officers",
+            "value": "7,920"
+          },
+          {
+            "label": "Generals",
+            "value": "15"
+          }
+        ],
+        "source": "Mediazona / BBC Russian"
+      },
+      "from_brief": null,
+      "request_focus": null
+    },
+    {
+      "id": "a10",
+      "round": 1,
+      "topic": "nato",
+      "title": "The MoD puts up to £2bn on replacing the SA80 rifle, and asks small firms to talk",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "A new MoD notice values Project GRAYBURN, the SA80 replacement, at up to £2bn including VAT, with a contract running from July 2029 to March 2045.",
+        "The rifle must be made in the UK and beat modern body armour; the calibre is still undecided.",
+        "An invitation-only industry day is open to registrations until 5pm on 30 October, and the notice says it suits SMEs."
+      ],
+      "body": [
+        "The Ministry of Defence has put a price on replacing the British Army's rifle for the first time. A notice issued on 23 October by the National Armaments Director Group values Project GRAYBURN at £2bn including VAT (about £1.67bn without), according to the UK Defence Journal. The contract is expected to run from July 2029 to the end of March 2045. A January pipeline notice had given 2028 to 2045 and no value at all; in April 2025 the then minister Maria Eagle told Parliament the project was too early for a cost estimate.",
+        "GRAYBURN replaces the whole SA80 family, in service since the 1980s and rebuilt twice: the A2 by Heckler & Koch and the current A3 with a new upper receiver. The January notice set out five variants, likely on a common lower receiver: a standard close-combat rifle to replace the L85A3, a shorter close-combat version, a personal defence weapon to replace the L22 carbine, a 'generalist' rifle to replace the L85A2, and a cadet rifle to replace the L98. Janes has reported a buy of about 170,000 weapons.",
+        "The requirements are specific. The rifle must defeat current and emerging enemy body armour, carry day optics as standard and take in-line night sights quickly, reduce its signature on some variants, and work in every climate. It must be made in the UK, and the MoD wants a possible long-term 'strategic supplier' that would deliver, support and keep developing the weapon. The calibre is open: performance, compatibility with allies and complexity are all being weighed. The notice says no procurement route, supplier, product or contract structure has been chosen.",
+        "For firms, the near-term detail is the industry day. It is hybrid and by invitation, each organisation gets one 15-minute one-to-one, registration closes at 5pm on 30 October and the engagement deadline is 27 November. The MoD says the sessions will not be used to evaluate or down-select suppliers and describes the opportunity as particularly suitable for small and medium-sized enterprises. The formal tender is not expected until 2 July 2027.",
+        "Some bidders are already positioning. Janes reported last November that Beretta Defense Technologies is offering its NARP and Sako ARG rifles with Norma ammunition and Steiner optics, and has drawn up a plan to turn an existing Lincolnshire site into a small-arms production hub with up to 70 skilled jobs, with options from 5% to 100% UK manufacture.",
+        "The catch is timing and money. The L85A3's out-of-service date has already slipped from 2030 into the early 2030s, so soldiers will carry the old rifle while the new one is delivered. A senior official said in July that GRAYBURN 'is funded', yet it has no specific line in the Defence Investment Plan."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "UK Defence Journal",
+          "title": "Up to two billion pounds to replace the SA80 rifle",
+          "url": "https://ukdefencejournal.org.uk/up-to-two-billion-pounds-to-replace-the-sa80-rifle/"
+        },
+        {
+          "outlet": "Janes",
+          "title": "Update: Candidates line up to replace UK's SA80 assault rifle",
+          "url": "https://www.janes.com/osint-insights/defence-news/defence/update-candidates-line-up-to-replace-uks-sa80-assault-rifle"
+        }
+      ],
+      "tags": [
+        "project grayburn",
+        "sa80",
+        "british army",
+        "procurement",
+        "smes",
+        "small arms"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "stats",
+        "title": "Project GRAYBURN in numbers",
+        "note": "From the MoD's 23 October notice and Janes",
+        "data": [
+          {
+            "label": "Estimated value incl. VAT",
+            "value": "£2bn"
+          },
+          {
+            "label": "Contract period",
+            "value": "2029–2045"
+          },
+          {
+            "label": "Variants planned",
+            "value": "5"
+          },
+          {
+            "label": "Weapons (Janes)",
+            "value": "~170,000"
+          }
+        ],
+        "source": "UK Defence Journal; Janes"
+      },
+      "from_brief": null,
+      "request_focus": null
+    },
+    {
+      "id": "a11",
+      "round": 1,
+      "topic": "nato",
+      "title": "Denmark picks a two-year-old start-up's cruise missile for its first long-range strike weapon",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "Denmark will buy Kongsberg's air-launched Joint Strike Missile and the ground-launched Anthem cruise missile from the US-Israeli start-up Covenant.",
+        "Anthem has never been used in combat, but Covenant says it will cost a 'mid six-figure' sum each, against over a million for Taurus or Tomahawk.",
+        "Denmark's missiles are to be built at Covenant's new Leipzig plant, which aims for 1,000 missiles in 2027 and up to 5,000 a year after that."
+      ],
+      "body": [
+        "Denmark has chosen a start-up's missile to give it a long-range strike capability for the first time. Defence minister Jeppe Bruus said on 22 October that the country will buy two weapons: Kongsberg's Joint Strike Missile, which its F-35s can carry, and a ground-launched cruise missile called Anthem from Covenant, a young US-based company, Defense News reported. Bruus called it 'a significant step toward improving Denmark's self-defence capabilities'. The purpose is to be able to hit back at an attacker, and Denmark has promised NATO such a capability by 2030. Officials gave no quantities, costs or delivery dates.",
+        "Covenant is about two years old, with roots in Israel and the US, founded by Michael Kaufman and Ofir Dayan. In early October it opened a site of about 10,000 square metres in north Leipzig, its third after Israel and Dallas, which Defence Network reports as a €250m investment (a little over £200m). According to Danish broadcaster TV2, Denmark's missiles will be made there.",
+        "What is known about Anthem is thin, and much of it comes from the company. Covenant has not published a range; observers estimate up to 1,500km, between Taurus (over 500km) and Tomahawk (up to 2,000km). Observers put the warhead at 200 to 300kg, roughly half what those two can carry in some versions. It first flew in August 2025 and Covenant says it has run more than 200 tests, including flights with the US military. It is sold as a complete package covering transport, storage and ground launch, with mission-planning software for coordinated mass launches.",
+        "The pitch is price and volume. Covenant says Anthem will cost a 'mid six-figure' sum per missile in serial production (it does not give a currency), against more than a million for Taurus or Tomahawk. It plans 1,000 missiles in 2027, its first year of production, and up to 5,000 a year after that, and says fewer than 5% of components in the German-built version will come from outside Europe.",
+        "That is why Berlin is watching. Germany plans to spend €12bn (about £10bn) closing its deep-strike gap: buying about 400 Tomahawks from the US, developing a missile with Britain over the longer term, and in the meantime looking at cheap, high-volume options including Anthem and two Ukrainian systems. Its defence ministry has confirmed only that it is in talks with Covenant.",
+        "The counter-argument is plain: Anthem has never been fired in anger, and every production target depends on a factory that has not yet built a missile. For a start-up, though, a NATO government order before serial production begins is a large vote of confidence."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Defense News",
+          "title": "Denmark to buy Kongsberg, Covenant missiles for new long-range strike option",
+          "url": "https://www.defensenews.com/global/europe/2026/10/22/denmark-to-buy-kongsberg-covenant-missiles-for-new-long-range-strike-option/"
+        },
+        {
+          "outlet": "Defence Network",
+          "title": "Anthem: Covenant eröffnet Marschflugkörper-Produktionsstätte in Leipzig",
+          "url": "https://defence-network.com/15f3"
+        }
+      ],
+      "tags": [
+        "denmark",
+        "covenant",
+        "anthem",
+        "long-range strike",
+        "defence start-ups",
+        "germany"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "bar",
+        "title": "Anthem planned output",
+        "note": "Missiles per year, company targets",
+        "data": [
+          {
+            "label": "2027 (first year)",
+            "value": 1000
+          },
+          {
+            "label": "Second year",
+            "value": 5000
+          }
+        ],
+        "highlight": "Second year",
+        "source": "Defence Network"
+      },
+      "from_brief": null,
+      "request_focus": null
+    },
+    {
+      "id": "a12",
+      "round": 1,
+      "topic": "nato",
+      "title": "Leonardo and Rheinmetall reportedly win about £3bn of Italian tank and armour orders",
+      "kind": "news",
+      "read_minutes": 1,
+      "tldr": [
+        "Italy's MF newspaper reports two Italian Army contracts worth $4.16bn (a little over £3bn) for the Leonardo–Rheinmetall joint venture.",
+        "They cover A2CS combat vehicles, based on the Lynx, and a new-generation main battle tank.",
+        "Neither company has confirmed signature; Leonardo's chief executive says his side is ready for production."
+      ],
+      "body": [
+        "Leonardo and Rheinmetall's 50-50 joint venture has reportedly won two Italian Army contracts worth $4.16bn in total (a little over £3bn), covering A2CS combat vehicles and new-generation main battle tanks. The report came from Italy's MF newspaper and was carried by Reuters on 23 October. Rheinmetall declined to comment. Leonardo's chief executive, Lorenzo Mariani, would not confirm signature, saying communication had to be coordinated with the customer, but said Leonardo was ready to move into production on both the tank and the wider vehicle programme.",
+        "A2CS is Italy's plan to renew its heavy armour. The joint venture, Leonardo Rheinmetall Military Vehicles, signed a first contract for 21 vehicles at the end of 2025 and handed over the first four Lynx infantry fighting vehicles at Montelibretti, near Rome, on 27 January. Those carry Rheinmetall's Lance 30mm turret; Leonardo's Hitfist 30mm turret is to replace it on the rest of the fleet. The Lynx is built to serve as a fighting vehicle, troop carrier, command post and ambulance.",
+        "No quantities, split between the two contracts or delivery dates have been reported. The pattern is a German vehicle design paired with an Italian turret, with Leonardo saying its side is ready to produce."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Defense News (Reuters)",
+          "title": "Leonardo, Rheinmetall secure $4 billion contracts with Italian Army, report says",
+          "url": "https://www.defensenews.com/global/europe/2026/10/23/leonardo-rheinmetall-secure-4-billion-contracts-with-italian-army-report-says/"
+        },
+        {
+          "outlet": "Leonardo",
+          "title": "Italian Army's A2CS programme kicks off",
+          "url": "https://www.leonardo.com/en/press-release-detail/-/detail/27-01-2026-italian-army-s-a2cs-programme-kicks-off"
+        }
+      ],
+      "tags": [
+        "italy",
+        "rheinmetall",
+        "leonardo",
+        "lynx",
+        "main battle tanks",
+        "european rearmament"
+      ],
+      "update_of": null,
+      "visual": null,
+      "from_brief": null,
+      "request_focus": null
+    },
+    {
+      "id": "a13",
+      "round": 1,
+      "topic": "china",
+      "title": "Kremlin says a Putin–Xi–Trump summit in Shenzhen is being prepared, but Beijing has not said so",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "Putin's aide Yuri Ushakov says Moscow, Beijing and Washington are 'in principle ready' for a three-way summit at APEC in Shenzhen on 18–19 November.",
+        "Trump says he would go to talk about nuclear weapons, 'not so much for Ukraine'; China's foreign ministry has said only that it has no information.",
+        "Kyiv and European voices warn of a great-power deal over Ukraine's head."
+      ],
+      "body": [
+        "The Kremlin says work has begun on the first summit between the leaders of Russia, China and the United States. Yuri Ushakov, Vladimir Putin's foreign policy aide, told Russian state television on Sunday that \"Moscow, Beijing and Washington are in principle ready to hold it, and preparations have already begun.\" The meeting would take place on the sidelines of the Asia-Pacific Economic Cooperation (APEC) leaders' summit in Shenzhen, China, on 18–19 November.",
+        "Ushakov said Russia and America had not yet agreed a separate Putin–Trump meeting in Shenzhen, \"because so far we have been talking about this trilateral contact\", though he said one was possible. He tied Putin's attendance at the G20 summit in Miami in December, for which the Kremlin has received a formal invitation, to how Shenzhen goes: \"first comes November, and then comes December.\" He also said Russia would be ready to resume talks in the Russia–US–Ukraine format after its National Unity Day on 4 November, describing the planned expert-level meeting as \"exploratory\".",
+        "Donald Trump first said he was open to the idea on 19 October. He said he would go \"not so much for Ukraine\" but \"to talk about nuclear weapons and denuclearisation\", while adding that he would do \"whatever I can do to end the war.\" The Wall Street Journal has reported that Moscow wants to use such a meeting to settle the war on terms favourable to Russia, according to reports relaying its story.",
+        "Beijing has been far more guarded. When asked about a three-way meeting on 19 October, foreign ministry spokeswoman Mao Ning said she had no information to share, and none of the reports read here carries a Chinese confirmation of Ushakov's claim. Even the Kremlin has been less certain at times: Dmitry Peskov said last week that \"no substantive proposals or agreements\" on the meeting or its agenda had been put forward.",
+        "For Xi, hosting such a meeting would put China at the centre of the table with both nuclear superpowers, on home ground. For Europe and Ukraine the format is the worry. Ukraine's foreign minister, Andrii Sybiha, said a three-way meeting of the Russian, Chinese and American leaders \"would do only the opposite\" of helping peace, and former prime minister Arseniy Yatsenyuk compared such arrangements to Munich in 1938 and Yalta in 1945. Volodymyr Zelensky has insisted no deal on Ukraine's borders can be made \"over Kyiv's head\".",
+        "The counter-argument is that the summit may never happen in this form: so far it rests on Russian statements, and both Washington and Beijing have stopped short of committing to it. The next signal to watch is whether China's foreign ministry says anything once the party plenum ends on Thursday."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Kyiv Post",
+          "title": "Preparations Underway for Putin-Trump-Xi Trilateral Summit, Ushakov Says",
+          "url": "https://www.kyivpost.com/post/88117"
+        },
+        {
+          "outlet": "Anadolu Agency (A News)",
+          "title": "Kremlin says preparations for Putin-Xi-Trump trilateral summit have begun",
+          "url": "https://www.anews.com.tr/world/2026/10/25/kremlin-says-preparations-for-putin-xi-trump-trilateral-summit-have-begun"
+        },
+        {
+          "outlet": "Euronews",
+          "title": "Trump says he is open to three-way summit with Putin and Xi in China",
+          "url": "https://www.euronews.com/2026/10/20/trump-says-hes-ready-to-meet-putin-and-xi-in-china"
+        },
+        {
+          "outlet": "UA.NEWS",
+          "title": "In Beijing, know nothing about trilateral summit between Trump, Xi, and Putin on Ukraine",
+          "url": "https://ua.news/en/world/u-pekini-nichogo-ne-znaiut-pro-tristoronnii-samit-trampa-si-ta-putina-shchodo-ukrayini"
+        }
+      ],
+      "tags": [
+        "xi jinping",
+        "putin",
+        "trump",
+        "apec",
+        "shenzhen",
+        "ukraine"
+      ],
+      "update_of": null,
+      "visual": null,
+      "from_brief": null,
+      "request_focus": null
+    },
+    {
+      "id": "a14",
+      "round": 1,
+      "topic": "china",
+      "title": "China's stock market slides into a bear market as company profits disappoint",
+      "kind": "analysis",
+      "read_minutes": 2,
+      "tldr": [
+        "The blue-chip CSI 300 is more than 20% below its June peak and was heading for an 11th straight weekly fall, the longest run since the index began in 2005.",
+        "Chinese shares have lost about $3.5 trillion (roughly £2.6 trillion) since May, and reported profits are missing forecasts by an average of 9%.",
+        "Beijing is propping prices up through state funds but is avoiding a big stimulus, and the party plenum that opens today is about discipline, not the economy."
+      ],
+      "body": [
+        "China's stock market has crossed into bear territory. The blue-chip CSI 300 index is more than 20% below its closing peak of 22 June, Reuters reported, and on Friday it was on course for an 11th consecutive weekly fall, the longest losing run since the index was created in 2005. On Thursday it posted its lowest close since July 2025, and the Shanghai Composite ended at its weakest level in more than a year. On Friday morning tech shares took the worst of it: Shanghai's STAR50 index fell 3.1% and the ChiNext start-up board 2.1%.",
+        "Bloomberg puts the loss in market value since a peak in May at $3.5 trillion, roughly £2.6 trillion at about 75p to the dollar. Its central point is that this is now about earnings, not just mood. Consensus 2026 profit forecasts for members of the MSCI China index have fallen by more than 4% since the end of March, and by more than 13% for the Hang Seng Tech index. Companies that have reported so far have missed forecasts by an average of 9%, the second-worst quarterly miss in two years. China Mobile's profit for January to September fell 8%; the battery maker CATL and Ganfeng Lithium also missed. Alibaba's sale of $10 billion (about £7.5 billion) of new shares has diluted existing holders.",
+        "The underlying problem is price wars and weak consumer demand, which turn sales growth into thinner margins. \"Competition is encouraged and generally brutal in China, not shareholder friendly,\" said Jason Lemire of Bold Wealth Partners. A sell-off in American tech on Thursday, after earnings raised fears about AI spending, added pressure on Chinese AI hardware stocks.",
+        "Beijing's response has been to steady prices rather than to boost demand. Trading spiked on Friday in exchange-traded funds favoured by the state-backed \"national team\", which eased the losses. But policymakers have preferred small, incremental measures to the large packages of 2024, and RBC Wealth Management blamed the slump on \"insufficient fiscal stimulus and disappointing earnings\", warning that without new policy or technology catalysts \"volatile trading may persist into early 2027.\" Third-quarter growth of 4.5% has put the year back within the government's 4.5–5% target, which reduces the pressure to act. As William Bratton of BNP Paribas put it, \"Policymakers are comfortable with the nature of economic growth.\"",
+        "The four-day party plenum that opens in Beijing today is not expected to change that: last year's plenum set the five-year economic plan, and this one is focused on party discipline.",
+        "The counter-argument: some investors think the sell-off has gone far enough. Bridgewater's China arm has turned \"prudently optimistic\", arguing that third-quarter falls were driven mainly by liquidity rather than valuations. Berenberg's Ulrich Urbahn is not convinced: \"It is too early to conclude that the worst is over.\""
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Business Recorder (Reuters)",
+          "title": "China stocks slide as blue chips head for longest weekly losing streak",
+          "url": "https://www.brecorder.com/news/40445598/china-stocks-slide-as-blue-chips-head-for-longest-weekly-losing-streak"
+        },
+        {
+          "outlet": "The Edge Malaysia (Bloomberg)",
+          "title": "Sinking profits turn China's US$3.5 tril stock rout into trap",
+          "url": "https://theedgemalaysia.com/node/823133"
+        },
+        {
+          "outlet": "The Herald Business",
+          "title": "China opens 5th plenum amid sweeping purge ahead of Xi's bid for 4th term",
+          "url": "https://biz.heraldcorp.com/article/10914120"
+        }
+      ],
+      "tags": [
+        "china economy",
+        "stock market",
+        "csi 300",
+        "earnings",
+        "stimulus"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "stats",
+        "title": "China's stock slump in numbers",
+        "data": [
+          {
+            "label": "CSI 300 below June peak",
+            "value": "20%+"
+          },
+          {
+            "label": "Weekly falls in a row (record)",
+            "value": "11"
+          },
+          {
+            "label": "Market value lost since May",
+            "value": "£2.6tn"
+          },
+          {
+            "label": "Average earnings miss",
+            "value": "9%"
+          }
+        ],
+        "note": "£ figure converted from $3.5 trillion at about 75p per dollar; 11th weekly fall was on course as of Friday 23 October",
+        "source": "Reuters via Business Recorder; Bloomberg via The Edge Malaysia"
+      },
+      "from_brief": null,
+      "request_focus": null
+    },
+    {
+      "id": "a15",
+      "round": 1,
+      "topic": "ai",
+      "title": "US banks shut the door on AI agents that log in with customers' passwords",
+      "kind": "news",
+      "read_minutes": 2,
+      "tldr": [
+        "JPMorgan, Citi, Bank of America and Schwab say they are blocking or restricting outside AI agents that log into customer accounts.",
+        "The problem is customers handing usernames and passwords to personal AI assistants the banks have never vetted.",
+        "Read-only access through open-banking providers is the route banks still allow; anything that moves money needs a human."
+      ],
+      "body": [
+        "America's biggest banks are pushing back against a new kind of customer: the personal AI agent. Axios reported on 22 October that banks are detecting activity from third-party agents inside customers' online accounts, an industrywide problem touching dozens of institutions, according to Axios's Madison Mills. CBS News, following up the next day, said the agents were not hacking accounts or draining them. They were mostly doing what their users told them, using usernames and passwords the users had handed over.",
+        "That is the sticking point. Sharing login details breaks the banks' terms of service, and some agents have taken steps their owners never approved, such as contacting a bank with a complaint without asking the account holder first. Meta's Muse assistant, launched in September, sharpened the worry: FStech reports that banks fear agents will start moving idle cash into higher-interest accounts on their owners' behalf.",
+        "The banks have responded one by one. Jamie Dimon told JPMorgan's 13 October earnings call that the bank would not let \"just any outside agents\" into its systems, and warned there could be thousands of rogue ones. Citi said it will not allow third-party AI agents or assistants to log into a customer's account or transact on its platforms. Schwab's chief executive, Rick Wurster, said it is blocking unauthorised agents. Bank of America's Brian Moynihan said it is restricting access while it works out who is liable when an AI authorises a payment, telling CNBC there should be \"a human in the loop\" before money leaves an account.",
+        "There is also a money motive. A report cited by FStech says JPMorgan, Bank of America and Wells Fargo hold $1.6 trillion (about £1.2 trillion, converted at roughly $1.34 to the pound) in deposits that pay no interest, 16% of their liabilities. Paying 3% on that would cost them $47 billion a year (about £35 billion), nearly half their combined earnings. Agents that shop around for yield threaten that cheap funding.",
+        "The counter-argument came from David Sacks, the White House AI adviser, who wrote that agents acting with their owner's permission are \"in no way cyberattacks\" and should not be lumped in with rogue ones. He suggested banks offer read-only access, letting an agent see activity but not act on it, while treating full access with user credentials carefully.",
+        "That is where the practical line is settling. Citi still lets customers give limited, read-only access through certain open-banking providers, and Chase says it supports customer-authorised data sharing through such providers rather than shared passwords. For a small firm trying an AI assistant on its books, the lesson is the same on either side of the Atlantic: connect it through the bank's approved data feed, keep it read-only, and keep payments in human hands. Giving it your banking password risks breaching your bank's terms and leaves the question of who pays for a mistake unanswered."
+      ],
+      "why_it_matters": "If KHD tries AI tools for cash flow or bookkeeping, connect them through the bank's or accounting package's approved open-banking feed in read-only mode, never with shared logins, and keep a person approving every payment.",
+      "sources": [
+        {
+          "outlet": "CBS News",
+          "title": "AI agents are roaming around consumers' bank accounts, and banks aren't happy about it",
+          "url": "https://www.cbsnews.com/news/ai-agents-customer-bank-accounts-security/"
+        },
+        {
+          "outlet": "FStech",
+          "title": "Citi and Bank of America block AI agents from customer accounts",
+          "url": "https://fstech.co.uk/fst/Citi_BofA_Block_AI_Agents.php"
+        }
+      ],
+      "tags": [
+        "ai agents",
+        "banking",
+        "open banking",
+        "jpmorgan",
+        "fraud risk"
+      ],
+      "update_of": null,
+      "visual": null,
+      "from_brief": null,
+      "request_focus": null
+    },
+    {
+      "id": "a16",
+      "round": 1,
+      "topic": "ai",
+      "title": "Rockwell and L2L put AI agents into factory software, but show no results yet",
+      "kind": "news",
+      "read_minutes": 1,
+      "tldr": [
+        "Rockwell will let manufacturers run its FactoryTalk Conductor AI platform on NVIDIA's open Nemotron models, keeping plant data in their own systems.",
+        "L2L launched shop-floor software with voice dispatch, automatic event logs and fault fixes suggested from past repairs.",
+        "Neither names a customer or publishes measured results."
+      ],
+      "body": [
+        "Two industrial software firms announced AI products for the factory floor on 22 October. Rockwell Automation added support for NVIDIA's open Nemotron models to FactoryTalk Conductor, its recently introduced platform that lets engineers start automation tasks in plain language and hands them to Rockwell-verified AI agents. The point of the open models, Rockwell says, is that customers can keep engineering and production data in their own environments and control cost and governance. Engineers stay responsible for checking and approving the work. Commercial availability is expected in the first quarter of 2027.",
+        "L2L, a Salt Lake City maker of plant operations software, launched Shop Floor Execution, which is available now. Its \"Execution AI\" offers voice-driven dispatching of maintenance jobs, automatic logging of line events, and troubleshooting that suggests a fix by searching how similar faults were resolved before. L2L claims return on investment in as little as four weeks.",
+        "Both are vendor announcements with no named users or measured results, and both are aimed at large plants. The idea a small manufacturer can copy today is cheaper: write every breakdown and its fix into a searchable log. That record is what L2L's troubleshooting feature runs on, and it is useful to an engineer or a general-purpose AI assistant long before any new platform is bought."
+      ],
+      "why_it_matters": "A disciplined fault-and-fix log for KHD's own production and for customer service calls would make AI troubleshooting possible later, and could feed a support tool for distributors.",
+      "sources": [
+        {
+          "outlet": "PR Newswire (Rockwell Automation)",
+          "title": "Rockwell Automation expands FactoryTalk Conductor with NVIDIA Nemotron support",
+          "url": "https://www.prnewswire.com/news-releases/rockwell-automation-expands-factorytalk-conductor-with-nvidia-nemotron-support-302916890.html"
+        },
+        {
+          "outlet": "L2L",
+          "title": "L2L unveils AI-powered Shop Floor Execution",
+          "url": "https://www.l2l.com/news/press-release-l2l-unveils-ai-powered-shop-floor-execution"
+        },
+        {
+          "outlet": "Ayoka Systems",
+          "title": "Manufacturing Daily Briefing - 2026-10-23",
+          "url": "https://ayokasystems.com/news/ayoka-daily-briefing-2026-10-23/"
+        }
+      ],
+      "tags": [
+        "rockwell automation",
+        "l2l",
+        "maintenance",
+        "ai agents",
+        "manufacturing software"
+      ],
+      "update_of": "Rockwell launches AI 'conductor' for factory engineering work",
+      "visual": null,
+      "from_brief": null,
+      "request_focus": null
+    },
+    {
+      "id": "a17",
+      "round": 1,
+      "topic": "us_politics",
+      "title": "A week out from the midterms, Democrats are favoured for the House and narrowly for the Senate",
+      "kind": "news",
+      "read_minutes": 1,
+      "tldr": [
+        "Forecasters give Democrats between 79% and 95% odds of winning the House.",
+        "The Senate, now 53-47 Republican, is closer: estimates range from 56% to 76%.",
+        "Tariffs are in play: Maine's Susan Collins, trailing narrowly, won carve-outs on Canadian goods."
+      ],
+      "body": [
+        "The US votes on Tuesday 3 November. Forecasters agree Democrats are favoured to take the House and disagree on how likely they are to win the Senate.",
+        "Decision Desk HQ, as of 25 October, gave Democrats a 79% chance in the House and 56% in the Senate, projecting 51 Senate seats. Newsweek's round-up, checked on 23 October, put Silver Bulletin at 95% for the House and 76.4% for the Senate, with a projected 52-48 chamber; VoteHub has 60% and 52-48. Republicans now hold the Senate 53-47.",
+        "The close races are Alaska, Iowa, Kansas, Maine, Michigan, Ohio, South Carolina and Texas. Silver Bulletin has Democrats narrowly ahead in Texas (D+2.4), Ohio (D+3.7) and Michigan (D+3), and Republicans ahead in South Carolina (R+1.7).",
+        "Trade is part of the campaign. In Maine, Silver Bulletin puts the Democrat Troy Jackson on 49.6% against Susan Collins on 46.8%. Collins won tariff exemptions on Canadian goods used by Maine farmers on Friday. The KPMG Law trade lawyer Robert Glasgow said the changes were mainly about the midterms and would have a small immediate effect. Trump said deals with Canada and Mexico were \"very close\"; Mark Carney said Canada would sign \"this afternoon\" if Washington were ready.",
+        "For Britain, the House of Commons Library notes that a 10% tariff still applies to most UK goods entering the US, and that the legal basis for several US tariffs changed after the Supreme Court's ruling on 20 February."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Newsweek",
+          "title": "Who Will Win the Midterms? What Polls Show 10 Days Out",
+          "url": "https://www.newsweek.com/who-will-win-the-midterms-what-polls-show-10-days-out-12610772"
+        },
+        {
+          "outlet": "Decision Desk HQ",
+          "title": "2026 Midterm Election Forecast: Live House and Senate Predictions",
+          "url": "https://votes.decisiondeskhq.com/forecast/2026"
+        },
+        {
+          "outlet": "CP24",
+          "title": "Trump trade war: U.S. removes tariffs on some Canadian goods",
+          "url": "https://cp24.com/news/world/2026/10/23/trump-to-remove-50-tariffs-on-some-canadian-goods-heres-what-we-know"
+        },
+        {
+          "outlet": "House of Commons Library",
+          "title": "US trade tariffs",
+          "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-10240/"
+        }
+      ],
+      "tags": [
+        "midterms",
+        "congress",
+        "tariffs",
+        "susan collins",
+        "senate"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "bar",
+        "title": "Chance of Democratic control, by forecaster",
+        "note": "Probability of Democrats winning each chamber, late October 2026",
+        "data": [
+          {
+            "label": "House, Silver Bulletin",
+            "value": 95
+          },
+          {
+            "label": "House, DDHQ",
+            "value": 79
+          },
+          {
+            "label": "Senate, Silver Bulletin",
+            "value": 76.4
+          },
+          {
+            "label": "Senate, VoteHub",
+            "value": 60
+          },
+          {
+            "label": "Senate, DDHQ",
+            "value": 56
+          }
+        ],
+        "unit": "%",
+        "decimals": 1,
+        "source": "Newsweek, Decision Desk HQ"
+      },
+      "from_brief": null,
+      "request_focus": null
+    },
+    {
+      "id": "a18",
+      "round": 1,
+      "topic": "wildcard",
+      "title": "The gallium neutrino anomaly may be a calculation error, not new physics",
+      "kind": "analysis",
+      "read_minutes": 2,
+      "tldr": [
+        "For 30 years gallium detectors have caught about 20% fewer neutrinos from radioactive sources than predicted, now a gap of more than 5 sigma.",
+        "The favourite explanation, a sterile neutrino, clashes with reactor and solar data.",
+        "An Italian team says the standard cross-section calculation wrongly separates the electron from the nuclear transition; doing it properly lowers the prediction enough to close the gap."
+      ],
+      "body": [
+        "The gallium anomaly is one of neutrino physics' stubborn loose ends. In the GALLEX, SAGE and BEST experiments, intense radioactive sources of chromium-51 or argon-37, which emit electron neutrinos of fixed energy, were placed inside large volumes of gallium. A neutrino can turn a gallium-71 nucleus into germanium-71 and an electron, a charged-current weak process in which a neutron becomes a proton. Counting the germanium atoms gives the capture rate. The count has come out about 20% low for three decades, and with BEST's 2022 result the discrepancy now exceeds 5 sigma.",
+        "The popular reading has been oscillation into a sterile neutrino, a hypothetical state that does not feel the weak force. The trouble is that the oscillation parameters it needs sit badly with reactor antineutrino experiments, solar neutrino bounds and neutrino mass measurements.",
+        "A paper in Physical Review Letters, published on 24 September and written up by Phys.org on 16 October, attacks the prediction instead. Matteo Cadeddu of Italy's INFN and colleagues, including Carlo Giunti, who first set out the anomaly clearly in 2007, question how the capture cross-section is computed. The standard method fixes its size from the measured half-life of germanium-71, which decays back to gallium-71 by electron capture, using detailed balance. In doing so it factorises the problem: the lepton wave functions are treated as a simple factor, separate from a single nuclear matrix element for the Gamow-Teller transition.",
+        "The authors drop that factorisation. They use relativistic electron wave functions from the Dirac equation and Gamow-Teller transition densities that keep track of where in the nucleus the transition happens, constrained to reproduce the germanium half-life. Relativistic wave functions alone did not fix things, Cadeddu told Phys.org; the point is that \"the electron and the nuclear transition cannot always be treated as two essentially independent pieces\". The revised cross-section is significantly smaller. The paper's abstract says this could resolve the anomaly without new physics; Phys.org reports the predicted capture rate now matches what was observed.",
+        "The caution is that the answer now leans on nuclear-structure inputs, and no other group has yet reproduced it. If it holds, it removes one of the main experimental hints for sterile neutrinos. It is also a reminder that an anomaly can sit in a textbook approximation as easily as in the Standard Model."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Phys.org",
+          "title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles",
+          "url": "https://phys.org/news/2026-10-gallium-anomaly-neutrino-shortfall-invoking.html"
+        },
+        {
+          "outlet": "arXiv / Physical Review Letters",
+          "title": "A possible solution to the gallium anomaly moving beyond the leptonic wave function factorization",
+          "url": "https://arxiv.org/abs/2512.20560v2"
+        },
+        {
+          "outlet": "Physical Review Letters",
+          "title": "Possible Solution to the Gallium Anomaly Moving beyond the Leptonic Wave-Function Factorization",
+          "url": "https://journals.aps.org/prl/abstract/10.1103/5pvf-mcr1"
+        }
+      ],
+      "tags": [
+        "physics",
+        "neutrinos",
+        "gallium anomaly",
+        "sterile neutrinos",
+        "nuclear physics"
+      ],
+      "update_of": null,
+      "visual": {
+        "type": "stats",
+        "title": "The gallium anomaly in numbers",
+        "data": [
+          {
+            "label": "Shortfall in neutrino captures",
+            "value": "~20%"
+          },
+          {
+            "label": "Statistical significance",
+            "value": ">5σ"
+          },
+          {
+            "label": "Years unexplained",
+            "value": "30+"
+          }
+        ],
+        "source": "Cadeddu et al., PRL; Phys.org"
+      },
+      "from_brief": null,
+      "request_focus": null
+    },
+    {
+      "id": "a19",
+      "round": 1,
+      "topic": "wildcard",
+      "title": "A proof that no quantum process thermalises in less than ħ/2k_BT",
+      "kind": "analysis",
+      "read_minutes": 2,
+      "tldr": [
+        "Physicists in Vienna, Barcelona and Geneva have proved a universal lower limit on how fast any quantum process can bring a system to thermal equilibrium.",
+        "Above the gap scale the limit is half the 'Planckian time' ħ/k_BT; near zero temperature it becomes ħ/Δ, set by the energy gap.",
+        "The proof comes from quantum estimation theory: a faster thermaliser would beat the Heisenberg limit."
+      ],
+      "body": [
+        "The 'Planckian time', ħ/k_BT, keeps turning up in condensed-matter physics. Strange metals with resistivity linear in temperature appear to scatter electrons at about this rate, and Maldacena, Shenker and Stanford's bound on quantum chaos has the same form. It has long been suspected to be a speed limit for thermal processes, but without a general proof. A paper in Nature Physics, reported by Phys.org on 18 October, supplies one for thermalisation.",
+        "The authors, Paolo Abiuso (IQOQI Vienna, Austrian Academy of Sciences), Alberto Rolandi (TU Wien), John Calsamiglia (Universitat Autònoma de Barcelona), Pavel Sekatski (Geneva) and Martí Perarnau-Llobet (Barcelona and Geneva), set the problem up very generally. A 'thermalisation machine' of any size, coupled to the system as strongly as you like and evolving under the Schrödinger equation, must take the system to within a small error of its Gibbs state at temperature T. Crucially, it must do this not for one Hamiltonian but for a set of nearby ones.",
+        "The argument is then one of distinguishability. If two slightly different Hamiltonians are each driven to their own thermal state, the outputs are distinguishable by a known amount. But the dynamics can only make them distinguishable so fast: the quantum Fisher information gained from evolving for time τ grows at most as τ²/ħ² times the squared norm of the perturbing operator, the generalised Heisenberg limit. As the authors put it, \"the thermalization machine cannot violate the Heisenberg limit\". Matching the two gives τ ≥ ħ/(2k_BT) when k_BT is comparable to or above the spectral gap Δ, and τ ≥ ħ/Δ at low temperature, which they link to the quantum adiabatic theorem.",
+        "Plugging in numbers: ħ/k_B is about 7.6 picosecond-kelvins, so at room temperature, 300 K, the floor is roughly 13 femtoseconds; at 1 K it is about 3.8 picoseconds. Pumping in more energy or driving harder cannot beat it.",
+        "The requirement to work for a family of Hamiltonians matters. For a single known Hamiltonian, a machine that simply swaps in a prepared Gibbs state can act almost instantly, so no bound applies. The authors show the bound can be tight in a fine-tuned two-Hamiltonian case and a fermionic resonant-level model, but leave open how close realistic many-body systems come to it and how entanglement and system size change the picture. The work was first posted on arXiv in June 2025."
+      ],
+      "why_it_matters": null,
+      "sources": [
+        {
+          "outlet": "Phys.org",
+          "title": "Physicists prove a long-suspected quantum speed limit for thermalization",
+          "url": "https://phys.org/news/2026-10-physicists-quantum-limit-thermalization.html"
+        },
+        {
+          "outlet": "arXiv / Nature Physics",
+          "title": "An information-theoretic proof of the Planckian bound for thermalization",
+          "url": "https://arxiv.org/html/2506.19188v1"
+        }
+      ],
+      "tags": [
+        "physics",
+        "quantum thermodynamics",
+        "planckian bound",
+        "quantum information",
+        "nature physics"
+      ],
+      "update_of": null,
+      "visual": null,
+      "from_brief": null,
+      "request_focus": null
+    }
+  ],
+  "briefs": [
+    {
+      "id": "b01",
+      "round": 1,
+      "topic": "industry",
+      "title": "Fridays grows egg sales 10% and keeps phasing out colony eggs",
+      "summary": "Egg producer and packer Fridays raised turnover 10.4% to £89.4m in 2025, with profit after tax up 16.1% to £11.9m. Strong cash funded new technology and equipment. It is winding down its remaining colony flocks as supermarkets move to free-range, and has stopped supplying one major customer with colony eggs.",
+      "sources": [
+        {
+          "outlet": "Poultry Business",
+          "title": "Fridays increases turnover and profit as egg demand grows",
+          "url": "https://www.poultrynews.co.uk/business-politics/fridays-increases-turnover-and-profit-as-egg-demand-grows.html"
+        }
+      ],
+      "tags": [
+        "fridays",
+        "eggs",
+        "egg packing",
+        "free range",
+        "results"
+      ]
+    },
+    {
+      "id": "b02",
+      "round": 1,
+      "topic": "industry",
+      "title": "Annyalla Chicks profit rises to almost £2m on turnover above £63m",
+      "summary": "Poultry Business reports that Annyalla Chicks lifted profit to nearly £2m as turnover passed £63m. A chick supplier with growing turnover and profit is worth adding to the egg and hatchery prospect list.",
+      "sources": [
+        {
+          "outlet": "Poultry Business",
+          "title": "Annyalla Chicks profit rises to almost £2m as turnover tops £63m",
+          "url": "https://www.poultrynews.co.uk/production/annyalla-chicks-profit-rises-to-almost-2m-as-turnover-tops-63m.html"
+        }
+      ],
+      "tags": [
+        "annyalla chicks",
+        "hatchery",
+        "poultry",
+        "results"
+      ]
+    },
+    {
+      "id": "b03",
+      "round": 1,
+      "topic": "industry",
+      "title": "Salmonella risk from Swedish eggs edges up, still below the EU average",
+      "summary": "A Swedish report finds the Salmonella Enteritidis risk from Swedish eggs has risen slightly from very low levels but remains below the European average. It is a reminder that egg-borne Salmonella control is never finished, even in the best-performing countries.",
+      "sources": [
+        {
+          "outlet": "Food Safety News",
+          "title": "Salmonella risk from Swedish eggs rises from low levels",
+          "url": "https://www.foodsafetynews.com/2026/10/salmonella-risk-from-swedish-eggs-rises-from-low-levels/"
+        }
+      ],
+      "tags": [
+        "salmonella",
+        "eggs",
+        "sweden",
+        "food safety"
+      ]
+    },
+    {
+      "id": "b04",
+      "round": 1,
+      "topic": "industry",
+      "title": "The Happy Egg Co moves into chilled convenience products",
+      "summary": "The Happy Egg Co has launched a chilled convenience range, part of a wider push by egg brands into prepared products. Fridays has also planned chilled launches. Moving from shell eggs into processed lines adds cooking and packing equipment that needs cleaning.",
+      "sources": [
+        {
+          "outlet": "Poultry Business",
+          "title": "The Happy Egg Co launches chilled convenience range",
+          "url": "https://www.poultrynews.co.uk/news/the-happy-egg-co-launches-chilled-convenience-range.html"
+        }
+      ],
+      "tags": [
+        "happy egg co",
+        "eggs",
+        "chilled food",
+        "new products"
+      ]
+    },
+    {
+      "id": "b05",
+      "round": 1,
+      "topic": "industry",
+      "title": "Italy suspends tomato use as Salmonella outbreak passes 160 cases in 10 countries",
+      "summary": "Italian authorities have suspended the use of tomatoes linked to a Salmonella outbreak that has caused more than 160 infections across 10 European countries since July. Austria had already warned against raw Sicilian cherry tomatoes. The case shows how far one contaminated fresh ingredient can spread through food supply chains.",
+      "sources": [
+        {
+          "outlet": "Food Safety News",
+          "title": "Tomato use suspended as Italy tackles Salmonella outbreak",
+          "url": "https://www.foodsafetynews.com/2026/10/tomato-use-suspended-as-italy-tackles-salmonella-outbreak/"
+        }
+      ],
+      "tags": [
+        "salmonella",
+        "tomatoes",
+        "italy",
+        "outbreak"
+      ]
+    },
+    {
+      "id": "b06",
+      "round": 1,
+      "topic": "industry",
+      "title": "FDA seeks views on exemptions from its Food Traceability Rule",
+      "summary": "The FDA is holding a free public meeting to gather input on exemptions from the Food Traceability Rule. The rule has been law since 2022, but firms do not have to comply until 2028. US food plants, and UK exporters supplying them, will need better lot-level records.",
+      "sources": [
+        {
+          "outlet": "Food Safety News",
+          "title": "FDA meeting seeks to gather input on exemptions from Food Traceability Rule",
+          "url": "https://www.foodsafetynews.com/2026/10/fda-meeting-seeks-to-gather-input-on-exemptions-from-food-traceability-rule/"
+        },
+        {
+          "outlet": "Food Safety News",
+          "title": "Publisher's Platform: The food Traceability Rule has been law since 2022",
+          "url": "https://www.foodsafetynews.com/2026/10/publishers-platform-the-food-traceability-rule-has-been-law-since-2022-nobody-has-to-follow-it-until-2028-here-is-how-that-happened-and-what-fda-is-doing-with-the-time/"
+        }
+      ],
+      "tags": [
+        "fda",
+        "fsma",
+        "traceability",
+        "regulation"
+      ]
+    },
+    {
+      "id": "b07",
+      "round": 1,
+      "topic": "industry",
+      "title": "US judge halts USDA reorganisation and office closures",
+      "summary": "A federal court has stayed the USDA's plan to close offices, cut staff and relocate others. Food-safety lawyers have criticised USDA and FDA this month for being slow to name brands in outbreaks, so the department's capacity is under scrutiny.",
+      "sources": [
+        {
+          "outlet": "Food Safety News",
+          "title": "Judge delays USDA's reorganization plan",
+          "url": "https://www.foodsafetynews.com/2026/10/judge-delays-usdas-reorganization-plan/"
+        }
+      ],
+      "tags": [
+        "usda",
+        "regulation",
+        "food safety",
+        "us"
+      ]
+    },
+    {
+      "id": "b08",
+      "round": 1,
+      "topic": "industry",
+      "title": "Lidl plans €420m of investment and 500 jobs in Munster",
+      "summary": "Lidl plans to spend €420m in the Irish province of Munster, creating 500 jobs. Discounter expansion in Ireland and the UK keeps pressure on suppliers to produce own-label food at scale and low cost.",
+      "sources": [
+        {
+          "outlet": "Food Manufacture",
+          "title": "Lidl to invest €420M into key Irish province",
+          "url": "https://www.foodmanufacture.co.uk/Article/2026/10/23/lidl-to-pump-over-400m-into-irish-province/"
+        }
+      ],
+      "tags": [
+        "lidl",
+        "ireland",
+        "investment",
+        "retail"
+      ]
+    },
+    {
+      "id": "b09",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Treasury's entrepreneurship adviser quits, saying scale-ups are treated as a 'sideshow'",
+      "summary": "Alex Depledge, founder of Resi and Hassle.com, leaves her Treasury role on Thursday, the day after the Budget. She says ministers favour established industries over fast-growing firms, that she had barely any time with Healey after regular meetings with Reeves, and that Britain has an 18-month window on AI. A Helm survey found 73% of 400 scale-up founders not at all confident the Budget will help.",
+      "sources": [
+        {
+          "outlet": "City AM",
+          "title": "Healey's startup adviser quits ahead of Budget over 'sideshow' treatment of entrepreneurs",
+          "url": "https://www.cityam.com/healeys-startup-adviser-quits-ahead-of-budget-over-sideshow-treatment-of-entrepreneurs/"
+        }
+      ],
+      "tags": [
+        "alex depledge",
+        "treasury",
+        "start-ups",
+        "budget 2026"
+      ]
+    },
+    {
+      "id": "b10",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Streeting says Britain has 'a little over 1,000 days' to prepare for possible conflict",
+      "summary": "Writing in the Telegraph on Saturday, Defence Secretary Wes Streeting said the UK must be ready for possible conflict by 2030 as Russia expands its military. Ahead of the Budget he blamed the Conservatives for shrinking the army to its smallest since the Napoleonic era and leaving a £17bn hole in the equipment plan.",
+      "sources": [
+        {
+          "outlet": "City AM",
+          "title": "Healey to unveil billions in defence spending as Tories demand he resign",
+          "url": "https://www.cityam.com/healey-to-unveil-billions-in-defence-spending-as-tories-demand-he-resign/"
+        }
+      ],
+      "tags": [
+        "wes streeting",
+        "defence",
+        "russia",
+        "budget 2026"
+      ]
+    },
+    {
+      "id": "b11",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Lower mansion-tax threshold looks in doubt before the Budget",
+      "summary": "Healey had been considering cutting the threshold for the high-value council tax surcharge from £2m to £1.5m, which Business Matters said could affect up to 300,000 homes, mainly in London and the south-east. After warnings from London Labour MPs, reports now suggest the idea has been dropped, though accounts conflict and nothing is confirmed.",
+      "sources": [
+        {
+          "outlet": "Brit Brief",
+          "title": "Budget 2026 leaks: What tax rises will Chancellor John Healey announce?",
+          "url": "https://britbrief.co.uk/politics/westminster/budget-2026-leaks-healeys-tax-rise-plans-revealed.html"
+        },
+        {
+          "outlet": "Business Matters",
+          "title": "Healey weighs business rates relief in Budget",
+          "url": "https://bmmagazine.co.uk/finance/business-rates-relief-budget-healey/"
+        }
+      ],
+      "tags": [
+        "mansion tax",
+        "council tax",
+        "property",
+        "budget 2026"
+      ]
+    },
+    {
+      "id": "b12",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Online retailers to pay for the small-business rates cut",
+      "summary": "The expected rise in the small business rates relief threshold from £12,000 to £18,000 of rateable value, sparing about 75,000 properties in England, is to be funded by higher tax on online retail. Reports citing the Sunday Times say making online marketplaces collect VAT could raise up to £1bn.",
+      "sources": [
+        {
+          "outlet": "LBC",
+          "title": "Pubs, cafes and hairdressers to stop paying business rates",
+          "url": "https://www.lbc.co.uk/politics/uk-politics/business-rate-pub-budget-healy/"
+        },
+        {
+          "outlet": "Brit Brief",
+          "title": "Budget 2026: Healey's tax plans, business rates, energy bills",
+          "url": "https://britbrief.co.uk/politics/unionism/budget-2026-healeys-tax-plans-rates-energy-bills.html"
+        }
+      ],
+      "tags": [
+        "business rates",
+        "vat",
+        "online marketplaces",
+        "budget 2026"
+      ]
+    },
+    {
+      "id": "b13",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Manufacturers want to expand in Britain, and now rank AI alongside machinery",
+      "summary": "Make UK's pre-Budget survey finds 62% of manufacturers weighing a big capacity increase in the next one to two years would prefer to expand in the UK. 41% now name AI as an investment priority, up from 27%, putting it alongside plant and machinery and skills for the first time. It wants Made Smarter widened to cover AI and energy efficiency.",
+      "sources": [
+        {
+          "outlet": "The Manufacturer",
+          "title": "4 ways the Chancellor's first Budget can help manufacturing",
+          "url": "https://www.themanufacturer.com/articles/4-ways-the-chancellors-first-budget-can-help-manufacturing/"
+        }
+      ],
+      "tags": [
+        "make uk",
+        "manufacturing",
+        "ai",
+        "made smarter",
+        "investment"
+      ]
+    },
+    {
+      "id": "b14",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Only 23% satisfied with the government despite Labour's poll lead",
+      "summary": "Ipsos finds 23% satisfied with how the government is running the country, a level last seen under Boris Johnson, and net satisfaction of -43. 47% say the government does not deserve re-election, against 30% who say it does. Labour's 32% vote share is resting on weak approval as it goes into a difficult Budget.",
+      "sources": [
+        {
+          "outlet": "LBC",
+          "title": "Labour sees another 'Burnham bounce' poll boost to 32% ahead of crunch budget week",
+          "url": "https://www.lbc.co.uk/article/labour-burnham-poll-boost-5HjdkPp_2/"
+        },
+        {
+          "outlet": "HuffPost UK",
+          "title": "Labour Storm Ahead In New Poll As Reform's Decline Worsens",
+          "url": "https://www.huffingtonpost.co.uk/entry/labour-poll-reform-uk-tories-election_uk_6ade2412e4b06b41b48d4547"
+        }
+      ],
+      "tags": [
+        "polling",
+        "ipsos",
+        "government approval",
+        "andy burnham"
+      ]
+    },
+    {
+      "id": "b15",
+      "round": 1,
+      "topic": "uk_politics",
+      "title": "Healey expected to scrap planned fuel duty rises of 3p and 2p a litre",
+      "summary": "The Financial Times reported, via Reuters, that Healey is expected to drop fuel duty increases of 3p a litre due in January and 2p in March, alongside targeted help with winter fuel bills. New measures are to be funded by tax rises or spending cuts, not extra borrowing, so the Budget is 'scorecard positive' in 2029-30.",
+      "sources": [
+        {
+          "outlet": "Investing.com (Reuters)",
+          "title": "UK finance minister Healey set to pay for budget measures without more borrowing, FT reports",
+          "url": "https://www.investing.com/news/economy-news/uk-finance-minister-healey-set-to-pay-for-budget-measures-without-more-borrowing-ft-reports-4948054"
+        }
+      ],
+      "tags": [
+        "fuel duty",
+        "budget 2026",
+        "john healey",
+        "fiscal rules"
+      ]
+    },
+    {
+      "id": "b16",
+      "round": 1,
+      "topic": "ukraine",
+      "title": "Russia rings Putin's Valdai residence with about 50 air-defence towers",
+      "summary": "Satellite analysis by RFE/RL and the OSINT analyst Jembob found a new ring of about 16 short-range air-defence towers built within 50km of Putin's Valdai residence in recent weeks, likely for Pantsir or Tor systems, bringing the total to 49 or 50. The ring covers the Khotilovo airfield Putin uses and a secret laboratory on Lisiy Island; the northern side is still open.",
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "'Putin's paranoia' — New air defenses appear around Russian president's Valdai residence, analysis shows",
+          "url": "https://kyivindependent.com/putins-paranoia-new-air-defenses-appear-around-russian-presidents-valdai-residence-analysis-shows/"
+        },
+        {
+          "outlet": "Militarnyi",
+          "title": "More Than 50 Air Defense Turrets Built Around Putin's Residence",
+          "url": "https://militarnyi.com/en/news/more-than-50-air-defense-turrets-built-around-putin-s-residence/"
+        }
+      ],
+      "tags": [
+        "putin",
+        "valdai",
+        "air defence",
+        "pantsir",
+        "osint"
+      ]
+    },
+    {
+      "id": "b17",
+      "round": 1,
+      "topic": "ukraine",
+      "title": "Jet-powered drones make up 92 of 153 Shaheds in Russia's latest overnight raid",
+      "summary": "Russia launched 153 Shahed-type drones at Ukraine overnight on 25 October, 92 of them jet-powered, plus low-cost Banderol cruise missiles. Ukraine downed 119, including 64 jet drones. Attacks over the day killed 8 people and injured 51; a drone hit a five-storey block of flats in Vinnytsia, destroying four apartments.",
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Russian attacks kill 8, injure 51 across Ukraine over past day as drone strikes residential building in Vinnytsia",
+          "url": "https://kyivindependent.com/russian-attacks-kill-8-injure-51-across-ukraine-over-past-day-as-drone-strikes-residential-building-in-vinnytsia/"
+        }
+      ],
+      "tags": [
+        "shahed",
+        "jet drones",
+        "air defence",
+        "vinnytsia",
+        "banderol"
+      ]
+    },
+    {
+      "id": "b18",
+      "round": 1,
+      "topic": "ukraine",
+      "title": "Trump says the US will do business with both Russia and Ukraine after the war",
+      "summary": "Donald Trump said on 24 October he expects America to \"do business with Ukraine and with Russia after this war ends\". The remarks came as the first tanker of Russian diesel, 40,000 tonnes, sailed from Primorsk for New York under a deal European allies, Kyiv and members of Congress say undermines sanctions. Around 900,000 tonnes are planned.",
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Trump wants 'business with both' Ukraine, Russia after war ends",
+          "url": "https://kyivindependent.com/trump-wants-business-with-both-ukraine-russia-after-war-ends/"
+        }
+      ],
+      "tags": [
+        "trump",
+        "russian diesel",
+        "sanctions",
+        "us-russia"
+      ]
+    },
+    {
+      "id": "b19",
+      "round": 1,
+      "topic": "ukraine",
+      "title": "Lula, a would-be Ukraine peace mediator, wins a fourth term in Brazil",
+      "summary": "Luiz Inácio Lula da Silva beat Flávio Bolsonaro 51.79% to 48.21% in Brazil's run-off on 25 October; Bolsonaro refuses to concede. Lula has pitched Brazil as a mediator between Kyiv and Moscow, meeting Zelensky at the G7 in June and speaking to Putin in August, while staying out of Western sanctions on Russia.",
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Bolsonaro refuses to concede as would-be Ukraine peace mediator Lula wins Brazil election",
+          "url": "https://kyivindependent.com/bolsonaro-refuses-to-concede-as-would-be-ukraine-peace-mediator-lula-wins-brazil-election/"
+        }
+      ],
+      "tags": [
+        "brazil",
+        "lula",
+        "mediation",
+        "peace talks"
+      ]
+    },
+    {
+      "id": "b20",
+      "round": 1,
+      "topic": "ukraine",
+      "title": "Ukraine's General Staff confirms hits on Tolyatti rubber plant and an aircraft at Yeysk",
+      "summary": "Ukraine's General Staff said on 24 October its forces struck the Tolyattikauchuk synthetic rubber plant in Tolyatti, Samara region, and an aircraft at Yeysk airfield. Drone attacks the previous day forced flight restrictions at Moscow's Sheremetyevo, Domodedovo, Vnukovo and Zhukovsky airports.",
+      "sources": [
+        {
+          "outlet": "Ukrainska Pravda",
+          "title": "General Staff: Ukraine strikes Tolyattikauchuk plant, missile component manufacturer and aircraft in Yeysk",
+          "url": "https://www.pravda.com.ua/eng/news/2026/10/24/8059516/"
+        },
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Ukrainian forces strike Oryol electronics plant, General Staff confirms, drone attacks shut down Moscow airports",
+          "url": "https://kyivindependent.com/ukrainian-drone-attack-triggers-shut-down-of-moscow-airports-drone-debris-reported-on-tarmac/"
+        }
+      ],
+      "tags": [
+        "tolyatti",
+        "yeysk",
+        "long-range strikes",
+        "moscow airports"
+      ]
+    },
+    {
+      "id": "b21",
+      "round": 1,
+      "topic": "ukraine",
+      "title": "Ukrainian drone attack hits shopping centre in Belgorod",
+      "summary": "An overnight Ukrainian drone attack on Belgorod on 25 October damaged a shopping and entertainment centre, residential buildings and cars, according to the monitoring channel Exilenova+. Belgorod's mayor, Valentin Demidov, said one person was killed and ten injured. Ukraine's General Staff said it hit Russian military radar stations in the region the same night.",
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Ukraine strikes Russian titanium plant, facility producing missile, drone components, monitoring channels claim",
+          "url": "https://kyivindependent.com/ukraine-strikes-russian-titanium-plant-more-than-1-400-kilometers-from-border-monitoring-channel-claims/"
+        }
+      ],
+      "tags": [
+        "belgorod",
+        "drones",
+        "radar",
+        "russia"
+      ]
+    },
+    {
+      "id": "b22",
+      "round": 1,
+      "topic": "ukraine",
+      "title": "Russia claims it downed 532 Ukrainian drones in one night",
+      "summary": "Russia's defence ministry said via TASS that its air defences destroyed 532 Ukrainian drones overnight into 25 October over 23 regions and the Sea of Azov, including over Perm region and around Moscow. The figure has not been independently verified. Strikes that night included the Avisma titanium plant in Berezniki and the Energiya battery plant in Yelets.",
+      "sources": [
+        {
+          "outlet": "Euromaidan Press",
+          "title": "Russian titanium plant in Urals reportedly hit by Ukrainian drones, 1,500 km from Ukraine",
+          "url": "https://euromaidanpress.com/2026/10/25/ukrainian-drones-reportedly-hit-russian-titanium-plant-in-perm-krai/"
+        }
+      ],
+      "tags": [
+        "drones",
+        "air defence",
+        "russia",
+        "long-range strikes"
+      ]
+    },
+    {
+      "id": "b23",
+      "round": 1,
+      "topic": "ukraine",
+      "title": "Oleshky evacuation ceasefire set for 27 October, but Zelensky doubts Russia will let people go",
+      "summary": "A local ceasefire to evacuate the occupied town of Oleshky in Kherson region is planned for 27 October. Zelensky said it would need to last several days and require Russian help, and that Moscow is unlikely to let residents leave freely; some may be evacuated to Ukrainian-held areas. A former resident warned people \"won't survive this winter\".",
+      "sources": [
+        {
+          "outlet": "Kyiv Independent",
+          "title": "Zelensky details expectations for upcoming trilateral peace talks with Russia, US",
+          "url": "https://kyivindependent.com/zelensky-details-expectations-for-upcoming-trilateral-peace-talks-with-russia-us/"
+        },
+        {
+          "outlet": "Kyiv Independent",
+          "title": "News from occupied Ukraine: Former Oleshky resident warns people 'won't survive this winter'",
+          "url": "https://kyivindependent.com/news-from-occupied-ukraine-former-oleshky-resident-warns-people-wont-survive-this-winter/"
+        }
+      ],
+      "tags": [
+        "oleshky",
+        "kherson",
+        "evacuation",
+        "ceasefire"
+      ]
+    },
+    {
+      "id": "b24",
+      "round": 1,
+      "topic": "nato",
+      "title": "Lib Dems propose three more Type 26 and three more Type 31 frigates",
+      "summary": "The Liberal Democrats want six more frigates ordered next Parliament for delivery by the mid-2030s, taking Type 26 numbers from 8 to 11 and Type 31 from 5 to 8. They cost it at about £4.42bn of capital, including £370m for two new shipbuilding facilities, paid for by raising the Digital Services Tax from 2% to 10%.",
+      "sources": [
+        {
+          "outlet": "UK Defence Journal",
+          "title": "Lib Dems propose six more frigates for Royal Navy",
+          "url": "https://ukdefencejournal.org.uk/lib-dems-propose-six-more-frigates-for-royal-navy/"
+        }
+      ],
+      "tags": [
+        "royal navy",
+        "type 26",
+        "type 31",
+        "liberal democrats",
+        "shipbuilding"
+      ]
+    },
+    {
+      "id": "b25",
+      "round": 1,
+      "topic": "nato",
+      "title": "£290m set aside to replace the Army's Point-class sealift ships",
+      "summary": "The Defence Investment Plan allocates £290m for a future strategic sealift capability; the current Foreland Shipping contract for four privately owned Point-class ro-ro ships ends on 31 December 2031. A January request to industry asked for up to six ships and 15,600 lane metres in a crisis, about 60% more than today, able to carry the heavier Challenger 3.",
+      "sources": [
+        {
+          "outlet": "UK Defence Journal",
+          "title": "Sealift replacement gets two hundred and ninety million",
+          "url": "https://ukdefencejournal.org.uk/sealift-replacement-gets-two-hundred-and-ninety-million/"
+        }
+      ],
+      "tags": [
+        "strategic sealift",
+        "point class",
+        "procurement",
+        "challenger 3",
+        "shipping"
+      ]
+    },
+    {
+      "id": "b26",
+      "round": 1,
+      "topic": "nato",
+      "title": "No service dates yet for the Royal Navy's drone warships",
+      "summary": "Defence minister Luke Pollard told MPs no in-service dates have been set for the Common Combat Vessel or the four uncrewed types of the 'Hybrid Navy' (Type 91 missile platform, Type 92 underwater sensor, Type 93 extra-large underwater vessel, Type 94 radar platform). Planning assumes they arrive progressively from the early 2030s; the Defence Investment Plan gives at least £1.3bn.",
+      "sources": [
+        {
+          "outlet": "UK Defence Journal",
+          "title": "No service dates set for Royal Navy's drone warships",
+          "url": "https://ukdefencejournal.org.uk/no-service-dates-set-for-royal-navys-drone-warships/"
+        }
+      ],
+      "tags": [
+        "royal navy",
+        "hybrid navy",
+        "uncrewed vessels",
+        "common combat vessel",
+        "procurement"
+      ]
+    },
+    {
+      "id": "b27",
+      "round": 1,
+      "topic": "nato",
+      "title": "DragonFire laser stays a sovereign programme, with no role for Ukraine for now",
+      "summary": "Asked whether Ukraine could join the DragonFire laser weapon programme, Luke Pollard said the MoD is focused on 'maturing advanced sovereign technologies' and gave no commitment. DragonFire, built by MBDA, Leonardo and QinetiQ with Dstl, is being accelerated onto a Type 45 destroyer, with its in-service date brought forward from 2032 to the late 2020s.",
+      "sources": [
+        {
+          "outlet": "UK Defence Journal",
+          "title": "DragonFire stays a sovereign programme for now",
+          "url": "https://ukdefencejournal.org.uk/dragonfire-stays-a-sovereign-programme-for-now/"
+        }
+      ],
+      "tags": [
+        "dragonfire",
+        "directed energy",
+        "counter-drone",
+        "mbda",
+        "royal navy"
+      ]
+    },
+    {
+      "id": "b28",
+      "round": 1,
+      "topic": "nato",
+      "title": "£2.45m UK-Australian competition seeks better battlefield power for soldiers",
+      "summary": "UK Defence Innovation, for the British Army and with Australia's ASCA accelerator, has opened the £2.45m Tactical Power Challenge for new ways to generate, store, distribute and manage power for deployed troops. Bids close at noon on 10 November. Radios, EW detectors, night vision and counter-drone kit are making battery weight and generator signatures a real constraint.",
+      "sources": [
+        {
+          "outlet": "UK Defence Journal",
+          "title": "Army seeks new ways to power troops on the battlefield",
+          "url": "https://ukdefencejournal.org.uk/army-seeks-new-ways-to-power-troops-on-the-battlefield/"
+        }
+      ],
+      "tags": [
+        "uk defence innovation",
+        "british army",
+        "batteries",
+        "smes",
+        "aukus"
+      ]
+    },
+    {
+      "id": "b29",
+      "round": 1,
+      "topic": "nato",
+      "title": "Three in four defence tech firms say the UK market has shrunk, techUK tells MPs",
+      "summary": "techUK told the Defence Committee that 73% of its defence tech members say the market has declined and 93% are rethinking investment or hiring. Chief executive Julian David said MoD commercial teams run at 70% headcount, 40% of them contractors, and only £2bn of the £7.5bn SME target is direct spend. The FSB said 19% of small firms that dealt with the MoD would not again.",
+      "sources": [
+        {
+          "outlet": "UK Defence Journal",
+          "title": "Most defence tech firms report a declining market",
+          "url": "https://ukdefencejournal.org.uk/most-defence-tech-firms-report-a-declining-market/"
+        }
+      ],
+      "tags": [
+        "techuk",
+        "smes",
+        "defence investment plan",
+        "procurement",
+        "defence industry"
+      ]
+    },
+    {
+      "id": "b30",
+      "round": 1,
+      "topic": "nato",
+      "title": "£470m for base security after intruders at RAF Molesworth and Fairford",
+      "summary": "Two Latvian nationals were arrested inside RAF Molesworth, which hosts US and NATO intelligence work, earlier in October, and there was a separate incident at RAF Fairford. Armed forces minister Louise Sandher-Jones said £470m over four years will go on site protection, surveillance, counter-drone kit and wider restricted airspace around defence sites.",
+      "sources": [
+        {
+          "outlet": "UK Defence Journal",
+          "title": "Base security boosted after Fairford and Molesworth breaches",
+          "url": "https://ukdefencejournal.org.uk/base-security-boosted-after-fairford-and-molesworth-breaches/"
+        }
+      ],
+      "tags": [
+        "base security",
+        "raf molesworth",
+        "raf fairford",
+        "counter-drone",
+        "hybrid threats"
+      ]
+    },
+    {
+      "id": "b31",
+      "round": 1,
+      "topic": "nato",
+      "title": "Seven Challenger 3 prototypes delivered for trials",
+      "summary": "RBSL in Telford has delivered seven of eight Challenger 3 prototypes for firing, mobility, electromagnetic and safety trials before the MoD commits to building the rest of the 148 tanks. The tank pairs a Challenger 2 hull with a new turret, smoothbore NATO-standard gun, modular armour and active protection; initial operating capability is planned for 2027 and full capability for 2030.",
+      "sources": [
+        {
+          "outlet": "UK Defence Journal",
+          "title": "Seven Challenger 3 tank prototypes delivered for trials",
+          "url": "https://ukdefencejournal.org.uk/seven-challenger-3-tank-prototypes-delivered-for-trials/"
+        }
+      ],
+      "tags": [
+        "challenger 3",
+        "rbsl",
+        "british army",
+        "main battle tanks",
+        "procurement"
+      ]
+    },
+    {
+      "id": "b32",
+      "round": 1,
+      "topic": "china",
+      "title": "Xi's party plenum opens in Beijing with attendance expected at a record low",
+      "summary": "The Communist Party's four-day fifth plenum opened on Monday and runs to Thursday, focused on a decision on 'comprehensively and strictly governing the party'. The Asia Society Policy Institute projects only 291 of 376 Central Committee members will attend (77%), below the previous low of 315 at last year's plenum, as purges thin the ranks a year before Xi's expected bid for a fourth term.",
+      "sources": [
+        {
+          "outlet": "The Herald Business",
+          "title": "China opens 5th plenum amid sweeping purge ahead of Xi's bid for 4th term",
+          "url": "https://biz.heraldcorp.com/article/10914120"
+        },
+        {
+          "outlet": "Seoul Economic Daily",
+          "title": "China's Communist Party Opens Plenum Focused on Party Discipline",
+          "url": "https://en.sedaily.com/international/2026/10/26/chinas-communist-party-opens-plenum-focused-on-party"
+        }
+      ],
+      "tags": [
+        "ccp",
+        "plenum",
+        "xi jinping",
+        "purges"
+      ]
+    },
+    {
+      "id": "b33",
+      "round": 1,
+      "topic": "china",
+      "title": "Kim Jong-un crosses the new Yalu bridge into China on his first known trip abroad in a year",
+      "summary": "North Korea's leader visited the Chinese border city of Dandong on Saturday, crossing the 3km New Yalu River Bridge that opened this month after more than a decade of delays. China's fourth-ranked leader, Wang Huning, met him with greetings from Xi Jinping; Kim toured a Dandong vehicle factory and a Korean War memorial. It signals warming trade ties as Pyongyang also deepens its military links with Russia.",
+      "sources": [
+        {
+          "outlet": "Reuters via ABC News (Australia)",
+          "title": "Kim Jong Un crosses new bridge into China as trade ties warm",
+          "url": "https://www.abc.net.au/news/2026-10-25/kim-jong-un-crosses-new-bridge-into-china/107305932"
+        },
+        {
+          "outlet": "The Spokesman-Review (Reuters)",
+          "title": "North Korea's Kim crosses new bridge into China as trade ties warm",
+          "url": "https://www.spokesman.com/stories/2026/oct/23/north-koreas-kim-crosses-new-bridge-into-china-as-/"
+        }
+      ],
+      "tags": [
+        "north korea",
+        "kim jong-un",
+        "dandong",
+        "china",
+        "trade"
+      ]
+    },
+    {
+      "id": "b34",
+      "round": 1,
+      "topic": "china",
+      "title": "Royal Navy patrol ships finish Five Power drills in the South China Sea despite Beijing's objections",
+      "summary": "HMS Tamar and HMS Spey have completed Exercise Bersama Lima with Australia, Malaysia, New Zealand and Singapore under the Five Power Defence Arrangements. The ten days included boarding suspect vessels, a submarine hunt, air defence and naval gunfire on to targets ashore. China has repeatedly criticised British naval activity in the region and threatened Spey when she patrolled there in June 2025.",
+      "sources": [
+        {
+          "outlet": "Royal Navy",
+          "title": "HMS Tamar and Spey demonstrate resolve with Commonwealth allies to safeguard South China Sea",
+          "url": "https://www.royalnavy.mod.uk/news/2026/october/23/20261023-bersama-lima"
+        },
+        {
+          "outlet": "UK Defence Journal",
+          "title": "British ships defy Chinese warnings in South China Sea",
+          "url": "https://ukdefencejournal.org.uk/british-ships-defy-chinese-warnings-in-south-china-sea/"
+        }
+      ],
+      "tags": [
+        "royal navy",
+        "south china sea",
+        "fpda",
+        "uk-china relations"
+      ]
+    },
+    {
+      "id": "b35",
+      "round": 1,
+      "topic": "china",
+      "title": "Beijing threatens 'firm countermeasures' if Britain copies EU curbs on Chinese EVs",
+      "summary": "China's commerce ministry warned on 19 October that it would retaliate if the UK restricts Chinese electric car imports, urging London to 'think twice' rather than follow Brussels. It was responding to trade minister Anas Sarwar, who said Britain and the EU should act in lockstep on China's car dominance but gave no tariff rates or timetable. The UK charges 10% on Chinese EVs; the EU adds duties of up to 35.3%.",
+      "sources": [
+        {
+          "outlet": "CnEVPost",
+          "title": "China warns UK against following EU on EV restrictions, vows retaliation",
+          "url": "https://cnevpost.com/2026/10/19/china-warns-uk-against-ev-restrictions"
+        },
+        {
+          "outlet": "South China Morning Post",
+          "title": "Beijing warns London of 'firm countermeasures' if it aligns with EU import curbs on EVs",
+          "url": "https://www.scmp.com/economy/china-economy/article/3371472/beijing-warns-london-firm-countermeasures-if-it-aligns-eu-import-curbs-evs"
+        }
+      ],
+      "tags": [
+        "uk-china relations",
+        "electric vehicles",
+        "tariffs",
+        "eu",
+        "trade"
+      ]
+    },
+    {
+      "id": "b36",
+      "round": 1,
+      "topic": "china",
+      "title": "Think tanks say Beijing is leaning on Taiwanese politicians' families before local elections",
+      "summary": "A report by ISW and AEI says China is 'likely targeting family members of separatists' to pressure Taiwanese politicians ahead of November's local elections. The main case is Taipei mayoral candidate Puma Shen, whose father's companies have been sanctioned twice by the Taiwan Affairs Office, most recently on 14 October. The report cites other relatives denied entry to China or losing jobs there, though direct Chinese responsibility is not proven.",
+      "sources": [
+        {
+          "outlet": "ANI",
+          "title": "China accused of pressuring families of Taiwan politicians ahead of key election",
+          "url": "https://www.aninews.in/news/world/asia/china-accused-of-pressuring-families-of-taiwan-politicians-ahead-of-key-election20261024210023/"
+        },
+        {
+          "outlet": "Taipei Times",
+          "title": "US think tank report highlights Chinese interference in Taipei race",
+          "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/10/23/2003866501"
+        }
+      ],
+      "tags": [
+        "taiwan",
+        "elections",
+        "united front",
+        "puma shen",
+        "coercion"
+      ]
+    },
+    {
+      "id": "b37",
+      "round": 1,
+      "topic": "china",
+      "title": "China marks 'Taiwan Restoration Day' with a pledge to back pro-unification 'patriots'",
+      "summary": "Beijing marked the 81st anniversary of the end of Japanese rule over Taiwan on Sunday, a commemoration day it created only last year, and pledged to back pro-unification 'patriots' on the island. It matters as part of Beijing's push to present unification as settled history, ahead of Taiwan's local elections in November.",
+      "sources": [
+        {
+          "outlet": "South China Morning Post",
+          "title": "Beijing pledges to back Taiwan's pro-unification 'patriots' as it marks key anniversary",
+          "url": "https://www.scmp.com/news/china/politics/article/3372065/beijing-commemorates-end-japanese-rule-over-taiwan-call-reunification"
+        }
+      ],
+      "tags": [
+        "taiwan",
+        "cross-strait",
+        "propaganda",
+        "unification"
+      ]
+    },
+    {
+      "id": "b38",
+      "round": 1,
+      "topic": "ai",
+      "title": "AI models reach every attack goal in Booz Allen's mock factory network",
+      "summary": "In an isolated lab built like a manufacturing plant, unnamed frontier AI models working as agents met all eight attack objectives set by Booz Allen, from mapping the network to moving a robotic arm. One run went from a perimeter breach to the control network in about 16 minutes, with humans approving each step. Advice for plant owners: segment networks, harden remote access and watch writes to controllers.",
+      "sources": [
+        {
+          "outlet": "Help Net Security",
+          "title": "Frontier AI cleared every OT attack goal Booz Allen set in its lab",
+          "url": "https://helpnetsecurity.com/2026/10/13/frontier-ai-ot-security-threat"
+        },
+        {
+          "outlet": "Cloud Security Alliance",
+          "title": "Booz Allen reports frontier AI reached all eight OT lab objectives",
+          "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-frontier-ai-ot-lab-booz-allen-20261014-csa/"
+        }
+      ],
+      "tags": [
+        "cyber security",
+        "operational technology",
+        "ai agents",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "b39",
+      "round": 1,
+      "topic": "ai",
+      "title": "MicroVision starts shipping a lidar that does its own perception for factory robots",
+      "summary": "MicroVision says its MOVIA Pro sensor has entered commercial production at its Orlando plant and is shipping. It combines short-range lidar, onboard perception software and industrial connectivity, aimed at industrial robots and smart infrastructure. Putting the 'seeing' on the sensor itself is part of a push to run AI at the edge rather than in the cloud; no customer results have been published yet.",
+      "sources": [
+        {
+          "outlet": "GlobeNewswire (MicroVision)",
+          "title": "MicroVision begins commercial production of MOVIA Pro",
+          "url": "https://rss.globenewswire.com/news-release/2026/10/23/3387006/0/en/microvision-begins-commercial-production-of-movia-tm-pro-to-meet-immediate-customer-demand-for-superior-short-range-sensing-and-onboard-perception-enabling-physical-ai-at-the-edge.html"
+        },
+        {
+          "outlet": "Ayoka Systems",
+          "title": "Manufacturing Daily Briefing - 2026-10-23",
+          "url": "https://ayokasystems.com/news/ayoka-daily-briefing-2026-10-23/"
+        }
+      ],
+      "tags": [
+        "lidar",
+        "robotics",
+        "edge ai",
+        "microvision"
+      ]
+    },
+    {
+      "id": "b40",
+      "round": 1,
+      "topic": "ai",
+      "title": "Israeli food manufacturer trials humanoid robots on its production line",
+      "summary": "Ultrobotix said on 15 October it has begun working with an unnamed Israeli food manufacturer to assess humanoid and other robots for production-line tasks. It is an evaluation rather than a deployment, but it puts humanoids into a food plant, where hygiene and washdown demands are a hard test for such machines.",
+      "sources": [
+        {
+          "outlet": "GlobeNewswire (Ultrobotix)",
+          "title": "Ultrobotix begins working with a food manufacturer to explore humanoid robotic solutions for production-line tasks",
+          "url": "https://www.globenewswire.com/news-release/2026/10/15/3381639/0/en/ultrobotix-begins-working-with-a-food-manufacturer-to-explore-humanoid-robotic-solutions-for-production-line-tasks.html"
+        }
+      ],
+      "tags": [
+        "humanoid robots",
+        "food processing",
+        "automation",
+        "israel"
+      ]
+    },
+    {
+      "id": "b41",
+      "round": 1,
+      "topic": "ai",
+      "title": "Spanish start-up uses AI to turn food waste into an egg replacer for bakeries",
+      "summary": "Moa Foodtech, named by C&EN as one of its start-ups to watch, uses AI to pick microbes that ferment food-industry by-products into ingredients. It is piloting a high-protein, high-fibre emulsifier meant to replace eggs in baked goods and sauces. Worth watching for bakeries and for egg suppliers, since egg replacers aim straight at the bakery egg market.",
+      "sources": [
+        {
+          "outlet": "C&EN",
+          "title": "10 Start-Ups to Watch 2026: Moa Foodtech is using AI to turn the food industry's trash into treasure",
+          "url": "https://cen.acs.org/food/fermentation/moa-foodtech-start-ups-biotech-ai-functional-ingredients/104/web/2026/10"
+        }
+      ],
+      "tags": [
+        "fermentation",
+        "egg replacer",
+        "bakery",
+        "food waste",
+        "start-ups"
+      ]
+    },
+    {
+      "id": "b42",
+      "round": 1,
+      "topic": "us_politics",
+      "title": "Trump says Canada and Mexico trade deals are 'very close' as tariff list is reshuffled",
+      "summary": "The White House removed seaweed, packing boxes and some plywood from its 50% tariff list on Canadian goods but added more items, including cocoa powder, vinyl flooring and shampoo, from the end of October. Trump said deals with Canada and Mexico were 'very close'. Mark Carney said Canada would sign 'this afternoon' if the US were ready, but trade lawyers expect no broad deal within weeks.",
+      "sources": [
+        {
+          "outlet": "CP24",
+          "title": "Trump trade war: U.S. removes tariffs on some Canadian goods",
+          "url": "https://cp24.com/news/world/2026/10/23/trump-to-remove-50-tariffs-on-some-canadian-goods-heres-what-we-know"
+        }
+      ],
+      "tags": [
+        "tariffs",
+        "canada",
+        "mexico",
+        "trade",
+        "mark carney"
+      ]
+    },
+    {
+      "id": "b43",
+      "round": 1,
+      "topic": "us_politics",
+      "title": "Trump hopes to sign a Thai tariff deal on his November Asia trip",
+      "summary": "Trump has written to Thai Prime Minister Anutin saying he hopes to sign a tariff deal during his Asia visit, and Bangkok says a signing could come in November around the APEC summit in China. Officials say the talks are in their final stage but key terms are still unresolved, despite agreement in principle.",
+      "sources": [
+        {
+          "outlet": "Bloomberg Law",
+          "title": "Thailand Says US Seeks Tariff Deal During Trump Asia Trip",
+          "url": "https://news.bloomberglaw.com/bankruptcy-law/thailand-says-us-seeks-tariff-deal-during-trump-asia-trip"
+        },
+        {
+          "outlet": "Nation Thailand",
+          "title": "Trump hopes to sign Thai tariff deal during November Asia visit",
+          "url": "https://www.nationthailand.com/business/economy/40071932"
+        }
+      ],
+      "tags": [
+        "tariffs",
+        "thailand",
+        "trade",
+        "apec"
+      ]
+    },
+    {
+      "id": "b44",
+      "round": 1,
+      "topic": "wildcard",
+      "title": "Quantum 'magic state' clean-up cuts errors 40-fold on real hardware",
+      "summary": "Researchers report the first successful hardware test of magic-state distillation, cutting errors in these states 40-fold. Magic states are the extra ingredient a fault-tolerant quantum computer needs to perform gates beyond the easy Clifford set, so distilling them cleanly on real devices is a necessary step towards useful error-corrected machines.",
+      "sources": [
+        {
+          "outlet": "Phys.org",
+          "title": "Quantum magic state cleanup cuts errors 40-fold in first successful hardware test",
+          "url": "https://phys.org/news/2026-10-quantum-magic-state-cleanup-errors.html"
+        }
+      ],
+      "tags": [
+        "physics",
+        "quantum computing",
+        "error correction",
+        "magic states"
+      ]
+    },
+    {
+      "id": "b45",
+      "round": 1,
+      "topic": "wildcard",
+      "title": "Atomic memory keeps distant ions entangled for about ten seconds",
+      "summary": "Physicists have preserved entanglement between ions in separate locations for roughly ten seconds using an atomic memory. Holding entanglement that long between distant nodes is a key requirement for quantum networks and repeaters, where links must survive while further connections are being set up.",
+      "sources": [
+        {
+          "outlet": "Phys.org",
+          "title": "Atomic memory keeps distant ions entangled for about 10 seconds",
+          "url": "https://phys.org/news/2026-10-atomic-memory-distant-ions-entangled.html"
+        }
+      ],
+      "tags": [
+        "physics",
+        "entanglement",
+        "quantum networks",
+        "trapped ions"
+      ]
+    },
+    {
+      "id": "b46",
+      "round": 1,
+      "topic": "wildcard",
+      "title": "Black holes spinning near the maximum rate could split in two, calculations suggest",
+      "summary": "New calculations suggest a black hole rotating close to its theoretical maximum spin could divide into two. Near-extremal Kerr black holes are a testing ground for general relativity and quantum gravity, so a predicted instability of this kind would matter for what astronomers expect to find among the fastest-spinning objects.",
+      "sources": [
+        {
+          "outlet": "Phys.org",
+          "title": "Black holes spinning near maximum rate could split in two, calculations suggest",
+          "url": "https://phys.org/news/2026-10-black-holes-maximum.html"
+        }
+      ],
+      "tags": [
+        "physics",
+        "black holes",
+        "general relativity",
+        "astrophysics"
+      ]
+    },
+    {
+      "id": "b47",
+      "round": 1,
+      "topic": "wildcard",
+      "title": "Supercurrent read-out reads a qubit without destroying its state",
+      "summary": "Researchers report a way to read quantum information through a supercurrent without collapsing the quantum state. Non-destructive read-out lets a qubit be measured repeatedly, which error-correction schemes rely on, so it is a practical step for quantum hardware.",
+      "sources": [
+        {
+          "outlet": "Phys.org",
+          "title": "Supercurrent enables the reading of quantum information without destroying it",
+          "url": "https://phys.org/news/2026-10-supercurrent-enables-quantum-destroying.html"
+        }
+      ],
+      "tags": [
+        "physics",
+        "qubits",
+        "superconductivity",
+        "quantum measurement"
+      ]
+    }
+  ],
+  "run": {
+    "mode": "daily",
+    "duration_minutes": 45,
+    "fetches": 96,
+    "notes": [
+      "Desks went over the ~40 fetch budget (six desks, about 96 page fetches); budget raised in practice by the larger edition and briefs.",
+      "Several briefs rest on a single source or a search-result description where pages were blocked (SCMP, ISW, Ukrainska Pravda, Bloomberg Law).",
+      "Dropped one China brief (Tibet earthquake) as unverified.",
+      "Some stories stretched beyond the lookback window: Denmark Covenant missile, Italian tank orders, fuel-duty brief, older AI briefs."
+    ]
+  }
+}
