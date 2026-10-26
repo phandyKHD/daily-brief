@@ -122,6 +122,23 @@ a { color: inherit; }
 .focus-box { display: grid; gap: 4px; }
 .focus-box label { font-family: var(--f-display); font-weight: 650; font-size: .82rem; color: var(--ink-2); }
 .focus-box textarea { width: 100%; min-height: 56px; resize: vertical; border: 1px solid var(--rule); border-radius: 8px; padding: 8px 10px; background: var(--surface); font-family: var(--f-body); font-size: 1rem; line-height: 1.4; }
+.setup { display: grid; gap: 18px; }
+.setup .field { display: grid; gap: 4px; }
+.setup label, .setup .lbl { font-family: var(--f-display); font-weight: 650; font-size: .9rem; }
+.setup .help { font-size: .85rem; color: var(--ink-3); font-family: var(--f-display); }
+.setup input[type=text], .setup input[type=number], .setup select, .setup textarea { width: 100%; border: 1px solid var(--rule); border-radius: 8px; padding: 8px 10px; background: var(--surface); font-family: var(--f-body); font-size: 1rem; }
+.setup textarea { min-height: 80px; resize: vertical; line-height: 1.45; }
+.setup .row2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: 12px; }
+.tlist { display: grid; gap: 8px; }
+.trow { display: grid; grid-template-columns: 4.2rem 1fr; gap: 6px 12px; align-items: start; padding: 10px 12px; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); }
+.trow.off { opacity: .65; }
+.trow select { padding: 6px; }
+.trow .tl { font-family: var(--f-display); font-weight: 650; }
+.trow .td { font-size: .85rem; color: var(--ink-3); }
+.trow .full { grid-column: 1 / -1; }
+.trow .x { justify-self: end; background: none; border: 0; color: var(--ink-3); cursor: pointer; font-family: var(--f-display); font-size: .8rem; }
+.setup-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; position: sticky; bottom: max(10px, env(safe-area-inset-bottom, 0px)); background: var(--bg); padding: 8px 0; }
+.btn-plain { background: var(--surface); color: var(--ink); border-color: var(--rule); }
 .req-bar { position: sticky; bottom: max(12px, env(safe-area-inset-bottom, 0px)); z-index: 4; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 14px; background: var(--ink); color: var(--surface); border-radius: 12px; padding: 10px 12px 10px 16px; font-family: var(--f-display); font-size: .9rem; box-shadow: 0 6px 24px rgba(0,0,0,.18); }
 .req-bar .btn-accent { padding: 7px 14px; }
 .chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
@@ -277,6 +294,7 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
       <button class="tab" role="tab" id="tab-more" aria-selected="false" data-view="more">More stories<span class="n" id="more-count"></span></button>
       <button class="tab" role="tab" id="tab-archive" aria-selected="false" data-view="archive">Archive</button>
       <button class="tab" role="tab" id="tab-about" aria-selected="false" data-view="about">What I've learned</button>
+      <button class="tab" role="tab" id="tab-setup" aria-selected="false" data-view="setup">Setup</button>
     </div>
     <div class="chips" id="chips" role="group" aria-label="Filter by topic"></div>
     <div class="progress" id="progress-row"><span id="progress-text">0 / 0 rated</span><span class="bar"><i id="progress-bar"></i></span></div>
@@ -301,11 +319,28 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
   }
 
   var OFFLINE = DATA.mode === "offline";
-  var TOPICS = {
-    industry: "Industry", uk_politics: "UK Politics", ukraine: "Ukraine War", nato: "NATO & Defence",
-    china: "China", ai: "AI in Practice", us_politics: "US Politics", wildcard: "Wildcard"
-  };
-  var TOPIC_ORDER = ["industry", "uk_politics", "ukraine", "nato", "china", "ai", "us_politics", "wildcard"];
+  // Topics come from this reader's setup (build.py embeds them with their colours).
+  var TOPIC_META = DATA.topics || [];
+  var TOPICS = {}, TOPIC_ORDER = [];
+  TOPIC_META.forEach(function (t) { TOPICS[t.id] = t.label; TOPIC_ORDER.push(t.id); });
+  // Topics in older editions that are no longer in the setup still need a label.
+  [DATA.edition].concat(DATA.archive || []).forEach(function (e) {
+    (e.articles || []).concat(e.briefs || []).forEach(function (a) {
+      if (!TOPICS[a.topic]) { TOPICS[a.topic] = a.topic.replace(/^p_/, "").replace(/_/g, " "); TOPIC_ORDER.push(a.topic); }
+    });
+  });
+  (function topicColours() {
+    var light = [], dark = [];
+    TOPIC_META.forEach(function (t) {
+      if (!/^[a-z0-9_]+$/.test(t.id)) return;
+      light.push("--t-" + t.id + ":" + t.light); dark.push("--t-" + t.id + ":" + t.dark);
+    });
+    var css = ":root{" + light.join(";") + "}" +
+      '@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){' + dark.join(";") + "}}" +
+      ':root[data-theme="dark"]{' + dark.join(";") + "}";
+    var st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);
+  })();
+  var PLACEHOLDER = !!DATA.edition.placeholder;
   var QUICK = [
     ["more", "More like this"], ["less", "Less like this"], ["too_long", "Too long"],
     ["too_shallow", "Too shallow"], ["already_knew", "Already knew"], ["biased", "Biased"], ["great_source", "Great source"]
@@ -320,7 +355,7 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
   var byDate = {};
   editions.forEach(function (e) { byDate[e.date] = e; });
   var state = {
-    view: "today",
+    view: PLACEHOLDER || !DATA.has_setup ? "setup" : "today",
     date: DATA.edition.date,
     filter: "all",
     open: {},
@@ -351,6 +386,9 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     window.claude.use("db").then(function (db) {
       if (!db) return;
       state.db = db;
+      db.doc("profile/setup").get().then(function (d) {
+        if (d.exists) { state.setup = JSON.parse(JSON.stringify(d.data())); if (state.view === "setup" && !draft) renderSetup(); }
+      }, function () {});
       var dates = editions.map(function (e) { return e.date; }).slice(0, 30);
       db.collection("ratings").where("date", "in", dates).onSnapshot(function (snap) {
         var changed = [];
@@ -451,38 +489,38 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
       st.innerHTML = 'Offline copy. Ratings here stay on this device.' + (DATA.viewer_url ? ' <a href="' + esc(DATA.viewer_url) + '" style="color:var(--sky-ink)">Open the live brief</a> to teach the agent.' : '');
       return;
     }
-    if (!DATA.trigger_id) {
-      btn.disabled = true;
-      st.textContent = "Refresh switches on once the morning routine is set up.";
-      return;
-    }
+    if (PLACEHOLDER) { btn.hidden = true; $("edition-pdf").hidden = true; }
     var last = null;
     try { last = JSON.parse(localStorage.getItem(REFRESH_LS) || "null"); } catch (e) {}
-    var latestRound = Math.max.apply(null, DATA.edition.articles.map(function (a) { return a.round || 1; }));
-    if (last && last.date === DATA.edition.date && last.round >= latestRound && Date.now() - last.at < 45 * 60000) {
-      st.textContent = "Refresh requested at " + new Date(last.at).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" }) + ". New articles usually arrive within 20 minutes; this page updates by itself.";
+    var latestRound = Math.max.apply(null, DATA.edition.articles.map(function (a) { return a.round || 1; }).concat([1]));
+    if (last && last.date === DATA.edition.date && last.round >= latestRound && Date.now() - last.at < 3 * 3600000) {
+      st.textContent = "Refresh queued at " + new Date(last.at).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" }) + ". The agent checks every 2 hours between 7am and 9pm; this page updates by itself.";
     }
     btn.addEventListener("click", function () { startRefresh(st); });
+    // A refresh is a flag in this brief's database. The refresh routine checks every
+    // brief's flag every 2 hours, so it works for every reader. The owner's press also
+    // starts that routine straight away.
     function startRefresh(st) {
-      if (!window.claude || !window.claude.use) { st.textContent = "Refresh only works inside claude.ai."; return; }
+      if (!state.db) { st.textContent = "Refresh only works inside claude.ai, signed in."; return; }
       btn.disabled = true;
-      st.innerHTML = '<span class="spin" aria-hidden="true"></span> Asking the agent…';
-      window.claude.use("mcp").then(function (mcp) {
-        if (!mcp) throw { code: "not_granted" };
-        return mcp.callTool("Claude Code Remote", "fire_trigger", { trigger_id: DATA.trigger_id, text: "mode=refresh date=" + DATA.edition.date });
-      }).then(function () {
+      st.innerHTML = '<span class="spin" aria-hidden="true"></span> Queuing…';
+      state.db.doc("control/refresh").set({ requested_at: new Date().toISOString(), date: DATA.edition.date, status: "pending" }).then(function () {
         try { localStorage.setItem(REFRESH_LS, JSON.stringify({ date: DATA.edition.date, round: latestRound, at: Date.now() })); } catch (e) {}
-        st.textContent = "Agent started. It writes up your requested stories first, then adds more. New articles usually arrive within 20 minutes; this page updates by itself.";
+        st.textContent = "Queued. Your requested stories are written first, then a few more. The agent checks every 2 hours (7am–9pm); this page updates by itself.";
         setTimeout(function () { btn.disabled = false; }, 60000);
-      }).catch(function (e) {
+        if (!DATA.trigger_id || !window.claude) return;
+        return window.claude.use("user").then(function (u) {
+          if (!u || !u.isOwner()) return;
+          return window.claude.use("mcp").then(function (mcp) {
+            if (!mcp) return;
+            return mcp.callTool("Claude Code Remote", "fire_trigger", { trigger_id: DATA.trigger_id, text: "mode=refresh reader=" + (DATA.reader_id || "") }).then(function () {
+              st.textContent = "Agent started. Your requested stories are written first, then a few more. New articles usually arrive within 30 minutes; this page updates by itself.";
+            });
+          });
+        }).catch(function () {});
+      }, function (e) {
         btn.disabled = false;
-        var c = e && e.code;
-        st.textContent =
-          c === "server_not_connected" ? "Add the Claude Code Remote connector in claude.ai Settings → Connectors, then try again." :
-          c === "needs_reauth" ? "Reconnect Claude Code Remote in claude.ai Settings → Connectors." :
-          c === "approval_required" || c === "not_in_manifest" ? "Refresh needs your permission. Press it again and choose Allow." :
-          c === "not_granted" ? "This view can't start the agent. Open the brief on claude.ai." :
-          "Couldn't start the agent (" + (c || "error") + "). Try again in a minute.";
+        st.textContent = e && e.code === "invalid_argument" ? "This view can't queue a refresh. Ask Peter to share the brief with you as a Contributor." : "Couldn't queue the refresh. Check your connection and try again.";
       });
     }
     window.__startRefresh = startRefresh;
@@ -491,6 +529,13 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
   // ---------- rendering ----------
   function renderMast() {
     var ed = byDate[state.date];
+    if (DATA.reader_name) document.querySelector(".brand").innerHTML = "Daily <b>Brief</b> · " + esc(DATA.reader_name);
+    if (PLACEHOLDER) {
+      $("date").textContent = "Welcome" + (DATA.reader_name ? ", " + DATA.reader_name : "");
+      $("stats").innerHTML = "<span>Fill in Setup and your first edition arrives tomorrow morning.</span>";
+      $("changes").hidden = true;
+      return;
+    }
     $("date").textContent = fmtDate(ed.date);
     var n = editions.length;
     $("issue").textContent = (DATA.issue_number ? "No. " + DATA.issue_number + " · " : "") + ed.date;
@@ -530,6 +575,94 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
   }
   function openRequests() {
     return Object.keys(state.requests).filter(function (k) { return state.requests[k].status === "pending"; });
+  }
+
+  // ---------- Setup (what this reader wants) ----------
+  state.setup = DATA.setup || null;
+  var LIB = DATA.library || [];
+  var draft = null;
+  function blankSetup() {
+    return { name: DATA.reader_name || "", about: "", stance: "", length_minutes: 2, articles_per_day: 15, briefs_per_day: 40, avoid: "",
+      topics: [{ id: "uk_politics", count: 3 }, { id: "world", count: 2 }, { id: "wildcard", count: 2 }] };
+  }
+  function slug(s) { return "p_" + String(s).toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "").slice(0, 30); }
+  function renderSetup() {
+    if (!draft) draft = JSON.parse(JSON.stringify(state.setup || blankSetup()));
+    var byId = {};
+    draft.topics.forEach(function (t) { byId[t.id] = t; });
+    var counts = function (sel) { var o = ""; for (var i = 0; i <= 5; i++) o += '<option value="' + i + '"' + (i === sel ? " selected" : "") + ">" + (i === 0 ? "Off" : i) + "</option>"; return o; };
+    var h = '<section class="panel setup" id="setup-form">';
+    h += "<h2>" + (state.setup ? "Your setup" : "Set up your Daily Brief") + "</h2>";
+    h += '<p class="help">Tell the agent what you want. It researches every morning at about 4am and learns from your ratings. Change this whenever you like; the next edition follows it.</p>';
+    h += '<div class="field"><label for="su-name">Your first name</label><input type="text" id="su-name" value="' + esc(draft.name) + '"></div>';
+    h += '<div class="field"><label for="su-about">About you</label><span class="help">Your work, where you live, what you care about. The agent uses this to decide what matters to you and to write the "Why it matters" lines.</span><textarea id="su-about">' + esc(draft.about) + "</textarea></div>";
+    h += '<div class="field"><span class="lbl">Topics from the shared newsroom</span><span class="help">How many full articles a day for each. Add your own angle if you like.</span><div class="tlist">';
+    LIB.forEach(function (lt) {
+      var t = byId[lt.id] || { id: lt.id, count: 0 };
+      h += '<div class="trow' + (t.count ? "" : " off") + '"><select data-tcount="' + lt.id + '" aria-label="Articles a day: ' + esc(lt.label) + '">' + counts(t.count || 0) + "</select>" +
+        '<div><div class="tl">' + esc(lt.label) + '</div><div class="td">' + esc(lt.description) + "</div></div>" +
+        (t.count ? '<input type="text" class="full" data-tangle="' + lt.id + '" placeholder="Your angle (optional), e.g. focus on what it means for the NHS" value="' + esc(t.angle || "") + '">' : "") + "</div>";
+    });
+    h += "</div></div>";
+    h += '<div class="field"><span class="lbl">Your own topics</span><span class="help">Anything specific to you: your industry, a hobby, your area. Describe it in a sentence or two.</span><div class="tlist">';
+    draft.topics.filter(function (t) { return t.personal; }).forEach(function (t, i) {
+      h += '<div class="trow"><select data-pcount="' + esc(t.id) + '" aria-label="Articles a day">' + counts(t.count || 0) + "</select>" +
+        '<input type="text" data-plabel="' + esc(t.id) + '" placeholder="Topic name, e.g. Primary care" value="' + esc(t.label || "") + '">' +
+        '<textarea class="full" data-pdesc="' + esc(t.id) + '" placeholder="What to look for and why it matters to you">' + esc(t.description || "") + "</textarea>" +
+        '<button type="button" class="x full" data-premove="' + esc(t.id) + '">Remove this topic</button></div>';
+    });
+    h += '</div><button type="button" class="btn btn-plain" id="su-addtopic" style="justify-self:start">Add a topic</button></div>';
+    h += '<div class="row2"><div class="field"><label for="su-n">Full articles a day</label><input type="number" id="su-n" min="5" max="25" value="' + (draft.articles_per_day || 15) + '"></div>' +
+      '<div class="field"><label for="su-b">Short summaries a day</label><input type="number" id="su-b" min="0" max="60" value="' + (draft.briefs_per_day == null ? 40 : draft.briefs_per_day) + '"></div>' +
+      '<div class="field"><label for="su-len">Usual article length</label><select id="su-len">' + [1, 2, 3].map(function (m) { return '<option value="' + m + '"' + (m === (draft.length_minutes || 2) ? " selected" : "") + ">" + m + " minute" + (m > 1 ? "s" : "") + "</option>"; }).join("") + "</select></div></div>";
+    h += '<div class="field"><label for="su-stance">Perspective and sources</label><span class="help">Optional. For example: "balanced, BBC and Guardian are fine" or "centre-right outlets for opinion".</span><textarea id="su-stance">' + esc(draft.stance) + "</textarea></div>";
+    h += '<div class="field"><label for="su-avoid">Anything to avoid</label><textarea id="su-avoid">' + esc(draft.avoid) + "</textarea></div>";
+    h += '<div class="setup-actions"><button type="button" class="btn btn-accent" id="su-save">Save setup</button><span class="saved" id="su-msg" role="status"></span></div>';
+    h += "</section>";
+    $("view").innerHTML = h;
+  }
+  function readSetupForm() {
+    if (!$("setup-form")) return;
+    draft.name = $("su-name").value.trim();
+    draft.about = $("su-about").value;
+    draft.stance = $("su-stance").value;
+    draft.avoid = $("su-avoid").value;
+    draft.articles_per_day = Math.max(5, Math.min(25, +$("su-n").value || 15));
+    draft.briefs_per_day = Math.max(0, Math.min(60, +$("su-b").value || 0));
+    draft.length_minutes = +$("su-len").value || 2;
+    var keep = [];
+    LIB.forEach(function (lt) {
+      var c = +document.querySelector('[data-tcount="' + lt.id + '"]').value;
+      var old = draft.topics.filter(function (t) { return t.id === lt.id; })[0] || {};
+      var ang = document.querySelector('[data-tangle="' + lt.id + '"]');
+      if (c) keep.push({ id: lt.id, count: c, angle: ang ? ang.value.trim() : (old.angle || "") });
+    });
+    draft.topics.filter(function (t) { return t.personal; }).forEach(function (t) {
+      var lab = document.querySelector('[data-plabel="' + t.id + '"]');
+      var desc = document.querySelector('[data-pdesc="' + t.id + '"]');
+      var cnt = document.querySelector('[data-pcount="' + t.id + '"]');
+      keep.push({ id: t.id, personal: true, label: lab ? lab.value.trim() : t.label, description: desc ? desc.value : t.description,
+        count: cnt ? +cnt.value : t.count, lookback_hours: t.lookback_hours || 72 });
+    });
+    draft.topics = keep;
+  }
+  function saveSetup() {
+    readSetupForm();
+    var msg = $("su-msg");
+    draft.topics.forEach(function (t) { if (t.personal && (!t.id || t.id.indexOf("p_new") === 0)) t.id = slug(t.label || "topic"); });
+    var bad = draft.topics.filter(function (t) { return t.personal && t.count && !(t.label && t.description); });
+    if (bad.length) { msg.textContent = "Give each of your own topics a name and a short description."; msg.className = "saved err"; return; }
+    if (!draft.topics.some(function (t) { return t.count; })) { msg.textContent = "Pick at least one topic."; msg.className = "saved err"; return; }
+    if (!state.db) { msg.textContent = "Saving needs the live brief on claude.ai."; msg.className = "saved err"; return; }
+    draft.saved_at = new Date().toISOString();
+    msg.textContent = "Saving…"; msg.className = "saved";
+    state.db.doc("profile/setup").set(JSON.parse(JSON.stringify(draft))).then(function () {
+      state.setup = JSON.parse(JSON.stringify(draft));
+      msg.textContent = "Saved. Your next edition will follow this setup."; msg.className = "saved ok";
+    }, function (e) {
+      msg.textContent = e && e.code === "invalid_argument" ? "This view can't save. Ask Peter to share the brief with you as a Contributor." : "Not saved. Check your connection and try again.";
+      msg.className = "saved err";
+    });
   }
 
   // ---------- More stories (briefs) ----------
@@ -844,7 +977,7 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
       }
       h += cardHtml(ed.date, a);
     });
-    if (!list.length) h += '<p class="empty">' + (state.filter === "unrated" ? "Everything here is rated. Thank you." : "Nothing in this section today.") + "</p>";
+    if (!list.length) h += '<p class="empty">' + (PLACEHOLDER ? "Your first edition will appear here the morning after you complete Setup." : state.filter === "unrated" ? "Everything here is rated. Thank you." : "Nothing in this section today.") + "</p>";
     $("view").innerHTML = h;
   }
 
@@ -905,6 +1038,7 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     if (state.view === "today") renderToday();
     else if (state.view === "archive") renderArchive();
     else if (state.view === "more") renderMore();
+    else if (state.view === "setup") renderSetup();
     else renderAbout();
     if (keepScroll) {
       window.scrollTo(0, y);
@@ -916,8 +1050,14 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
   document.addEventListener("click", function (ev) {
     var t = ev.target.closest("button, .card-head");
     if (!t) return;
-    if (t.classList.contains("tab")) { state.view = t.dataset.view; state.filter = "all"; renderAll(); window.scrollTo(0, 0); return; }
+    if (t.classList.contains("tab")) {
+      if (state.view === "setup" && t.dataset.view !== "setup") readSetupForm();
+      state.view = t.dataset.view; state.filter = "all"; renderAll(); window.scrollTo(0, 0); return;
+    }
     if (t.dataset.req) { toggleRequest(t.dataset.req); return; }
+    if (t.id === "su-save") { saveSetup(); return; }
+    if (t.id === "su-addtopic") { readSetupForm(); draft.topics.push({ id: "p_new_" + Date.now(), personal: true, label: "", description: "", count: 1, lookback_hours: 72 }); renderSetup(); var nl = document.querySelectorAll("[data-plabel]"); if (nl.length) nl[nl.length - 1].focus(); return; }
+    if (t.dataset.premove) { readSetupForm(); draft.topics = draft.topics.filter(function (x) { return x.id !== t.dataset.premove; }); renderSetup(); return; }
     if (t.id === "req-refresh") { if (window.__startRefresh) { window.__startRefresh($("refresh-status")); window.scrollTo(0, 0); } return; }
     if (t.dataset.goto) {
       var g = splitKey(t.dataset.goto);
@@ -981,6 +1121,9 @@ footer { text-align: center; color: var(--ink-3); font-family: var(--f-mono); fo
     if (!a) return;
     ratingFor(p.date, a).feedback = ta.value;
     queueSave(p.date, a, 1500);
+  });
+  document.addEventListener("change", function (ev) {
+    if (ev.target.dataset && ev.target.dataset.tcount !== undefined) { readSetupForm(); renderSetup(); }
   });
   var focusTimers = {};
   function saveFocus(k) {

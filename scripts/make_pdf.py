@@ -31,16 +31,15 @@ from reportlab.graphics.shapes import Circle, Drawing, Line, Path, PolyLine, Rec
 from reportlab.platypus import (BaseDocTemplate, CondPageBreak, Frame, KeepTogether, PageTemplate,
                                 Paragraph, Spacer, Table, TableStyle)
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import common  # noqa: E402
+
+ROOT = common.HOME
 rl_config.useA85 = 0  # binary Flate streams: about 20% smaller than ASCII85
 INK, INK2, INK3 = HexColor("#161b2e"), HexColor("#4a5068"), HexColor("#7a8098")
 CHART, GRID = HexColor("#2c4f9e"), HexColor("#e6e8ef")
 SKY, SKY2, ACCENT, ACCENT_SOFT, RULE = HexColor("#1d2a4d"), HexColor("#aab3d1"), HexColor("#c8611e"), HexColor("#fbeee3"), HexColor("#dfe2ea")
-TOPIC = {
-    "industry": ("Industry", "#8a5a12"), "uk_politics": ("UK Politics", "#6b3fa0"), "ukraine": ("Ukraine War", "#2a6f86"),
-    "nato": ("NATO & Defence", "#2c4f9e"), "china": ("China", "#b0322a"), "ai": ("AI in Practice", "#217a5b"),
-    "us_politics": ("US Politics", "#5e6372"), "wildcard": ("Wildcard", "#a63d78"),
-}
+TOPIC = {t["id"]: (t["label"], t["light"]) for t in common.topic_meta()}
 # Characters outside the standard fonts' WinAnsi set, mapped to safe equivalents.
 SAFE = {"≈": "~", "→": "->", "←": "<-", "−": "-", " ": " ", " ": " ", "‑": "-",
         "′": "'", "″": '"', "≤": "<=", "≥": ">=", "×": "x"}

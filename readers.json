@@ -1,0 +1,11 @@
+{
+  "readers": [
+    {
+      "id": "peter",
+      "name": "Peter",
+      "artifact_url": "https://claude.ai/artifact/2Cu5Wokp6MMSy3xkigWmo7",
+      "email": "peter@khdtechnology.com",
+      "active": true
+    }
+  ]
+}

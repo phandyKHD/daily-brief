@@ -4,6 +4,7 @@
 Usage:
   python3 scripts/build.py YYYY-MM-DD                 # writes dist/live.html and dist/offline-YYYY-MM-DD.html
   python3 scripts/build.py YYYY-MM-DD --email-body    # prints the email HTML body to stdout
+  python3 scripts/build.py YYYY-MM-DD --placeholder   # page for a new reader: Setup tab, no edition
 
 live.html is the claude.ai Artifact page (no doctype: the Artifact tool adds the skeleton).
 offline-*.html is a complete standalone document for the email attachment.
@@ -14,11 +15,11 @@ import json
 import os
 import sys
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-TOPIC_LABELS = {
-    "industry": "Industry", "uk_politics": "UK Politics", "ukraine": "Ukraine War", "nato": "NATO & Defence",
-    "china": "China", "ai": "AI in Practice", "us_politics": "US Politics", "wildcard": "Wildcard",
-}
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import common  # noqa: E402
+
+ROOT = common.HOME
+TOPIC_LABELS = common.labels()
 
 
 def p(*parts):
@@ -48,8 +49,10 @@ def archive_for(date, days):
     return out
 
 
-def payload(date, mode, config):
-    ed = load_edition(date)
+def payload(date, mode, config, placeholder=False):
+    ed = ({"date": date, "placeholder": True, "generated_at": None, "changes": [], "rounds": [{"round": 1, "mode": "daily"}],
+           "articles": [], "briefs": [], "run": {}} if placeholder else load_edition(date))
+    setup = common.setup()
     issue = len([f for f in glob.glob(p("data", "editions", "*.json")) if os.path.basename(f)[:10] <= date])
     data = {
         "mode": mode,
@@ -61,16 +64,22 @@ def payload(date, mode, config):
         "stats": json.loads(read(p("data", "stats.json"), "{}") or "{}"),
         "trigger_id": config.get("routine_trigger_id"),
         "viewer_url": config.get("viewer_artifact_url"),
+        "reader_id": config.get("reader_id"),
+        "reader_name": (setup or {}).get("name") or config.get("reader_name"),
+        "topics": common.topic_meta(),
+        "library": common.library(),
+        "setup": setup,
+        "has_setup": bool(setup),
     }
     # Escape "</" so article text can never close the <script> tag.
     return json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 
 
-def render(date, mode, config):
-    template = read(p("viewer", "template.html"))
+def render(date, mode, config, placeholder=False):
+    template = read(common.code("viewer", "template.html"))
     if "__BRIEF_DATA__" not in template:
         sys.exit("template.html is missing the __BRIEF_DATA__ placeholder")
-    return template.replace("__BRIEF_DATA__", payload(date, mode, config))
+    return template.replace("__BRIEF_DATA__", payload(date, mode, config, placeholder))
 
 
 def offline_document(body):
@@ -130,10 +139,9 @@ def email_body(date, config):
            '<div style="padding:16px 20px">']
     if url:
         out.append(f'<p style="font:600 14px Arial,sans-serif"><a href="{e(url)}" style="color:#c8611e">Open the live brief to read and rate</a>. '
-                   'Every article is in full below, so this email works offline. '
-                   'For a PDF, tap <b>Save edition as PDF</b> in the live brief.</p>')
+                   'Headlines and key points below. For the full articles offline, tap <b>Save edition as PDF</b> in the live brief.</p>')
     else:
-        out.append('<p style="font:600 14px Arial,sans-serif">Every article is in full below, so this email works offline.</p>')
+        out.append('<p style="font:600 14px Arial,sans-serif">Headlines and key points below; full articles are in the live brief.</p>')
     if ed.get("changes"):
         out.append('<div style="border-left:3px solid #c8611e;padding:6px 12px;margin:12px 0;background:#fbeee3">'
                    '<b style="font:700 12px Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:#c8611e">Changed because of your feedback</b><ul style="margin:4px 0 0;padding-left:18px">')
@@ -148,22 +156,8 @@ def email_body(date, config):
         out.append(f'<div style="margin:10px 0 14px"><a href="#{a["id"]}" style="font:700 16px Arial,sans-serif;line-height:1.25;color:#161b2e;text-decoration:none">{e(a["title"])}</a>{kind}'
                    f' <span style="font:12px monospace;color:#7a8098">{a["read_minutes"]} min</span>'
                    '<ul style="margin:4px 0 0;padding-left:18px;color:#4a5068;font-size:15px">' + "".join(f"<li>{e(t)}</li>" for t in a["tldr"]) + "</ul></div>")
-    # Full articles below the contents, so the whole brief is readable offline in the mail app.
-    out.append('<h2 style="font:800 13px Arial,sans-serif;text-transform:uppercase;letter-spacing:.14em;color:#c8611e;margin:34px 0 0;border-top:3px solid #c8611e;padding-top:10px">Full articles</h2>')
-    for a in ed["articles"]:
-        out.append(f'<div id="{a["id"]}" style="margin:22px 0;padding-bottom:18px;border-bottom:1px solid #dfe2ea">'
-                   f'<div style="font:700 11px Arial,sans-serif;text-transform:uppercase;letter-spacing:.1em;color:#7a8098">{e(TOPIC_LABELS.get(a["topic"], a["topic"]))} · {a["read_minutes"]} min</div>'
-                   f'<div style="font:700 19px Arial,sans-serif;line-height:1.25;margin:4px 0 8px">{e(a["title"])}</div>')
-        paras = [f"<p>{e(para)}</p>" for para in a["body"]]
-        if a.get("visual"):
-            at = min(2, len(paras))
-            paras = paras[:at] + [email_figure(a["visual"])] + paras[at:]
-        out += paras
-        if a.get("why_it_matters"):
-            label = "Why it matters for KHD" if a["topic"] == "industry" else "Why it matters"
-            out.append(f'<p style="background:#fbeee3;padding:8px 12px;font-size:15px"><b style="font:700 11px Arial,sans-serif;text-transform:uppercase;color:#c8611e">{label}</b><br>{e(a["why_it_matters"])}</p>')
-        out.append('<p style="font:12px Arial,sans-serif;color:#7a8098">Sources: ' + " · ".join(
-            f'<a href="{e(s["url"])}" style="color:#7a8098">{e(s["outlet"])}</a>' for s in a["sources"]) + "</p></div>")
+    # Full article text is no longer included: a 120 KB body took two hours to send
+    # through the Gmail tool. Offline reading uses "Save edition as PDF" in the brief.
     if ed.get("briefs"):
         out.append('<h2 style="font:800 13px Arial,sans-serif;text-transform:uppercase;letter-spacing:.14em;color:#c8611e;margin:34px 0 4px;border-top:3px solid #c8611e;padding-top:10px">'
                    f'More stories ({len(ed["briefs"])})</h2>')
@@ -193,6 +187,12 @@ def main():
         print(email_body(date, config))
         return
     os.makedirs(p("dist"), exist_ok=True)
+    if "--placeholder" in sys.argv:
+        # A new reader with no edition yet: the page opens on the Setup tab.
+        with open(p("dist", "live.html"), "w", encoding="utf-8") as f:
+            f.write(render(date, "live", config, placeholder=True))
+        print("Built dist/live.html (placeholder: Setup only)")
+        return
     with open(p("dist", "live.html"), "w", encoding="utf-8") as f:
         f.write(render(date, "live", config))
     with open(p("dist", f"offline-{date}.html"), "w", encoding="utf-8") as f:

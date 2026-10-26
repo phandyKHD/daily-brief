@@ -1,0 +1,89 @@
+{
+  "topics": [
+    {
+      "id": "uk_politics",
+      "label": "UK Politics",
+      "lookback_hours": 36,
+      "description": "Westminster, the main parties and polling for all of them, tax and the economy, immigration, policy that affects households and businesses."
+    },
+    {
+      "id": "us_politics",
+      "label": "US Politics",
+      "lookback_hours": 36,
+      "description": "Only the most significant US political stories, especially ones with UK or trade consequences.",
+      "max": 2
+    },
+    {
+      "id": "ukraine",
+      "label": "Ukraine War",
+      "lookback_hours": 36,
+      "description": "Front line, weapons and drones, diplomacy and ceasefire talks, Western aid, sanctions, Russia's home front."
+    },
+    {
+      "id": "nato",
+      "label": "NATO & Defence",
+      "lookback_hours": 36,
+      "description": "Alliance politics, defence spending and procurement, UK armed forces, European rearmament, the defence industry."
+    },
+    {
+      "id": "china",
+      "label": "China",
+      "lookback_hours": 36,
+      "description": "Economy, Communist Party politics, Taiwan, trade and tariffs, UK-China relations, security and espionage."
+    },
+    {
+      "id": "ai",
+      "label": "AI in Practice",
+      "lookback_hours": 72,
+      "description": "How people and businesses actually use AI: real workflows, tools and case studies. Practical pieces over funding rounds and model launches."
+    },
+    {
+      "id": "wildcard",
+      "label": "Science & Discovery",
+      "lookback_hours": 240,
+      "description": "New science explained clearly: physics, space, engineering, biology. Real findings from papers and labs."
+    },
+    {
+      "id": "world",
+      "label": "World News",
+      "lookback_hours": 36,
+      "description": "The most important international stories outside the topics above."
+    },
+    {
+      "id": "economy",
+      "label": "Economy & Money",
+      "lookback_hours": 36,
+      "description": "UK economy, interest rates, inflation, markets, personal finance, house prices."
+    },
+    {
+      "id": "health",
+      "label": "Health & Medicine",
+      "lookback_hours": 72,
+      "description": "Medical research, the NHS, public health, wellbeing, with evidence explained plainly."
+    },
+    {
+      "id": "tech",
+      "label": "Technology",
+      "lookback_hours": 72,
+      "description": "Consumer and business technology, gadgets, the big tech companies, online safety."
+    },
+    {
+      "id": "energy_climate",
+      "label": "Energy & Climate",
+      "lookback_hours": 72,
+      "description": "Energy prices and supply, the grid, nuclear and renewables, climate policy and its costs."
+    },
+    {
+      "id": "culture",
+      "label": "Culture & Books",
+      "lookback_hours": 120,
+      "description": "Books, film, TV, art, history and ideas worth knowing about."
+    },
+    {
+      "id": "sport",
+      "label": "Sport",
+      "lookback_hours": 36,
+      "description": "Major sport results and stories."
+    }
+  ]
+}

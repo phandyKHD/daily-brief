@@ -16,10 +16,14 @@ import json
 import os
 import sys
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import common  # noqa: E402
+
+ROOT = common.HOME
 RATINGS = os.path.join(ROOT, "data", "ratings.jsonl")
 FEEDBACK = os.path.join(ROOT, "data", "feedback-log.md")
 STATS = os.path.join(ROOT, "data", "stats.json")
+META = os.path.join(ROOT, "profile", "meta.json")
 HALF_LIFE_DAYS = 7  # EWMA weight halves every 7 days, so ~14 days dominate
 COMPARE = ("relevance", "quality", "summary_vote", "requested", "quick_tags", "feedback")
 # A thumbs vote from the summary stands in for relevance when no stars were given.
@@ -129,8 +133,28 @@ def main():
             raw = json.load(f)
         if isinstance(raw, dict):
             raw = raw.get("docs") or raw.get("documents") or raw.get("items") or []
-    latest = load_existing()
     now = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
+    meta = common.load_json(META)
+    if meta is not None:
+        # Multi-reader mode: state comes from the reader's artifact, not ratings.jsonl.
+        # A rating is new or changed if the page saved it after the last ingest.
+        since = meta.get("last_ingest") or ""
+        latest, fresh = {}, []
+        for doc in raw:
+            r = normalise(doc)
+            latest[r["key"]] = r
+            if not is_empty(r) and (r.get("updated_at") or "") > since:
+                fresh.append(r)
+        notes = [r for r in fresh if r["feedback"]]
+        new = len(fresh)
+        changed = 0
+        meta["last_ingest"] = now
+        os.makedirs(os.path.dirname(META), exist_ok=True)
+        with open(META, "w", encoding="utf-8") as f:
+            json.dump(meta, f, indent=2)
+        report(latest, new, changed, notes, append_log=True)
+        return
+    latest = load_existing()
     new, changed, notes = 0, 0, []
     appended = []
     for doc in raw:
@@ -154,7 +178,11 @@ def main():
         with open(RATINGS, "a", encoding="utf-8") as f:
             for r in appended:
                 f.write(json.dumps(r, ensure_ascii=False) + "\n")
-    if notes:
+    report(latest, new, changed, notes, append_log=True)
+
+
+def report(latest, new, changed, notes, append_log):
+    if notes and append_log:
         existing = open(FEEDBACK, encoding="utf-8").read() if os.path.exists(FEEDBACK) else "# Feedback log\n"
         head, _, rest = existing.partition("\n\n")
         block = "\n".join(
@@ -177,7 +205,7 @@ def main():
     if stats["quick_tags"]:
         print("  quick tags:", ", ".join(f"{k}×{v['n']}" for k, v in stats["quick_tags"].items()))
     if notes:
-        print(f"\n{len(notes)} new note(s) from Peter. Read every one:")
+        print(f"\n{len(notes)} new note(s) from the reader. Read every one:")
         for r in notes:
             print(f"- [{r.get('date')} {r.get('topic')}] \"{r.get('title')}\" R{r['relevance'] or '-'} Q{r['quality'] or '-'}: {r['feedback']}")
     else:

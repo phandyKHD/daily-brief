@@ -22,8 +22,11 @@ import os
 import re
 import sys
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ORDER = ["industry", "uk_politics", "ukraine", "nato", "china", "ai", "us_politics", "wildcard"]
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import common  # noqa: E402
+
+ROOT = common.HOME
+ORDER = [t for t, _ in common.topics()]
 FIELDS = ["topic", "title", "kind", "read_minutes", "tldr", "body", "why_it_matters", "sources", "tags", "update_of", "visual", "from_brief", "request_focus"]
 BRIEF_FIELDS = ["topic", "title", "summary", "sources", "tags"]
 

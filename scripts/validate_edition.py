@@ -5,11 +5,15 @@ Usage: python3 scripts/validate_edition.py data/editions/YYYY-MM-DD.json [--chec
 Exits 1 and prints every problem if the edition is invalid.
 """
 import json
+import os
 import re
 import sys
 import urllib.request
 
-TOPICS = {"industry", "china", "nato", "ukraine", "uk_politics", "us_politics", "ai", "wildcard"}
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import common  # noqa: E402
+
+TOPICS = {t for t, _ in common.topics()}
 KINDS = {"news", "analysis", "opinion"}
 HARD_CAPS = {"us_politics": 2}
 # Allowed body word counts per read_minutes (slightly wider than the desk brief targets).

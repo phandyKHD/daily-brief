@@ -1,89 +1,78 @@
-# Daily Brief agent playbook
+# Daily Brief newsroom playbook
 
-You are the Daily Brief agent. You write Peter's personal morning news brief: 15–19 short, original, well-sourced articles (mostly 2-minute reads) plus 40–60 one-paragraph summaries on the topics he cares about. You learn from his ratings and notes. Every run is either:
+The Daily Brief is a personal morning news brief for several readers, all run from Peter's account. Each reader has their own brief page (a claude.ai artifact Peter owns and shares with them). Every morning one newsroom run researches the shared topics once, then writes each reader their own edition from that shared pool, plus their personal topics. Readers rate articles, leave notes, request write-ups and edit their **Setup** tab; the next run learns from all of it.
 
-- **`daily`**: the scheduled 04:07 Europe/London run. Builds a new edition for today and emails it.
-- **`refresh`**: Peter pressed Refresh. Adds a new round to today's edition: first every pending request from the "More stories" tab written up in full, then enough fresh articles to make 5–8 in total, plus 15–25 new briefs. No email unless the trigger text contains `email`.
+**Nothing at run time is saved to GitHub and nothing needs the Gmail connector.** Each reader's state lives in their own brief (artifact database and published files). The repo holds the code and is only read. Do not `git push` from a run.
 
-The trigger text says which mode. If it says nothing, use `daily`.
+Modes (the trigger text says which; default `daily`):
+- **`daily`**: 04:00 Europe/London, a fresh session. All active readers.
+- **`refresh`**: every 2 hours 07:00–21:00, a fresh session, and when Peter presses Refresh (text `mode=refresh reader=peter`). Only readers with a refresh flag or pending "Write this up" requests.
+- **`mail`**: runs in Peter's own long-lived chat session (the only one with Gmail) after the daily run. Sends Peter his headlines email.
 
-Today's date: run `TZ=Europe/London date +%F`. Use that date everywhere.
+Today's date: `TZ=Europe/London date +%F`.
 
 ---
 
-## Where this runs
+## Where things live
 
-The "Daily Brief" routine (`config.routine_trigger_id`) fires into Peter's own long-lived Claude Code session, the one that built this project. That session has everything the run needs: push access to `phandyKHD/daily-brief`, the Gmail connector, and the Artifact and ArtifactData tools. The 04:07 run and every Refresh press arrive there as a new message. Keep the main conversation lean: do research and the email send in subagents, and read files in pieces rather than whole.
-
-## 0. Before you start
-
-1. `cd /home/user/daily-brief && git pull origin main` and `rm -rf dist/desk-*.json dist/briefs-*.json dist/ratings-export dist/requests-export`.
-2. **Recover anything a failed run left only in the viewer.** `Artifact` read of `config.viewer_artifact_url`, then `python3 scripts/recover_from_viewer.py <saved html path>`. If it recovers anything, commit it as `Recover state from viewer` before continuing.
-
-3. Read `config.json`, `profile/interests.yaml`, `profile/company.md`, `profile/standing-instructions.md`, `profile/learned.md`, `data/stats.json`.
-4. List the last 7 files in `data/editions/` and note every article title and tag (for dedupe).
-5. `profile/standing-instructions.md` outranks everything else. Read it first and obey it.
-
-## 1. Ingest ratings and feedback
-
-The viewer stores ratings in its Artifact database (collection `ratings`, one document per article, id `<date>_<articleId>`).
-
-1. Load the `ArtifactData` tool (ToolSearch `select:ArtifactData`) and `list` the `ratings` collection on `config.viewer_artifact_url` with `query.limit` 1000 and `out_dir` `dist/ratings-export`. Follow `next_cursor` if there is one.
-2. Run `python3 scripts/ingest_ratings.py dist/ratings-export`. It appends new or changed ratings to `data/ratings.jsonl`, adds notes to `data/feedback-log.md` and recomputes `data/stats.json`. It prints a summary including every new note. Read that summary carefully.
-
-If `ArtifactData` is unavailable or fails, carry on without new ratings and record the failure in the edition's `run.notes`.
-
-### Requests from the "More stories" tab
-
-`list` the `requests` collection (`query.where` `[["status","==","pending"]]`, `out_dir` `dist/requests-export`). Each pending request is a summary Peter wants written up in full: `{date, brief_id, topic, title, summary, sources, tags, requested_at, status, focus}`. `focus` is optional free text from Peter saying what the article should concentrate on: pass it to the desk word for word, make it the angle of the piece, and copy it into the article as `request_focus`. Its document id is `<date>_<brief_id>`. Assign every pending request to the desk for its topic. After the edition is published (step 7), mark each fulfilled request with an ArtifactData `batch` of `update` writes: `{"status": "done", "article_date": "<date>", "article_id": "<aXX>"}` (pin each with the `version` you read). A request you could not write up (e.g. sources vanished) gets `{"status": "failed", "reason": "…"}`.
-
-## 2. Learn
-
-Use the ingest summary and `data/stats.json`:
-
-- **Free-text notes have the highest priority.** For each new note decide:
-  - *lasting preference* ("stop covering X", "more on Y", "I like Z's analysis") → add a dated line to `profile/standing-instructions.md`
-  - *one-off request* ("follow up on this", "explain the background") → act on it in today's edition only
-- **Topic quotas**: `quota = base_quota × clamp(topic_score / 3.5, 0.5, 1.5)`, rounded, then clamped to the topic's `min`/`max` from `interests.yaml`. `topic_score` comes from `stats.json` (`topics.<id>.ewma_relevance`); use `base_quota` if a topic has fewer than 3 ratings. **US politics never exceeds 2.** The wildcard always keeps at least 1 slot. During the first `cold_start_days` days (count the edition files), aim for `cold_start_target` articles with 2 wildcard slots.
-- **Tags**: tags with average relevance ≥ 4 (at least 2 ratings) become search leads. Tags ≤ 2 are avoided.
-- **Sources**: outlets with average quality ≥ 4 are preferred. Outlets < 2.5 after 3+ ratings are not used as a primary source.
-- **Length**: if `too_long` is frequent or 4-minute pieces score low on quality, shift toward 2 minutes. If `too_shallow` is frequent, allow more 3–4 minute pieces.
-- **Thumbs from the summary** (`summary_vote` up / mid / down) mean Peter judged the story from its headline and TL;DR alone. They count as relevance 4 / 3 / 1.5 when no stars were given (`ingest_ratings.py` already does this). A thumbs-down on a summary is a strong signal about the story angle or topic, not the writing.
-- **Requests** ("Write this up" on a summary) are the strongest positive signal Peter gives: `ingest_ratings.py` counts them as relevance 4.5 for that topic and its tags. Votes on summaries count like votes on article summaries.
-- **Unrated articles** older than 3 days count as a weak negative for their topic only.
-- Update `profile/learned.md` with anything new, citing dates. On **Sundays**, rewrite it compactly, removing outdated or contradicted points.
-- Write 1–3 short plain sentences for the edition's `changes` field saying what changed because of Peter's feedback (e.g. "More China coverage: you rated it 4.6 this week."). Empty list if nothing changed.
-
-## 3. Plan
-
-Make a slot list, e.g. `industry×2, china×2, nato×2, ukraine×2, uk_politics×3, us_politics×1, ai×2, wildcard×2`. Attach leads to slots: liked tags, follow-ups to stories rated 4+, one-off requests from notes.
-
-## 4. Research and write (desk subagents, in parallel)
-
-Spawn one subagent per desk, all in one message so they run in parallel:
-
-| Desk | Topics |
+| What | Where |
 |---|---|
-| Industry | industry |
-| China | china |
-| Security | nato, ukraine |
-| Politics | uk_politics, us_politics |
-| AI & Wildcard | ai, wildcard |
+| Code, viewer template, topic library (`topics.json`), reader registry (`readers.json`) | GitHub repo (read-only at run time) |
+| Reader's setup (topics, counts, angles, about, stance, length, avoid) | Their artifact db `profile/setup` (written by the Setup tab) |
+| Learned profile, standing instructions, feedback log, stats, last-ingest time | Their artifact db, collection `state`, one new doc per run (`s<YYYYMMDDTHHMMSS>`); the newest `saved_at` wins |
+| Ratings, notes, thumbs, requests, refresh flag | Their artifact db: `ratings/*`, `requests/*`, `control/refresh` |
+| Editions | Their artifact's published files `editions/<date>.json`, plus `pdf/<date>/*.pdf` |
+| Working copy during a run | `work/<reader>/` (git-ignored), same layout as before: `profile/`, `data/`, `dist/` |
 
-Give each desk: today's date, its slot counts and leads, the relevant `interests.yaml` topic briefs, the editorial stance and source lists, the titles and tags from the last 7 days (to avoid repeats), the standing instructions, and the **Desk brief** below. Each desk also gets its **brief count** (see "More stories" below; about 8 per desk, 40+ in total) and any **requested** stories assigned to it. Each desk writes a JSON object `{"articles": [...], "briefs": [...]}` to `dist/desk-<name>.json`.
+Scripts take the reader from the environment: prefix every script call with `BRIEF_HOME=work/<reader>`.
+
+## 0. Start of every run
+
+1. `cd /home/user/daily-brief && git pull origin main` (if the folder is missing, clone `https://github.com/phandyKHD/daily-brief` there). `rm -rf work dist/pool && mkdir -p dist/pool`.
+2. Load tools: ToolSearch `select:ArtifactData`. The Artifact tool is built in.
+3. Read `readers.json` and `topics.json`.
+
+## 1. Load each reader (daily mode: every active reader; refresh mode: see section 7)
+
+For reader `<r>` with brief `<url>`:
+
+1. `python3 scripts/newsroom.py prepare <r>`
+2. `Artifact` read `<url>` (any read counts; this lets you publish to it later).
+3. `ArtifactData` get `profile/setup` with `out_dir` `work/<r>/export`.
+4. `ArtifactData` query collection `state`, `query` `{"order_by": {"field": "saved_at", "direction": "desc"}, "limit": 1}`, `out_dir` `work/<r>/export`.
+5. `Artifact` list `scope: "files"` on `<url>`; then `Artifact` read with `paths` set to the newest 7 `editions/<date>.json`, `out_dir` `work/<r>/export`.
+6. `BRIEF_HOME=work/<r> python3 scripts/state.py unpack work/<r>/export`. If it says **No setup yet**, skip this reader for the rest of the run (their page stays on Setup).
+7. `ArtifactData` list `ratings` (`query.limit` 1000, `out_dir` `work/<r>/export`), then `BRIEF_HOME=work/<r> python3 scripts/ingest_ratings.py work/<r>/export/ratings`. Keep the printed summary (notes!) for the reader's editor.
+8. `ArtifactData` query `requests` where `status == "pending"`, `out_dir` `work/<r>/export`. Note each request's id and `version`.
+
+## 2. Plan
+
+`python3 scripts/newsroom.py plan` prints the shared desks (topic, article count, brief count, which readers, their angles) and the personal desks. Also list `dist/pool/recent.txt`: titles and tags of every reader's last 7 days of articles and briefs, for dedupe:
+
+```
+for r in work/*/; do for f in $r/data/editions/*.json; do python3 -c "import json,sys;e=json.load(open(sys.argv[1]));[print(e['date'],'['+a['topic']+']',a['title']) for a in e['articles']+e.get('briefs',[])]" $f; done; done | sort -u > dist/pool/recent.txt
+```
+
+## 3. Research (subagents, in parallel)
+
+Spawn all desks in one message so they run in parallel (group small shared topics so there are at most about 8 subagents):
+
+- **Shared desks** write `{"articles": [...], "briefs": [...]}` to `dist/pool/desk-<topic>.json`. Give them the topic's library description, the article and brief counts from the plan, the readers' angles, the dedupe file, and the Desk brief below.
+- **Personal desks** (one per reader topic, or one per reader covering all their personal topics) write to `work/<r>/dist/desk-personal-<topic>.json`. Give them that reader's `profile/setup.json` (about, stance, avoid, the topic's description), their `profile/standing-instructions.md`, the dedupe file and the Desk brief.
+- **Request desks**: each reader's pending requests go to a personal desk for that reader (requests come first; see Desk brief), written to `work/<r>/dist/desk-personal-requests.json`.
 
 ### Desk brief (copy this into every desk prompt)
 
-> Research the news for your topics from the last `lookback_hours` hours using web search and by reading the actual articles. Pick the most important and interesting stories for Peter: a UK-based owner of a food-equipment manufacturing company with a centre-right outlook. Prefer stories with real consequences over noise.
+> Research the news for your topics from the last `lookback_hours` hours using web search and by reading the actual articles. Pick the most important and interesting stories for the readers you are given (shared desks: every reader listed for your topic, plus their angles; personal desks: that one reader's setup). Prefer stories with real consequences over noise.
 >
 > For each slot write one **original** article. Do not copy paragraphs from sources; short attributed quotes are fine. Rules:
 > - At least 2 independent sources you actually read, and all facts must come from them. Never invent quotes, figures or events. If you can't verify something, leave it out.
-> - Lean on centre-right outlets for commentary and framing; use wires and specialists for facts.
+> - Follow the reader's `stance` for commentary and framing (shared desks: be factual and balanced, and use wires and specialists for facts; each reader's editor adds their angle).
 > - Plain, direct British English. No clickbait titles. No filler.
-> - `read_minutes` 2 → 380–500 words of body; 3 → 580–720; 4 → 780–950. Mostly 2. Use 1 (200–330 words, dense with facts) only when Peter asks for a quick read in a focus note.
+> - `read_minutes` 2 → 380–500 words of body; 3 → 580–720; 4 → 780–950. Mostly 2. Use the reader's `length_minutes` as the default. Use 1 (200–330 words, dense with facts) when they ask for a quick read or when hard facts are scarce.
 > - `kind`: `news` (reporting), `analysis` (explains why or what next), or `opinion` (built mainly on a commentator's argument; say whose in the body).
 > - On contested stories add one line with the strongest counter-argument.
-> - Industry articles must have `why_it_matters` aimed at KHD Technology (see `profile/company.md`). Others may have it if it adds value, otherwise `null`.
+> - Personal desks write `why_it_matters` for their reader (required when the topic's description asks for it, e.g. Peter's industry topic). Shared desks leave `why_it_matters` null: each reader's editor writes it.
 > - 3–6 lowercase `tags` naming the main entities and themes (e.g. `taiwan`, `reform uk`, `drones`, `listeria`, `ai agents`).
 > - If a story continues one from the last 7 days, set `update_of` to that article's title and focus on what is new.
 >
@@ -93,71 +82,68 @@ Give each desk: today's date, its slot counts and leads, the relevant `interests
 >   - `stats`: 1–4 headline figures that don't share a scale (e.g. "7+" ships hit, "~30" sailors missing). Values may be short strings.
 >   Shape: `{"type": "bar"|"line"|"stats", "title": "…", "note": "what is measured, period, unit" (optional), "data": [{"label": "…", "value": 4.5}], "prefix": "£" (optional), "unit": "%" (optional), "decimals": 1 (optional), "highlight": "<one data label to emphasise>" (optional), "source": "outlet(s)"}`. One unit per chart: never mix £ and %, or two scales, in one chart. Otherwise `visual` is `null`.
 >
-> **Requested stories.** If you were given requests (Peter pressed "Write this up" on a summary), write each one as a full article first, using the request's summary and sources as the starting point and researching further. Set `from_brief` to the request's id (e.g. `"2026-10-25_b07"`). If the request has a `focus` note, build the article around it (answer his question, take his angle) and set `request_focus` to that note. Requests come before your normal slots and do not count against them.
+> **Requested stories.** If you were given requests (the reader pressed "Write this up" on a summary), write each one as a full article first, using the request's summary and sources as the starting point and researching further. Set `from_brief` to the request's id (e.g. `"2026-10-25_b07"`). If the request has a `focus` note, build the article around it (answer their question, take their angle) and set `request_focus` to that note. Requests come before your normal slots and do not count against them.
 >
-> **More stories (briefs).** After the full articles, collect your brief count of further stories for the "More stories" tab: real, current stories that did not make your full articles, so Peter can scan widely and ask for the ones he wants. Each brief: a plain headline `title`, a `summary` of 2–3 sentences (30–80 words) saying what happened and why it matters, 1–2 `sources` you actually opened or whose search result clearly states the facts, 2–5 lowercase `tags`, and the `topic`. Same accuracy rules as articles: nothing you cannot source. Cast wider than the articles (smaller stories, trade press, specialist outlets) and never repeat a story already covered by a full article in the last 7 days (unless there is a real new development).
+> **More stories (briefs).** After the full articles, collect your brief count of further stories for the "More stories" tab: real, current stories that did not make your full articles, so readers can scan widely and ask for the ones he wants. Each brief: a plain headline `title`, a `summary` of 2–3 sentences (30–80 words) saying what happened and why it matters, 1–2 `sources` you actually opened or whose search result clearly states the facts, 2–5 lowercase `tags`, and the `topic`. Same accuracy rules as articles: nothing you cannot source. Cast wider than the articles (smaller stories, trade press, specialist outlets) and never repeat a story already covered by a full article in the last 7 days (unless there is a real new development).
 >
 > Output a JSON object `{"articles": [...], "briefs": [...]}`. Each article has exactly these fields:
 > `topic, title, kind, read_minutes, tldr (3 short strings), body (array of paragraph strings), why_it_matters (string or null), sources (array of {outlet, title, url}), tags (array), update_of (string or null), visual (object or null), from_brief (string or null), request_focus (string or null)`.
 > Each brief has exactly: `topic, title, summary, sources (array of {outlet, title, url}), tags`.
 > Write it to the given file path, then reply with one line per article (title and word count) and the number of briefs.
 
-## 5. Edit
 
-Read every desk file. As editor:
+## 4. Pool, then one editor per reader
 
-1. Dedupe across desks and against the last 7 days.
-2. Check each article: facts consistent with the sources, word count right for `read_minutes`, no copied text, title clear, TL;DR genuinely useful.
-3. Order the edition: lead with the most important story overall, then group by topic in this order: industry, uk_politics, ukraine, nato, china, ai, us_politics, wildcard.
-4. Fix problems by editing the desk files directly (cut unsourced claims, delete weak or duplicate articles).
+1. `python3 scripts/newsroom.py merge-pool` writes `dist/pool/pool.json` and `dist/pool/index.txt`.
+2. Spawn one **editor subagent per reader**, in parallel. Each editor:
+   - reads `work/<r>/profile/setup.json`, `profile/standing-instructions.md`, `profile/learned.md`, `data/stats.json`, the ingest summary you pass it (with every new note), and `dist/pool/index.txt`;
+   - **learns** (rules below) and edits `work/<r>/profile/learned.md` and `standing-instructions.md`;
+   - **selects** from the pool for this reader: about `articles_per_day` articles in total including their personal desk articles. It follows the topic counts in their setup, adjusted by learning, and picks the best stories for this person. Briefs come to about `briefs_per_day` from their topics;
+   - writes a **`why_it_matters`** line for each picked article where there is a genuine angle for this reader, or null. Industry or personal-context angles come from their `about`;
+   - writes `work/<r>/dist/selection.json` in the format in `scripts/newsroom.py` (lead, articles with why_it_matters, briefs, 1–3 `changes` sentences about what changed because of their feedback).
+   It must not change article text or facts.
 
-## 6. Write the edition
+### Learning rules (for editors)
+- **Notes have the highest priority.** A lasting preference becomes a dated line in `standing-instructions.md`; a one-off request is acted on today only.
+- **Topic weight**: `count × clamp(ewma_relevance / 3.5, 0.5, 1.5)`, rounded, once a topic has 3+ ratings. Never above a library `max` (US politics max 2). Never drop a topic the reader set to 1+ below 1.
+- **Thumbs** on a summary count as relevance 4 / 3 / 1.5 (up / OK / down). A **request** ("Write this up") counts as 4.5 and is the strongest signal.
+- **Tags** averaging 4+ become leads to favour, and tags averaging 2 or below are avoided. **Sources**: outlets averaging 4+ on quality are preferred, and those under 2.5 after 3+ ratings are avoided. **Length**: `too_long` → shorter; `too_shallow` → longer.
+- Update `learned.md` with new points, citing dates. On Sundays rewrite it compactly.
 
-Run `python3 scripts/assemble_edition.py <date> daily --lead "<exact title of the lead story>" --changes "<sentence>" --changes "<sentence>"`
-(or `python3 scripts/assemble_edition.py <date> refresh`). It merges `dist/desk-*.json`, orders by topic with the lead first, assigns ids and rounds and writes the file below. Then fill in `run` by hand.
+## 5. Build and publish each reader
 
-`data/editions/<date>.json`:
+For each reader with a setup:
 
-```json
-{
-  "date": "2026-10-25",
-  "generated_at": "2026-10-25T04:52:00+01:00",
-  "changes": ["…"],
-  "rounds": [{"round": 1, "mode": "daily", "generated_at": "…"}],
-  "articles": [ { "id": "a01", "round": 1, "topic": "…", "title": "…", "kind": "news",
-                  "read_minutes": 2, "tldr": ["…","…","…"], "body": ["…"],
-                  "why_it_matters": null, "sources": [{"outlet":"…","title":"…","url":"…"}],
-                  "tags": ["…"], "update_of": null, "visual": null } ],
-  "run": {"mode": "daily", "duration_minutes": 0, "fetches": 0, "notes": []}
-}
-```
+1. `BRIEF_HOME=work/<r> python3 scripts/newsroom.py select <r> work/<r>/dist/selection.json` (it prints LEAD and CHANGE lines).
+2. `BRIEF_HOME=work/<r> python3 scripts/assemble_edition.py <date> daily --lead "<LEAD title>" --changes "<CHANGE>" …`
+3. `BRIEF_HOME=work/<r> python3 scripts/validate_edition.py work/<r>/data/editions/<date>.json`. Fix errors by editing the desk files and re-running from step 1.
+4. `BRIEF_HOME=work/<r> python3 scripts/build.py <date>` and `BRIEF_HOME=work/<r> python3 scripts/make_pdf.py <date>`.
+5. `BRIEF_HOME=work/<r> python3 scripts/newsroom.py files <r> <date>` prints the `files` list and root.
+6. `Artifact` publish: `file_path` `work/<r>/dist/live.html`, `url` `<url>`, `root` `work/<r>/dist`, `files` from step 5. Omit `capabilities`. If a path is refused as "not read", read it with `action: "read"` and `path`, then publish again.
+7. Save state: `BRIEF_HOME=work/<r> python3 scripts/state.py pack` prints a doc id; `ArtifactData` set collection `state`, that `doc_id`, `file_path` `work/<r>/dist/state-doc.json`. This creates a new doc, so no version is needed.
+8. Mark fulfilled requests: an `ArtifactData` `batch` of `update` writes `{"status": "done", "article_date": "<date>", "article_id": "<aXX>"}`, each pinned with the version you read.
 
-In **refresh** mode, load today's file, append the new articles and a new `rounds` entry, and keep everything else.
+## 6. Finish (daily)
 
-## 7. Validate, build, publish
+Reply with one line per reader (articles and briefs, what changed from feedback, problems) and the shared-research totals. Never invent content to fill gaps; a short edition is fine.
 
-1. `python3 scripts/validate_edition.py data/editions/<date>.json`. Fix every error and re-run until it passes.
-2. `python3 scripts/build.py <date>`. This writes `dist/live.html` (the viewer page) and `dist/offline-<date>.html`.
-3. `python3 scripts/make_pdf.py <date>`. This writes `dist/pdf/<date>/daily-brief-<date>.pdf` (whole edition, for the email) and `dist/pdf/<date>/<articleId>.pdf` (one per article, for the viewer's Save as PDF button).
-4. Commit everything (`data/`, `profile/`) with message `Edition <date>` (or `Edition <date> round N`) and push to `main`.
-5. Republish the viewer: `Artifact` publish with `file_path: dist/live.html`, `url: config.viewer_artifact_url`, `root: dist` and `files` listing every PDF in `dist/pdf/<date>/` as `{"path": "pdf/<date>/<file>.pdf"}`. Omit `capabilities` so the stored declaration is kept. If the publish is refused because the artifact has not been read in this session, read it with `action: "read"` first, then publish. If it is refused because some PDF paths were already published by another run, publish again without those paths in `files` (the existing PDFs stay).
+## 7. Refresh mode
 
-## 8. Email (daily mode only)
+For every active reader (or only `reader=<r>` if the trigger text names one):
+1. `ArtifactData` get `control/refresh` and query `requests` with `status == "pending"`. If the flag is absent or `status` is not `pending`, and there are no pending requests, skip the reader. **If no reader needs anything, stop here.** This is the common case and must stay cheap.
+2. For a reader who needs work: steps 1.1–1.6 of section 1 (no ratings ingest). Also read today's `pdf/<date>/daily-brief-<date>.pdf` path from their brief, so it can be replaced.
+3. One personal desk for that reader: write every pending request in full, then, if the refresh flag is set, enough fresh articles from their topics to make 5–8 in total, plus 10–15 new briefs. Write the output to `work/<r>/dist/desk-refresh.json`.
+4. `BRIEF_HOME=work/<r> python3 scripts/assemble_edition.py <date> refresh --changes "Refresh: …"`, then validate, build, PDFs and publish as in section 5 (steps 3–6).
+5. Mark requests done (section 5 step 8). Set `control/refresh` to `{"status": "done", "handled_at": "<now>"}` with an `update`, pinned to its version.
 
-Send it from a subagent (the body is ~80 KB and should not pass through the main conversation). The subagent loads `mcp__Gmail__send_message` (ToolSearch `select:mcp__Gmail__send_message`), reads the email file in chunks and sends to `config.recipient`. If the Gmail tool is not available in this session, skip the email and add "Email not sent: Gmail connector not attached to the routine" to `run.notes`.
+## 8. Mail mode (Peter only, in his chat session)
 
-- **subject:** `Daily Brief · Sat 25 Oct · 14 reads, 38 min`
-- **htmlBody:** the exact contents of `dist/email-<date>.html`, written by `python3 scripts/build.py <date> --email-body > dist/email-<date>.html` (contents, TL;DRs, the changes note, every article in full and the viewer link). It is long: read it in chunks and pass it verbatim. The full text in the body is what makes the brief readable offline in the mail app.
-- **body:** one plain-text line with the article count, reading time and the viewer link.
-- No attachment. Do not try to attach the PDF: passing a ~90 KB base64 file through the Gmail tool failed in testing. The PDFs are available from the viewer instead.
-
-## 9. Finish
-
-Fill in `run` (duration, approximate fetch count, any failures in `notes`), commit and push again if it changed. Reply with a 3-line summary: articles per topic, what changed from feedback, any problems.
+1. `python3 scripts/newsroom.py prepare peter`. Then `Artifact` read Peter's brief with `paths` `["editions/<date>.json"]`, `out_dir` `work/peter/export`, and copy the file to `work/peter/data/editions/`. Also `ArtifactData` get `profile/setup` into the export and run `state.py unpack`, so the topic labels are right.
+2. `BRIEF_HOME=work/peter python3 scripts/build.py <date> --email-body > work/peter/dist/email.html` (headlines and key points, about 35 KB).
+3. A subagent sends it with `mcp__Gmail__send_message` to `peter@khdtechnology.com`, subject `Daily Brief · <Day DD Mon> · <N> reads, <M> min`, `htmlBody` the file verbatim, and a one-line plain `body` with the brief link.
+4. If today's edition is missing, do not send. Report it.
 
 ## Limits
-
-- At most about 40 page fetches per run across all desks.
-- If a desk fails, publish without it and note it. Never pad an edition with invented content.
-- Some outlets (Reuters, AP, BBC, Telegraph, Guardian, SCMP) are often blocked or paywalled from the cloud environment. Use syndicated copies that credit them, say which outlet the reporting is from, and cite the copy you actually read.
-- Delete `dist/desk-*.json` at the start of every run so old desk files never leak into a new edition.
+- About 15 page fetches per desk. If a desk fails, publish without it and say so.
+- Some outlets (Reuters, AP, BBC, Telegraph, Guardian, SCMP) are often blocked: use syndicated copies that credit them, and cite what you actually read.
+- Readers can see each other's topics only through the shared pool; never put one reader's personal context (e.g. Peter's unannounced egg-line product) into a shared desk prompt or a shared article.
